@@ -1,0 +1,25 @@
+{
+    "name": "telegram-client-generator",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "update": "node ./update.js",
+        "generate": "node ./generator.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JSProto/telegram-client-generator.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/JSProto/telegram-client-generator/issues"
+    },
+    "homepage": "https://github.com/JSProto/telegram-client-generator#readme",
+    "dependencies": {
+        "tl-parser": "^0.8.1"
+    },
+    "scheme": "https://raw.githubusercontent.com/telegramdesktop/tdesktop/dev/Telegram/Resources/scheme.tl"
+}
