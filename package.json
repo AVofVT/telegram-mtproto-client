@@ -1,5 +1,5 @@
 {
-    "name": "telegram-client-generator",
+    "name": "telegram-mtproto-client",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -9,15 +9,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/JSProto/telegram-client-generator.git"
+        "url": "git+https://github.com/JSProto/telegram-mtproto-client.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/JSProto/telegram-client-generator/issues"
+        "url": "https://github.com/JSProto/telegram-mtproto-client/issues"
     },
-    "homepage": "https://github.com/JSProto/telegram-client-generator#readme",
+    "homepage": "https://github.com/JSProto/telegram-mtproto-client#readme",
     "dependencies": {
         "tl-parser": "^0.8.1"
     },
