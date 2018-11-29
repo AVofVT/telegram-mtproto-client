@@ -6,7 +6,7 @@ class Ctor {
     constructor(client){
         if (client instanceof MTProtoClient) {
             /**
-             * @param {MTProtoClient} client
+             * @property {MTProtoClient}
              */
             this.__client = client
         }
@@ -19,8 +19,17 @@ class Ctor {
 //classes//
 
 class MTProtoClient {
+    /**
+     * @param {ApiManagerInstance} api
+     */
     constructor(api){
+        /**
+         * @property {number}
+         */
         this.__errors = 0
+        /**
+         * @property {ApiManagerInstance}
+         */
         this.__connector = api
 
         const ctor = this.constructor
