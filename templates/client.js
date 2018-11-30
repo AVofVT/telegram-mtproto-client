@@ -14,6 +14,15 @@ class Ctor {
             throw new Error('{client} must be instanceOf {MTProtoClient}')
         }
     }
+
+    /**
+     * @param {string} method
+     * @param {object} config
+     * @returns {any}
+     */
+    send(method, config){
+        return this.__client.request(method, config)
+    }
 }
 
 //classes//

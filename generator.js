@@ -67,7 +67,7 @@ const classTpl = (name, methods) => {
         const hasParams = fn.args && fn.args.length
 
     return `${description}\n    ${fn.method}(${hasParams ? 'config': ''}) {
-        return this.__client.request('${fn.name}'${hasParams ? ', config': ''})
+        return this.send('${fn.name}'${hasParams ? ', config': ''})
     }`
     }).join('\n') + `\n}\n`
 }

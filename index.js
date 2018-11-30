@@ -14,6 +14,15 @@ class Ctor {
             throw new Error('{client} must be instanceOf {MTProtoClient}')
         }
     }
+
+    /**
+     * @param {string} method
+     * @param {object} config
+     * @returns {any}
+     */
+    send(method, config){
+        return this.__client.request(method, config)
+    }
 }
 
 class Contest extends Ctor {
@@ -28,7 +37,7 @@ class Contest extends Ctor {
      * @returns {Bool}
      */
     saveDeveloperInfo(config) {
-        return this.__client.request('contest.saveDeveloperInfo', config)
+        return this.send('contest.saveDeveloperInfo', config)
     }
 }
 
@@ -45,7 +54,7 @@ class Auth extends Ctor {
      * @returns {auth.SentCode}
      */
     sendCode(config) {
-        return this.__client.request('auth.sendCode', config)
+        return this.send('auth.sendCode', config)
     }
 
     /**
@@ -59,7 +68,7 @@ class Auth extends Ctor {
      * @returns {auth.Authorization}
      */
     signUp(config) {
-        return this.__client.request('auth.signUp', config)
+        return this.send('auth.signUp', config)
     }
 
     /**
@@ -71,7 +80,7 @@ class Auth extends Ctor {
      * @returns {auth.Authorization}
      */
     signIn(config) {
-        return this.__client.request('auth.signIn', config)
+        return this.send('auth.signIn', config)
     }
 
     /**
@@ -79,7 +88,7 @@ class Auth extends Ctor {
      * @returns {Bool}
      */
     logOut() {
-        return this.__client.request('auth.logOut')
+        return this.send('auth.logOut')
     }
 
     /**
@@ -87,7 +96,7 @@ class Auth extends Ctor {
      * @returns {Bool}
      */
     resetAuthorizations() {
-        return this.__client.request('auth.resetAuthorizations')
+        return this.send('auth.resetAuthorizations')
     }
 
     /**
@@ -97,7 +106,7 @@ class Auth extends Ctor {
      * @returns {auth.ExportedAuthorization}
      */
     exportAuthorization(config) {
-        return this.__client.request('auth.exportAuthorization', config)
+        return this.send('auth.exportAuthorization', config)
     }
 
     /**
@@ -108,7 +117,7 @@ class Auth extends Ctor {
      * @returns {auth.Authorization}
      */
     importAuthorization(config) {
-        return this.__client.request('auth.importAuthorization', config)
+        return this.send('auth.importAuthorization', config)
     }
 
     /**
@@ -121,7 +130,7 @@ class Auth extends Ctor {
      * @returns {Bool}
      */
     bindTempAuthKey(config) {
-        return this.__client.request('auth.bindTempAuthKey', config)
+        return this.send('auth.bindTempAuthKey', config)
     }
 
     /**
@@ -134,7 +143,7 @@ class Auth extends Ctor {
      * @returns {auth.Authorization}
      */
     importBotAuthorization(config) {
-        return this.__client.request('auth.importBotAuthorization', config)
+        return this.send('auth.importBotAuthorization', config)
     }
 
     /**
@@ -144,7 +153,7 @@ class Auth extends Ctor {
      * @returns {auth.Authorization}
      */
     checkPassword(config) {
-        return this.__client.request('auth.checkPassword', config)
+        return this.send('auth.checkPassword', config)
     }
 
     /**
@@ -152,7 +161,7 @@ class Auth extends Ctor {
      * @returns {auth.PasswordRecovery}
      */
     requestPasswordRecovery() {
-        return this.__client.request('auth.requestPasswordRecovery')
+        return this.send('auth.requestPasswordRecovery')
     }
 
     /**
@@ -162,7 +171,7 @@ class Auth extends Ctor {
      * @returns {auth.Authorization}
      */
     recoverPassword(config) {
-        return this.__client.request('auth.recoverPassword', config)
+        return this.send('auth.recoverPassword', config)
     }
 
     /**
@@ -173,7 +182,7 @@ class Auth extends Ctor {
      * @returns {auth.SentCode}
      */
     resendCode(config) {
-        return this.__client.request('auth.resendCode', config)
+        return this.send('auth.resendCode', config)
     }
 
     /**
@@ -184,7 +193,7 @@ class Auth extends Ctor {
      * @returns {Bool}
      */
     cancelCode(config) {
-        return this.__client.request('auth.cancelCode', config)
+        return this.send('auth.cancelCode', config)
     }
 
     /**
@@ -194,7 +203,7 @@ class Auth extends Ctor {
      * @returns {Bool}
      */
     dropTempAuthKeys(config) {
-        return this.__client.request('auth.dropTempAuthKeys', config)
+        return this.send('auth.dropTempAuthKeys', config)
     }
 }
 
@@ -210,7 +219,7 @@ class Account extends Ctor {
      * @returns {Bool}
      */
     registerDevice(config) {
-        return this.__client.request('account.registerDevice', config)
+        return this.send('account.registerDevice', config)
     }
 
     /**
@@ -222,7 +231,7 @@ class Account extends Ctor {
      * @returns {Bool}
      */
     unregisterDevice(config) {
-        return this.__client.request('account.unregisterDevice', config)
+        return this.send('account.unregisterDevice', config)
     }
 
     /**
@@ -233,7 +242,7 @@ class Account extends Ctor {
      * @returns {Bool}
      */
     updateNotifySettings(config) {
-        return this.__client.request('account.updateNotifySettings', config)
+        return this.send('account.updateNotifySettings', config)
     }
 
     /**
@@ -243,7 +252,7 @@ class Account extends Ctor {
      * @returns {PeerNotifySettings}
      */
     getNotifySettings(config) {
-        return this.__client.request('account.getNotifySettings', config)
+        return this.send('account.getNotifySettings', config)
     }
 
     /**
@@ -251,7 +260,7 @@ class Account extends Ctor {
      * @returns {Bool}
      */
     resetNotifySettings() {
-        return this.__client.request('account.resetNotifySettings')
+        return this.send('account.resetNotifySettings')
     }
 
     /**
@@ -264,7 +273,7 @@ class Account extends Ctor {
      * @returns {User}
      */
     updateProfile(config) {
-        return this.__client.request('account.updateProfile', config)
+        return this.send('account.updateProfile', config)
     }
 
     /**
@@ -274,7 +283,7 @@ class Account extends Ctor {
      * @returns {Bool}
      */
     updateStatus(config) {
-        return this.__client.request('account.updateStatus', config)
+        return this.send('account.updateStatus', config)
     }
 
     /**
@@ -282,7 +291,7 @@ class Account extends Ctor {
      * @returns {Vector.<WallPaper>}
      */
     getWallPapers() {
-        return this.__client.request('account.getWallPapers')
+        return this.send('account.getWallPapers')
     }
 
     /**
@@ -293,7 +302,7 @@ class Account extends Ctor {
      * @returns {Bool}
      */
     reportPeer(config) {
-        return this.__client.request('account.reportPeer', config)
+        return this.send('account.reportPeer', config)
     }
 
     /**
@@ -303,7 +312,7 @@ class Account extends Ctor {
      * @returns {Bool}
      */
     checkUsername(config) {
-        return this.__client.request('account.checkUsername', config)
+        return this.send('account.checkUsername', config)
     }
 
     /**
@@ -313,7 +322,7 @@ class Account extends Ctor {
      * @returns {User}
      */
     updateUsername(config) {
-        return this.__client.request('account.updateUsername', config)
+        return this.send('account.updateUsername', config)
     }
 
     /**
@@ -323,7 +332,7 @@ class Account extends Ctor {
      * @returns {account.PrivacyRules}
      */
     getPrivacy(config) {
-        return this.__client.request('account.getPrivacy', config)
+        return this.send('account.getPrivacy', config)
     }
 
     /**
@@ -334,7 +343,7 @@ class Account extends Ctor {
      * @returns {account.PrivacyRules}
      */
     setPrivacy(config) {
-        return this.__client.request('account.setPrivacy', config)
+        return this.send('account.setPrivacy', config)
     }
 
     /**
@@ -344,7 +353,7 @@ class Account extends Ctor {
      * @returns {Bool}
      */
     deleteAccount(config) {
-        return this.__client.request('account.deleteAccount', config)
+        return this.send('account.deleteAccount', config)
     }
 
     /**
@@ -352,7 +361,7 @@ class Account extends Ctor {
      * @returns {AccountDaysTTL}
      */
     getAccountTTL() {
-        return this.__client.request('account.getAccountTTL')
+        return this.send('account.getAccountTTL')
     }
 
     /**
@@ -362,7 +371,7 @@ class Account extends Ctor {
      * @returns {Bool}
      */
     setAccountTTL(config) {
-        return this.__client.request('account.setAccountTTL', config)
+        return this.send('account.setAccountTTL', config)
     }
 
     /**
@@ -375,7 +384,7 @@ class Account extends Ctor {
      * @returns {auth.SentCode}
      */
     sendChangePhoneCode(config) {
-        return this.__client.request('account.sendChangePhoneCode', config)
+        return this.send('account.sendChangePhoneCode', config)
     }
 
     /**
@@ -387,7 +396,7 @@ class Account extends Ctor {
      * @returns {User}
      */
     changePhone(config) {
-        return this.__client.request('account.changePhone', config)
+        return this.send('account.changePhone', config)
     }
 
     /**
@@ -397,7 +406,7 @@ class Account extends Ctor {
      * @returns {Bool}
      */
     updateDeviceLocked(config) {
-        return this.__client.request('account.updateDeviceLocked', config)
+        return this.send('account.updateDeviceLocked', config)
     }
 
     /**
@@ -405,7 +414,7 @@ class Account extends Ctor {
      * @returns {account.Authorizations}
      */
     getAuthorizations() {
-        return this.__client.request('account.getAuthorizations')
+        return this.send('account.getAuthorizations')
     }
 
     /**
@@ -415,7 +424,7 @@ class Account extends Ctor {
      * @returns {Bool}
      */
     resetAuthorization(config) {
-        return this.__client.request('account.resetAuthorization', config)
+        return this.send('account.resetAuthorization', config)
     }
 
     /**
@@ -423,7 +432,7 @@ class Account extends Ctor {
      * @returns {account.Password}
      */
     getPassword() {
-        return this.__client.request('account.getPassword')
+        return this.send('account.getPassword')
     }
 
     /**
@@ -433,7 +442,7 @@ class Account extends Ctor {
      * @returns {account.PasswordSettings}
      */
     getPasswordSettings(config) {
-        return this.__client.request('account.getPasswordSettings', config)
+        return this.send('account.getPasswordSettings', config)
     }
 
     /**
@@ -444,7 +453,7 @@ class Account extends Ctor {
      * @returns {Bool}
      */
     updatePasswordSettings(config) {
-        return this.__client.request('account.updatePasswordSettings', config)
+        return this.send('account.updatePasswordSettings', config)
     }
 
     /**
@@ -457,7 +466,7 @@ class Account extends Ctor {
      * @returns {auth.SentCode}
      */
     sendConfirmPhoneCode(config) {
-        return this.__client.request('account.sendConfirmPhoneCode', config)
+        return this.send('account.sendConfirmPhoneCode', config)
     }
 
     /**
@@ -468,7 +477,7 @@ class Account extends Ctor {
      * @returns {Bool}
      */
     confirmPhone(config) {
-        return this.__client.request('account.confirmPhone', config)
+        return this.send('account.confirmPhone', config)
     }
 
     /**
@@ -479,7 +488,7 @@ class Account extends Ctor {
      * @returns {account.TmpPassword}
      */
     getTmpPassword(config) {
-        return this.__client.request('account.getTmpPassword', config)
+        return this.send('account.getTmpPassword', config)
     }
 
     /**
@@ -487,7 +496,7 @@ class Account extends Ctor {
      * @returns {account.WebAuthorizations}
      */
     getWebAuthorizations() {
-        return this.__client.request('account.getWebAuthorizations')
+        return this.send('account.getWebAuthorizations')
     }
 
     /**
@@ -497,7 +506,7 @@ class Account extends Ctor {
      * @returns {Bool}
      */
     resetWebAuthorization(config) {
-        return this.__client.request('account.resetWebAuthorization', config)
+        return this.send('account.resetWebAuthorization', config)
     }
 
     /**
@@ -505,7 +514,7 @@ class Account extends Ctor {
      * @returns {Bool}
      */
     resetWebAuthorizations() {
-        return this.__client.request('account.resetWebAuthorizations')
+        return this.send('account.resetWebAuthorizations')
     }
 
     /**
@@ -513,7 +522,7 @@ class Account extends Ctor {
      * @returns {Vector.<SecureValue>}
      */
     getAllSecureValues() {
-        return this.__client.request('account.getAllSecureValues')
+        return this.send('account.getAllSecureValues')
     }
 
     /**
@@ -523,7 +532,7 @@ class Account extends Ctor {
      * @returns {Vector.<SecureValue>}
      */
     getSecureValue(config) {
-        return this.__client.request('account.getSecureValue', config)
+        return this.send('account.getSecureValue', config)
     }
 
     /**
@@ -534,7 +543,7 @@ class Account extends Ctor {
      * @returns {SecureValue}
      */
     saveSecureValue(config) {
-        return this.__client.request('account.saveSecureValue', config)
+        return this.send('account.saveSecureValue', config)
     }
 
     /**
@@ -544,7 +553,7 @@ class Account extends Ctor {
      * @returns {Bool}
      */
     deleteSecureValue(config) {
-        return this.__client.request('account.deleteSecureValue', config)
+        return this.send('account.deleteSecureValue', config)
     }
 
     /**
@@ -556,7 +565,7 @@ class Account extends Ctor {
      * @returns {account.AuthorizationForm}
      */
     getAuthorizationForm(config) {
-        return this.__client.request('account.getAuthorizationForm', config)
+        return this.send('account.getAuthorizationForm', config)
     }
 
     /**
@@ -570,7 +579,7 @@ class Account extends Ctor {
      * @returns {Bool}
      */
     acceptAuthorization(config) {
-        return this.__client.request('account.acceptAuthorization', config)
+        return this.send('account.acceptAuthorization', config)
     }
 
     /**
@@ -583,7 +592,7 @@ class Account extends Ctor {
      * @returns {auth.SentCode}
      */
     sendVerifyPhoneCode(config) {
-        return this.__client.request('account.sendVerifyPhoneCode', config)
+        return this.send('account.sendVerifyPhoneCode', config)
     }
 
     /**
@@ -595,7 +604,7 @@ class Account extends Ctor {
      * @returns {Bool}
      */
     verifyPhone(config) {
-        return this.__client.request('account.verifyPhone', config)
+        return this.send('account.verifyPhone', config)
     }
 
     /**
@@ -605,7 +614,7 @@ class Account extends Ctor {
      * @returns {account.SentEmailCode}
      */
     sendVerifyEmailCode(config) {
-        return this.__client.request('account.sendVerifyEmailCode', config)
+        return this.send('account.sendVerifyEmailCode', config)
     }
 
     /**
@@ -616,7 +625,7 @@ class Account extends Ctor {
      * @returns {Bool}
      */
     verifyEmail(config) {
-        return this.__client.request('account.verifyEmail', config)
+        return this.send('account.verifyEmail', config)
     }
 
     /**
@@ -633,7 +642,7 @@ class Account extends Ctor {
      * @returns {account.Takeout}
      */
     initTakeoutSession(config) {
-        return this.__client.request('account.initTakeoutSession', config)
+        return this.send('account.initTakeoutSession', config)
     }
 
     /**
@@ -644,7 +653,7 @@ class Account extends Ctor {
      * @returns {Bool}
      */
     finishTakeoutSession(config) {
-        return this.__client.request('account.finishTakeoutSession', config)
+        return this.send('account.finishTakeoutSession', config)
     }
 }
 
@@ -656,7 +665,7 @@ class Users extends Ctor {
      * @returns {Vector.<User>}
      */
     getUsers(config) {
-        return this.__client.request('users.getUsers', config)
+        return this.send('users.getUsers', config)
     }
 
     /**
@@ -666,7 +675,7 @@ class Users extends Ctor {
      * @returns {UserFull}
      */
     getFullUser(config) {
-        return this.__client.request('users.getFullUser', config)
+        return this.send('users.getFullUser', config)
     }
 
     /**
@@ -677,7 +686,7 @@ class Users extends Ctor {
      * @returns {Bool}
      */
     setSecureValueErrors(config) {
-        return this.__client.request('users.setSecureValueErrors', config)
+        return this.send('users.setSecureValueErrors', config)
     }
 }
 
@@ -687,7 +696,7 @@ class Contacts extends Ctor {
      * @returns {Vector.<ContactStatus>}
      */
     getStatuses() {
-        return this.__client.request('contacts.getStatuses')
+        return this.send('contacts.getStatuses')
     }
 
     /**
@@ -697,7 +706,7 @@ class Contacts extends Ctor {
      * @returns {contacts.Contacts}
      */
     getContacts(config) {
-        return this.__client.request('contacts.getContacts', config)
+        return this.send('contacts.getContacts', config)
     }
 
     /**
@@ -707,7 +716,7 @@ class Contacts extends Ctor {
      * @returns {contacts.ImportedContacts}
      */
     importContacts(config) {
-        return this.__client.request('contacts.importContacts', config)
+        return this.send('contacts.importContacts', config)
     }
 
     /**
@@ -717,7 +726,7 @@ class Contacts extends Ctor {
      * @returns {contacts.Link}
      */
     deleteContact(config) {
-        return this.__client.request('contacts.deleteContact', config)
+        return this.send('contacts.deleteContact', config)
     }
 
     /**
@@ -727,7 +736,7 @@ class Contacts extends Ctor {
      * @returns {Bool}
      */
     deleteContacts(config) {
-        return this.__client.request('contacts.deleteContacts', config)
+        return this.send('contacts.deleteContacts', config)
     }
 
     /**
@@ -737,7 +746,7 @@ class Contacts extends Ctor {
      * @returns {Bool}
      */
     block(config) {
-        return this.__client.request('contacts.block', config)
+        return this.send('contacts.block', config)
     }
 
     /**
@@ -747,7 +756,7 @@ class Contacts extends Ctor {
      * @returns {Bool}
      */
     unblock(config) {
-        return this.__client.request('contacts.unblock', config)
+        return this.send('contacts.unblock', config)
     }
 
     /**
@@ -758,7 +767,7 @@ class Contacts extends Ctor {
      * @returns {contacts.Blocked}
      */
     getBlocked(config) {
-        return this.__client.request('contacts.getBlocked', config)
+        return this.send('contacts.getBlocked', config)
     }
 
     /**
@@ -766,7 +775,7 @@ class Contacts extends Ctor {
      * @returns {Vector.<int>}
      */
     exportCard() {
-        return this.__client.request('contacts.exportCard')
+        return this.send('contacts.exportCard')
     }
 
     /**
@@ -776,7 +785,7 @@ class Contacts extends Ctor {
      * @returns {User}
      */
     importCard(config) {
-        return this.__client.request('contacts.importCard', config)
+        return this.send('contacts.importCard', config)
     }
 
     /**
@@ -787,7 +796,7 @@ class Contacts extends Ctor {
      * @returns {contacts.Found}
      */
     search(config) {
-        return this.__client.request('contacts.search', config)
+        return this.send('contacts.search', config)
     }
 
     /**
@@ -797,7 +806,7 @@ class Contacts extends Ctor {
      * @returns {contacts.ResolvedPeer}
      */
     resolveUsername(config) {
-        return this.__client.request('contacts.resolveUsername', config)
+        return this.send('contacts.resolveUsername', config)
     }
 
     /**
@@ -816,7 +825,7 @@ class Contacts extends Ctor {
      * @returns {contacts.TopPeers}
      */
     getTopPeers(config) {
-        return this.__client.request('contacts.getTopPeers', config)
+        return this.send('contacts.getTopPeers', config)
     }
 
     /**
@@ -827,7 +836,7 @@ class Contacts extends Ctor {
      * @returns {Bool}
      */
     resetTopPeerRating(config) {
-        return this.__client.request('contacts.resetTopPeerRating', config)
+        return this.send('contacts.resetTopPeerRating', config)
     }
 
     /**
@@ -835,7 +844,7 @@ class Contacts extends Ctor {
      * @returns {Bool}
      */
     resetSaved() {
-        return this.__client.request('contacts.resetSaved')
+        return this.send('contacts.resetSaved')
     }
 
     /**
@@ -843,7 +852,7 @@ class Contacts extends Ctor {
      * @returns {Vector.<SavedContact>}
      */
     getSaved() {
-        return this.__client.request('contacts.getSaved')
+        return this.send('contacts.getSaved')
     }
 
     /**
@@ -853,7 +862,7 @@ class Contacts extends Ctor {
      * @returns {Bool}
      */
     toggleTopPeers(config) {
-        return this.__client.request('contacts.toggleTopPeers', config)
+        return this.send('contacts.toggleTopPeers', config)
     }
 }
 
@@ -865,7 +874,7 @@ class Messages extends Ctor {
      * @returns {messages.Messages}
      */
     getMessages(config) {
-        return this.__client.request('messages.getMessages', config)
+        return this.send('messages.getMessages', config)
     }
 
     /**
@@ -881,7 +890,7 @@ class Messages extends Ctor {
      * @returns {messages.Dialogs}
      */
     getDialogs(config) {
-        return this.__client.request('messages.getDialogs', config)
+        return this.send('messages.getDialogs', config)
     }
 
     /**
@@ -898,7 +907,7 @@ class Messages extends Ctor {
      * @returns {messages.Messages}
      */
     getHistory(config) {
-        return this.__client.request('messages.getHistory', config)
+        return this.send('messages.getHistory', config)
     }
 
     /**
@@ -920,7 +929,7 @@ class Messages extends Ctor {
      * @returns {messages.Messages}
      */
     search(config) {
-        return this.__client.request('messages.search', config)
+        return this.send('messages.search', config)
     }
 
     /**
@@ -931,7 +940,7 @@ class Messages extends Ctor {
      * @returns {messages.AffectedMessages}
      */
     readHistory(config) {
-        return this.__client.request('messages.readHistory', config)
+        return this.send('messages.readHistory', config)
     }
 
     /**
@@ -944,7 +953,7 @@ class Messages extends Ctor {
      * @returns {messages.AffectedHistory}
      */
     deleteHistory(config) {
-        return this.__client.request('messages.deleteHistory', config)
+        return this.send('messages.deleteHistory', config)
     }
 
     /**
@@ -956,7 +965,7 @@ class Messages extends Ctor {
      * @returns {messages.AffectedMessages}
      */
     deleteMessages(config) {
-        return this.__client.request('messages.deleteMessages', config)
+        return this.send('messages.deleteMessages', config)
     }
 
     /**
@@ -966,7 +975,7 @@ class Messages extends Ctor {
      * @returns {Vector.<ReceivedNotifyMessage>}
      */
     receivedMessages(config) {
-        return this.__client.request('messages.receivedMessages', config)
+        return this.send('messages.receivedMessages', config)
     }
 
     /**
@@ -977,7 +986,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     setTyping(config) {
-        return this.__client.request('messages.setTyping', config)
+        return this.send('messages.setTyping', config)
     }
 
     /**
@@ -997,7 +1006,7 @@ class Messages extends Ctor {
      * @returns {Updates}
      */
     sendMessage(config) {
-        return this.__client.request('messages.sendMessage', config)
+        return this.send('messages.sendMessage', config)
     }
 
     /**
@@ -1017,7 +1026,7 @@ class Messages extends Ctor {
      * @returns {Updates}
      */
     sendMedia(config) {
-        return this.__client.request('messages.sendMedia', config)
+        return this.send('messages.sendMedia', config)
     }
 
     /**
@@ -1035,7 +1044,7 @@ class Messages extends Ctor {
      * @returns {Updates}
      */
     forwardMessages(config) {
-        return this.__client.request('messages.forwardMessages', config)
+        return this.send('messages.forwardMessages', config)
     }
 
     /**
@@ -1045,7 +1054,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     reportSpam(config) {
-        return this.__client.request('messages.reportSpam', config)
+        return this.send('messages.reportSpam', config)
     }
 
     /**
@@ -1055,7 +1064,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     hideReportSpam(config) {
-        return this.__client.request('messages.hideReportSpam', config)
+        return this.send('messages.hideReportSpam', config)
     }
 
     /**
@@ -1065,7 +1074,7 @@ class Messages extends Ctor {
      * @returns {PeerSettings}
      */
     getPeerSettings(config) {
-        return this.__client.request('messages.getPeerSettings', config)
+        return this.send('messages.getPeerSettings', config)
     }
 
     /**
@@ -1077,7 +1086,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     report(config) {
-        return this.__client.request('messages.report', config)
+        return this.send('messages.report', config)
     }
 
     /**
@@ -1087,7 +1096,7 @@ class Messages extends Ctor {
      * @returns {messages.Chats}
      */
     getChats(config) {
-        return this.__client.request('messages.getChats', config)
+        return this.send('messages.getChats', config)
     }
 
     /**
@@ -1097,7 +1106,7 @@ class Messages extends Ctor {
      * @returns {messages.ChatFull}
      */
     getFullChat(config) {
-        return this.__client.request('messages.getFullChat', config)
+        return this.send('messages.getFullChat', config)
     }
 
     /**
@@ -1108,7 +1117,7 @@ class Messages extends Ctor {
      * @returns {Updates}
      */
     editChatTitle(config) {
-        return this.__client.request('messages.editChatTitle', config)
+        return this.send('messages.editChatTitle', config)
     }
 
     /**
@@ -1119,7 +1128,7 @@ class Messages extends Ctor {
      * @returns {Updates}
      */
     editChatPhoto(config) {
-        return this.__client.request('messages.editChatPhoto', config)
+        return this.send('messages.editChatPhoto', config)
     }
 
     /**
@@ -1131,7 +1140,7 @@ class Messages extends Ctor {
      * @returns {Updates}
      */
     addChatUser(config) {
-        return this.__client.request('messages.addChatUser', config)
+        return this.send('messages.addChatUser', config)
     }
 
     /**
@@ -1142,7 +1151,7 @@ class Messages extends Ctor {
      * @returns {Updates}
      */
     deleteChatUser(config) {
-        return this.__client.request('messages.deleteChatUser', config)
+        return this.send('messages.deleteChatUser', config)
     }
 
     /**
@@ -1153,7 +1162,7 @@ class Messages extends Ctor {
      * @returns {Updates}
      */
     createChat(config) {
-        return this.__client.request('messages.createChat', config)
+        return this.send('messages.createChat', config)
     }
 
     /**
@@ -1164,7 +1173,7 @@ class Messages extends Ctor {
      * @returns {messages.DhConfig}
      */
     getDhConfig(config) {
-        return this.__client.request('messages.getDhConfig', config)
+        return this.send('messages.getDhConfig', config)
     }
 
     /**
@@ -1176,7 +1185,7 @@ class Messages extends Ctor {
      * @returns {EncryptedChat}
      */
     requestEncryption(config) {
-        return this.__client.request('messages.requestEncryption', config)
+        return this.send('messages.requestEncryption', config)
     }
 
     /**
@@ -1188,7 +1197,7 @@ class Messages extends Ctor {
      * @returns {EncryptedChat}
      */
     acceptEncryption(config) {
-        return this.__client.request('messages.acceptEncryption', config)
+        return this.send('messages.acceptEncryption', config)
     }
 
     /**
@@ -1198,7 +1207,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     discardEncryption(config) {
-        return this.__client.request('messages.discardEncryption', config)
+        return this.send('messages.discardEncryption', config)
     }
 
     /**
@@ -1209,7 +1218,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     setEncryptedTyping(config) {
-        return this.__client.request('messages.setEncryptedTyping', config)
+        return this.send('messages.setEncryptedTyping', config)
     }
 
     /**
@@ -1220,7 +1229,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     readEncryptedHistory(config) {
-        return this.__client.request('messages.readEncryptedHistory', config)
+        return this.send('messages.readEncryptedHistory', config)
     }
 
     /**
@@ -1232,7 +1241,7 @@ class Messages extends Ctor {
      * @returns {messages.SentEncryptedMessage}
      */
     sendEncrypted(config) {
-        return this.__client.request('messages.sendEncrypted', config)
+        return this.send('messages.sendEncrypted', config)
     }
 
     /**
@@ -1245,7 +1254,7 @@ class Messages extends Ctor {
      * @returns {messages.SentEncryptedMessage}
      */
     sendEncryptedFile(config) {
-        return this.__client.request('messages.sendEncryptedFile', config)
+        return this.send('messages.sendEncryptedFile', config)
     }
 
     /**
@@ -1257,7 +1266,7 @@ class Messages extends Ctor {
      * @returns {messages.SentEncryptedMessage}
      */
     sendEncryptedService(config) {
-        return this.__client.request('messages.sendEncryptedService', config)
+        return this.send('messages.sendEncryptedService', config)
     }
 
     /**
@@ -1267,7 +1276,7 @@ class Messages extends Ctor {
      * @returns {Vector.<long>}
      */
     receivedQueue(config) {
-        return this.__client.request('messages.receivedQueue', config)
+        return this.send('messages.receivedQueue', config)
     }
 
     /**
@@ -1277,7 +1286,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     reportEncryptedSpam(config) {
-        return this.__client.request('messages.reportEncryptedSpam', config)
+        return this.send('messages.reportEncryptedSpam', config)
     }
 
     /**
@@ -1287,7 +1296,7 @@ class Messages extends Ctor {
      * @returns {messages.AffectedMessages}
      */
     readMessageContents(config) {
-        return this.__client.request('messages.readMessageContents', config)
+        return this.send('messages.readMessageContents', config)
     }
 
     /**
@@ -1298,7 +1307,7 @@ class Messages extends Ctor {
      * @returns {messages.Stickers}
      */
     getStickers(config) {
-        return this.__client.request('messages.getStickers', config)
+        return this.send('messages.getStickers', config)
     }
 
     /**
@@ -1308,7 +1317,7 @@ class Messages extends Ctor {
      * @returns {messages.AllStickers}
      */
     getAllStickers(config) {
-        return this.__client.request('messages.getAllStickers', config)
+        return this.send('messages.getAllStickers', config)
     }
 
     /**
@@ -1320,7 +1329,7 @@ class Messages extends Ctor {
      * @returns {MessageMedia}
      */
     getWebPagePreview(config) {
-        return this.__client.request('messages.getWebPagePreview', config)
+        return this.send('messages.getWebPagePreview', config)
     }
 
     /**
@@ -1330,7 +1339,7 @@ class Messages extends Ctor {
      * @returns {ExportedChatInvite}
      */
     exportChatInvite(config) {
-        return this.__client.request('messages.exportChatInvite', config)
+        return this.send('messages.exportChatInvite', config)
     }
 
     /**
@@ -1340,7 +1349,7 @@ class Messages extends Ctor {
      * @returns {ChatInvite}
      */
     checkChatInvite(config) {
-        return this.__client.request('messages.checkChatInvite', config)
+        return this.send('messages.checkChatInvite', config)
     }
 
     /**
@@ -1350,7 +1359,7 @@ class Messages extends Ctor {
      * @returns {Updates}
      */
     importChatInvite(config) {
-        return this.__client.request('messages.importChatInvite', config)
+        return this.send('messages.importChatInvite', config)
     }
 
     /**
@@ -1360,7 +1369,7 @@ class Messages extends Ctor {
      * @returns {messages.StickerSet}
      */
     getStickerSet(config) {
-        return this.__client.request('messages.getStickerSet', config)
+        return this.send('messages.getStickerSet', config)
     }
 
     /**
@@ -1371,7 +1380,7 @@ class Messages extends Ctor {
      * @returns {messages.StickerSetInstallResult}
      */
     installStickerSet(config) {
-        return this.__client.request('messages.installStickerSet', config)
+        return this.send('messages.installStickerSet', config)
     }
 
     /**
@@ -1381,7 +1390,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     uninstallStickerSet(config) {
-        return this.__client.request('messages.uninstallStickerSet', config)
+        return this.send('messages.uninstallStickerSet', config)
     }
 
     /**
@@ -1394,7 +1403,7 @@ class Messages extends Ctor {
      * @returns {Updates}
      */
     startBot(config) {
-        return this.__client.request('messages.startBot', config)
+        return this.send('messages.startBot', config)
     }
 
     /**
@@ -1406,7 +1415,7 @@ class Messages extends Ctor {
      * @returns {Vector.<int>}
      */
     getMessagesViews(config) {
-        return this.__client.request('messages.getMessagesViews', config)
+        return this.send('messages.getMessagesViews', config)
     }
 
     /**
@@ -1417,7 +1426,7 @@ class Messages extends Ctor {
      * @returns {Updates}
      */
     toggleChatAdmins(config) {
-        return this.__client.request('messages.toggleChatAdmins', config)
+        return this.send('messages.toggleChatAdmins', config)
     }
 
     /**
@@ -1429,7 +1438,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     editChatAdmin(config) {
-        return this.__client.request('messages.editChatAdmin', config)
+        return this.send('messages.editChatAdmin', config)
     }
 
     /**
@@ -1439,7 +1448,7 @@ class Messages extends Ctor {
      * @returns {Updates}
      */
     migrateChat(config) {
-        return this.__client.request('messages.migrateChat', config)
+        return this.send('messages.migrateChat', config)
     }
 
     /**
@@ -1453,7 +1462,7 @@ class Messages extends Ctor {
      * @returns {messages.Messages}
      */
     searchGlobal(config) {
-        return this.__client.request('messages.searchGlobal', config)
+        return this.send('messages.searchGlobal', config)
     }
 
     /**
@@ -1465,7 +1474,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     reorderStickerSets(config) {
-        return this.__client.request('messages.reorderStickerSets', config)
+        return this.send('messages.reorderStickerSets', config)
     }
 
     /**
@@ -1477,7 +1486,7 @@ class Messages extends Ctor {
      * @returns {Document}
      */
     getDocumentByHash(config) {
-        return this.__client.request('messages.getDocumentByHash', config)
+        return this.send('messages.getDocumentByHash', config)
     }
 
     /**
@@ -1488,7 +1497,7 @@ class Messages extends Ctor {
      * @returns {messages.FoundGifs}
      */
     searchGifs(config) {
-        return this.__client.request('messages.searchGifs', config)
+        return this.send('messages.searchGifs', config)
     }
 
     /**
@@ -1498,7 +1507,7 @@ class Messages extends Ctor {
      * @returns {messages.SavedGifs}
      */
     getSavedGifs(config) {
-        return this.__client.request('messages.getSavedGifs', config)
+        return this.send('messages.getSavedGifs', config)
     }
 
     /**
@@ -1509,7 +1518,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     saveGif(config) {
-        return this.__client.request('messages.saveGif', config)
+        return this.send('messages.saveGif', config)
     }
 
     /**
@@ -1524,7 +1533,7 @@ class Messages extends Ctor {
      * @returns {messages.BotResults}
      */
     getInlineBotResults(config) {
-        return this.__client.request('messages.getInlineBotResults', config)
+        return this.send('messages.getInlineBotResults', config)
     }
 
     /**
@@ -1541,7 +1550,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     setInlineBotResults(config) {
-        return this.__client.request('messages.setInlineBotResults', config)
+        return this.send('messages.setInlineBotResults', config)
     }
 
     /**
@@ -1559,7 +1568,7 @@ class Messages extends Ctor {
      * @returns {Updates}
      */
     sendInlineBotResult(config) {
-        return this.__client.request('messages.sendInlineBotResult', config)
+        return this.send('messages.sendInlineBotResult', config)
     }
 
     /**
@@ -1570,7 +1579,7 @@ class Messages extends Ctor {
      * @returns {messages.MessageEditData}
      */
     getMessageEditData(config) {
-        return this.__client.request('messages.getMessageEditData', config)
+        return this.send('messages.getMessageEditData', config)
     }
 
     /**
@@ -1589,7 +1598,7 @@ class Messages extends Ctor {
      * @returns {Updates}
      */
     editMessage(config) {
-        return this.__client.request('messages.editMessage', config)
+        return this.send('messages.editMessage', config)
     }
 
     /**
@@ -1607,7 +1616,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     editInlineBotMessage(config) {
-        return this.__client.request('messages.editInlineBotMessage', config)
+        return this.send('messages.editInlineBotMessage', config)
     }
 
     /**
@@ -1621,7 +1630,7 @@ class Messages extends Ctor {
      * @returns {messages.BotCallbackAnswer}
      */
     getBotCallbackAnswer(config) {
-        return this.__client.request('messages.getBotCallbackAnswer', config)
+        return this.send('messages.getBotCallbackAnswer', config)
     }
 
     /**
@@ -1636,7 +1645,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     setBotCallbackAnswer(config) {
-        return this.__client.request('messages.setBotCallbackAnswer', config)
+        return this.send('messages.setBotCallbackAnswer', config)
     }
 
     /**
@@ -1646,7 +1655,7 @@ class Messages extends Ctor {
      * @returns {messages.PeerDialogs}
      */
     getPeerDialogs(config) {
-        return this.__client.request('messages.getPeerDialogs', config)
+        return this.send('messages.getPeerDialogs', config)
     }
 
     /**
@@ -1661,7 +1670,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     saveDraft(config) {
-        return this.__client.request('messages.saveDraft', config)
+        return this.send('messages.saveDraft', config)
     }
 
     /**
@@ -1669,7 +1678,7 @@ class Messages extends Ctor {
      * @returns {Updates}
      */
     getAllDrafts() {
-        return this.__client.request('messages.getAllDrafts')
+        return this.send('messages.getAllDrafts')
     }
 
     /**
@@ -1679,7 +1688,7 @@ class Messages extends Ctor {
      * @returns {messages.FeaturedStickers}
      */
     getFeaturedStickers(config) {
-        return this.__client.request('messages.getFeaturedStickers', config)
+        return this.send('messages.getFeaturedStickers', config)
     }
 
     /**
@@ -1689,7 +1698,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     readFeaturedStickers(config) {
-        return this.__client.request('messages.readFeaturedStickers', config)
+        return this.send('messages.readFeaturedStickers', config)
     }
 
     /**
@@ -1701,7 +1710,7 @@ class Messages extends Ctor {
      * @returns {messages.RecentStickers}
      */
     getRecentStickers(config) {
-        return this.__client.request('messages.getRecentStickers', config)
+        return this.send('messages.getRecentStickers', config)
     }
 
     /**
@@ -1714,7 +1723,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     saveRecentSticker(config) {
-        return this.__client.request('messages.saveRecentSticker', config)
+        return this.send('messages.saveRecentSticker', config)
     }
 
     /**
@@ -1725,7 +1734,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     clearRecentStickers(config) {
-        return this.__client.request('messages.clearRecentStickers', config)
+        return this.send('messages.clearRecentStickers', config)
     }
 
     /**
@@ -1738,7 +1747,7 @@ class Messages extends Ctor {
      * @returns {messages.ArchivedStickers}
      */
     getArchivedStickers(config) {
-        return this.__client.request('messages.getArchivedStickers', config)
+        return this.send('messages.getArchivedStickers', config)
     }
 
     /**
@@ -1748,7 +1757,7 @@ class Messages extends Ctor {
      * @returns {messages.AllStickers}
      */
     getMaskStickers(config) {
-        return this.__client.request('messages.getMaskStickers', config)
+        return this.send('messages.getMaskStickers', config)
     }
 
     /**
@@ -1758,7 +1767,7 @@ class Messages extends Ctor {
      * @returns {Vector.<StickerSetCovered>}
      */
     getAttachedStickers(config) {
-        return this.__client.request('messages.getAttachedStickers', config)
+        return this.send('messages.getAttachedStickers', config)
     }
 
     /**
@@ -1774,7 +1783,7 @@ class Messages extends Ctor {
      * @returns {Updates}
      */
     setGameScore(config) {
-        return this.__client.request('messages.setGameScore', config)
+        return this.send('messages.setGameScore', config)
     }
 
     /**
@@ -1789,7 +1798,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     setInlineGameScore(config) {
-        return this.__client.request('messages.setInlineGameScore', config)
+        return this.send('messages.setInlineGameScore', config)
     }
 
     /**
@@ -1801,7 +1810,7 @@ class Messages extends Ctor {
      * @returns {messages.HighScores}
      */
     getGameHighScores(config) {
-        return this.__client.request('messages.getGameHighScores', config)
+        return this.send('messages.getGameHighScores', config)
     }
 
     /**
@@ -1812,7 +1821,7 @@ class Messages extends Ctor {
      * @returns {messages.HighScores}
      */
     getInlineGameHighScores(config) {
-        return this.__client.request('messages.getInlineGameHighScores', config)
+        return this.send('messages.getInlineGameHighScores', config)
     }
 
     /**
@@ -1824,7 +1833,7 @@ class Messages extends Ctor {
      * @returns {messages.Chats}
      */
     getCommonChats(config) {
-        return this.__client.request('messages.getCommonChats', config)
+        return this.send('messages.getCommonChats', config)
     }
 
     /**
@@ -1834,7 +1843,7 @@ class Messages extends Ctor {
      * @returns {messages.Chats}
      */
     getAllChats(config) {
-        return this.__client.request('messages.getAllChats', config)
+        return this.send('messages.getAllChats', config)
     }
 
     /**
@@ -1845,7 +1854,7 @@ class Messages extends Ctor {
      * @returns {WebPage}
      */
     getWebPage(config) {
-        return this.__client.request('messages.getWebPage', config)
+        return this.send('messages.getWebPage', config)
     }
 
     /**
@@ -1857,7 +1866,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     toggleDialogPin(config) {
-        return this.__client.request('messages.toggleDialogPin', config)
+        return this.send('messages.toggleDialogPin', config)
     }
 
     /**
@@ -1869,7 +1878,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     reorderPinnedDialogs(config) {
-        return this.__client.request('messages.reorderPinnedDialogs', config)
+        return this.send('messages.reorderPinnedDialogs', config)
     }
 
     /**
@@ -1877,7 +1886,7 @@ class Messages extends Ctor {
      * @returns {messages.PeerDialogs}
      */
     getPinnedDialogs() {
-        return this.__client.request('messages.getPinnedDialogs')
+        return this.send('messages.getPinnedDialogs')
     }
 
     /**
@@ -1890,7 +1899,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     setBotShippingResults(config) {
-        return this.__client.request('messages.setBotShippingResults', config)
+        return this.send('messages.setBotShippingResults', config)
     }
 
     /**
@@ -1903,7 +1912,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     setBotPrecheckoutResults(config) {
-        return this.__client.request('messages.setBotPrecheckoutResults', config)
+        return this.send('messages.setBotPrecheckoutResults', config)
     }
 
     /**
@@ -1914,7 +1923,7 @@ class Messages extends Ctor {
      * @returns {MessageMedia}
      */
     uploadMedia(config) {
-        return this.__client.request('messages.uploadMedia', config)
+        return this.send('messages.uploadMedia', config)
     }
 
     /**
@@ -1926,7 +1935,7 @@ class Messages extends Ctor {
      * @returns {Updates}
      */
     sendScreenshotNotification(config) {
-        return this.__client.request('messages.sendScreenshotNotification', config)
+        return this.send('messages.sendScreenshotNotification', config)
     }
 
     /**
@@ -1936,7 +1945,7 @@ class Messages extends Ctor {
      * @returns {messages.FavedStickers}
      */
     getFavedStickers(config) {
-        return this.__client.request('messages.getFavedStickers', config)
+        return this.send('messages.getFavedStickers', config)
     }
 
     /**
@@ -1947,7 +1956,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     faveSticker(config) {
-        return this.__client.request('messages.faveSticker', config)
+        return this.send('messages.faveSticker', config)
     }
 
     /**
@@ -1962,7 +1971,7 @@ class Messages extends Ctor {
      * @returns {messages.Messages}
      */
     getUnreadMentions(config) {
-        return this.__client.request('messages.getUnreadMentions', config)
+        return this.send('messages.getUnreadMentions', config)
     }
 
     /**
@@ -1972,7 +1981,7 @@ class Messages extends Ctor {
      * @returns {messages.AffectedHistory}
      */
     readMentions(config) {
-        return this.__client.request('messages.readMentions', config)
+        return this.send('messages.readMentions', config)
     }
 
     /**
@@ -1984,7 +1993,7 @@ class Messages extends Ctor {
      * @returns {messages.Messages}
      */
     getRecentLocations(config) {
-        return this.__client.request('messages.getRecentLocations', config)
+        return this.send('messages.getRecentLocations', config)
     }
 
     /**
@@ -2000,7 +2009,7 @@ class Messages extends Ctor {
      * @returns {Updates}
      */
     sendMultiMedia(config) {
-        return this.__client.request('messages.sendMultiMedia', config)
+        return this.send('messages.sendMultiMedia', config)
     }
 
     /**
@@ -2011,7 +2020,7 @@ class Messages extends Ctor {
      * @returns {EncryptedFile}
      */
     uploadEncryptedFile(config) {
-        return this.__client.request('messages.uploadEncryptedFile', config)
+        return this.send('messages.uploadEncryptedFile', config)
     }
 
     /**
@@ -2024,7 +2033,7 @@ class Messages extends Ctor {
      * @returns {messages.FoundStickerSets}
      */
     searchStickerSets(config) {
-        return this.__client.request('messages.searchStickerSets', config)
+        return this.send('messages.searchStickerSets', config)
     }
 
     /**
@@ -2032,7 +2041,7 @@ class Messages extends Ctor {
      * @returns {Vector.<MessageRange>}
      */
     getSplitRanges() {
-        return this.__client.request('messages.getSplitRanges')
+        return this.send('messages.getSplitRanges')
     }
 
     /**
@@ -2044,7 +2053,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     markDialogUnread(config) {
-        return this.__client.request('messages.markDialogUnread', config)
+        return this.send('messages.markDialogUnread', config)
     }
 
     /**
@@ -2052,7 +2061,7 @@ class Messages extends Ctor {
      * @returns {Vector.<DialogPeer>}
      */
     getDialogUnreadMarks() {
-        return this.__client.request('messages.getDialogUnreadMarks')
+        return this.send('messages.getDialogUnreadMarks')
     }
 
     /**
@@ -2060,7 +2069,7 @@ class Messages extends Ctor {
      * @returns {Bool}
      */
     clearAllDrafts() {
-        return this.__client.request('messages.clearAllDrafts')
+        return this.send('messages.clearAllDrafts')
     }
 }
 
@@ -2070,7 +2079,7 @@ class Updates extends Ctor {
      * @returns {updates.State}
      */
     getState() {
-        return this.__client.request('updates.getState')
+        return this.send('updates.getState')
     }
 
     /**
@@ -2084,7 +2093,7 @@ class Updates extends Ctor {
      * @returns {updates.Difference}
      */
     getDifference(config) {
-        return this.__client.request('updates.getDifference', config)
+        return this.send('updates.getDifference', config)
     }
 
     /**
@@ -2099,7 +2108,7 @@ class Updates extends Ctor {
      * @returns {updates.ChannelDifference}
      */
     getChannelDifference(config) {
-        return this.__client.request('updates.getChannelDifference', config)
+        return this.send('updates.getChannelDifference', config)
     }
 }
 
@@ -2111,7 +2120,7 @@ class Photos extends Ctor {
      * @returns {UserProfilePhoto}
      */
     updateProfilePhoto(config) {
-        return this.__client.request('photos.updateProfilePhoto', config)
+        return this.send('photos.updateProfilePhoto', config)
     }
 
     /**
@@ -2121,7 +2130,7 @@ class Photos extends Ctor {
      * @returns {photos.Photo}
      */
     uploadProfilePhoto(config) {
-        return this.__client.request('photos.uploadProfilePhoto', config)
+        return this.send('photos.uploadProfilePhoto', config)
     }
 
     /**
@@ -2131,7 +2140,7 @@ class Photos extends Ctor {
      * @returns {Vector.<long>}
      */
     deletePhotos(config) {
-        return this.__client.request('photos.deletePhotos', config)
+        return this.send('photos.deletePhotos', config)
     }
 
     /**
@@ -2144,7 +2153,7 @@ class Photos extends Ctor {
      * @returns {photos.Photos}
      */
     getUserPhotos(config) {
-        return this.__client.request('photos.getUserPhotos', config)
+        return this.send('photos.getUserPhotos', config)
     }
 }
 
@@ -2158,7 +2167,7 @@ class Upload extends Ctor {
      * @returns {Bool}
      */
     saveFilePart(config) {
-        return this.__client.request('upload.saveFilePart', config)
+        return this.send('upload.saveFilePart', config)
     }
 
     /**
@@ -2170,7 +2179,7 @@ class Upload extends Ctor {
      * @returns {upload.File}
      */
     getFile(config) {
-        return this.__client.request('upload.getFile', config)
+        return this.send('upload.getFile', config)
     }
 
     /**
@@ -2183,7 +2192,7 @@ class Upload extends Ctor {
      * @returns {Bool}
      */
     saveBigFilePart(config) {
-        return this.__client.request('upload.saveBigFilePart', config)
+        return this.send('upload.saveBigFilePart', config)
     }
 
     /**
@@ -2195,7 +2204,7 @@ class Upload extends Ctor {
      * @returns {upload.WebFile}
      */
     getWebFile(config) {
-        return this.__client.request('upload.getWebFile', config)
+        return this.send('upload.getWebFile', config)
     }
 
     /**
@@ -2207,7 +2216,7 @@ class Upload extends Ctor {
      * @returns {upload.CdnFile}
      */
     getCdnFile(config) {
-        return this.__client.request('upload.getCdnFile', config)
+        return this.send('upload.getCdnFile', config)
     }
 
     /**
@@ -2218,7 +2227,7 @@ class Upload extends Ctor {
      * @returns {Vector.<FileHash>}
      */
     reuploadCdnFile(config) {
-        return this.__client.request('upload.reuploadCdnFile', config)
+        return this.send('upload.reuploadCdnFile', config)
     }
 
     /**
@@ -2229,7 +2238,7 @@ class Upload extends Ctor {
      * @returns {Vector.<FileHash>}
      */
     getCdnFileHashes(config) {
-        return this.__client.request('upload.getCdnFileHashes', config)
+        return this.send('upload.getCdnFileHashes', config)
     }
 
     /**
@@ -2240,7 +2249,7 @@ class Upload extends Ctor {
      * @returns {Vector.<FileHash>}
      */
     getFileHashes(config) {
-        return this.__client.request('upload.getFileHashes', config)
+        return this.send('upload.getFileHashes', config)
     }
 }
 
@@ -2250,7 +2259,7 @@ class Help extends Ctor {
      * @returns {Config}
      */
     getConfig() {
-        return this.__client.request('help.getConfig')
+        return this.send('help.getConfig')
     }
 
     /**
@@ -2258,7 +2267,7 @@ class Help extends Ctor {
      * @returns {NearestDc}
      */
     getNearestDc() {
-        return this.__client.request('help.getNearestDc')
+        return this.send('help.getNearestDc')
     }
 
     /**
@@ -2268,7 +2277,7 @@ class Help extends Ctor {
      * @returns {help.AppUpdate}
      */
     getAppUpdate(config) {
-        return this.__client.request('help.getAppUpdate', config)
+        return this.send('help.getAppUpdate', config)
     }
 
     /**
@@ -2278,7 +2287,7 @@ class Help extends Ctor {
      * @returns {Bool}
      */
     saveAppLog(config) {
-        return this.__client.request('help.saveAppLog', config)
+        return this.send('help.saveAppLog', config)
     }
 
     /**
@@ -2286,7 +2295,7 @@ class Help extends Ctor {
      * @returns {help.InviteText}
      */
     getInviteText() {
-        return this.__client.request('help.getInviteText')
+        return this.send('help.getInviteText')
     }
 
     /**
@@ -2294,7 +2303,7 @@ class Help extends Ctor {
      * @returns {help.Support}
      */
     getSupport() {
-        return this.__client.request('help.getSupport')
+        return this.send('help.getSupport')
     }
 
     /**
@@ -2304,7 +2313,7 @@ class Help extends Ctor {
      * @returns {Updates}
      */
     getAppChangelog(config) {
-        return this.__client.request('help.getAppChangelog', config)
+        return this.send('help.getAppChangelog', config)
     }
 
     /**
@@ -2315,7 +2324,7 @@ class Help extends Ctor {
      * @returns {Bool}
      */
     setBotUpdatesStatus(config) {
-        return this.__client.request('help.setBotUpdatesStatus', config)
+        return this.send('help.setBotUpdatesStatus', config)
     }
 
     /**
@@ -2323,7 +2332,7 @@ class Help extends Ctor {
      * @returns {CdnConfig}
      */
     getCdnConfig() {
-        return this.__client.request('help.getCdnConfig')
+        return this.send('help.getCdnConfig')
     }
 
     /**
@@ -2333,7 +2342,7 @@ class Help extends Ctor {
      * @returns {help.RecentMeUrls}
      */
     getRecentMeUrls(config) {
-        return this.__client.request('help.getRecentMeUrls', config)
+        return this.send('help.getRecentMeUrls', config)
     }
 
     /**
@@ -2341,7 +2350,7 @@ class Help extends Ctor {
      * @returns {help.ProxyData}
      */
     getProxyData() {
-        return this.__client.request('help.getProxyData')
+        return this.send('help.getProxyData')
     }
 
     /**
@@ -2349,7 +2358,7 @@ class Help extends Ctor {
      * @returns {help.TermsOfServiceUpdate}
      */
     getTermsOfServiceUpdate() {
-        return this.__client.request('help.getTermsOfServiceUpdate')
+        return this.send('help.getTermsOfServiceUpdate')
     }
 
     /**
@@ -2359,7 +2368,7 @@ class Help extends Ctor {
      * @returns {Bool}
      */
     acceptTermsOfService(config) {
-        return this.__client.request('help.acceptTermsOfService', config)
+        return this.send('help.acceptTermsOfService', config)
     }
 
     /**
@@ -2369,7 +2378,7 @@ class Help extends Ctor {
      * @returns {help.DeepLinkInfo}
      */
     getDeepLinkInfo(config) {
-        return this.__client.request('help.getDeepLinkInfo', config)
+        return this.send('help.getDeepLinkInfo', config)
     }
 
     /**
@@ -2379,7 +2388,7 @@ class Help extends Ctor {
      * @returns {help.PassportConfig}
      */
     getPassportConfig(config) {
-        return this.__client.request('help.getPassportConfig', config)
+        return this.send('help.getPassportConfig', config)
     }
 }
 
@@ -2392,7 +2401,7 @@ class Channels extends Ctor {
      * @returns {Bool}
      */
     readHistory(config) {
-        return this.__client.request('channels.readHistory', config)
+        return this.send('channels.readHistory', config)
     }
 
     /**
@@ -2403,7 +2412,7 @@ class Channels extends Ctor {
      * @returns {messages.AffectedMessages}
      */
     deleteMessages(config) {
-        return this.__client.request('channels.deleteMessages', config)
+        return this.send('channels.deleteMessages', config)
     }
 
     /**
@@ -2414,7 +2423,7 @@ class Channels extends Ctor {
      * @returns {messages.AffectedHistory}
      */
     deleteUserHistory(config) {
-        return this.__client.request('channels.deleteUserHistory', config)
+        return this.send('channels.deleteUserHistory', config)
     }
 
     /**
@@ -2426,7 +2435,7 @@ class Channels extends Ctor {
      * @returns {Bool}
      */
     reportSpam(config) {
-        return this.__client.request('channels.reportSpam', config)
+        return this.send('channels.reportSpam', config)
     }
 
     /**
@@ -2437,7 +2446,7 @@ class Channels extends Ctor {
      * @returns {messages.Messages}
      */
     getMessages(config) {
-        return this.__client.request('channels.getMessages', config)
+        return this.send('channels.getMessages', config)
     }
 
     /**
@@ -2451,7 +2460,7 @@ class Channels extends Ctor {
      * @returns {channels.ChannelParticipants}
      */
     getParticipants(config) {
-        return this.__client.request('channels.getParticipants', config)
+        return this.send('channels.getParticipants', config)
     }
 
     /**
@@ -2462,7 +2471,7 @@ class Channels extends Ctor {
      * @returns {channels.ChannelParticipant}
      */
     getParticipant(config) {
-        return this.__client.request('channels.getParticipant', config)
+        return this.send('channels.getParticipant', config)
     }
 
     /**
@@ -2472,7 +2481,7 @@ class Channels extends Ctor {
      * @returns {messages.Chats}
      */
     getChannels(config) {
-        return this.__client.request('channels.getChannels', config)
+        return this.send('channels.getChannels', config)
     }
 
     /**
@@ -2482,7 +2491,7 @@ class Channels extends Ctor {
      * @returns {messages.ChatFull}
      */
     getFullChannel(config) {
-        return this.__client.request('channels.getFullChannel', config)
+        return this.send('channels.getFullChannel', config)
     }
 
     /**
@@ -2496,7 +2505,7 @@ class Channels extends Ctor {
      * @returns {Updates}
      */
     createChannel(config) {
-        return this.__client.request('channels.createChannel', config)
+        return this.send('channels.createChannel', config)
     }
 
     /**
@@ -2507,7 +2516,7 @@ class Channels extends Ctor {
      * @returns {Bool}
      */
     editAbout(config) {
-        return this.__client.request('channels.editAbout', config)
+        return this.send('channels.editAbout', config)
     }
 
     /**
@@ -2519,7 +2528,7 @@ class Channels extends Ctor {
      * @returns {Updates}
      */
     editAdmin(config) {
-        return this.__client.request('channels.editAdmin', config)
+        return this.send('channels.editAdmin', config)
     }
 
     /**
@@ -2530,7 +2539,7 @@ class Channels extends Ctor {
      * @returns {Updates}
      */
     editTitle(config) {
-        return this.__client.request('channels.editTitle', config)
+        return this.send('channels.editTitle', config)
     }
 
     /**
@@ -2541,7 +2550,7 @@ class Channels extends Ctor {
      * @returns {Updates}
      */
     editPhoto(config) {
-        return this.__client.request('channels.editPhoto', config)
+        return this.send('channels.editPhoto', config)
     }
 
     /**
@@ -2552,7 +2561,7 @@ class Channels extends Ctor {
      * @returns {Bool}
      */
     checkUsername(config) {
-        return this.__client.request('channels.checkUsername', config)
+        return this.send('channels.checkUsername', config)
     }
 
     /**
@@ -2563,7 +2572,7 @@ class Channels extends Ctor {
      * @returns {Bool}
      */
     updateUsername(config) {
-        return this.__client.request('channels.updateUsername', config)
+        return this.send('channels.updateUsername', config)
     }
 
     /**
@@ -2573,7 +2582,7 @@ class Channels extends Ctor {
      * @returns {Updates}
      */
     joinChannel(config) {
-        return this.__client.request('channels.joinChannel', config)
+        return this.send('channels.joinChannel', config)
     }
 
     /**
@@ -2583,7 +2592,7 @@ class Channels extends Ctor {
      * @returns {Updates}
      */
     leaveChannel(config) {
-        return this.__client.request('channels.leaveChannel', config)
+        return this.send('channels.leaveChannel', config)
     }
 
     /**
@@ -2594,7 +2603,7 @@ class Channels extends Ctor {
      * @returns {Updates}
      */
     inviteToChannel(config) {
-        return this.__client.request('channels.inviteToChannel', config)
+        return this.send('channels.inviteToChannel', config)
     }
 
     /**
@@ -2604,7 +2613,7 @@ class Channels extends Ctor {
      * @returns {ExportedChatInvite}
      */
     exportInvite(config) {
-        return this.__client.request('channels.exportInvite', config)
+        return this.send('channels.exportInvite', config)
     }
 
     /**
@@ -2614,7 +2623,7 @@ class Channels extends Ctor {
      * @returns {Updates}
      */
     deleteChannel(config) {
-        return this.__client.request('channels.deleteChannel', config)
+        return this.send('channels.deleteChannel', config)
     }
 
     /**
@@ -2625,7 +2634,7 @@ class Channels extends Ctor {
      * @returns {Updates}
      */
     toggleInvites(config) {
-        return this.__client.request('channels.toggleInvites', config)
+        return this.send('channels.toggleInvites', config)
     }
 
     /**
@@ -2637,7 +2646,7 @@ class Channels extends Ctor {
      * @returns {ExportedMessageLink}
      */
     exportMessageLink(config) {
-        return this.__client.request('channels.exportMessageLink', config)
+        return this.send('channels.exportMessageLink', config)
     }
 
     /**
@@ -2648,7 +2657,7 @@ class Channels extends Ctor {
      * @returns {Updates}
      */
     toggleSignatures(config) {
-        return this.__client.request('channels.toggleSignatures', config)
+        return this.send('channels.toggleSignatures', config)
     }
 
     /**
@@ -2661,7 +2670,7 @@ class Channels extends Ctor {
      * @returns {Updates}
      */
     updatePinnedMessage(config) {
-        return this.__client.request('channels.updatePinnedMessage', config)
+        return this.send('channels.updatePinnedMessage', config)
     }
 
     /**
@@ -2669,7 +2678,7 @@ class Channels extends Ctor {
      * @returns {messages.Chats}
      */
     getAdminedPublicChannels() {
-        return this.__client.request('channels.getAdminedPublicChannels')
+        return this.send('channels.getAdminedPublicChannels')
     }
 
     /**
@@ -2681,7 +2690,7 @@ class Channels extends Ctor {
      * @returns {Updates}
      */
     editBanned(config) {
-        return this.__client.request('channels.editBanned', config)
+        return this.send('channels.editBanned', config)
     }
 
     /**
@@ -2698,7 +2707,7 @@ class Channels extends Ctor {
      * @returns {channels.AdminLogResults}
      */
     getAdminLog(config) {
-        return this.__client.request('channels.getAdminLog', config)
+        return this.send('channels.getAdminLog', config)
     }
 
     /**
@@ -2709,7 +2718,7 @@ class Channels extends Ctor {
      * @returns {Bool}
      */
     setStickers(config) {
-        return this.__client.request('channels.setStickers', config)
+        return this.send('channels.setStickers', config)
     }
 
     /**
@@ -2720,7 +2729,7 @@ class Channels extends Ctor {
      * @returns {Bool}
      */
     readMessageContents(config) {
-        return this.__client.request('channels.readMessageContents', config)
+        return this.send('channels.readMessageContents', config)
     }
 
     /**
@@ -2731,7 +2740,7 @@ class Channels extends Ctor {
      * @returns {Bool}
      */
     deleteHistory(config) {
-        return this.__client.request('channels.deleteHistory', config)
+        return this.send('channels.deleteHistory', config)
     }
 
     /**
@@ -2742,7 +2751,7 @@ class Channels extends Ctor {
      * @returns {Updates}
      */
     togglePreHistoryHidden(config) {
-        return this.__client.request('channels.togglePreHistoryHidden', config)
+        return this.send('channels.togglePreHistoryHidden', config)
     }
 
     /**
@@ -2752,7 +2761,7 @@ class Channels extends Ctor {
      * @returns {messages.Chats}
      */
     getLeftChannels(config) {
-        return this.__client.request('channels.getLeftChannels', config)
+        return this.send('channels.getLeftChannels', config)
     }
 }
 
@@ -2765,7 +2774,7 @@ class Bots extends Ctor {
      * @returns {DataJSON}
      */
     sendCustomRequest(config) {
-        return this.__client.request('bots.sendCustomRequest', config)
+        return this.send('bots.sendCustomRequest', config)
     }
 
     /**
@@ -2776,7 +2785,7 @@ class Bots extends Ctor {
      * @returns {Bool}
      */
     answerWebhookJSONQuery(config) {
-        return this.__client.request('bots.answerWebhookJSONQuery', config)
+        return this.send('bots.answerWebhookJSONQuery', config)
     }
 }
 
@@ -2788,7 +2797,7 @@ class Payments extends Ctor {
      * @returns {payments.PaymentForm}
      */
     getPaymentForm(config) {
-        return this.__client.request('payments.getPaymentForm', config)
+        return this.send('payments.getPaymentForm', config)
     }
 
     /**
@@ -2798,7 +2807,7 @@ class Payments extends Ctor {
      * @returns {payments.PaymentReceipt}
      */
     getPaymentReceipt(config) {
-        return this.__client.request('payments.getPaymentReceipt', config)
+        return this.send('payments.getPaymentReceipt', config)
     }
 
     /**
@@ -2811,7 +2820,7 @@ class Payments extends Ctor {
      * @returns {payments.ValidatedRequestedInfo}
      */
     validateRequestedInfo(config) {
-        return this.__client.request('payments.validateRequestedInfo', config)
+        return this.send('payments.validateRequestedInfo', config)
     }
 
     /**
@@ -2825,7 +2834,7 @@ class Payments extends Ctor {
      * @returns {payments.PaymentResult}
      */
     sendPaymentForm(config) {
-        return this.__client.request('payments.sendPaymentForm', config)
+        return this.send('payments.sendPaymentForm', config)
     }
 
     /**
@@ -2833,7 +2842,7 @@ class Payments extends Ctor {
      * @returns {payments.SavedInfo}
      */
     getSavedInfo() {
-        return this.__client.request('payments.getSavedInfo')
+        return this.send('payments.getSavedInfo')
     }
 
     /**
@@ -2845,7 +2854,7 @@ class Payments extends Ctor {
      * @returns {Bool}
      */
     clearSavedInfo(config) {
-        return this.__client.request('payments.clearSavedInfo', config)
+        return this.send('payments.clearSavedInfo', config)
     }
 }
 
@@ -2862,7 +2871,7 @@ class Stickers extends Ctor {
      * @returns {messages.StickerSet}
      */
     createStickerSet(config) {
-        return this.__client.request('stickers.createStickerSet', config)
+        return this.send('stickers.createStickerSet', config)
     }
 
     /**
@@ -2872,7 +2881,7 @@ class Stickers extends Ctor {
      * @returns {messages.StickerSet}
      */
     removeStickerFromSet(config) {
-        return this.__client.request('stickers.removeStickerFromSet', config)
+        return this.send('stickers.removeStickerFromSet', config)
     }
 
     /**
@@ -2883,7 +2892,7 @@ class Stickers extends Ctor {
      * @returns {messages.StickerSet}
      */
     changeStickerPosition(config) {
-        return this.__client.request('stickers.changeStickerPosition', config)
+        return this.send('stickers.changeStickerPosition', config)
     }
 
     /**
@@ -2894,7 +2903,7 @@ class Stickers extends Ctor {
      * @returns {messages.StickerSet}
      */
     addStickerToSet(config) {
-        return this.__client.request('stickers.addStickerToSet', config)
+        return this.send('stickers.addStickerToSet', config)
     }
 }
 
@@ -2904,7 +2913,7 @@ class Phone extends Ctor {
      * @returns {DataJSON}
      */
     getCallConfig() {
-        return this.__client.request('phone.getCallConfig')
+        return this.send('phone.getCallConfig')
     }
 
     /**
@@ -2917,7 +2926,7 @@ class Phone extends Ctor {
      * @returns {phone.PhoneCall}
      */
     requestCall(config) {
-        return this.__client.request('phone.requestCall', config)
+        return this.send('phone.requestCall', config)
     }
 
     /**
@@ -2929,7 +2938,7 @@ class Phone extends Ctor {
      * @returns {phone.PhoneCall}
      */
     acceptCall(config) {
-        return this.__client.request('phone.acceptCall', config)
+        return this.send('phone.acceptCall', config)
     }
 
     /**
@@ -2942,7 +2951,7 @@ class Phone extends Ctor {
      * @returns {phone.PhoneCall}
      */
     confirmCall(config) {
-        return this.__client.request('phone.confirmCall', config)
+        return this.send('phone.confirmCall', config)
     }
 
     /**
@@ -2952,7 +2961,7 @@ class Phone extends Ctor {
      * @returns {Bool}
      */
     receivedCall(config) {
-        return this.__client.request('phone.receivedCall', config)
+        return this.send('phone.receivedCall', config)
     }
 
     /**
@@ -2965,7 +2974,7 @@ class Phone extends Ctor {
      * @returns {Updates}
      */
     discardCall(config) {
-        return this.__client.request('phone.discardCall', config)
+        return this.send('phone.discardCall', config)
     }
 
     /**
@@ -2977,7 +2986,7 @@ class Phone extends Ctor {
      * @returns {Updates}
      */
     setCallRating(config) {
-        return this.__client.request('phone.setCallRating', config)
+        return this.send('phone.setCallRating', config)
     }
 
     /**
@@ -2988,7 +2997,7 @@ class Phone extends Ctor {
      * @returns {Bool}
      */
     saveCallDebug(config) {
-        return this.__client.request('phone.saveCallDebug', config)
+        return this.send('phone.saveCallDebug', config)
     }
 }
 
@@ -3001,7 +3010,7 @@ class Langpack extends Ctor {
      * @returns {LangPackDifference}
      */
     getLangPack(config) {
-        return this.__client.request('langpack.getLangPack', config)
+        return this.send('langpack.getLangPack', config)
     }
 
     /**
@@ -3013,7 +3022,7 @@ class Langpack extends Ctor {
      * @returns {Vector.<LangPackString>}
      */
     getStrings(config) {
-        return this.__client.request('langpack.getStrings', config)
+        return this.send('langpack.getStrings', config)
     }
 
     /**
@@ -3023,7 +3032,7 @@ class Langpack extends Ctor {
      * @returns {LangPackDifference}
      */
     getDifference(config) {
-        return this.__client.request('langpack.getDifference', config)
+        return this.send('langpack.getDifference', config)
     }
 
     /**
@@ -3033,7 +3042,7 @@ class Langpack extends Ctor {
      * @returns {Vector.<LangPackLanguage>}
      */
     getLanguages(config) {
-        return this.__client.request('langpack.getLanguages', config)
+        return this.send('langpack.getLanguages', config)
     }
 }
 
