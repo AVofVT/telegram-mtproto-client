@@ -1,5 +1,5 @@
 const fs = require('fs')
-const {parse} = require('tl-parser')
+const { parse } = require('tl-parser')
 
 const dump = json => console.log(JSON.stringify(json, (k, v) => (k == 'start' || k == 'end' ? undefined : v), '    '));
 
