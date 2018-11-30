@@ -18,8 +18,6 @@
         "url": "https://github.com/JSProto/telegram-mtproto-client/issues"
     },
     "homepage": "https://github.com/JSProto/telegram-mtproto-client#readme",
-    "dependencies": {
-        "tl-parser": "^0.8.1"
-    },
-    "scheme": "https://raw.githubusercontent.com/telegramdesktop/tdesktop/dev/Telegram/Resources/scheme.tl"
+    "dependencies": {},
+    "schema": "https://core.telegram.org/schema/json"
 }

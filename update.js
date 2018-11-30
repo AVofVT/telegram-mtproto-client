@@ -1,6 +1,6 @@
 const fs = require('fs')
 const http = require('https')
-const {scheme} = require('./package')
+const {schema} = require('./package')
 
 const download = function(url, dest, cb) {
     const onerror = err => (fs.unlink(dest), cb(err.message))
@@ -21,4 +21,4 @@ const download = function(url, dest, cb) {
 }
 
 
-download(scheme, 'scheme.tl', (err) => console.log(err || 'download complete!'))
+download(schema, 'schema.json', (err) => console.log(err || 'download complete!'))
