@@ -53,7 +53,7 @@ const descriptionTpl = (method) => {
     const hasParams = method.args && method.args.length
     return `
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/${method.method}.md}` +
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/${method.name}.md}` +
      `${hasParams ? '\n     * @param {object} config': ''}` +
      method.args.map(p =>  `\n     * @property {${p.type}} config.${p.name}` ).join('') + `
      * @returns {${method.return}}

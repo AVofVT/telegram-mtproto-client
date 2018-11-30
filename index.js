@@ -18,7 +18,7 @@ class Ctor {
 
 class Contest extends Ctor {
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/saveDeveloperInfo.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/contest.saveDeveloperInfo.md}
      * @param {object} config
      * @property {int} config.vk_id
      * @property {string} config.name
@@ -34,7 +34,7 @@ class Contest extends Ctor {
 
 class Auth extends Ctor {
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/sendCode.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/auth.sendCode.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.allow_flashcall
@@ -49,7 +49,7 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/signUp.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/auth.signUp.md}
      * @param {object} config
      * @property {string} config.phone_number
      * @property {string} config.phone_code_hash
@@ -63,7 +63,7 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/signIn.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/auth.signIn.md}
      * @param {object} config
      * @property {string} config.phone_number
      * @property {string} config.phone_code_hash
@@ -75,7 +75,7 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/logOut.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/auth.logOut.md}
      * @returns {Bool}
      */
     logOut() {
@@ -83,7 +83,7 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/resetAuthorizations.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/auth.resetAuthorizations.md}
      * @returns {Bool}
      */
     resetAuthorizations() {
@@ -91,7 +91,7 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/exportAuthorization.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/auth.exportAuthorization.md}
      * @param {object} config
      * @property {int} config.dc_id
      * @returns {auth.ExportedAuthorization}
@@ -101,7 +101,7 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/importAuthorization.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/auth.importAuthorization.md}
      * @param {object} config
      * @property {int} config.id
      * @property {bytes} config.bytes
@@ -112,7 +112,7 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/bindTempAuthKey.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/auth.bindTempAuthKey.md}
      * @param {object} config
      * @property {long} config.perm_auth_key_id
      * @property {long} config.nonce
@@ -125,7 +125,7 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/importBotAuthorization.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/auth.importBotAuthorization.md}
      * @param {object} config
      * @property {int} config.flags
      * @property {int} config.api_id
@@ -138,7 +138,7 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/checkPassword.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/auth.checkPassword.md}
      * @param {object} config
      * @property {InputCheckPasswordSRP} config.password
      * @returns {auth.Authorization}
@@ -148,7 +148,7 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/requestPasswordRecovery.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/auth.requestPasswordRecovery.md}
      * @returns {auth.PasswordRecovery}
      */
     requestPasswordRecovery() {
@@ -156,7 +156,7 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/recoverPassword.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/auth.recoverPassword.md}
      * @param {object} config
      * @property {string} config.code
      * @returns {auth.Authorization}
@@ -166,7 +166,7 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/resendCode.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/auth.resendCode.md}
      * @param {object} config
      * @property {string} config.phone_number
      * @property {string} config.phone_code_hash
@@ -177,7 +177,7 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/cancelCode.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/auth.cancelCode.md}
      * @param {object} config
      * @property {string} config.phone_number
      * @property {string} config.phone_code_hash
@@ -188,7 +188,7 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/dropTempAuthKeys.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/auth.dropTempAuthKeys.md}
      * @param {object} config
      * @property {Vector.<long>} config.except_auth_keys
      * @returns {Bool}
@@ -200,7 +200,7 @@ class Auth extends Ctor {
 
 class Account extends Ctor {
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/registerDevice.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.registerDevice.md}
      * @param {object} config
      * @property {int} config.token_type
      * @property {string} config.token
@@ -214,7 +214,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/unregisterDevice.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.unregisterDevice.md}
      * @param {object} config
      * @property {int} config.token_type
      * @property {string} config.token
@@ -226,7 +226,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/updateNotifySettings.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.updateNotifySettings.md}
      * @param {object} config
      * @property {InputNotifyPeer} config.peer
      * @property {InputPeerNotifySettings} config.settings
@@ -237,7 +237,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getNotifySettings.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.getNotifySettings.md}
      * @param {object} config
      * @property {InputNotifyPeer} config.peer
      * @returns {PeerNotifySettings}
@@ -247,7 +247,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/resetNotifySettings.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.resetNotifySettings.md}
      * @returns {Bool}
      */
     resetNotifySettings() {
@@ -255,7 +255,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/updateProfile.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.updateProfile.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {string} config.first_name
@@ -268,7 +268,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/updateStatus.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.updateStatus.md}
      * @param {object} config
      * @property {Bool} config.offline
      * @returns {Bool}
@@ -278,7 +278,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getWallPapers.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.getWallPapers.md}
      * @returns {Vector.<WallPaper>}
      */
     getWallPapers() {
@@ -286,7 +286,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/reportPeer.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.reportPeer.md}
      * @param {object} config
      * @property {InputPeer} config.peer
      * @property {ReportReason} config.reason
@@ -297,7 +297,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/checkUsername.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.checkUsername.md}
      * @param {object} config
      * @property {string} config.username
      * @returns {Bool}
@@ -307,7 +307,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/updateUsername.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.updateUsername.md}
      * @param {object} config
      * @property {string} config.username
      * @returns {User}
@@ -317,7 +317,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getPrivacy.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.getPrivacy.md}
      * @param {object} config
      * @property {InputPrivacyKey} config.key
      * @returns {account.PrivacyRules}
@@ -327,7 +327,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/setPrivacy.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.setPrivacy.md}
      * @param {object} config
      * @property {InputPrivacyKey} config.key
      * @property {Vector.<InputPrivacyRule>} config.rules
@@ -338,7 +338,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/deleteAccount.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.deleteAccount.md}
      * @param {object} config
      * @property {string} config.reason
      * @returns {Bool}
@@ -348,7 +348,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getAccountTTL.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.getAccountTTL.md}
      * @returns {AccountDaysTTL}
      */
     getAccountTTL() {
@@ -356,7 +356,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/setAccountTTL.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.setAccountTTL.md}
      * @param {object} config
      * @property {AccountDaysTTL} config.ttl
      * @returns {Bool}
@@ -366,7 +366,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/sendChangePhoneCode.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.sendChangePhoneCode.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.allow_flashcall
@@ -379,7 +379,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/changePhone.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.changePhone.md}
      * @param {object} config
      * @property {string} config.phone_number
      * @property {string} config.phone_code_hash
@@ -391,7 +391,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/updateDeviceLocked.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.updateDeviceLocked.md}
      * @param {object} config
      * @property {int} config.period
      * @returns {Bool}
@@ -401,7 +401,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getAuthorizations.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.getAuthorizations.md}
      * @returns {account.Authorizations}
      */
     getAuthorizations() {
@@ -409,7 +409,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/resetAuthorization.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.resetAuthorization.md}
      * @param {object} config
      * @property {long} config.hash
      * @returns {Bool}
@@ -419,7 +419,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getPassword.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.getPassword.md}
      * @returns {account.Password}
      */
     getPassword() {
@@ -427,7 +427,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getPasswordSettings.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.getPasswordSettings.md}
      * @param {object} config
      * @property {InputCheckPasswordSRP} config.password
      * @returns {account.PasswordSettings}
@@ -437,7 +437,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/updatePasswordSettings.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.updatePasswordSettings.md}
      * @param {object} config
      * @property {InputCheckPasswordSRP} config.password
      * @property {account.PasswordInputSettings} config.new_settings
@@ -448,7 +448,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/sendConfirmPhoneCode.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.sendConfirmPhoneCode.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.allow_flashcall
@@ -461,7 +461,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/confirmPhone.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.confirmPhone.md}
      * @param {object} config
      * @property {string} config.phone_code_hash
      * @property {string} config.phone_code
@@ -472,7 +472,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getTmpPassword.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.getTmpPassword.md}
      * @param {object} config
      * @property {InputCheckPasswordSRP} config.password
      * @property {int} config.period
@@ -483,7 +483,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getWebAuthorizations.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.getWebAuthorizations.md}
      * @returns {account.WebAuthorizations}
      */
     getWebAuthorizations() {
@@ -491,7 +491,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/resetWebAuthorization.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.resetWebAuthorization.md}
      * @param {object} config
      * @property {long} config.hash
      * @returns {Bool}
@@ -501,7 +501,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/resetWebAuthorizations.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.resetWebAuthorizations.md}
      * @returns {Bool}
      */
     resetWebAuthorizations() {
@@ -509,7 +509,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getAllSecureValues.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.getAllSecureValues.md}
      * @returns {Vector.<SecureValue>}
      */
     getAllSecureValues() {
@@ -517,7 +517,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getSecureValue.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.getSecureValue.md}
      * @param {object} config
      * @property {Vector.<SecureValueType>} config.types
      * @returns {Vector.<SecureValue>}
@@ -527,7 +527,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/saveSecureValue.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.saveSecureValue.md}
      * @param {object} config
      * @property {InputSecureValue} config.value
      * @property {long} config.secure_secret_id
@@ -538,7 +538,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/deleteSecureValue.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.deleteSecureValue.md}
      * @param {object} config
      * @property {Vector.<SecureValueType>} config.types
      * @returns {Bool}
@@ -548,7 +548,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getAuthorizationForm.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.getAuthorizationForm.md}
      * @param {object} config
      * @property {int} config.bot_id
      * @property {string} config.scope
@@ -560,7 +560,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/acceptAuthorization.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.acceptAuthorization.md}
      * @param {object} config
      * @property {int} config.bot_id
      * @property {string} config.scope
@@ -574,7 +574,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/sendVerifyPhoneCode.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.sendVerifyPhoneCode.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.allow_flashcall
@@ -587,7 +587,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/verifyPhone.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.verifyPhone.md}
      * @param {object} config
      * @property {string} config.phone_number
      * @property {string} config.phone_code_hash
@@ -599,7 +599,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/sendVerifyEmailCode.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.sendVerifyEmailCode.md}
      * @param {object} config
      * @property {string} config.email
      * @returns {account.SentEmailCode}
@@ -609,7 +609,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/verifyEmail.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.verifyEmail.md}
      * @param {object} config
      * @property {string} config.email
      * @property {string} config.code
@@ -620,7 +620,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/initTakeoutSession.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.initTakeoutSession.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.contacts
@@ -637,7 +637,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/finishTakeoutSession.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/account.finishTakeoutSession.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.success
@@ -650,7 +650,7 @@ class Account extends Ctor {
 
 class Users extends Ctor {
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getUsers.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/users.getUsers.md}
      * @param {object} config
      * @property {Vector.<InputUser>} config.id
      * @returns {Vector.<User>}
@@ -660,7 +660,7 @@ class Users extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getFullUser.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/users.getFullUser.md}
      * @param {object} config
      * @property {InputUser} config.id
      * @returns {UserFull}
@@ -670,7 +670,7 @@ class Users extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/setSecureValueErrors.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/users.setSecureValueErrors.md}
      * @param {object} config
      * @property {InputUser} config.id
      * @property {Vector.<SecureValueError>} config.errors
@@ -683,7 +683,7 @@ class Users extends Ctor {
 
 class Contacts extends Ctor {
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getStatuses.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/contacts.getStatuses.md}
      * @returns {Vector.<ContactStatus>}
      */
     getStatuses() {
@@ -691,7 +691,7 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getContacts.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/contacts.getContacts.md}
      * @param {object} config
      * @property {int} config.hash
      * @returns {contacts.Contacts}
@@ -701,7 +701,7 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/importContacts.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/contacts.importContacts.md}
      * @param {object} config
      * @property {Vector.<InputContact>} config.contacts
      * @returns {contacts.ImportedContacts}
@@ -711,7 +711,7 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/deleteContact.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/contacts.deleteContact.md}
      * @param {object} config
      * @property {InputUser} config.id
      * @returns {contacts.Link}
@@ -721,7 +721,7 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/deleteContacts.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/contacts.deleteContacts.md}
      * @param {object} config
      * @property {Vector.<InputUser>} config.id
      * @returns {Bool}
@@ -731,7 +731,7 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/block.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/contacts.block.md}
      * @param {object} config
      * @property {InputUser} config.id
      * @returns {Bool}
@@ -741,7 +741,7 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/unblock.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/contacts.unblock.md}
      * @param {object} config
      * @property {InputUser} config.id
      * @returns {Bool}
@@ -751,7 +751,7 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getBlocked.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/contacts.getBlocked.md}
      * @param {object} config
      * @property {int} config.offset
      * @property {int} config.limit
@@ -762,7 +762,7 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/exportCard.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/contacts.exportCard.md}
      * @returns {Vector.<int>}
      */
     exportCard() {
@@ -770,7 +770,7 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/importCard.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/contacts.importCard.md}
      * @param {object} config
      * @property {Vector.<int>} config.export_card
      * @returns {User}
@@ -780,7 +780,7 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/search.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/contacts.search.md}
      * @param {object} config
      * @property {string} config.q
      * @property {int} config.limit
@@ -791,7 +791,7 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/resolveUsername.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/contacts.resolveUsername.md}
      * @param {object} config
      * @property {string} config.username
      * @returns {contacts.ResolvedPeer}
@@ -801,7 +801,7 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getTopPeers.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/contacts.getTopPeers.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.correspondents
@@ -820,7 +820,7 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/resetTopPeerRating.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/contacts.resetTopPeerRating.md}
      * @param {object} config
      * @property {TopPeerCategory} config.category
      * @property {InputPeer} config.peer
@@ -831,7 +831,7 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/resetSaved.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/contacts.resetSaved.md}
      * @returns {Bool}
      */
     resetSaved() {
@@ -839,7 +839,7 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getSaved.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/contacts.getSaved.md}
      * @returns {Vector.<SavedContact>}
      */
     getSaved() {
@@ -847,7 +847,7 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/toggleTopPeers.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/contacts.toggleTopPeers.md}
      * @param {object} config
      * @property {Bool} config.enabled
      * @returns {Bool}
@@ -859,7 +859,7 @@ class Contacts extends Ctor {
 
 class Messages extends Ctor {
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getMessages.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getMessages.md}
      * @param {object} config
      * @property {Vector.<InputMessage>} config.id
      * @returns {messages.Messages}
@@ -869,7 +869,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getDialogs.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getDialogs.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.exclude_pinned
@@ -885,7 +885,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getHistory.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getHistory.md}
      * @param {object} config
      * @property {InputPeer} config.peer
      * @property {int} config.offset_id
@@ -902,7 +902,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/search.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.search.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {InputPeer} config.peer
@@ -924,7 +924,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/readHistory.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.readHistory.md}
      * @param {object} config
      * @property {InputPeer} config.peer
      * @property {int} config.max_id
@@ -935,7 +935,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/deleteHistory.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.deleteHistory.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.just_clear
@@ -948,7 +948,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/deleteMessages.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.deleteMessages.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.revoke
@@ -960,7 +960,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/receivedMessages.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.receivedMessages.md}
      * @param {object} config
      * @property {int} config.max_id
      * @returns {Vector.<ReceivedNotifyMessage>}
@@ -970,7 +970,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/setTyping.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.setTyping.md}
      * @param {object} config
      * @property {InputPeer} config.peer
      * @property {SendMessageAction} config.action
@@ -981,7 +981,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/sendMessage.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.sendMessage.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.no_webpage
@@ -1001,7 +1001,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/sendMedia.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.sendMedia.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.silent
@@ -1021,7 +1021,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/forwardMessages.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.forwardMessages.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.silent
@@ -1039,7 +1039,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/reportSpam.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.reportSpam.md}
      * @param {object} config
      * @property {InputPeer} config.peer
      * @returns {Bool}
@@ -1049,7 +1049,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/hideReportSpam.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.hideReportSpam.md}
      * @param {object} config
      * @property {InputPeer} config.peer
      * @returns {Bool}
@@ -1059,7 +1059,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getPeerSettings.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getPeerSettings.md}
      * @param {object} config
      * @property {InputPeer} config.peer
      * @returns {PeerSettings}
@@ -1069,7 +1069,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/report.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.report.md}
      * @param {object} config
      * @property {InputPeer} config.peer
      * @property {Vector.<int>} config.id
@@ -1081,7 +1081,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getChats.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getChats.md}
      * @param {object} config
      * @property {Vector.<int>} config.id
      * @returns {messages.Chats}
@@ -1091,7 +1091,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getFullChat.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getFullChat.md}
      * @param {object} config
      * @property {int} config.chat_id
      * @returns {messages.ChatFull}
@@ -1101,7 +1101,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/editChatTitle.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.editChatTitle.md}
      * @param {object} config
      * @property {int} config.chat_id
      * @property {string} config.title
@@ -1112,7 +1112,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/editChatPhoto.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.editChatPhoto.md}
      * @param {object} config
      * @property {int} config.chat_id
      * @property {InputChatPhoto} config.photo
@@ -1123,7 +1123,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/addChatUser.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.addChatUser.md}
      * @param {object} config
      * @property {int} config.chat_id
      * @property {InputUser} config.user_id
@@ -1135,7 +1135,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/deleteChatUser.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.deleteChatUser.md}
      * @param {object} config
      * @property {int} config.chat_id
      * @property {InputUser} config.user_id
@@ -1146,7 +1146,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/createChat.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.createChat.md}
      * @param {object} config
      * @property {Vector.<InputUser>} config.users
      * @property {string} config.title
@@ -1157,7 +1157,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getDhConfig.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getDhConfig.md}
      * @param {object} config
      * @property {int} config.version
      * @property {int} config.random_length
@@ -1168,7 +1168,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/requestEncryption.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.requestEncryption.md}
      * @param {object} config
      * @property {InputUser} config.user_id
      * @property {int} config.random_id
@@ -1180,7 +1180,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/acceptEncryption.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.acceptEncryption.md}
      * @param {object} config
      * @property {InputEncryptedChat} config.peer
      * @property {bytes} config.g_b
@@ -1192,7 +1192,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/discardEncryption.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.discardEncryption.md}
      * @param {object} config
      * @property {int} config.chat_id
      * @returns {Bool}
@@ -1202,7 +1202,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/setEncryptedTyping.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.setEncryptedTyping.md}
      * @param {object} config
      * @property {InputEncryptedChat} config.peer
      * @property {Bool} config.typing
@@ -1213,7 +1213,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/readEncryptedHistory.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.readEncryptedHistory.md}
      * @param {object} config
      * @property {InputEncryptedChat} config.peer
      * @property {int} config.max_date
@@ -1224,7 +1224,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/sendEncrypted.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.sendEncrypted.md}
      * @param {object} config
      * @property {InputEncryptedChat} config.peer
      * @property {long} config.random_id
@@ -1236,7 +1236,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/sendEncryptedFile.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.sendEncryptedFile.md}
      * @param {object} config
      * @property {InputEncryptedChat} config.peer
      * @property {long} config.random_id
@@ -1249,7 +1249,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/sendEncryptedService.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.sendEncryptedService.md}
      * @param {object} config
      * @property {InputEncryptedChat} config.peer
      * @property {long} config.random_id
@@ -1261,7 +1261,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/receivedQueue.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.receivedQueue.md}
      * @param {object} config
      * @property {int} config.max_qts
      * @returns {Vector.<long>}
@@ -1271,7 +1271,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/reportEncryptedSpam.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.reportEncryptedSpam.md}
      * @param {object} config
      * @property {InputEncryptedChat} config.peer
      * @returns {Bool}
@@ -1281,7 +1281,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/readMessageContents.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.readMessageContents.md}
      * @param {object} config
      * @property {Vector.<int>} config.id
      * @returns {messages.AffectedMessages}
@@ -1291,7 +1291,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getStickers.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getStickers.md}
      * @param {object} config
      * @property {string} config.emoticon
      * @property {int} config.hash
@@ -1302,7 +1302,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getAllStickers.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getAllStickers.md}
      * @param {object} config
      * @property {int} config.hash
      * @returns {messages.AllStickers}
@@ -1312,7 +1312,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getWebPagePreview.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getWebPagePreview.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {string} config.message
@@ -1324,7 +1324,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/exportChatInvite.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.exportChatInvite.md}
      * @param {object} config
      * @property {int} config.chat_id
      * @returns {ExportedChatInvite}
@@ -1334,7 +1334,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/checkChatInvite.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.checkChatInvite.md}
      * @param {object} config
      * @property {string} config.hash
      * @returns {ChatInvite}
@@ -1344,7 +1344,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/importChatInvite.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.importChatInvite.md}
      * @param {object} config
      * @property {string} config.hash
      * @returns {Updates}
@@ -1354,7 +1354,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getStickerSet.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getStickerSet.md}
      * @param {object} config
      * @property {InputStickerSet} config.stickerset
      * @returns {messages.StickerSet}
@@ -1364,7 +1364,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/installStickerSet.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.installStickerSet.md}
      * @param {object} config
      * @property {InputStickerSet} config.stickerset
      * @property {Bool} config.archived
@@ -1375,7 +1375,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/uninstallStickerSet.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.uninstallStickerSet.md}
      * @param {object} config
      * @property {InputStickerSet} config.stickerset
      * @returns {Bool}
@@ -1385,7 +1385,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/startBot.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.startBot.md}
      * @param {object} config
      * @property {InputUser} config.bot
      * @property {InputPeer} config.peer
@@ -1398,7 +1398,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getMessagesViews.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getMessagesViews.md}
      * @param {object} config
      * @property {InputPeer} config.peer
      * @property {Vector.<int>} config.id
@@ -1410,7 +1410,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/toggleChatAdmins.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.toggleChatAdmins.md}
      * @param {object} config
      * @property {int} config.chat_id
      * @property {Bool} config.enabled
@@ -1421,7 +1421,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/editChatAdmin.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.editChatAdmin.md}
      * @param {object} config
      * @property {int} config.chat_id
      * @property {InputUser} config.user_id
@@ -1433,7 +1433,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/migrateChat.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.migrateChat.md}
      * @param {object} config
      * @property {int} config.chat_id
      * @returns {Updates}
@@ -1443,7 +1443,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/searchGlobal.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.searchGlobal.md}
      * @param {object} config
      * @property {string} config.q
      * @property {int} config.offset_date
@@ -1457,7 +1457,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/reorderStickerSets.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.reorderStickerSets.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.masks
@@ -1469,7 +1469,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getDocumentByHash.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getDocumentByHash.md}
      * @param {object} config
      * @property {bytes} config.sha256
      * @property {int} config.size
@@ -1481,7 +1481,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/searchGifs.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.searchGifs.md}
      * @param {object} config
      * @property {string} config.q
      * @property {int} config.offset
@@ -1492,7 +1492,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getSavedGifs.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getSavedGifs.md}
      * @param {object} config
      * @property {int} config.hash
      * @returns {messages.SavedGifs}
@@ -1502,7 +1502,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/saveGif.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.saveGif.md}
      * @param {object} config
      * @property {InputDocument} config.id
      * @property {Bool} config.unsave
@@ -1513,7 +1513,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getInlineBotResults.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getInlineBotResults.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {InputUser} config.bot
@@ -1528,7 +1528,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/setInlineBotResults.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.setInlineBotResults.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.gallery
@@ -1545,7 +1545,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/sendInlineBotResult.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.sendInlineBotResult.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.silent
@@ -1563,7 +1563,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getMessageEditData.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getMessageEditData.md}
      * @param {object} config
      * @property {InputPeer} config.peer
      * @property {int} config.id
@@ -1574,7 +1574,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/editMessage.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.editMessage.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.no_webpage
@@ -1593,7 +1593,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/editInlineBotMessage.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.editInlineBotMessage.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.no_webpage
@@ -1611,7 +1611,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getBotCallbackAnswer.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getBotCallbackAnswer.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.game
@@ -1625,7 +1625,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/setBotCallbackAnswer.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.setBotCallbackAnswer.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.alert
@@ -1640,7 +1640,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getPeerDialogs.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getPeerDialogs.md}
      * @param {object} config
      * @property {Vector.<InputDialogPeer>} config.peers
      * @returns {messages.PeerDialogs}
@@ -1650,7 +1650,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/saveDraft.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.saveDraft.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.no_webpage
@@ -1665,7 +1665,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getAllDrafts.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getAllDrafts.md}
      * @returns {Updates}
      */
     getAllDrafts() {
@@ -1673,7 +1673,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getFeaturedStickers.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getFeaturedStickers.md}
      * @param {object} config
      * @property {int} config.hash
      * @returns {messages.FeaturedStickers}
@@ -1683,7 +1683,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/readFeaturedStickers.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.readFeaturedStickers.md}
      * @param {object} config
      * @property {Vector.<long>} config.id
      * @returns {Bool}
@@ -1693,7 +1693,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getRecentStickers.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getRecentStickers.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.attached
@@ -1705,7 +1705,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/saveRecentSticker.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.saveRecentSticker.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.attached
@@ -1718,7 +1718,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/clearRecentStickers.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.clearRecentStickers.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.attached
@@ -1729,7 +1729,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getArchivedStickers.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getArchivedStickers.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.masks
@@ -1742,7 +1742,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getMaskStickers.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getMaskStickers.md}
      * @param {object} config
      * @property {int} config.hash
      * @returns {messages.AllStickers}
@@ -1752,7 +1752,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getAttachedStickers.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getAttachedStickers.md}
      * @param {object} config
      * @property {InputStickeredMedia} config.media
      * @returns {Vector.<StickerSetCovered>}
@@ -1762,7 +1762,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/setGameScore.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.setGameScore.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.edit_message
@@ -1778,7 +1778,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/setInlineGameScore.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.setInlineGameScore.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.edit_message
@@ -1793,7 +1793,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getGameHighScores.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getGameHighScores.md}
      * @param {object} config
      * @property {InputPeer} config.peer
      * @property {int} config.id
@@ -1805,7 +1805,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getInlineGameHighScores.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getInlineGameHighScores.md}
      * @param {object} config
      * @property {InputBotInlineMessageID} config.id
      * @property {InputUser} config.user_id
@@ -1816,7 +1816,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getCommonChats.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getCommonChats.md}
      * @param {object} config
      * @property {InputUser} config.user_id
      * @property {int} config.max_id
@@ -1828,7 +1828,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getAllChats.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getAllChats.md}
      * @param {object} config
      * @property {Vector.<int>} config.except_ids
      * @returns {messages.Chats}
@@ -1838,7 +1838,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getWebPage.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getWebPage.md}
      * @param {object} config
      * @property {string} config.url
      * @property {int} config.hash
@@ -1849,7 +1849,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/toggleDialogPin.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.toggleDialogPin.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.pinned
@@ -1861,7 +1861,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/reorderPinnedDialogs.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.reorderPinnedDialogs.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.force
@@ -1873,7 +1873,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getPinnedDialogs.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getPinnedDialogs.md}
      * @returns {messages.PeerDialogs}
      */
     getPinnedDialogs() {
@@ -1881,7 +1881,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/setBotShippingResults.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.setBotShippingResults.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {long} config.query_id
@@ -1894,7 +1894,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/setBotPrecheckoutResults.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.setBotPrecheckoutResults.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.success
@@ -1907,7 +1907,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/uploadMedia.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.uploadMedia.md}
      * @param {object} config
      * @property {InputPeer} config.peer
      * @property {InputMedia} config.media
@@ -1918,7 +1918,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/sendScreenshotNotification.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.sendScreenshotNotification.md}
      * @param {object} config
      * @property {InputPeer} config.peer
      * @property {int} config.reply_to_msg_id
@@ -1930,7 +1930,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getFavedStickers.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getFavedStickers.md}
      * @param {object} config
      * @property {int} config.hash
      * @returns {messages.FavedStickers}
@@ -1940,7 +1940,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/faveSticker.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.faveSticker.md}
      * @param {object} config
      * @property {InputDocument} config.id
      * @property {Bool} config.unfave
@@ -1951,7 +1951,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getUnreadMentions.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getUnreadMentions.md}
      * @param {object} config
      * @property {InputPeer} config.peer
      * @property {int} config.offset_id
@@ -1966,7 +1966,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/readMentions.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.readMentions.md}
      * @param {object} config
      * @property {InputPeer} config.peer
      * @returns {messages.AffectedHistory}
@@ -1976,7 +1976,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getRecentLocations.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getRecentLocations.md}
      * @param {object} config
      * @property {InputPeer} config.peer
      * @property {int} config.limit
@@ -1988,7 +1988,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/sendMultiMedia.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.sendMultiMedia.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.silent
@@ -2004,7 +2004,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/uploadEncryptedFile.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.uploadEncryptedFile.md}
      * @param {object} config
      * @property {InputEncryptedChat} config.peer
      * @property {InputEncryptedFile} config.file
@@ -2015,7 +2015,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/searchStickerSets.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.searchStickerSets.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.exclude_featured
@@ -2028,7 +2028,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getSplitRanges.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getSplitRanges.md}
      * @returns {Vector.<MessageRange>}
      */
     getSplitRanges() {
@@ -2036,7 +2036,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/markDialogUnread.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.markDialogUnread.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.unread
@@ -2048,7 +2048,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getDialogUnreadMarks.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.getDialogUnreadMarks.md}
      * @returns {Vector.<DialogPeer>}
      */
     getDialogUnreadMarks() {
@@ -2056,7 +2056,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/clearAllDrafts.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/messages.clearAllDrafts.md}
      * @returns {Bool}
      */
     clearAllDrafts() {
@@ -2066,7 +2066,7 @@ class Messages extends Ctor {
 
 class Updates extends Ctor {
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getState.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/updates.getState.md}
      * @returns {updates.State}
      */
     getState() {
@@ -2074,7 +2074,7 @@ class Updates extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getDifference.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/updates.getDifference.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {int} config.pts
@@ -2088,7 +2088,7 @@ class Updates extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getChannelDifference.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/updates.getChannelDifference.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.force
@@ -2105,7 +2105,7 @@ class Updates extends Ctor {
 
 class Photos extends Ctor {
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/updateProfilePhoto.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/photos.updateProfilePhoto.md}
      * @param {object} config
      * @property {InputPhoto} config.id
      * @returns {UserProfilePhoto}
@@ -2115,7 +2115,7 @@ class Photos extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/uploadProfilePhoto.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/photos.uploadProfilePhoto.md}
      * @param {object} config
      * @property {InputFile} config.file
      * @returns {photos.Photo}
@@ -2125,7 +2125,7 @@ class Photos extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/deletePhotos.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/photos.deletePhotos.md}
      * @param {object} config
      * @property {Vector.<InputPhoto>} config.id
      * @returns {Vector.<long>}
@@ -2135,7 +2135,7 @@ class Photos extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getUserPhotos.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/photos.getUserPhotos.md}
      * @param {object} config
      * @property {InputUser} config.user_id
      * @property {int} config.offset
@@ -2150,7 +2150,7 @@ class Photos extends Ctor {
 
 class Upload extends Ctor {
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/saveFilePart.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/upload.saveFilePart.md}
      * @param {object} config
      * @property {long} config.file_id
      * @property {int} config.file_part
@@ -2162,7 +2162,7 @@ class Upload extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getFile.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/upload.getFile.md}
      * @param {object} config
      * @property {InputFileLocation} config.location
      * @property {int} config.offset
@@ -2174,7 +2174,7 @@ class Upload extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/saveBigFilePart.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/upload.saveBigFilePart.md}
      * @param {object} config
      * @property {long} config.file_id
      * @property {int} config.file_part
@@ -2187,7 +2187,7 @@ class Upload extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getWebFile.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/upload.getWebFile.md}
      * @param {object} config
      * @property {InputWebFileLocation} config.location
      * @property {int} config.offset
@@ -2199,7 +2199,7 @@ class Upload extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getCdnFile.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/upload.getCdnFile.md}
      * @param {object} config
      * @property {bytes} config.file_token
      * @property {int} config.offset
@@ -2211,7 +2211,7 @@ class Upload extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/reuploadCdnFile.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/upload.reuploadCdnFile.md}
      * @param {object} config
      * @property {bytes} config.file_token
      * @property {bytes} config.request_token
@@ -2222,7 +2222,7 @@ class Upload extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getCdnFileHashes.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/upload.getCdnFileHashes.md}
      * @param {object} config
      * @property {bytes} config.file_token
      * @property {int} config.offset
@@ -2233,7 +2233,7 @@ class Upload extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getFileHashes.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/upload.getFileHashes.md}
      * @param {object} config
      * @property {InputFileLocation} config.location
      * @property {int} config.offset
@@ -2246,7 +2246,7 @@ class Upload extends Ctor {
 
 class Help extends Ctor {
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getConfig.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/help.getConfig.md}
      * @returns {Config}
      */
     getConfig() {
@@ -2254,7 +2254,7 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getNearestDc.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/help.getNearestDc.md}
      * @returns {NearestDc}
      */
     getNearestDc() {
@@ -2262,7 +2262,7 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getAppUpdate.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/help.getAppUpdate.md}
      * @param {object} config
      * @property {string} config.source
      * @returns {help.AppUpdate}
@@ -2272,7 +2272,7 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/saveAppLog.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/help.saveAppLog.md}
      * @param {object} config
      * @property {Vector.<InputAppEvent>} config.events
      * @returns {Bool}
@@ -2282,7 +2282,7 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getInviteText.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/help.getInviteText.md}
      * @returns {help.InviteText}
      */
     getInviteText() {
@@ -2290,7 +2290,7 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getSupport.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/help.getSupport.md}
      * @returns {help.Support}
      */
     getSupport() {
@@ -2298,7 +2298,7 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getAppChangelog.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/help.getAppChangelog.md}
      * @param {object} config
      * @property {string} config.prev_app_version
      * @returns {Updates}
@@ -2308,7 +2308,7 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/setBotUpdatesStatus.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/help.setBotUpdatesStatus.md}
      * @param {object} config
      * @property {int} config.pending_updates_count
      * @property {string} config.message
@@ -2319,7 +2319,7 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getCdnConfig.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/help.getCdnConfig.md}
      * @returns {CdnConfig}
      */
     getCdnConfig() {
@@ -2327,7 +2327,7 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getRecentMeUrls.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/help.getRecentMeUrls.md}
      * @param {object} config
      * @property {string} config.referer
      * @returns {help.RecentMeUrls}
@@ -2337,7 +2337,7 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getProxyData.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/help.getProxyData.md}
      * @returns {help.ProxyData}
      */
     getProxyData() {
@@ -2345,7 +2345,7 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getTermsOfServiceUpdate.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/help.getTermsOfServiceUpdate.md}
      * @returns {help.TermsOfServiceUpdate}
      */
     getTermsOfServiceUpdate() {
@@ -2353,7 +2353,7 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/acceptTermsOfService.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/help.acceptTermsOfService.md}
      * @param {object} config
      * @property {DataJSON} config.id
      * @returns {Bool}
@@ -2363,7 +2363,7 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getDeepLinkInfo.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/help.getDeepLinkInfo.md}
      * @param {object} config
      * @property {string} config.path
      * @returns {help.DeepLinkInfo}
@@ -2373,7 +2373,7 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getPassportConfig.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/help.getPassportConfig.md}
      * @param {object} config
      * @property {int} config.hash
      * @returns {help.PassportConfig}
@@ -2385,7 +2385,7 @@ class Help extends Ctor {
 
 class Channels extends Ctor {
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/readHistory.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.readHistory.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {int} config.max_id
@@ -2396,7 +2396,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/deleteMessages.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.deleteMessages.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {Vector.<int>} config.id
@@ -2407,7 +2407,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/deleteUserHistory.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.deleteUserHistory.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {InputUser} config.user_id
@@ -2418,7 +2418,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/reportSpam.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.reportSpam.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {InputUser} config.user_id
@@ -2430,7 +2430,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getMessages.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.getMessages.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {Vector.<InputMessage>} config.id
@@ -2441,7 +2441,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getParticipants.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.getParticipants.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {ChannelParticipantsFilter} config.filter
@@ -2455,7 +2455,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getParticipant.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.getParticipant.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {InputUser} config.user_id
@@ -2466,7 +2466,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getChannels.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.getChannels.md}
      * @param {object} config
      * @property {Vector.<InputChannel>} config.id
      * @returns {messages.Chats}
@@ -2476,7 +2476,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getFullChannel.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.getFullChannel.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @returns {messages.ChatFull}
@@ -2486,7 +2486,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/createChannel.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.createChannel.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.broadcast
@@ -2500,7 +2500,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/editAbout.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.editAbout.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {string} config.about
@@ -2511,7 +2511,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/editAdmin.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.editAdmin.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {InputUser} config.user_id
@@ -2523,7 +2523,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/editTitle.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.editTitle.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {string} config.title
@@ -2534,7 +2534,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/editPhoto.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.editPhoto.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {InputChatPhoto} config.photo
@@ -2545,7 +2545,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/checkUsername.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.checkUsername.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {string} config.username
@@ -2556,7 +2556,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/updateUsername.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.updateUsername.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {string} config.username
@@ -2567,7 +2567,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/joinChannel.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.joinChannel.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @returns {Updates}
@@ -2577,7 +2577,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/leaveChannel.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.leaveChannel.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @returns {Updates}
@@ -2587,7 +2587,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/inviteToChannel.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.inviteToChannel.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {Vector.<InputUser>} config.users
@@ -2598,7 +2598,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/exportInvite.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.exportInvite.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @returns {ExportedChatInvite}
@@ -2608,7 +2608,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/deleteChannel.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.deleteChannel.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @returns {Updates}
@@ -2618,7 +2618,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/toggleInvites.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.toggleInvites.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {Bool} config.enabled
@@ -2629,7 +2629,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/exportMessageLink.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.exportMessageLink.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {int} config.id
@@ -2641,7 +2641,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/toggleSignatures.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.toggleSignatures.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {Bool} config.enabled
@@ -2652,7 +2652,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/updatePinnedMessage.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.updatePinnedMessage.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.silent
@@ -2665,7 +2665,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getAdminedPublicChannels.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.getAdminedPublicChannels.md}
      * @returns {messages.Chats}
      */
     getAdminedPublicChannels() {
@@ -2673,7 +2673,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/editBanned.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.editBanned.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {InputUser} config.user_id
@@ -2685,7 +2685,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getAdminLog.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.getAdminLog.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {InputChannel} config.channel
@@ -2702,7 +2702,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/setStickers.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.setStickers.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {InputStickerSet} config.stickerset
@@ -2713,7 +2713,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/readMessageContents.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.readMessageContents.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {Vector.<int>} config.id
@@ -2724,7 +2724,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/deleteHistory.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.deleteHistory.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {int} config.max_id
@@ -2735,7 +2735,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/togglePreHistoryHidden.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.togglePreHistoryHidden.md}
      * @param {object} config
      * @property {InputChannel} config.channel
      * @property {Bool} config.enabled
@@ -2746,7 +2746,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getLeftChannels.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/channels.getLeftChannels.md}
      * @param {object} config
      * @property {int} config.offset
      * @returns {messages.Chats}
@@ -2758,7 +2758,7 @@ class Channels extends Ctor {
 
 class Bots extends Ctor {
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/sendCustomRequest.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/bots.sendCustomRequest.md}
      * @param {object} config
      * @property {string} config.custom_method
      * @property {DataJSON} config.params
@@ -2769,7 +2769,7 @@ class Bots extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/answerWebhookJSONQuery.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/bots.answerWebhookJSONQuery.md}
      * @param {object} config
      * @property {long} config.query_id
      * @property {DataJSON} config.data
@@ -2782,7 +2782,7 @@ class Bots extends Ctor {
 
 class Payments extends Ctor {
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getPaymentForm.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/payments.getPaymentForm.md}
      * @param {object} config
      * @property {int} config.msg_id
      * @returns {payments.PaymentForm}
@@ -2792,7 +2792,7 @@ class Payments extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getPaymentReceipt.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/payments.getPaymentReceipt.md}
      * @param {object} config
      * @property {int} config.msg_id
      * @returns {payments.PaymentReceipt}
@@ -2802,7 +2802,7 @@ class Payments extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/validateRequestedInfo.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/payments.validateRequestedInfo.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.save
@@ -2815,7 +2815,7 @@ class Payments extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/sendPaymentForm.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/payments.sendPaymentForm.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {int} config.msg_id
@@ -2829,7 +2829,7 @@ class Payments extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getSavedInfo.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/payments.getSavedInfo.md}
      * @returns {payments.SavedInfo}
      */
     getSavedInfo() {
@@ -2837,7 +2837,7 @@ class Payments extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/clearSavedInfo.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/payments.clearSavedInfo.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.credentials
@@ -2851,7 +2851,7 @@ class Payments extends Ctor {
 
 class Stickers extends Ctor {
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/createStickerSet.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/stickers.createStickerSet.md}
      * @param {object} config
      * @property {#} config.flags
      * @property {true} config.masks
@@ -2866,7 +2866,7 @@ class Stickers extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/removeStickerFromSet.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/stickers.removeStickerFromSet.md}
      * @param {object} config
      * @property {InputDocument} config.sticker
      * @returns {messages.StickerSet}
@@ -2876,7 +2876,7 @@ class Stickers extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/changeStickerPosition.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/stickers.changeStickerPosition.md}
      * @param {object} config
      * @property {InputDocument} config.sticker
      * @property {int} config.position
@@ -2887,7 +2887,7 @@ class Stickers extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/addStickerToSet.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/stickers.addStickerToSet.md}
      * @param {object} config
      * @property {InputStickerSet} config.stickerset
      * @property {InputStickerSetItem} config.sticker
@@ -2900,7 +2900,7 @@ class Stickers extends Ctor {
 
 class Phone extends Ctor {
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getCallConfig.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/phone.getCallConfig.md}
      * @returns {DataJSON}
      */
     getCallConfig() {
@@ -2908,7 +2908,7 @@ class Phone extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/requestCall.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/phone.requestCall.md}
      * @param {object} config
      * @property {InputUser} config.user_id
      * @property {int} config.random_id
@@ -2921,7 +2921,7 @@ class Phone extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/acceptCall.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/phone.acceptCall.md}
      * @param {object} config
      * @property {InputPhoneCall} config.peer
      * @property {bytes} config.g_b
@@ -2933,7 +2933,7 @@ class Phone extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/confirmCall.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/phone.confirmCall.md}
      * @param {object} config
      * @property {InputPhoneCall} config.peer
      * @property {bytes} config.g_a
@@ -2946,7 +2946,7 @@ class Phone extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/receivedCall.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/phone.receivedCall.md}
      * @param {object} config
      * @property {InputPhoneCall} config.peer
      * @returns {Bool}
@@ -2956,7 +2956,7 @@ class Phone extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/discardCall.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/phone.discardCall.md}
      * @param {object} config
      * @property {InputPhoneCall} config.peer
      * @property {int} config.duration
@@ -2969,7 +2969,7 @@ class Phone extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/setCallRating.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/phone.setCallRating.md}
      * @param {object} config
      * @property {InputPhoneCall} config.peer
      * @property {int} config.rating
@@ -2981,7 +2981,7 @@ class Phone extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/saveCallDebug.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/phone.saveCallDebug.md}
      * @param {object} config
      * @property {InputPhoneCall} config.peer
      * @property {DataJSON} config.debug
@@ -2994,7 +2994,7 @@ class Phone extends Ctor {
 
 class Langpack extends Ctor {
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getLangPack.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/langpack.getLangPack.md}
      * @param {object} config
      * @property {string} config.lang_pack
      * @property {string} config.lang_code
@@ -3005,7 +3005,7 @@ class Langpack extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getStrings.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/langpack.getStrings.md}
      * @param {object} config
      * @property {string} config.lang_pack
      * @property {string} config.lang_code
@@ -3017,7 +3017,7 @@ class Langpack extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getDifference.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/langpack.getDifference.md}
      * @param {object} config
      * @property {int} config.from_version
      * @returns {LangPackDifference}
@@ -3027,7 +3027,7 @@ class Langpack extends Ctor {
     }
 
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/getLanguages.md}
+     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/langpack.getLanguages.md}
      * @param {object} config
      * @property {string} config.lang_pack
      * @returns {Vector.<LangPackLanguage>}
