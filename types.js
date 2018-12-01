@@ -1,42 +1,42 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/int.md}
+ * @see {@link https://core.telegram.org/constructor/int.md}
  * @typedef {number} int
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/double.md}
+ * @see {@link https://core.telegram.org/constructor/double.md}
  * @typedef {number} double
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/log.md}
+ * @see {@link https://core.telegram.org/constructor/log.md}
  * @typedef {number} log
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/bytes.md}
+ * @see {@link https://core.telegram.org/constructor/bytes.md}
  * @typedef {string} bytes
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/Bool.md}
+ * @see {@link https://core.telegram.org/constructor/Bool.md}
  * @typedef {boolean} Bool
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/Vector.md}
+ * @see {@link https://core.telegram.org/constructor/Vector.md}
  * @typedef {Array} Vector
  */
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/resPQ.md}
+ * @see {@link https://core.telegram.org/constructor/resPQ.md}
  * @typedef {ResPQ} resPQ
  * @property {int128} nonce
  * @property {int128} server_nonce
@@ -46,7 +46,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/p_q_inner_data.md}
+ * @see {@link https://core.telegram.org/constructor/p_q_inner_data.md}
  * @typedef {P_Q_inner_data} p_q_inner_data
  * @property {string} pq
  * @property {string} p
@@ -58,7 +58,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/p_q_inner_data_dc.md}
+ * @see {@link https://core.telegram.org/constructor/p_q_inner_data_dc.md}
  * @typedef {P_Q_inner_data} p_q_inner_data_dc
  * @property {string} pq
  * @property {string} p
@@ -71,7 +71,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/p_q_inner_data_temp.md}
+ * @see {@link https://core.telegram.org/constructor/p_q_inner_data_temp.md}
  * @typedef {P_Q_inner_data} p_q_inner_data_temp
  * @property {string} pq
  * @property {string} p
@@ -84,7 +84,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/p_q_inner_data_temp_dc.md}
+ * @see {@link https://core.telegram.org/constructor/p_q_inner_data_temp_dc.md}
  * @typedef {P_Q_inner_data} p_q_inner_data_temp_dc
  * @property {string} pq
  * @property {string} p
@@ -98,7 +98,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/server_DH_params_fail.md}
+ * @see {@link https://core.telegram.org/constructor/server_DH_params_fail.md}
  * @typedef {Server_DH_Params} server_DH_params_fail
  * @property {int128} nonce
  * @property {int128} server_nonce
@@ -107,7 +107,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/server_DH_params_ok.md}
+ * @see {@link https://core.telegram.org/constructor/server_DH_params_ok.md}
  * @typedef {Server_DH_Params} server_DH_params_ok
  * @property {int128} nonce
  * @property {int128} server_nonce
@@ -116,7 +116,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/server_DH_inner_data.md}
+ * @see {@link https://core.telegram.org/constructor/server_DH_inner_data.md}
  * @typedef {Server_DH_inner_data} server_DH_inner_data
  * @property {int128} nonce
  * @property {int128} server_nonce
@@ -128,7 +128,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/client_DH_inner_data.md}
+ * @see {@link https://core.telegram.org/constructor/client_DH_inner_data.md}
  * @typedef {Client_DH_Inner_Data} client_DH_inner_data
  * @property {int128} nonce
  * @property {int128} server_nonce
@@ -138,7 +138,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/dh_gen_ok.md}
+ * @see {@link https://core.telegram.org/constructor/dh_gen_ok.md}
  * @typedef {Set_client_DH_params_answer} dh_gen_ok
  * @property {int128} nonce
  * @property {int128} server_nonce
@@ -147,7 +147,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/dh_gen_retry.md}
+ * @see {@link https://core.telegram.org/constructor/dh_gen_retry.md}
  * @typedef {Set_client_DH_params_answer} dh_gen_retry
  * @property {int128} nonce
  * @property {int128} server_nonce
@@ -156,7 +156,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/dh_gen_fail.md}
+ * @see {@link https://core.telegram.org/constructor/dh_gen_fail.md}
  * @typedef {Set_client_DH_params_answer} dh_gen_fail
  * @property {int128} nonce
  * @property {int128} server_nonce
@@ -165,32 +165,32 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/destroy_auth_key_ok.md}
+ * @see {@link https://core.telegram.org/constructor/destroy_auth_key_ok.md}
  * @typedef {DestroyAuthKeyRes} destroy_auth_key_ok
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/destroy_auth_key_none.md}
+ * @see {@link https://core.telegram.org/constructor/destroy_auth_key_none.md}
  * @typedef {DestroyAuthKeyRes} destroy_auth_key_none
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/destroy_auth_key_fail.md}
+ * @see {@link https://core.telegram.org/constructor/destroy_auth_key_fail.md}
  * @typedef {DestroyAuthKeyRes} destroy_auth_key_fail
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/msgs_ack.md}
+ * @see {@link https://core.telegram.org/constructor/msgs_ack.md}
  * @typedef {MsgsAck} msgs_ack
  * @property {Vector.<long>} msg_ids
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/bad_msg_notification.md}
+ * @see {@link https://core.telegram.org/constructor/bad_msg_notification.md}
  * @typedef {BadMsgNotification} bad_msg_notification
  * @property {long} bad_msg_id
  * @property {int} bad_msg_seqno
@@ -199,7 +199,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/bad_server_salt.md}
+ * @see {@link https://core.telegram.org/constructor/bad_server_salt.md}
  * @typedef {BadMsgNotification} bad_server_salt
  * @property {long} bad_msg_id
  * @property {int} bad_msg_seqno
@@ -209,14 +209,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/msgs_state_req.md}
+ * @see {@link https://core.telegram.org/constructor/msgs_state_req.md}
  * @typedef {MsgsStateReq} msgs_state_req
  * @property {Vector.<long>} msg_ids
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/msgs_state_info.md}
+ * @see {@link https://core.telegram.org/constructor/msgs_state_info.md}
  * @typedef {MsgsStateInfo} msgs_state_info
  * @property {long} req_msg_id
  * @property {string} info
@@ -224,7 +224,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/msgs_all_info.md}
+ * @see {@link https://core.telegram.org/constructor/msgs_all_info.md}
  * @typedef {MsgsAllInfo} msgs_all_info
  * @property {Vector.<long>} msg_ids
  * @property {string} info
@@ -232,7 +232,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/msg_detailed_info.md}
+ * @see {@link https://core.telegram.org/constructor/msg_detailed_info.md}
  * @typedef {MsgDetailedInfo} msg_detailed_info
  * @property {long} msg_id
  * @property {long} answer_msg_id
@@ -242,7 +242,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/msg_new_detailed_info.md}
+ * @see {@link https://core.telegram.org/constructor/msg_new_detailed_info.md}
  * @typedef {MsgDetailedInfo} msg_new_detailed_info
  * @property {long} answer_msg_id
  * @property {int} bytes
@@ -251,14 +251,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/msg_resend_req.md}
+ * @see {@link https://core.telegram.org/constructor/msg_resend_req.md}
  * @typedef {MsgResendReq} msg_resend_req
  * @property {Vector.<long>} msg_ids
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/rpc_error.md}
+ * @see {@link https://core.telegram.org/constructor/rpc_error.md}
  * @typedef {RpcError} rpc_error
  * @property {int} error_code
  * @property {string} error_message
@@ -266,19 +266,19 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/rpc_answer_unknown.md}
+ * @see {@link https://core.telegram.org/constructor/rpc_answer_unknown.md}
  * @typedef {RpcDropAnswer} rpc_answer_unknown
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/rpc_answer_dropped_running.md}
+ * @see {@link https://core.telegram.org/constructor/rpc_answer_dropped_running.md}
  * @typedef {RpcDropAnswer} rpc_answer_dropped_running
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/rpc_answer_dropped.md}
+ * @see {@link https://core.telegram.org/constructor/rpc_answer_dropped.md}
  * @typedef {RpcDropAnswer} rpc_answer_dropped
  * @property {long} msg_id
  * @property {int} seq_no
@@ -287,7 +287,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/future_salt.md}
+ * @see {@link https://core.telegram.org/constructor/future_salt.md}
  * @typedef {FutureSalt} future_salt
  * @property {int} valid_since
  * @property {int} valid_until
@@ -296,7 +296,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/future_salts.md}
+ * @see {@link https://core.telegram.org/constructor/future_salts.md}
  * @typedef {FutureSalts} future_salts
  * @property {long} req_msg_id
  * @property {int} now
@@ -305,7 +305,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pong.md}
+ * @see {@link https://core.telegram.org/constructor/pong.md}
  * @typedef {Pong} pong
  * @property {long} msg_id
  * @property {long} ping_id
@@ -313,21 +313,21 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/destroy_session_ok.md}
+ * @see {@link https://core.telegram.org/constructor/destroy_session_ok.md}
  * @typedef {DestroySessionRes} destroy_session_ok
  * @property {long} session_id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/destroy_session_none.md}
+ * @see {@link https://core.telegram.org/constructor/destroy_session_none.md}
  * @typedef {DestroySessionRes} destroy_session_none
  * @property {long} session_id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/new_session_created.md}
+ * @see {@link https://core.telegram.org/constructor/new_session_created.md}
  * @typedef {NewSession} new_session_created
  * @property {long} first_msg_id
  * @property {long} unique_id
@@ -336,7 +336,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/http_wait.md}
+ * @see {@link https://core.telegram.org/constructor/http_wait.md}
  * @typedef {HttpWait} http_wait
  * @property {int} max_delay
  * @property {int} wait_after
@@ -345,7 +345,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/ipPort.md}
+ * @see {@link https://core.telegram.org/constructor/ipPort.md}
  * @typedef {IpPort} ipPort
  * @property {int} ipv4
  * @property {int} port
@@ -353,7 +353,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/ipPortSecret.md}
+ * @see {@link https://core.telegram.org/constructor/ipPortSecret.md}
  * @typedef {IpPort} ipPortSecret
  * @property {int} ipv4
  * @property {int} port
@@ -362,7 +362,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/accessPointRule.md}
+ * @see {@link https://core.telegram.org/constructor/accessPointRule.md}
  * @typedef {AccessPointRule} accessPointRule
  * @property {string} phone_prefix_rules
  * @property {int} dc_id
@@ -371,7 +371,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/help.configSimple.md}
+ * @see {@link https://core.telegram.org/constructor/help.configSimple.md}
  * @typedef {help.ConfigSimple} help.configSimple
  * @property {int} date
  * @property {int} expires
@@ -380,25 +380,25 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/boolFalse.md}
+ * @see {@link https://core.telegram.org/constructor/boolFalse.md}
  * @typedef {Bool} boolFalse
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/boolTrue.md}
+ * @see {@link https://core.telegram.org/constructor/boolTrue.md}
  * @typedef {Bool} boolTrue
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/true.md}
+ * @see {@link https://core.telegram.org/constructor/true.md}
  * @typedef {True} true
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/error.md}
+ * @see {@link https://core.telegram.org/constructor/error.md}
  * @typedef {Error} error
  * @property {int} code
  * @property {string} text
@@ -406,32 +406,32 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/null.md}
+ * @see {@link https://core.telegram.org/constructor/null.md}
  * @typedef {Null} null
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPeerEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/inputPeerEmpty.md}
  * @typedef {InputPeer} inputPeerEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPeerSelf.md}
+ * @see {@link https://core.telegram.org/constructor/inputPeerSelf.md}
  * @typedef {InputPeer} inputPeerSelf
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPeerChat.md}
+ * @see {@link https://core.telegram.org/constructor/inputPeerChat.md}
  * @typedef {InputPeer} inputPeerChat
  * @property {int} chat_id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPeerUser.md}
+ * @see {@link https://core.telegram.org/constructor/inputPeerUser.md}
  * @typedef {InputPeer} inputPeerUser
  * @property {int} user_id
  * @property {long} access_hash
@@ -439,7 +439,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPeerChannel.md}
+ * @see {@link https://core.telegram.org/constructor/inputPeerChannel.md}
  * @typedef {InputPeer} inputPeerChannel
  * @property {int} channel_id
  * @property {long} access_hash
@@ -447,19 +447,19 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputUserEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/inputUserEmpty.md}
  * @typedef {InputUser} inputUserEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputUserSelf.md}
+ * @see {@link https://core.telegram.org/constructor/inputUserSelf.md}
  * @typedef {InputUser} inputUserSelf
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputUser.md}
+ * @see {@link https://core.telegram.org/constructor/inputUser.md}
  * @typedef {InputUser} inputUser
  * @property {int} user_id
  * @property {long} access_hash
@@ -467,7 +467,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPhoneContact.md}
+ * @see {@link https://core.telegram.org/constructor/inputPhoneContact.md}
  * @typedef {InputContact} inputPhoneContact
  * @property {long} client_id
  * @property {string} phone
@@ -477,7 +477,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputFile.md}
+ * @see {@link https://core.telegram.org/constructor/inputFile.md}
  * @typedef {InputFile} inputFile
  * @property {long} id
  * @property {int} parts
@@ -487,7 +487,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputFileBig.md}
+ * @see {@link https://core.telegram.org/constructor/inputFileBig.md}
  * @typedef {InputFile} inputFileBig
  * @property {long} id
  * @property {int} parts
@@ -496,13 +496,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMediaEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/inputMediaEmpty.md}
  * @typedef {InputMedia} inputMediaEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMediaUploadedPhoto.md}
+ * @see {@link https://core.telegram.org/constructor/inputMediaUploadedPhoto.md}
  * @typedef {InputMedia} inputMediaUploadedPhoto
  * @property {#} flags
  * @property {InputFile} file
@@ -512,7 +512,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMediaPhoto.md}
+ * @see {@link https://core.telegram.org/constructor/inputMediaPhoto.md}
  * @typedef {InputMedia} inputMediaPhoto
  * @property {#} flags
  * @property {InputPhoto} id
@@ -521,14 +521,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMediaGeoPoint.md}
+ * @see {@link https://core.telegram.org/constructor/inputMediaGeoPoint.md}
  * @typedef {InputMedia} inputMediaGeoPoint
  * @property {InputGeoPoint} geo_point
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMediaContact.md}
+ * @see {@link https://core.telegram.org/constructor/inputMediaContact.md}
  * @typedef {InputMedia} inputMediaContact
  * @property {string} phone_number
  * @property {string} first_name
@@ -538,7 +538,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMediaUploadedDocument.md}
+ * @see {@link https://core.telegram.org/constructor/inputMediaUploadedDocument.md}
  * @typedef {InputMedia} inputMediaUploadedDocument
  * @property {#} flags
  * @property {true} nosound_video
@@ -552,7 +552,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMediaDocument.md}
+ * @see {@link https://core.telegram.org/constructor/inputMediaDocument.md}
  * @typedef {InputMedia} inputMediaDocument
  * @property {#} flags
  * @property {InputDocument} id
@@ -561,7 +561,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMediaVenue.md}
+ * @see {@link https://core.telegram.org/constructor/inputMediaVenue.md}
  * @typedef {InputMedia} inputMediaVenue
  * @property {InputGeoPoint} geo_point
  * @property {string} title
@@ -573,7 +573,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMediaGifExternal.md}
+ * @see {@link https://core.telegram.org/constructor/inputMediaGifExternal.md}
  * @typedef {InputMedia} inputMediaGifExternal
  * @property {string} url
  * @property {string} q
@@ -581,7 +581,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMediaPhotoExternal.md}
+ * @see {@link https://core.telegram.org/constructor/inputMediaPhotoExternal.md}
  * @typedef {InputMedia} inputMediaPhotoExternal
  * @property {#} flags
  * @property {string} url
@@ -590,7 +590,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMediaDocumentExternal.md}
+ * @see {@link https://core.telegram.org/constructor/inputMediaDocumentExternal.md}
  * @typedef {InputMedia} inputMediaDocumentExternal
  * @property {#} flags
  * @property {string} url
@@ -599,14 +599,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMediaGame.md}
+ * @see {@link https://core.telegram.org/constructor/inputMediaGame.md}
  * @typedef {InputMedia} inputMediaGame
  * @property {InputGame} id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMediaInvoice.md}
+ * @see {@link https://core.telegram.org/constructor/inputMediaInvoice.md}
  * @typedef {InputMedia} inputMediaInvoice
  * @property {#} flags
  * @property {string} title
@@ -621,7 +621,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMediaGeoLive.md}
+ * @see {@link https://core.telegram.org/constructor/inputMediaGeoLive.md}
  * @typedef {InputMedia} inputMediaGeoLive
  * @property {InputGeoPoint} geo_point
  * @property {int} period
@@ -629,33 +629,33 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputChatPhotoEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/inputChatPhotoEmpty.md}
  * @typedef {InputChatPhoto} inputChatPhotoEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputChatUploadedPhoto.md}
+ * @see {@link https://core.telegram.org/constructor/inputChatUploadedPhoto.md}
  * @typedef {InputChatPhoto} inputChatUploadedPhoto
  * @property {InputFile} file
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputChatPhoto.md}
+ * @see {@link https://core.telegram.org/constructor/inputChatPhoto.md}
  * @typedef {InputChatPhoto} inputChatPhoto
  * @property {InputPhoto} id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputGeoPointEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/inputGeoPointEmpty.md}
  * @typedef {InputGeoPoint} inputGeoPointEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputGeoPoint.md}
+ * @see {@link https://core.telegram.org/constructor/inputGeoPoint.md}
  * @typedef {InputGeoPoint} inputGeoPoint
  * @property {double} lat
  * @property {double} long
@@ -663,13 +663,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPhotoEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/inputPhotoEmpty.md}
  * @typedef {InputPhoto} inputPhotoEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPhoto.md}
+ * @see {@link https://core.telegram.org/constructor/inputPhoto.md}
  * @typedef {InputPhoto} inputPhoto
  * @property {long} id
  * @property {long} access_hash
@@ -678,7 +678,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputFileLocation.md}
+ * @see {@link https://core.telegram.org/constructor/inputFileLocation.md}
  * @typedef {InputFileLocation} inputFileLocation
  * @property {long} volume_id
  * @property {int} local_id
@@ -688,7 +688,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputEncryptedFileLocation.md}
+ * @see {@link https://core.telegram.org/constructor/inputEncryptedFileLocation.md}
  * @typedef {InputFileLocation} inputEncryptedFileLocation
  * @property {long} id
  * @property {long} access_hash
@@ -696,7 +696,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputDocumentFileLocation.md}
+ * @see {@link https://core.telegram.org/constructor/inputDocumentFileLocation.md}
  * @typedef {InputFileLocation} inputDocumentFileLocation
  * @property {long} id
  * @property {long} access_hash
@@ -705,7 +705,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputSecureFileLocation.md}
+ * @see {@link https://core.telegram.org/constructor/inputSecureFileLocation.md}
  * @typedef {InputFileLocation} inputSecureFileLocation
  * @property {long} id
  * @property {long} access_hash
@@ -713,13 +713,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputTakeoutFileLocation.md}
+ * @see {@link https://core.telegram.org/constructor/inputTakeoutFileLocation.md}
  * @typedef {InputFileLocation} inputTakeoutFileLocation
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputAppEvent.md}
+ * @see {@link https://core.telegram.org/constructor/inputAppEvent.md}
  * @typedef {InputAppEvent} inputAppEvent
  * @property {double} time
  * @property {string} type
@@ -729,88 +729,88 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/peerUser.md}
+ * @see {@link https://core.telegram.org/constructor/peerUser.md}
  * @typedef {Peer} peerUser
  * @property {int} user_id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/peerChat.md}
+ * @see {@link https://core.telegram.org/constructor/peerChat.md}
  * @typedef {Peer} peerChat
  * @property {int} chat_id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/peerChannel.md}
+ * @see {@link https://core.telegram.org/constructor/peerChannel.md}
  * @typedef {Peer} peerChannel
  * @property {int} channel_id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/storage.fileUnknown.md}
+ * @see {@link https://core.telegram.org/constructor/storage.fileUnknown.md}
  * @typedef {storage.FileType} storage.fileUnknown
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/storage.filePartial.md}
+ * @see {@link https://core.telegram.org/constructor/storage.filePartial.md}
  * @typedef {storage.FileType} storage.filePartial
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/storage.fileJpeg.md}
+ * @see {@link https://core.telegram.org/constructor/storage.fileJpeg.md}
  * @typedef {storage.FileType} storage.fileJpeg
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/storage.fileGif.md}
+ * @see {@link https://core.telegram.org/constructor/storage.fileGif.md}
  * @typedef {storage.FileType} storage.fileGif
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/storage.filePng.md}
+ * @see {@link https://core.telegram.org/constructor/storage.filePng.md}
  * @typedef {storage.FileType} storage.filePng
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/storage.filePdf.md}
+ * @see {@link https://core.telegram.org/constructor/storage.filePdf.md}
  * @typedef {storage.FileType} storage.filePdf
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/storage.fileMp3.md}
+ * @see {@link https://core.telegram.org/constructor/storage.fileMp3.md}
  * @typedef {storage.FileType} storage.fileMp3
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/storage.fileMov.md}
+ * @see {@link https://core.telegram.org/constructor/storage.fileMov.md}
  * @typedef {storage.FileType} storage.fileMov
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/storage.fileMp4.md}
+ * @see {@link https://core.telegram.org/constructor/storage.fileMp4.md}
  * @typedef {storage.FileType} storage.fileMp4
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/storage.fileWebp.md}
+ * @see {@link https://core.telegram.org/constructor/storage.fileWebp.md}
  * @typedef {storage.FileType} storage.fileWebp
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/fileLocationUnavailable.md}
+ * @see {@link https://core.telegram.org/constructor/fileLocationUnavailable.md}
  * @typedef {FileLocation} fileLocationUnavailable
  * @property {long} volume_id
  * @property {int} local_id
@@ -819,7 +819,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/fileLocation.md}
+ * @see {@link https://core.telegram.org/constructor/fileLocation.md}
  * @typedef {FileLocation} fileLocation
  * @property {int} dc_id
  * @property {long} volume_id
@@ -830,14 +830,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/userEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/userEmpty.md}
  * @typedef {User} userEmpty
  * @property {int} id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/user.md}
+ * @see {@link https://core.telegram.org/constructor/user.md}
  * @typedef {User} user
  * @property {#} flags
  * @property {true} self
@@ -867,13 +867,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/userProfilePhotoEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/userProfilePhotoEmpty.md}
  * @typedef {UserProfilePhoto} userProfilePhotoEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/userProfilePhoto.md}
+ * @see {@link https://core.telegram.org/constructor/userProfilePhoto.md}
  * @typedef {UserProfilePhoto} userProfilePhoto
  * @property {long} photo_id
  * @property {FileLocation} photo_small
@@ -882,52 +882,52 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/userStatusEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/userStatusEmpty.md}
  * @typedef {UserStatus} userStatusEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/userStatusOnline.md}
+ * @see {@link https://core.telegram.org/constructor/userStatusOnline.md}
  * @typedef {UserStatus} userStatusOnline
  * @property {int} expires
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/userStatusOffline.md}
+ * @see {@link https://core.telegram.org/constructor/userStatusOffline.md}
  * @typedef {UserStatus} userStatusOffline
  * @property {int} was_online
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/userStatusRecently.md}
+ * @see {@link https://core.telegram.org/constructor/userStatusRecently.md}
  * @typedef {UserStatus} userStatusRecently
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/userStatusLastWeek.md}
+ * @see {@link https://core.telegram.org/constructor/userStatusLastWeek.md}
  * @typedef {UserStatus} userStatusLastWeek
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/userStatusLastMonth.md}
+ * @see {@link https://core.telegram.org/constructor/userStatusLastMonth.md}
  * @typedef {UserStatus} userStatusLastMonth
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/chatEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/chatEmpty.md}
  * @typedef {Chat} chatEmpty
  * @property {int} id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/chat.md}
+ * @see {@link https://core.telegram.org/constructor/chat.md}
  * @typedef {Chat} chat
  * @property {#} flags
  * @property {true} creator
@@ -947,7 +947,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/chatForbidden.md}
+ * @see {@link https://core.telegram.org/constructor/chatForbidden.md}
  * @typedef {Chat} chatForbidden
  * @property {int} id
  * @property {string} title
@@ -955,7 +955,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channel.md}
+ * @see {@link https://core.telegram.org/constructor/channel.md}
  * @typedef {Chat} channel
  * @property {#} flags
  * @property {true} creator
@@ -983,7 +983,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelForbidden.md}
+ * @see {@link https://core.telegram.org/constructor/channelForbidden.md}
  * @typedef {Chat} channelForbidden
  * @property {#} flags
  * @property {true} broadcast
@@ -996,7 +996,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/chatFull.md}
+ * @see {@link https://core.telegram.org/constructor/chatFull.md}
  * @typedef {ChatFull} chatFull
  * @property {int} id
  * @property {ChatParticipants} participants
@@ -1008,7 +1008,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelFull.md}
+ * @see {@link https://core.telegram.org/constructor/channelFull.md}
  * @typedef {ChatFull} channelFull
  * @property {#} flags
  * @property {true} can_view_participants
@@ -1037,7 +1037,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/chatParticipant.md}
+ * @see {@link https://core.telegram.org/constructor/chatParticipant.md}
  * @typedef {ChatParticipant} chatParticipant
  * @property {int} user_id
  * @property {int} inviter_id
@@ -1046,14 +1046,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/chatParticipantCreator.md}
+ * @see {@link https://core.telegram.org/constructor/chatParticipantCreator.md}
  * @typedef {ChatParticipant} chatParticipantCreator
  * @property {int} user_id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/chatParticipantAdmin.md}
+ * @see {@link https://core.telegram.org/constructor/chatParticipantAdmin.md}
  * @typedef {ChatParticipant} chatParticipantAdmin
  * @property {int} user_id
  * @property {int} inviter_id
@@ -1062,7 +1062,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/chatParticipantsForbidden.md}
+ * @see {@link https://core.telegram.org/constructor/chatParticipantsForbidden.md}
  * @typedef {ChatParticipants} chatParticipantsForbidden
  * @property {#} flags
  * @property {int} chat_id
@@ -1071,7 +1071,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/chatParticipants.md}
+ * @see {@link https://core.telegram.org/constructor/chatParticipants.md}
  * @typedef {ChatParticipants} chatParticipants
  * @property {int} chat_id
  * @property {Vector.<ChatParticipant>} participants
@@ -1080,13 +1080,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/chatPhotoEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/chatPhotoEmpty.md}
  * @typedef {ChatPhoto} chatPhotoEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/chatPhoto.md}
+ * @see {@link https://core.telegram.org/constructor/chatPhoto.md}
  * @typedef {ChatPhoto} chatPhoto
  * @property {FileLocation} photo_small
  * @property {FileLocation} photo_big
@@ -1094,14 +1094,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/messageEmpty.md}
  * @typedef {Message} messageEmpty
  * @property {int} id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/message.md}
+ * @see {@link https://core.telegram.org/constructor/message.md}
  * @typedef {Message} message
  * @property {#} flags
  * @property {true} out
@@ -1128,7 +1128,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageService.md}
+ * @see {@link https://core.telegram.org/constructor/messageService.md}
  * @typedef {Message} messageService
  * @property {#} flags
  * @property {true} out
@@ -1146,13 +1146,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageMediaEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/messageMediaEmpty.md}
  * @typedef {MessageMedia} messageMediaEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageMediaPhoto.md}
+ * @see {@link https://core.telegram.org/constructor/messageMediaPhoto.md}
  * @typedef {MessageMedia} messageMediaPhoto
  * @property {#} flags
  * @property {Photo} photo
@@ -1161,14 +1161,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageMediaGeo.md}
+ * @see {@link https://core.telegram.org/constructor/messageMediaGeo.md}
  * @typedef {MessageMedia} messageMediaGeo
  * @property {GeoPoint} geo
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageMediaContact.md}
+ * @see {@link https://core.telegram.org/constructor/messageMediaContact.md}
  * @typedef {MessageMedia} messageMediaContact
  * @property {string} phone_number
  * @property {string} first_name
@@ -1179,13 +1179,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageMediaUnsupported.md}
+ * @see {@link https://core.telegram.org/constructor/messageMediaUnsupported.md}
  * @typedef {MessageMedia} messageMediaUnsupported
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageMediaDocument.md}
+ * @see {@link https://core.telegram.org/constructor/messageMediaDocument.md}
  * @typedef {MessageMedia} messageMediaDocument
  * @property {#} flags
  * @property {Document} document
@@ -1194,14 +1194,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageMediaWebPage.md}
+ * @see {@link https://core.telegram.org/constructor/messageMediaWebPage.md}
  * @typedef {MessageMedia} messageMediaWebPage
  * @property {WebPage} webpage
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageMediaVenue.md}
+ * @see {@link https://core.telegram.org/constructor/messageMediaVenue.md}
  * @typedef {MessageMedia} messageMediaVenue
  * @property {GeoPoint} geo
  * @property {string} title
@@ -1213,14 +1213,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageMediaGame.md}
+ * @see {@link https://core.telegram.org/constructor/messageMediaGame.md}
  * @typedef {MessageMedia} messageMediaGame
  * @property {Game} game
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageMediaInvoice.md}
+ * @see {@link https://core.telegram.org/constructor/messageMediaInvoice.md}
  * @typedef {MessageMedia} messageMediaInvoice
  * @property {#} flags
  * @property {true} shipping_address_requested
@@ -1236,7 +1236,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageMediaGeoLive.md}
+ * @see {@link https://core.telegram.org/constructor/messageMediaGeoLive.md}
  * @typedef {MessageMedia} messageMediaGeoLive
  * @property {GeoPoint} geo
  * @property {int} period
@@ -1244,13 +1244,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionEmpty.md}
  * @typedef {MessageAction} messageActionEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionChatCreate.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionChatCreate.md}
  * @typedef {MessageAction} messageActionChatCreate
  * @property {string} title
  * @property {Vector.<int>} users
@@ -1258,62 +1258,62 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionChatEditTitle.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionChatEditTitle.md}
  * @typedef {MessageAction} messageActionChatEditTitle
  * @property {string} title
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionChatEditPhoto.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionChatEditPhoto.md}
  * @typedef {MessageAction} messageActionChatEditPhoto
  * @property {Photo} photo
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionChatDeletePhoto.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionChatDeletePhoto.md}
  * @typedef {MessageAction} messageActionChatDeletePhoto
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionChatAddUser.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionChatAddUser.md}
  * @typedef {MessageAction} messageActionChatAddUser
  * @property {Vector.<int>} users
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionChatDeleteUser.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionChatDeleteUser.md}
  * @typedef {MessageAction} messageActionChatDeleteUser
  * @property {int} user_id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionChatJoinedByLink.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionChatJoinedByLink.md}
  * @typedef {MessageAction} messageActionChatJoinedByLink
  * @property {int} inviter_id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionChannelCreate.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionChannelCreate.md}
  * @typedef {MessageAction} messageActionChannelCreate
  * @property {string} title
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionChatMigrateTo.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionChatMigrateTo.md}
  * @typedef {MessageAction} messageActionChatMigrateTo
  * @property {int} channel_id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionChannelMigrateFrom.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionChannelMigrateFrom.md}
  * @typedef {MessageAction} messageActionChannelMigrateFrom
  * @property {string} title
  * @property {int} chat_id
@@ -1321,19 +1321,19 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionPinMessage.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionPinMessage.md}
  * @typedef {MessageAction} messageActionPinMessage
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionHistoryClear.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionHistoryClear.md}
  * @typedef {MessageAction} messageActionHistoryClear
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionGameScore.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionGameScore.md}
  * @typedef {MessageAction} messageActionGameScore
  * @property {long} game_id
  * @property {int} score
@@ -1341,7 +1341,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionPaymentSentMe.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionPaymentSentMe.md}
  * @typedef {MessageAction} messageActionPaymentSentMe
  * @property {#} flags
  * @property {string} currency
@@ -1354,7 +1354,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionPaymentSent.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionPaymentSent.md}
  * @typedef {MessageAction} messageActionPaymentSent
  * @property {string} currency
  * @property {long} total_amount
@@ -1362,7 +1362,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionPhoneCall.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionPhoneCall.md}
  * @typedef {MessageAction} messageActionPhoneCall
  * @property {#} flags
  * @property {long} call_id
@@ -1372,27 +1372,27 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionScreenshotTaken.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionScreenshotTaken.md}
  * @typedef {MessageAction} messageActionScreenshotTaken
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionCustomAction.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionCustomAction.md}
  * @typedef {MessageAction} messageActionCustomAction
  * @property {string} message
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionBotAllowed.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionBotAllowed.md}
  * @typedef {MessageAction} messageActionBotAllowed
  * @property {string} domain
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionSecureValuesSentMe.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionSecureValuesSentMe.md}
  * @typedef {MessageAction} messageActionSecureValuesSentMe
  * @property {Vector.<SecureValue>} values
  * @property {SecureCredentialsEncrypted} credentials
@@ -1400,14 +1400,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageActionSecureValuesSent.md}
+ * @see {@link https://core.telegram.org/constructor/messageActionSecureValuesSent.md}
  * @typedef {MessageAction} messageActionSecureValuesSent
  * @property {Vector.<SecureValueType>} types
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/dialog.md}
+ * @see {@link https://core.telegram.org/constructor/dialog.md}
  * @typedef {Dialog} dialog
  * @property {#} flags
  * @property {true} pinned
@@ -1425,14 +1425,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/photoEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/photoEmpty.md}
  * @typedef {Photo} photoEmpty
  * @property {long} id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/photo.md}
+ * @see {@link https://core.telegram.org/constructor/photo.md}
  * @typedef {Photo} photo
  * @property {#} flags
  * @property {true} has_stickers
@@ -1445,14 +1445,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/photoSizeEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/photoSizeEmpty.md}
  * @typedef {PhotoSize} photoSizeEmpty
  * @property {string} type
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/photoSize.md}
+ * @see {@link https://core.telegram.org/constructor/photoSize.md}
  * @typedef {PhotoSize} photoSize
  * @property {string} type
  * @property {FileLocation} location
@@ -1463,7 +1463,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/photoCachedSize.md}
+ * @see {@link https://core.telegram.org/constructor/photoCachedSize.md}
  * @typedef {PhotoSize} photoCachedSize
  * @property {string} type
  * @property {FileLocation} location
@@ -1474,13 +1474,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/geoPointEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/geoPointEmpty.md}
  * @typedef {GeoPoint} geoPointEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/geoPoint.md}
+ * @see {@link https://core.telegram.org/constructor/geoPoint.md}
  * @typedef {GeoPoint} geoPoint
  * @property {double} long
  * @property {double} lat
@@ -1489,14 +1489,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/auth.checkedPhone.md}
+ * @see {@link https://core.telegram.org/constructor/auth.checkedPhone.md}
  * @typedef {auth.CheckedPhone} auth.checkedPhone
  * @property {Bool} phone_registered
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/auth.sentCode.md}
+ * @see {@link https://core.telegram.org/constructor/auth.sentCode.md}
  * @typedef {auth.SentCode} auth.sentCode
  * @property {#} flags
  * @property {true} phone_registered
@@ -1509,7 +1509,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/auth.authorization.md}
+ * @see {@link https://core.telegram.org/constructor/auth.authorization.md}
  * @typedef {auth.Authorization} auth.authorization
  * @property {#} flags
  * @property {int} tmp_sessions
@@ -1518,7 +1518,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/auth.exportedAuthorization.md}
+ * @see {@link https://core.telegram.org/constructor/auth.exportedAuthorization.md}
  * @typedef {auth.ExportedAuthorization} auth.exportedAuthorization
  * @property {int} id
  * @property {bytes} bytes
@@ -1526,26 +1526,26 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputNotifyPeer.md}
+ * @see {@link https://core.telegram.org/constructor/inputNotifyPeer.md}
  * @typedef {InputNotifyPeer} inputNotifyPeer
  * @property {InputPeer} peer
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputNotifyUsers.md}
+ * @see {@link https://core.telegram.org/constructor/inputNotifyUsers.md}
  * @typedef {InputNotifyPeer} inputNotifyUsers
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputNotifyChats.md}
+ * @see {@link https://core.telegram.org/constructor/inputNotifyChats.md}
  * @typedef {InputNotifyPeer} inputNotifyChats
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPeerNotifySettings.md}
+ * @see {@link https://core.telegram.org/constructor/inputPeerNotifySettings.md}
  * @typedef {InputPeerNotifySettings} inputPeerNotifySettings
  * @property {#} flags
  * @property {Bool} show_previews
@@ -1556,7 +1556,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/peerNotifySettings.md}
+ * @see {@link https://core.telegram.org/constructor/peerNotifySettings.md}
  * @typedef {PeerNotifySettings} peerNotifySettings
  * @property {#} flags
  * @property {Bool} show_previews
@@ -1567,7 +1567,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/peerSettings.md}
+ * @see {@link https://core.telegram.org/constructor/peerSettings.md}
  * @typedef {PeerSettings} peerSettings
  * @property {#} flags
  * @property {true} report_spam
@@ -1575,7 +1575,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/wallPaper.md}
+ * @see {@link https://core.telegram.org/constructor/wallPaper.md}
  * @typedef {WallPaper} wallPaper
  * @property {int} id
  * @property {string} title
@@ -1585,7 +1585,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/wallPaperSolid.md}
+ * @see {@link https://core.telegram.org/constructor/wallPaperSolid.md}
  * @typedef {WallPaper} wallPaperSolid
  * @property {int} id
  * @property {string} title
@@ -1595,38 +1595,38 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputReportReasonSpam.md}
+ * @see {@link https://core.telegram.org/constructor/inputReportReasonSpam.md}
  * @typedef {ReportReason} inputReportReasonSpam
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputReportReasonViolence.md}
+ * @see {@link https://core.telegram.org/constructor/inputReportReasonViolence.md}
  * @typedef {ReportReason} inputReportReasonViolence
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputReportReasonPornography.md}
+ * @see {@link https://core.telegram.org/constructor/inputReportReasonPornography.md}
  * @typedef {ReportReason} inputReportReasonPornography
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputReportReasonOther.md}
+ * @see {@link https://core.telegram.org/constructor/inputReportReasonOther.md}
  * @typedef {ReportReason} inputReportReasonOther
  * @property {string} text
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputReportReasonCopyright.md}
+ * @see {@link https://core.telegram.org/constructor/inputReportReasonCopyright.md}
  * @typedef {ReportReason} inputReportReasonCopyright
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/userFull.md}
+ * @see {@link https://core.telegram.org/constructor/userFull.md}
  * @typedef {UserFull} userFull
  * @property {#} flags
  * @property {true} blocked
@@ -1643,7 +1643,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/contact.md}
+ * @see {@link https://core.telegram.org/constructor/contact.md}
  * @typedef {Contact} contact
  * @property {int} user_id
  * @property {Bool} mutual
@@ -1651,7 +1651,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/importedContact.md}
+ * @see {@link https://core.telegram.org/constructor/importedContact.md}
  * @typedef {ImportedContact} importedContact
  * @property {int} user_id
  * @property {long} client_id
@@ -1659,7 +1659,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/contactBlocked.md}
+ * @see {@link https://core.telegram.org/constructor/contactBlocked.md}
  * @typedef {ContactBlocked} contactBlocked
  * @property {int} user_id
  * @property {int} date
@@ -1667,7 +1667,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/contactStatus.md}
+ * @see {@link https://core.telegram.org/constructor/contactStatus.md}
  * @typedef {ContactStatus} contactStatus
  * @property {int} user_id
  * @property {UserStatus} status
@@ -1675,7 +1675,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/contacts.link.md}
+ * @see {@link https://core.telegram.org/constructor/contacts.link.md}
  * @typedef {contacts.Link} contacts.link
  * @property {ContactLink} my_link
  * @property {ContactLink} foreign_link
@@ -1684,13 +1684,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/contacts.contactsNotModified.md}
+ * @see {@link https://core.telegram.org/constructor/contacts.contactsNotModified.md}
  * @typedef {contacts.Contacts} contacts.contactsNotModified
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/contacts.contacts.md}
+ * @see {@link https://core.telegram.org/constructor/contacts.contacts.md}
  * @typedef {contacts.Contacts} contacts.contacts
  * @property {Vector.<Contact>} contacts
  * @property {int} saved_count
@@ -1699,7 +1699,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/contacts.importedContacts.md}
+ * @see {@link https://core.telegram.org/constructor/contacts.importedContacts.md}
  * @typedef {contacts.ImportedContacts} contacts.importedContacts
  * @property {Vector.<ImportedContact>} imported
  * @property {Vector.<PopularContact>} popular_invites
@@ -1709,7 +1709,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/contacts.blocked.md}
+ * @see {@link https://core.telegram.org/constructor/contacts.blocked.md}
  * @typedef {contacts.Blocked} contacts.blocked
  * @property {Vector.<ContactBlocked>} blocked
  * @property {Vector.<User>} users
@@ -1717,7 +1717,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/contacts.blockedSlice.md}
+ * @see {@link https://core.telegram.org/constructor/contacts.blockedSlice.md}
  * @typedef {contacts.Blocked} contacts.blockedSlice
  * @property {int} count
  * @property {Vector.<ContactBlocked>} blocked
@@ -1726,7 +1726,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.dialogs.md}
+ * @see {@link https://core.telegram.org/constructor/messages.dialogs.md}
  * @typedef {messages.Dialogs} messages.dialogs
  * @property {Vector.<Dialog>} dialogs
  * @property {Vector.<Message>} messages
@@ -1736,7 +1736,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.dialogsSlice.md}
+ * @see {@link https://core.telegram.org/constructor/messages.dialogsSlice.md}
  * @typedef {messages.Dialogs} messages.dialogsSlice
  * @property {int} count
  * @property {Vector.<Dialog>} dialogs
@@ -1747,14 +1747,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.dialogsNotModified.md}
+ * @see {@link https://core.telegram.org/constructor/messages.dialogsNotModified.md}
  * @typedef {messages.Dialogs} messages.dialogsNotModified
  * @property {int} count
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.messages.md}
+ * @see {@link https://core.telegram.org/constructor/messages.messages.md}
  * @typedef {messages.Messages} messages.messages
  * @property {Vector.<Message>} messages
  * @property {Vector.<Chat>} chats
@@ -1763,7 +1763,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.messagesSlice.md}
+ * @see {@link https://core.telegram.org/constructor/messages.messagesSlice.md}
  * @typedef {messages.Messages} messages.messagesSlice
  * @property {int} count
  * @property {Vector.<Message>} messages
@@ -1773,7 +1773,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.channelMessages.md}
+ * @see {@link https://core.telegram.org/constructor/messages.channelMessages.md}
  * @typedef {messages.Messages} messages.channelMessages
  * @property {#} flags
  * @property {int} pts
@@ -1785,21 +1785,21 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.messagesNotModified.md}
+ * @see {@link https://core.telegram.org/constructor/messages.messagesNotModified.md}
  * @typedef {messages.Messages} messages.messagesNotModified
  * @property {int} count
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.chats.md}
+ * @see {@link https://core.telegram.org/constructor/messages.chats.md}
  * @typedef {messages.Chats} messages.chats
  * @property {Vector.<Chat>} chats
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.chatsSlice.md}
+ * @see {@link https://core.telegram.org/constructor/messages.chatsSlice.md}
  * @typedef {messages.Chats} messages.chatsSlice
  * @property {int} count
  * @property {Vector.<Chat>} chats
@@ -1807,7 +1807,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.chatFull.md}
+ * @see {@link https://core.telegram.org/constructor/messages.chatFull.md}
  * @typedef {messages.ChatFull} messages.chatFull
  * @property {ChatFull} full_chat
  * @property {Vector.<Chat>} chats
@@ -1816,7 +1816,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.affectedHistory.md}
+ * @see {@link https://core.telegram.org/constructor/messages.affectedHistory.md}
  * @typedef {messages.AffectedHistory} messages.affectedHistory
  * @property {int} pts
  * @property {int} pts_count
@@ -1825,67 +1825,67 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMessagesFilterEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/inputMessagesFilterEmpty.md}
  * @typedef {MessagesFilter} inputMessagesFilterEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMessagesFilterPhotos.md}
+ * @see {@link https://core.telegram.org/constructor/inputMessagesFilterPhotos.md}
  * @typedef {MessagesFilter} inputMessagesFilterPhotos
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMessagesFilterVideo.md}
+ * @see {@link https://core.telegram.org/constructor/inputMessagesFilterVideo.md}
  * @typedef {MessagesFilter} inputMessagesFilterVideo
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMessagesFilterPhotoVideo.md}
+ * @see {@link https://core.telegram.org/constructor/inputMessagesFilterPhotoVideo.md}
  * @typedef {MessagesFilter} inputMessagesFilterPhotoVideo
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMessagesFilterDocument.md}
+ * @see {@link https://core.telegram.org/constructor/inputMessagesFilterDocument.md}
  * @typedef {MessagesFilter} inputMessagesFilterDocument
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMessagesFilterUrl.md}
+ * @see {@link https://core.telegram.org/constructor/inputMessagesFilterUrl.md}
  * @typedef {MessagesFilter} inputMessagesFilterUrl
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMessagesFilterGif.md}
+ * @see {@link https://core.telegram.org/constructor/inputMessagesFilterGif.md}
  * @typedef {MessagesFilter} inputMessagesFilterGif
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMessagesFilterVoice.md}
+ * @see {@link https://core.telegram.org/constructor/inputMessagesFilterVoice.md}
  * @typedef {MessagesFilter} inputMessagesFilterVoice
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMessagesFilterMusic.md}
+ * @see {@link https://core.telegram.org/constructor/inputMessagesFilterMusic.md}
  * @typedef {MessagesFilter} inputMessagesFilterMusic
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMessagesFilterChatPhotos.md}
+ * @see {@link https://core.telegram.org/constructor/inputMessagesFilterChatPhotos.md}
  * @typedef {MessagesFilter} inputMessagesFilterChatPhotos
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMessagesFilterPhoneCalls.md}
+ * @see {@link https://core.telegram.org/constructor/inputMessagesFilterPhoneCalls.md}
  * @typedef {MessagesFilter} inputMessagesFilterPhoneCalls
  * @property {#} flags
  * @property {true} missed
@@ -1893,37 +1893,37 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMessagesFilterRoundVoice.md}
+ * @see {@link https://core.telegram.org/constructor/inputMessagesFilterRoundVoice.md}
  * @typedef {MessagesFilter} inputMessagesFilterRoundVoice
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMessagesFilterRoundVideo.md}
+ * @see {@link https://core.telegram.org/constructor/inputMessagesFilterRoundVideo.md}
  * @typedef {MessagesFilter} inputMessagesFilterRoundVideo
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMessagesFilterMyMentions.md}
+ * @see {@link https://core.telegram.org/constructor/inputMessagesFilterMyMentions.md}
  * @typedef {MessagesFilter} inputMessagesFilterMyMentions
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMessagesFilterGeo.md}
+ * @see {@link https://core.telegram.org/constructor/inputMessagesFilterGeo.md}
  * @typedef {MessagesFilter} inputMessagesFilterGeo
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMessagesFilterContacts.md}
+ * @see {@link https://core.telegram.org/constructor/inputMessagesFilterContacts.md}
  * @typedef {MessagesFilter} inputMessagesFilterContacts
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateNewMessage.md}
+ * @see {@link https://core.telegram.org/constructor/updateNewMessage.md}
  * @typedef {Update} updateNewMessage
  * @property {Message} message
  * @property {int} pts
@@ -1932,7 +1932,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateMessageID.md}
+ * @see {@link https://core.telegram.org/constructor/updateMessageID.md}
  * @typedef {Update} updateMessageID
  * @property {int} id
  * @property {long} random_id
@@ -1940,7 +1940,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateDeleteMessages.md}
+ * @see {@link https://core.telegram.org/constructor/updateDeleteMessages.md}
  * @typedef {Update} updateDeleteMessages
  * @property {Vector.<int>} messages
  * @property {int} pts
@@ -1949,7 +1949,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateUserTyping.md}
+ * @see {@link https://core.telegram.org/constructor/updateUserTyping.md}
  * @typedef {Update} updateUserTyping
  * @property {int} user_id
  * @property {SendMessageAction} action
@@ -1957,7 +1957,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateChatUserTyping.md}
+ * @see {@link https://core.telegram.org/constructor/updateChatUserTyping.md}
  * @typedef {Update} updateChatUserTyping
  * @property {int} chat_id
  * @property {int} user_id
@@ -1966,14 +1966,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateChatParticipants.md}
+ * @see {@link https://core.telegram.org/constructor/updateChatParticipants.md}
  * @typedef {Update} updateChatParticipants
  * @property {ChatParticipants} participants
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateUserStatus.md}
+ * @see {@link https://core.telegram.org/constructor/updateUserStatus.md}
  * @typedef {Update} updateUserStatus
  * @property {int} user_id
  * @property {UserStatus} status
@@ -1981,7 +1981,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateUserName.md}
+ * @see {@link https://core.telegram.org/constructor/updateUserName.md}
  * @typedef {Update} updateUserName
  * @property {int} user_id
  * @property {string} first_name
@@ -1991,7 +1991,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateUserPhoto.md}
+ * @see {@link https://core.telegram.org/constructor/updateUserPhoto.md}
  * @typedef {Update} updateUserPhoto
  * @property {int} user_id
  * @property {int} date
@@ -2001,7 +2001,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateContactRegistered.md}
+ * @see {@link https://core.telegram.org/constructor/updateContactRegistered.md}
  * @typedef {Update} updateContactRegistered
  * @property {int} user_id
  * @property {int} date
@@ -2009,7 +2009,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateContactLink.md}
+ * @see {@link https://core.telegram.org/constructor/updateContactLink.md}
  * @typedef {Update} updateContactLink
  * @property {int} user_id
  * @property {ContactLink} my_link
@@ -2018,7 +2018,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateNewEncryptedMessage.md}
+ * @see {@link https://core.telegram.org/constructor/updateNewEncryptedMessage.md}
  * @typedef {Update} updateNewEncryptedMessage
  * @property {EncryptedMessage} message
  * @property {int} qts
@@ -2026,14 +2026,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateEncryptedChatTyping.md}
+ * @see {@link https://core.telegram.org/constructor/updateEncryptedChatTyping.md}
  * @typedef {Update} updateEncryptedChatTyping
  * @property {int} chat_id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateEncryption.md}
+ * @see {@link https://core.telegram.org/constructor/updateEncryption.md}
  * @typedef {Update} updateEncryption
  * @property {EncryptedChat} chat
  * @property {int} date
@@ -2041,7 +2041,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateEncryptedMessagesRead.md}
+ * @see {@link https://core.telegram.org/constructor/updateEncryptedMessagesRead.md}
  * @typedef {Update} updateEncryptedMessagesRead
  * @property {int} chat_id
  * @property {int} max_date
@@ -2050,7 +2050,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateChatParticipantAdd.md}
+ * @see {@link https://core.telegram.org/constructor/updateChatParticipantAdd.md}
  * @typedef {Update} updateChatParticipantAdd
  * @property {int} chat_id
  * @property {int} user_id
@@ -2061,7 +2061,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateChatParticipantDelete.md}
+ * @see {@link https://core.telegram.org/constructor/updateChatParticipantDelete.md}
  * @typedef {Update} updateChatParticipantDelete
  * @property {int} chat_id
  * @property {int} user_id
@@ -2070,14 +2070,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateDcOptions.md}
+ * @see {@link https://core.telegram.org/constructor/updateDcOptions.md}
  * @typedef {Update} updateDcOptions
  * @property {Vector.<DcOption>} dc_options
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateUserBlocked.md}
+ * @see {@link https://core.telegram.org/constructor/updateUserBlocked.md}
  * @typedef {Update} updateUserBlocked
  * @property {int} user_id
  * @property {Bool} blocked
@@ -2085,7 +2085,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateNotifySettings.md}
+ * @see {@link https://core.telegram.org/constructor/updateNotifySettings.md}
  * @typedef {Update} updateNotifySettings
  * @property {NotifyPeer} peer
  * @property {PeerNotifySettings} notify_settings
@@ -2093,7 +2093,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateServiceNotification.md}
+ * @see {@link https://core.telegram.org/constructor/updateServiceNotification.md}
  * @typedef {Update} updateServiceNotification
  * @property {#} flags
  * @property {true} popup
@@ -2106,7 +2106,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updatePrivacy.md}
+ * @see {@link https://core.telegram.org/constructor/updatePrivacy.md}
  * @typedef {Update} updatePrivacy
  * @property {PrivacyKey} key
  * @property {Vector.<PrivacyRule>} rules
@@ -2114,7 +2114,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateUserPhone.md}
+ * @see {@link https://core.telegram.org/constructor/updateUserPhone.md}
  * @typedef {Update} updateUserPhone
  * @property {int} user_id
  * @property {string} phone
@@ -2122,7 +2122,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateReadHistoryInbox.md}
+ * @see {@link https://core.telegram.org/constructor/updateReadHistoryInbox.md}
  * @typedef {Update} updateReadHistoryInbox
  * @property {Peer} peer
  * @property {int} max_id
@@ -2132,7 +2132,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateReadHistoryOutbox.md}
+ * @see {@link https://core.telegram.org/constructor/updateReadHistoryOutbox.md}
  * @typedef {Update} updateReadHistoryOutbox
  * @property {Peer} peer
  * @property {int} max_id
@@ -2142,7 +2142,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateWebPage.md}
+ * @see {@link https://core.telegram.org/constructor/updateWebPage.md}
  * @typedef {Update} updateWebPage
  * @property {WebPage} webpage
  * @property {int} pts
@@ -2151,7 +2151,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateReadMessagesContents.md}
+ * @see {@link https://core.telegram.org/constructor/updateReadMessagesContents.md}
  * @typedef {Update} updateReadMessagesContents
  * @property {Vector.<int>} messages
  * @property {int} pts
@@ -2160,7 +2160,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateChannelTooLong.md}
+ * @see {@link https://core.telegram.org/constructor/updateChannelTooLong.md}
  * @typedef {Update} updateChannelTooLong
  * @property {#} flags
  * @property {int} channel_id
@@ -2169,14 +2169,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateChannel.md}
+ * @see {@link https://core.telegram.org/constructor/updateChannel.md}
  * @typedef {Update} updateChannel
  * @property {int} channel_id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateNewChannelMessage.md}
+ * @see {@link https://core.telegram.org/constructor/updateNewChannelMessage.md}
  * @typedef {Update} updateNewChannelMessage
  * @property {Message} message
  * @property {int} pts
@@ -2185,7 +2185,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateReadChannelInbox.md}
+ * @see {@link https://core.telegram.org/constructor/updateReadChannelInbox.md}
  * @typedef {Update} updateReadChannelInbox
  * @property {int} channel_id
  * @property {int} max_id
@@ -2193,7 +2193,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateDeleteChannelMessages.md}
+ * @see {@link https://core.telegram.org/constructor/updateDeleteChannelMessages.md}
  * @typedef {Update} updateDeleteChannelMessages
  * @property {int} channel_id
  * @property {Vector.<int>} messages
@@ -2203,7 +2203,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateChannelMessageViews.md}
+ * @see {@link https://core.telegram.org/constructor/updateChannelMessageViews.md}
  * @typedef {Update} updateChannelMessageViews
  * @property {int} channel_id
  * @property {int} id
@@ -2212,7 +2212,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateChatAdmins.md}
+ * @see {@link https://core.telegram.org/constructor/updateChatAdmins.md}
  * @typedef {Update} updateChatAdmins
  * @property {int} chat_id
  * @property {Bool} enabled
@@ -2221,7 +2221,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateChatParticipantAdmin.md}
+ * @see {@link https://core.telegram.org/constructor/updateChatParticipantAdmin.md}
  * @typedef {Update} updateChatParticipantAdmin
  * @property {int} chat_id
  * @property {int} user_id
@@ -2231,14 +2231,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateNewStickerSet.md}
+ * @see {@link https://core.telegram.org/constructor/updateNewStickerSet.md}
  * @typedef {Update} updateNewStickerSet
  * @property {messages.StickerSet} stickerset
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateStickerSetsOrder.md}
+ * @see {@link https://core.telegram.org/constructor/updateStickerSetsOrder.md}
  * @typedef {Update} updateStickerSetsOrder
  * @property {#} flags
  * @property {true} masks
@@ -2247,19 +2247,19 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateStickerSets.md}
+ * @see {@link https://core.telegram.org/constructor/updateStickerSets.md}
  * @typedef {Update} updateStickerSets
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateSavedGifs.md}
+ * @see {@link https://core.telegram.org/constructor/updateSavedGifs.md}
  * @typedef {Update} updateSavedGifs
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateBotInlineQuery.md}
+ * @see {@link https://core.telegram.org/constructor/updateBotInlineQuery.md}
  * @typedef {Update} updateBotInlineQuery
  * @property {#} flags
  * @property {long} query_id
@@ -2271,7 +2271,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateBotInlineSend.md}
+ * @see {@link https://core.telegram.org/constructor/updateBotInlineSend.md}
  * @typedef {Update} updateBotInlineSend
  * @property {#} flags
  * @property {int} user_id
@@ -2283,7 +2283,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateEditChannelMessage.md}
+ * @see {@link https://core.telegram.org/constructor/updateEditChannelMessage.md}
  * @typedef {Update} updateEditChannelMessage
  * @property {Message} message
  * @property {int} pts
@@ -2292,7 +2292,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateChannelPinnedMessage.md}
+ * @see {@link https://core.telegram.org/constructor/updateChannelPinnedMessage.md}
  * @typedef {Update} updateChannelPinnedMessage
  * @property {int} channel_id
  * @property {int} id
@@ -2300,7 +2300,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateBotCallbackQuery.md}
+ * @see {@link https://core.telegram.org/constructor/updateBotCallbackQuery.md}
  * @typedef {Update} updateBotCallbackQuery
  * @property {#} flags
  * @property {long} query_id
@@ -2314,7 +2314,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateEditMessage.md}
+ * @see {@link https://core.telegram.org/constructor/updateEditMessage.md}
  * @typedef {Update} updateEditMessage
  * @property {Message} message
  * @property {int} pts
@@ -2323,7 +2323,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateInlineBotCallbackQuery.md}
+ * @see {@link https://core.telegram.org/constructor/updateInlineBotCallbackQuery.md}
  * @typedef {Update} updateInlineBotCallbackQuery
  * @property {#} flags
  * @property {long} query_id
@@ -2336,7 +2336,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateReadChannelOutbox.md}
+ * @see {@link https://core.telegram.org/constructor/updateReadChannelOutbox.md}
  * @typedef {Update} updateReadChannelOutbox
  * @property {int} channel_id
  * @property {int} max_id
@@ -2344,7 +2344,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateDraftMessage.md}
+ * @see {@link https://core.telegram.org/constructor/updateDraftMessage.md}
  * @typedef {Update} updateDraftMessage
  * @property {Peer} peer
  * @property {DraftMessage} draft
@@ -2352,31 +2352,31 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateReadFeaturedStickers.md}
+ * @see {@link https://core.telegram.org/constructor/updateReadFeaturedStickers.md}
  * @typedef {Update} updateReadFeaturedStickers
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateRecentStickers.md}
+ * @see {@link https://core.telegram.org/constructor/updateRecentStickers.md}
  * @typedef {Update} updateRecentStickers
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateConfig.md}
+ * @see {@link https://core.telegram.org/constructor/updateConfig.md}
  * @typedef {Update} updateConfig
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updatePtsChanged.md}
+ * @see {@link https://core.telegram.org/constructor/updatePtsChanged.md}
  * @typedef {Update} updatePtsChanged
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateChannelWebPage.md}
+ * @see {@link https://core.telegram.org/constructor/updateChannelWebPage.md}
  * @typedef {Update} updateChannelWebPage
  * @property {int} channel_id
  * @property {WebPage} webpage
@@ -2386,7 +2386,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateDialogPinned.md}
+ * @see {@link https://core.telegram.org/constructor/updateDialogPinned.md}
  * @typedef {Update} updateDialogPinned
  * @property {#} flags
  * @property {true} pinned
@@ -2395,7 +2395,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updatePinnedDialogs.md}
+ * @see {@link https://core.telegram.org/constructor/updatePinnedDialogs.md}
  * @typedef {Update} updatePinnedDialogs
  * @property {#} flags
  * @property {Vector.<DialogPeer>} order
@@ -2403,14 +2403,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateBotWebhookJSON.md}
+ * @see {@link https://core.telegram.org/constructor/updateBotWebhookJSON.md}
  * @typedef {Update} updateBotWebhookJSON
  * @property {DataJSON} data
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateBotWebhookJSONQuery.md}
+ * @see {@link https://core.telegram.org/constructor/updateBotWebhookJSONQuery.md}
  * @typedef {Update} updateBotWebhookJSONQuery
  * @property {long} query_id
  * @property {DataJSON} data
@@ -2419,7 +2419,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateBotShippingQuery.md}
+ * @see {@link https://core.telegram.org/constructor/updateBotShippingQuery.md}
  * @typedef {Update} updateBotShippingQuery
  * @property {long} query_id
  * @property {int} user_id
@@ -2429,7 +2429,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateBotPrecheckoutQuery.md}
+ * @see {@link https://core.telegram.org/constructor/updateBotPrecheckoutQuery.md}
  * @typedef {Update} updateBotPrecheckoutQuery
  * @property {#} flags
  * @property {long} query_id
@@ -2443,33 +2443,33 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updatePhoneCall.md}
+ * @see {@link https://core.telegram.org/constructor/updatePhoneCall.md}
  * @typedef {Update} updatePhoneCall
  * @property {PhoneCall} phone_call
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateLangPackTooLong.md}
+ * @see {@link https://core.telegram.org/constructor/updateLangPackTooLong.md}
  * @typedef {Update} updateLangPackTooLong
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateLangPack.md}
+ * @see {@link https://core.telegram.org/constructor/updateLangPack.md}
  * @typedef {Update} updateLangPack
  * @property {LangPackDifference} difference
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateFavedStickers.md}
+ * @see {@link https://core.telegram.org/constructor/updateFavedStickers.md}
  * @typedef {Update} updateFavedStickers
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateChannelReadMessagesContents.md}
+ * @see {@link https://core.telegram.org/constructor/updateChannelReadMessagesContents.md}
  * @typedef {Update} updateChannelReadMessagesContents
  * @property {int} channel_id
  * @property {Vector.<int>} messages
@@ -2477,13 +2477,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateContactsReset.md}
+ * @see {@link https://core.telegram.org/constructor/updateContactsReset.md}
  * @typedef {Update} updateContactsReset
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateChannelAvailableMessages.md}
+ * @see {@link https://core.telegram.org/constructor/updateChannelAvailableMessages.md}
  * @typedef {Update} updateChannelAvailableMessages
  * @property {int} channel_id
  * @property {int} available_min_id
@@ -2491,7 +2491,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateDialogUnreadMark.md}
+ * @see {@link https://core.telegram.org/constructor/updateDialogUnreadMark.md}
  * @typedef {Update} updateDialogUnreadMark
  * @property {#} flags
  * @property {true} unread
@@ -2500,7 +2500,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updates.state.md}
+ * @see {@link https://core.telegram.org/constructor/updates.state.md}
  * @typedef {updates.State} updates.state
  * @property {int} pts
  * @property {int} qts
@@ -2511,7 +2511,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updates.differenceEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/updates.differenceEmpty.md}
  * @typedef {updates.Difference} updates.differenceEmpty
  * @property {int} date
  * @property {int} seq
@@ -2519,7 +2519,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updates.difference.md}
+ * @see {@link https://core.telegram.org/constructor/updates.difference.md}
  * @typedef {updates.Difference} updates.difference
  * @property {Vector.<Message>} new_messages
  * @property {Vector.<EncryptedMessage>} new_encrypted_messages
@@ -2531,7 +2531,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updates.differenceSlice.md}
+ * @see {@link https://core.telegram.org/constructor/updates.differenceSlice.md}
  * @typedef {updates.Difference} updates.differenceSlice
  * @property {Vector.<Message>} new_messages
  * @property {Vector.<EncryptedMessage>} new_encrypted_messages
@@ -2543,20 +2543,20 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updates.differenceTooLong.md}
+ * @see {@link https://core.telegram.org/constructor/updates.differenceTooLong.md}
  * @typedef {updates.Difference} updates.differenceTooLong
  * @property {int} pts
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updatesTooLong.md}
+ * @see {@link https://core.telegram.org/constructor/updatesTooLong.md}
  * @typedef {Updates} updatesTooLong
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateShortMessage.md}
+ * @see {@link https://core.telegram.org/constructor/updateShortMessage.md}
  * @typedef {Updates} updateShortMessage
  * @property {#} flags
  * @property {true} out
@@ -2577,7 +2577,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateShortChatMessage.md}
+ * @see {@link https://core.telegram.org/constructor/updateShortChatMessage.md}
  * @typedef {Updates} updateShortChatMessage
  * @property {#} flags
  * @property {true} out
@@ -2599,7 +2599,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateShort.md}
+ * @see {@link https://core.telegram.org/constructor/updateShort.md}
  * @typedef {Updates} updateShort
  * @property {Update} update
  * @property {int} date
@@ -2607,7 +2607,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updatesCombined.md}
+ * @see {@link https://core.telegram.org/constructor/updatesCombined.md}
  * @typedef {Updates} updatesCombined
  * @property {Vector.<Update>} updates
  * @property {Vector.<User>} users
@@ -2619,7 +2619,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updates.md}
+ * @see {@link https://core.telegram.org/constructor/updates.md}
  * @typedef {Updates} updates
  * @property {Vector.<Update>} updates
  * @property {Vector.<User>} users
@@ -2630,7 +2630,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updateShortSentMessage.md}
+ * @see {@link https://core.telegram.org/constructor/updateShortSentMessage.md}
  * @typedef {Updates} updateShortSentMessage
  * @property {#} flags
  * @property {true} out
@@ -2644,7 +2644,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/photos.photos.md}
+ * @see {@link https://core.telegram.org/constructor/photos.photos.md}
  * @typedef {photos.Photos} photos.photos
  * @property {Vector.<Photo>} photos
  * @property {Vector.<User>} users
@@ -2652,7 +2652,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/photos.photosSlice.md}
+ * @see {@link https://core.telegram.org/constructor/photos.photosSlice.md}
  * @typedef {photos.Photos} photos.photosSlice
  * @property {int} count
  * @property {Vector.<Photo>} photos
@@ -2661,7 +2661,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/photos.photo.md}
+ * @see {@link https://core.telegram.org/constructor/photos.photo.md}
  * @typedef {photos.Photo} photos.photo
  * @property {Photo} photo
  * @property {Vector.<User>} users
@@ -2669,7 +2669,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/upload.file.md}
+ * @see {@link https://core.telegram.org/constructor/upload.file.md}
  * @typedef {upload.File} upload.file
  * @property {storage.FileType} type
  * @property {int} mtime
@@ -2678,7 +2678,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/upload.fileCdnRedirect.md}
+ * @see {@link https://core.telegram.org/constructor/upload.fileCdnRedirect.md}
  * @typedef {upload.File} upload.fileCdnRedirect
  * @property {int} dc_id
  * @property {bytes} file_token
@@ -2689,7 +2689,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/dcOption.md}
+ * @see {@link https://core.telegram.org/constructor/dcOption.md}
  * @typedef {DcOption} dcOption
  * @property {#} flags
  * @property {true} ipv6
@@ -2705,7 +2705,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/config.md}
+ * @see {@link https://core.telegram.org/constructor/config.md}
  * @typedef {Config} config
  * @property {#} flags
  * @property {true} phonecalls_enabled
@@ -2760,7 +2760,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/nearestDc.md}
+ * @see {@link https://core.telegram.org/constructor/nearestDc.md}
  * @typedef {NearestDc} nearestDc
  * @property {string} country
  * @property {int} this_dc
@@ -2769,7 +2769,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/help.appUpdate.md}
+ * @see {@link https://core.telegram.org/constructor/help.appUpdate.md}
  * @typedef {help.AppUpdate} help.appUpdate
  * @property {#} flags
  * @property {true} popup
@@ -2783,27 +2783,27 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/help.noAppUpdate.md}
+ * @see {@link https://core.telegram.org/constructor/help.noAppUpdate.md}
  * @typedef {help.AppUpdate} help.noAppUpdate
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/help.inviteText.md}
+ * @see {@link https://core.telegram.org/constructor/help.inviteText.md}
  * @typedef {help.InviteText} help.inviteText
  * @property {string} message
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/encryptedChatEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/encryptedChatEmpty.md}
  * @typedef {EncryptedChat} encryptedChatEmpty
  * @property {int} id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/encryptedChatWaiting.md}
+ * @see {@link https://core.telegram.org/constructor/encryptedChatWaiting.md}
  * @typedef {EncryptedChat} encryptedChatWaiting
  * @property {int} id
  * @property {long} access_hash
@@ -2814,7 +2814,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/encryptedChatRequested.md}
+ * @see {@link https://core.telegram.org/constructor/encryptedChatRequested.md}
  * @typedef {EncryptedChat} encryptedChatRequested
  * @property {int} id
  * @property {long} access_hash
@@ -2826,7 +2826,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/encryptedChat.md}
+ * @see {@link https://core.telegram.org/constructor/encryptedChat.md}
  * @typedef {EncryptedChat} encryptedChat
  * @property {int} id
  * @property {long} access_hash
@@ -2839,14 +2839,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/encryptedChatDiscarded.md}
+ * @see {@link https://core.telegram.org/constructor/encryptedChatDiscarded.md}
  * @typedef {EncryptedChat} encryptedChatDiscarded
  * @property {int} id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputEncryptedChat.md}
+ * @see {@link https://core.telegram.org/constructor/inputEncryptedChat.md}
  * @typedef {InputEncryptedChat} inputEncryptedChat
  * @property {int} chat_id
  * @property {long} access_hash
@@ -2854,13 +2854,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/encryptedFileEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/encryptedFileEmpty.md}
  * @typedef {EncryptedFile} encryptedFileEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/encryptedFile.md}
+ * @see {@link https://core.telegram.org/constructor/encryptedFile.md}
  * @typedef {EncryptedFile} encryptedFile
  * @property {long} id
  * @property {long} access_hash
@@ -2871,13 +2871,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputEncryptedFileEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/inputEncryptedFileEmpty.md}
  * @typedef {InputEncryptedFile} inputEncryptedFileEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputEncryptedFileUploaded.md}
+ * @see {@link https://core.telegram.org/constructor/inputEncryptedFileUploaded.md}
  * @typedef {InputEncryptedFile} inputEncryptedFileUploaded
  * @property {long} id
  * @property {int} parts
@@ -2887,7 +2887,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputEncryptedFile.md}
+ * @see {@link https://core.telegram.org/constructor/inputEncryptedFile.md}
  * @typedef {InputEncryptedFile} inputEncryptedFile
  * @property {long} id
  * @property {long} access_hash
@@ -2895,7 +2895,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputEncryptedFileBigUploaded.md}
+ * @see {@link https://core.telegram.org/constructor/inputEncryptedFileBigUploaded.md}
  * @typedef {InputEncryptedFile} inputEncryptedFileBigUploaded
  * @property {long} id
  * @property {int} parts
@@ -2904,7 +2904,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/encryptedMessage.md}
+ * @see {@link https://core.telegram.org/constructor/encryptedMessage.md}
  * @typedef {EncryptedMessage} encryptedMessage
  * @property {long} random_id
  * @property {int} chat_id
@@ -2915,7 +2915,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/encryptedMessageService.md}
+ * @see {@link https://core.telegram.org/constructor/encryptedMessageService.md}
  * @typedef {EncryptedMessage} encryptedMessageService
  * @property {long} random_id
  * @property {int} chat_id
@@ -2925,14 +2925,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.dhConfigNotModified.md}
+ * @see {@link https://core.telegram.org/constructor/messages.dhConfigNotModified.md}
  * @typedef {messages.DhConfig} messages.dhConfigNotModified
  * @property {bytes} random
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.dhConfig.md}
+ * @see {@link https://core.telegram.org/constructor/messages.dhConfig.md}
  * @typedef {messages.DhConfig} messages.dhConfig
  * @property {int} g
  * @property {bytes} p
@@ -2942,14 +2942,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.sentEncryptedMessage.md}
+ * @see {@link https://core.telegram.org/constructor/messages.sentEncryptedMessage.md}
  * @typedef {messages.SentEncryptedMessage} messages.sentEncryptedMessage
  * @property {int} date
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.sentEncryptedFile.md}
+ * @see {@link https://core.telegram.org/constructor/messages.sentEncryptedFile.md}
  * @typedef {messages.SentEncryptedMessage} messages.sentEncryptedFile
  * @property {int} date
  * @property {EncryptedFile} file
@@ -2957,13 +2957,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputDocumentEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/inputDocumentEmpty.md}
  * @typedef {InputDocument} inputDocumentEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputDocument.md}
+ * @see {@link https://core.telegram.org/constructor/inputDocument.md}
  * @typedef {InputDocument} inputDocument
  * @property {long} id
  * @property {long} access_hash
@@ -2972,14 +2972,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/documentEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/documentEmpty.md}
  * @typedef {Document} documentEmpty
  * @property {long} id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/document.md}
+ * @see {@link https://core.telegram.org/constructor/document.md}
  * @typedef {Document} document
  * @property {long} id
  * @property {long} access_hash
@@ -2994,7 +2994,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/help.support.md}
+ * @see {@link https://core.telegram.org/constructor/help.support.md}
  * @typedef {help.Support} help.support
  * @property {string} phone_number
  * @property {User} user
@@ -3002,109 +3002,109 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/notifyPeer.md}
+ * @see {@link https://core.telegram.org/constructor/notifyPeer.md}
  * @typedef {NotifyPeer} notifyPeer
  * @property {Peer} peer
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/notifyUsers.md}
+ * @see {@link https://core.telegram.org/constructor/notifyUsers.md}
  * @typedef {NotifyPeer} notifyUsers
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/notifyChats.md}
+ * @see {@link https://core.telegram.org/constructor/notifyChats.md}
  * @typedef {NotifyPeer} notifyChats
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/sendMessageTypingAction.md}
+ * @see {@link https://core.telegram.org/constructor/sendMessageTypingAction.md}
  * @typedef {SendMessageAction} sendMessageTypingAction
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/sendMessageCancelAction.md}
+ * @see {@link https://core.telegram.org/constructor/sendMessageCancelAction.md}
  * @typedef {SendMessageAction} sendMessageCancelAction
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/sendMessageRecordVideoAction.md}
+ * @see {@link https://core.telegram.org/constructor/sendMessageRecordVideoAction.md}
  * @typedef {SendMessageAction} sendMessageRecordVideoAction
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/sendMessageUploadVideoAction.md}
+ * @see {@link https://core.telegram.org/constructor/sendMessageUploadVideoAction.md}
  * @typedef {SendMessageAction} sendMessageUploadVideoAction
  * @property {int} progress
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/sendMessageRecordAudioAction.md}
+ * @see {@link https://core.telegram.org/constructor/sendMessageRecordAudioAction.md}
  * @typedef {SendMessageAction} sendMessageRecordAudioAction
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/sendMessageUploadAudioAction.md}
+ * @see {@link https://core.telegram.org/constructor/sendMessageUploadAudioAction.md}
  * @typedef {SendMessageAction} sendMessageUploadAudioAction
  * @property {int} progress
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/sendMessageUploadPhotoAction.md}
+ * @see {@link https://core.telegram.org/constructor/sendMessageUploadPhotoAction.md}
  * @typedef {SendMessageAction} sendMessageUploadPhotoAction
  * @property {int} progress
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/sendMessageUploadDocumentAction.md}
+ * @see {@link https://core.telegram.org/constructor/sendMessageUploadDocumentAction.md}
  * @typedef {SendMessageAction} sendMessageUploadDocumentAction
  * @property {int} progress
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/sendMessageGeoLocationAction.md}
+ * @see {@link https://core.telegram.org/constructor/sendMessageGeoLocationAction.md}
  * @typedef {SendMessageAction} sendMessageGeoLocationAction
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/sendMessageChooseContactAction.md}
+ * @see {@link https://core.telegram.org/constructor/sendMessageChooseContactAction.md}
  * @typedef {SendMessageAction} sendMessageChooseContactAction
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/sendMessageGamePlayAction.md}
+ * @see {@link https://core.telegram.org/constructor/sendMessageGamePlayAction.md}
  * @typedef {SendMessageAction} sendMessageGamePlayAction
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/sendMessageRecordRoundAction.md}
+ * @see {@link https://core.telegram.org/constructor/sendMessageRecordRoundAction.md}
  * @typedef {SendMessageAction} sendMessageRecordRoundAction
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/sendMessageUploadRoundAction.md}
+ * @see {@link https://core.telegram.org/constructor/sendMessageUploadRoundAction.md}
  * @typedef {SendMessageAction} sendMessageUploadRoundAction
  * @property {int} progress
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/contacts.found.md}
+ * @see {@link https://core.telegram.org/constructor/contacts.found.md}
  * @typedef {contacts.Found} contacts.found
  * @property {Vector.<Peer>} my_results
  * @property {Vector.<Peer>} results
@@ -3114,119 +3114,119 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPrivacyKeyStatusTimestamp.md}
+ * @see {@link https://core.telegram.org/constructor/inputPrivacyKeyStatusTimestamp.md}
  * @typedef {InputPrivacyKey} inputPrivacyKeyStatusTimestamp
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPrivacyKeyChatInvite.md}
+ * @see {@link https://core.telegram.org/constructor/inputPrivacyKeyChatInvite.md}
  * @typedef {InputPrivacyKey} inputPrivacyKeyChatInvite
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPrivacyKeyPhoneCall.md}
+ * @see {@link https://core.telegram.org/constructor/inputPrivacyKeyPhoneCall.md}
  * @typedef {InputPrivacyKey} inputPrivacyKeyPhoneCall
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/privacyKeyStatusTimestamp.md}
+ * @see {@link https://core.telegram.org/constructor/privacyKeyStatusTimestamp.md}
  * @typedef {PrivacyKey} privacyKeyStatusTimestamp
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/privacyKeyChatInvite.md}
+ * @see {@link https://core.telegram.org/constructor/privacyKeyChatInvite.md}
  * @typedef {PrivacyKey} privacyKeyChatInvite
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/privacyKeyPhoneCall.md}
+ * @see {@link https://core.telegram.org/constructor/privacyKeyPhoneCall.md}
  * @typedef {PrivacyKey} privacyKeyPhoneCall
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPrivacyValueAllowContacts.md}
+ * @see {@link https://core.telegram.org/constructor/inputPrivacyValueAllowContacts.md}
  * @typedef {InputPrivacyRule} inputPrivacyValueAllowContacts
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPrivacyValueAllowAll.md}
+ * @see {@link https://core.telegram.org/constructor/inputPrivacyValueAllowAll.md}
  * @typedef {InputPrivacyRule} inputPrivacyValueAllowAll
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPrivacyValueAllowUsers.md}
+ * @see {@link https://core.telegram.org/constructor/inputPrivacyValueAllowUsers.md}
  * @typedef {InputPrivacyRule} inputPrivacyValueAllowUsers
  * @property {Vector.<InputUser>} users
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPrivacyValueDisallowContacts.md}
+ * @see {@link https://core.telegram.org/constructor/inputPrivacyValueDisallowContacts.md}
  * @typedef {InputPrivacyRule} inputPrivacyValueDisallowContacts
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPrivacyValueDisallowAll.md}
+ * @see {@link https://core.telegram.org/constructor/inputPrivacyValueDisallowAll.md}
  * @typedef {InputPrivacyRule} inputPrivacyValueDisallowAll
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPrivacyValueDisallowUsers.md}
+ * @see {@link https://core.telegram.org/constructor/inputPrivacyValueDisallowUsers.md}
  * @typedef {InputPrivacyRule} inputPrivacyValueDisallowUsers
  * @property {Vector.<InputUser>} users
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/privacyValueAllowContacts.md}
+ * @see {@link https://core.telegram.org/constructor/privacyValueAllowContacts.md}
  * @typedef {PrivacyRule} privacyValueAllowContacts
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/privacyValueAllowAll.md}
+ * @see {@link https://core.telegram.org/constructor/privacyValueAllowAll.md}
  * @typedef {PrivacyRule} privacyValueAllowAll
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/privacyValueAllowUsers.md}
+ * @see {@link https://core.telegram.org/constructor/privacyValueAllowUsers.md}
  * @typedef {PrivacyRule} privacyValueAllowUsers
  * @property {Vector.<int>} users
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/privacyValueDisallowContacts.md}
+ * @see {@link https://core.telegram.org/constructor/privacyValueDisallowContacts.md}
  * @typedef {PrivacyRule} privacyValueDisallowContacts
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/privacyValueDisallowAll.md}
+ * @see {@link https://core.telegram.org/constructor/privacyValueDisallowAll.md}
  * @typedef {PrivacyRule} privacyValueDisallowAll
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/privacyValueDisallowUsers.md}
+ * @see {@link https://core.telegram.org/constructor/privacyValueDisallowUsers.md}
  * @typedef {PrivacyRule} privacyValueDisallowUsers
  * @property {Vector.<int>} users
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/account.privacyRules.md}
+ * @see {@link https://core.telegram.org/constructor/account.privacyRules.md}
  * @typedef {account.PrivacyRules} account.privacyRules
  * @property {Vector.<PrivacyRule>} rules
  * @property {Vector.<User>} users
@@ -3234,14 +3234,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/accountDaysTTL.md}
+ * @see {@link https://core.telegram.org/constructor/accountDaysTTL.md}
  * @typedef {AccountDaysTTL} accountDaysTTL
  * @property {int} days
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/documentAttributeImageSize.md}
+ * @see {@link https://core.telegram.org/constructor/documentAttributeImageSize.md}
  * @typedef {DocumentAttribute} documentAttributeImageSize
  * @property {int} w
  * @property {int} h
@@ -3249,13 +3249,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/documentAttributeAnimated.md}
+ * @see {@link https://core.telegram.org/constructor/documentAttributeAnimated.md}
  * @typedef {DocumentAttribute} documentAttributeAnimated
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/documentAttributeSticker.md}
+ * @see {@link https://core.telegram.org/constructor/documentAttributeSticker.md}
  * @typedef {DocumentAttribute} documentAttributeSticker
  * @property {#} flags
  * @property {true} mask
@@ -3266,7 +3266,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/documentAttributeVideo.md}
+ * @see {@link https://core.telegram.org/constructor/documentAttributeVideo.md}
  * @typedef {DocumentAttribute} documentAttributeVideo
  * @property {#} flags
  * @property {true} round_message
@@ -3278,7 +3278,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/documentAttributeAudio.md}
+ * @see {@link https://core.telegram.org/constructor/documentAttributeAudio.md}
  * @typedef {DocumentAttribute} documentAttributeAudio
  * @property {#} flags
  * @property {true} voice
@@ -3290,26 +3290,26 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/documentAttributeFilename.md}
+ * @see {@link https://core.telegram.org/constructor/documentAttributeFilename.md}
  * @typedef {DocumentAttribute} documentAttributeFilename
  * @property {string} file_name
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/documentAttributeHasStickers.md}
+ * @see {@link https://core.telegram.org/constructor/documentAttributeHasStickers.md}
  * @typedef {DocumentAttribute} documentAttributeHasStickers
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.stickersNotModified.md}
+ * @see {@link https://core.telegram.org/constructor/messages.stickersNotModified.md}
  * @typedef {messages.Stickers} messages.stickersNotModified
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.stickers.md}
+ * @see {@link https://core.telegram.org/constructor/messages.stickers.md}
  * @typedef {messages.Stickers} messages.stickers
  * @property {int} hash
  * @property {Vector.<Document>} stickers
@@ -3317,7 +3317,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/stickerPack.md}
+ * @see {@link https://core.telegram.org/constructor/stickerPack.md}
  * @typedef {StickerPack} stickerPack
  * @property {string} emoticon
  * @property {Vector.<long>} documents
@@ -3325,13 +3325,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.allStickersNotModified.md}
+ * @see {@link https://core.telegram.org/constructor/messages.allStickersNotModified.md}
  * @typedef {messages.AllStickers} messages.allStickersNotModified
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.allStickers.md}
+ * @see {@link https://core.telegram.org/constructor/messages.allStickers.md}
  * @typedef {messages.AllStickers} messages.allStickers
  * @property {int} hash
  * @property {Vector.<StickerSet>} sets
@@ -3339,7 +3339,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.affectedMessages.md}
+ * @see {@link https://core.telegram.org/constructor/messages.affectedMessages.md}
  * @typedef {messages.AffectedMessages} messages.affectedMessages
  * @property {int} pts
  * @property {int} pts_count
@@ -3347,38 +3347,38 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/contactLinkUnknown.md}
+ * @see {@link https://core.telegram.org/constructor/contactLinkUnknown.md}
  * @typedef {ContactLink} contactLinkUnknown
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/contactLinkNone.md}
+ * @see {@link https://core.telegram.org/constructor/contactLinkNone.md}
  * @typedef {ContactLink} contactLinkNone
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/contactLinkHasPhone.md}
+ * @see {@link https://core.telegram.org/constructor/contactLinkHasPhone.md}
  * @typedef {ContactLink} contactLinkHasPhone
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/contactLinkContact.md}
+ * @see {@link https://core.telegram.org/constructor/contactLinkContact.md}
  * @typedef {ContactLink} contactLinkContact
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/webPageEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/webPageEmpty.md}
  * @typedef {WebPage} webPageEmpty
  * @property {long} id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/webPagePending.md}
+ * @see {@link https://core.telegram.org/constructor/webPagePending.md}
  * @typedef {WebPage} webPagePending
  * @property {long} id
  * @property {int} date
@@ -3386,7 +3386,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/webPage.md}
+ * @see {@link https://core.telegram.org/constructor/webPage.md}
  * @typedef {WebPage} webPage
  * @property {#} flags
  * @property {long} id
@@ -3410,13 +3410,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/webPageNotModified.md}
+ * @see {@link https://core.telegram.org/constructor/webPageNotModified.md}
  * @typedef {WebPage} webPageNotModified
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/authorization.md}
+ * @see {@link https://core.telegram.org/constructor/authorization.md}
  * @typedef {Authorization} authorization
  * @property {long} hash
  * @property {int} flags
@@ -3435,14 +3435,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/account.authorizations.md}
+ * @see {@link https://core.telegram.org/constructor/account.authorizations.md}
  * @typedef {account.Authorizations} account.authorizations
  * @property {Vector.<Authorization>} authorizations
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/account.password.md}
+ * @see {@link https://core.telegram.org/constructor/account.password.md}
  * @typedef {account.Password} account.password
  * @property {#} flags
  * @property {true} has_recovery
@@ -3460,7 +3460,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/account.passwordSettings.md}
+ * @see {@link https://core.telegram.org/constructor/account.passwordSettings.md}
  * @typedef {account.PasswordSettings} account.passwordSettings
  * @property {#} flags
  * @property {string} email
@@ -3469,7 +3469,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/account.passwordInputSettings.md}
+ * @see {@link https://core.telegram.org/constructor/account.passwordInputSettings.md}
  * @typedef {account.PasswordInputSettings} account.passwordInputSettings
  * @property {#} flags
  * @property {PasswordKdfAlgo} new_algo
@@ -3481,14 +3481,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/auth.passwordRecovery.md}
+ * @see {@link https://core.telegram.org/constructor/auth.passwordRecovery.md}
  * @typedef {auth.PasswordRecovery} auth.passwordRecovery
  * @property {string} email_pattern
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/receivedNotifyMessage.md}
+ * @see {@link https://core.telegram.org/constructor/receivedNotifyMessage.md}
  * @typedef {ReceivedNotifyMessage} receivedNotifyMessage
  * @property {int} id
  * @property {int} flags
@@ -3496,27 +3496,27 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/chatInviteEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/chatInviteEmpty.md}
  * @typedef {ExportedChatInvite} chatInviteEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/chatInviteExported.md}
+ * @see {@link https://core.telegram.org/constructor/chatInviteExported.md}
  * @typedef {ExportedChatInvite} chatInviteExported
  * @property {string} link
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/chatInviteAlready.md}
+ * @see {@link https://core.telegram.org/constructor/chatInviteAlready.md}
  * @typedef {ChatInvite} chatInviteAlready
  * @property {Chat} chat
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/chatInvite.md}
+ * @see {@link https://core.telegram.org/constructor/chatInvite.md}
  * @typedef {ChatInvite} chatInvite
  * @property {#} flags
  * @property {true} channel
@@ -3531,13 +3531,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputStickerSetEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/inputStickerSetEmpty.md}
  * @typedef {InputStickerSet} inputStickerSetEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputStickerSetID.md}
+ * @see {@link https://core.telegram.org/constructor/inputStickerSetID.md}
  * @typedef {InputStickerSet} inputStickerSetID
  * @property {long} id
  * @property {long} access_hash
@@ -3545,14 +3545,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputStickerSetShortName.md}
+ * @see {@link https://core.telegram.org/constructor/inputStickerSetShortName.md}
  * @typedef {InputStickerSet} inputStickerSetShortName
  * @property {string} short_name
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/stickerSet.md}
+ * @see {@link https://core.telegram.org/constructor/stickerSet.md}
  * @typedef {StickerSet} stickerSet
  * @property {#} flags
  * @property {true} archived
@@ -3569,7 +3569,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.stickerSet.md}
+ * @see {@link https://core.telegram.org/constructor/messages.stickerSet.md}
  * @typedef {messages.StickerSet} messages.stickerSet
  * @property {StickerSet} set
  * @property {Vector.<StickerPack>} packs
@@ -3578,7 +3578,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/botCommand.md}
+ * @see {@link https://core.telegram.org/constructor/botCommand.md}
  * @typedef {BotCommand} botCommand
  * @property {string} command
  * @property {string} description
@@ -3586,7 +3586,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/botInfo.md}
+ * @see {@link https://core.telegram.org/constructor/botInfo.md}
  * @typedef {BotInfo} botInfo
  * @property {int} user_id
  * @property {string} description
@@ -3595,14 +3595,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/keyboardButton.md}
+ * @see {@link https://core.telegram.org/constructor/keyboardButton.md}
  * @typedef {KeyboardButton} keyboardButton
  * @property {string} text
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/keyboardButtonUrl.md}
+ * @see {@link https://core.telegram.org/constructor/keyboardButtonUrl.md}
  * @typedef {KeyboardButton} keyboardButtonUrl
  * @property {string} text
  * @property {string} url
@@ -3610,7 +3610,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/keyboardButtonCallback.md}
+ * @see {@link https://core.telegram.org/constructor/keyboardButtonCallback.md}
  * @typedef {KeyboardButton} keyboardButtonCallback
  * @property {string} text
  * @property {bytes} data
@@ -3618,21 +3618,21 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/keyboardButtonRequestPhone.md}
+ * @see {@link https://core.telegram.org/constructor/keyboardButtonRequestPhone.md}
  * @typedef {KeyboardButton} keyboardButtonRequestPhone
  * @property {string} text
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/keyboardButtonRequestGeoLocation.md}
+ * @see {@link https://core.telegram.org/constructor/keyboardButtonRequestGeoLocation.md}
  * @typedef {KeyboardButton} keyboardButtonRequestGeoLocation
  * @property {string} text
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/keyboardButtonSwitchInline.md}
+ * @see {@link https://core.telegram.org/constructor/keyboardButtonSwitchInline.md}
  * @typedef {KeyboardButton} keyboardButtonSwitchInline
  * @property {#} flags
  * @property {true} same_peer
@@ -3642,28 +3642,28 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/keyboardButtonGame.md}
+ * @see {@link https://core.telegram.org/constructor/keyboardButtonGame.md}
  * @typedef {KeyboardButton} keyboardButtonGame
  * @property {string} text
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/keyboardButtonBuy.md}
+ * @see {@link https://core.telegram.org/constructor/keyboardButtonBuy.md}
  * @typedef {KeyboardButton} keyboardButtonBuy
  * @property {string} text
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/keyboardButtonRow.md}
+ * @see {@link https://core.telegram.org/constructor/keyboardButtonRow.md}
  * @typedef {KeyboardButtonRow} keyboardButtonRow
  * @property {Vector.<KeyboardButton>} buttons
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/replyKeyboardHide.md}
+ * @see {@link https://core.telegram.org/constructor/replyKeyboardHide.md}
  * @typedef {ReplyMarkup} replyKeyboardHide
  * @property {#} flags
  * @property {true} selective
@@ -3671,7 +3671,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/replyKeyboardForceReply.md}
+ * @see {@link https://core.telegram.org/constructor/replyKeyboardForceReply.md}
  * @typedef {ReplyMarkup} replyKeyboardForceReply
  * @property {#} flags
  * @property {true} single_use
@@ -3680,7 +3680,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/replyKeyboardMarkup.md}
+ * @see {@link https://core.telegram.org/constructor/replyKeyboardMarkup.md}
  * @typedef {ReplyMarkup} replyKeyboardMarkup
  * @property {#} flags
  * @property {true} resize
@@ -3691,14 +3691,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/replyInlineMarkup.md}
+ * @see {@link https://core.telegram.org/constructor/replyInlineMarkup.md}
  * @typedef {ReplyMarkup} replyInlineMarkup
  * @property {Vector.<KeyboardButtonRow>} rows
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageEntityUnknown.md}
+ * @see {@link https://core.telegram.org/constructor/messageEntityUnknown.md}
  * @typedef {MessageEntity} messageEntityUnknown
  * @property {int} offset
  * @property {int} length
@@ -3706,7 +3706,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageEntityMention.md}
+ * @see {@link https://core.telegram.org/constructor/messageEntityMention.md}
  * @typedef {MessageEntity} messageEntityMention
  * @property {int} offset
  * @property {int} length
@@ -3714,7 +3714,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageEntityHashtag.md}
+ * @see {@link https://core.telegram.org/constructor/messageEntityHashtag.md}
  * @typedef {MessageEntity} messageEntityHashtag
  * @property {int} offset
  * @property {int} length
@@ -3722,7 +3722,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageEntityBotCommand.md}
+ * @see {@link https://core.telegram.org/constructor/messageEntityBotCommand.md}
  * @typedef {MessageEntity} messageEntityBotCommand
  * @property {int} offset
  * @property {int} length
@@ -3730,7 +3730,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageEntityUrl.md}
+ * @see {@link https://core.telegram.org/constructor/messageEntityUrl.md}
  * @typedef {MessageEntity} messageEntityUrl
  * @property {int} offset
  * @property {int} length
@@ -3738,7 +3738,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageEntityEmail.md}
+ * @see {@link https://core.telegram.org/constructor/messageEntityEmail.md}
  * @typedef {MessageEntity} messageEntityEmail
  * @property {int} offset
  * @property {int} length
@@ -3746,7 +3746,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageEntityBold.md}
+ * @see {@link https://core.telegram.org/constructor/messageEntityBold.md}
  * @typedef {MessageEntity} messageEntityBold
  * @property {int} offset
  * @property {int} length
@@ -3754,7 +3754,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageEntityItalic.md}
+ * @see {@link https://core.telegram.org/constructor/messageEntityItalic.md}
  * @typedef {MessageEntity} messageEntityItalic
  * @property {int} offset
  * @property {int} length
@@ -3762,7 +3762,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageEntityCode.md}
+ * @see {@link https://core.telegram.org/constructor/messageEntityCode.md}
  * @typedef {MessageEntity} messageEntityCode
  * @property {int} offset
  * @property {int} length
@@ -3770,7 +3770,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageEntityPre.md}
+ * @see {@link https://core.telegram.org/constructor/messageEntityPre.md}
  * @typedef {MessageEntity} messageEntityPre
  * @property {int} offset
  * @property {int} length
@@ -3779,7 +3779,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageEntityTextUrl.md}
+ * @see {@link https://core.telegram.org/constructor/messageEntityTextUrl.md}
  * @typedef {MessageEntity} messageEntityTextUrl
  * @property {int} offset
  * @property {int} length
@@ -3788,7 +3788,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageEntityMentionName.md}
+ * @see {@link https://core.telegram.org/constructor/messageEntityMentionName.md}
  * @typedef {MessageEntity} messageEntityMentionName
  * @property {int} offset
  * @property {int} length
@@ -3797,7 +3797,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMessageEntityMentionName.md}
+ * @see {@link https://core.telegram.org/constructor/inputMessageEntityMentionName.md}
  * @typedef {MessageEntity} inputMessageEntityMentionName
  * @property {int} offset
  * @property {int} length
@@ -3806,7 +3806,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageEntityPhone.md}
+ * @see {@link https://core.telegram.org/constructor/messageEntityPhone.md}
  * @typedef {MessageEntity} messageEntityPhone
  * @property {int} offset
  * @property {int} length
@@ -3814,7 +3814,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageEntityCashtag.md}
+ * @see {@link https://core.telegram.org/constructor/messageEntityCashtag.md}
  * @typedef {MessageEntity} messageEntityCashtag
  * @property {int} offset
  * @property {int} length
@@ -3822,13 +3822,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputChannelEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/inputChannelEmpty.md}
  * @typedef {InputChannel} inputChannelEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputChannel.md}
+ * @see {@link https://core.telegram.org/constructor/inputChannel.md}
  * @typedef {InputChannel} inputChannel
  * @property {int} channel_id
  * @property {long} access_hash
@@ -3836,7 +3836,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/contacts.resolvedPeer.md}
+ * @see {@link https://core.telegram.org/constructor/contacts.resolvedPeer.md}
  * @typedef {contacts.ResolvedPeer} contacts.resolvedPeer
  * @property {Peer} peer
  * @property {Vector.<Chat>} chats
@@ -3845,7 +3845,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageRange.md}
+ * @see {@link https://core.telegram.org/constructor/messageRange.md}
  * @typedef {MessageRange} messageRange
  * @property {int} min_id
  * @property {int} max_id
@@ -3853,7 +3853,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updates.channelDifferenceEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/updates.channelDifferenceEmpty.md}
  * @typedef {updates.ChannelDifference} updates.channelDifferenceEmpty
  * @property {#} flags
  * @property {true} final
@@ -3863,7 +3863,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updates.channelDifferenceTooLong.md}
+ * @see {@link https://core.telegram.org/constructor/updates.channelDifferenceTooLong.md}
  * @typedef {updates.ChannelDifference} updates.channelDifferenceTooLong
  * @property {#} flags
  * @property {true} final
@@ -3881,7 +3881,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/updates.channelDifference.md}
+ * @see {@link https://core.telegram.org/constructor/updates.channelDifference.md}
  * @typedef {updates.ChannelDifference} updates.channelDifference
  * @property {#} flags
  * @property {true} final
@@ -3895,13 +3895,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelMessagesFilterEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/channelMessagesFilterEmpty.md}
  * @typedef {ChannelMessagesFilter} channelMessagesFilterEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelMessagesFilter.md}
+ * @see {@link https://core.telegram.org/constructor/channelMessagesFilter.md}
  * @typedef {ChannelMessagesFilter} channelMessagesFilter
  * @property {#} flags
  * @property {true} exclude_new_messages
@@ -3910,7 +3910,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelParticipant.md}
+ * @see {@link https://core.telegram.org/constructor/channelParticipant.md}
  * @typedef {ChannelParticipant} channelParticipant
  * @property {int} user_id
  * @property {int} date
@@ -3918,7 +3918,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelParticipantSelf.md}
+ * @see {@link https://core.telegram.org/constructor/channelParticipantSelf.md}
  * @typedef {ChannelParticipant} channelParticipantSelf
  * @property {int} user_id
  * @property {int} inviter_id
@@ -3927,14 +3927,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelParticipantCreator.md}
+ * @see {@link https://core.telegram.org/constructor/channelParticipantCreator.md}
  * @typedef {ChannelParticipant} channelParticipantCreator
  * @property {int} user_id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelParticipantAdmin.md}
+ * @see {@link https://core.telegram.org/constructor/channelParticipantAdmin.md}
  * @typedef {ChannelParticipant} channelParticipantAdmin
  * @property {#} flags
  * @property {true} can_edit
@@ -3947,7 +3947,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelParticipantBanned.md}
+ * @see {@link https://core.telegram.org/constructor/channelParticipantBanned.md}
  * @typedef {ChannelParticipant} channelParticipantBanned
  * @property {#} flags
  * @property {true} left
@@ -3959,46 +3959,46 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelParticipantsRecent.md}
+ * @see {@link https://core.telegram.org/constructor/channelParticipantsRecent.md}
  * @typedef {ChannelParticipantsFilter} channelParticipantsRecent
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelParticipantsAdmins.md}
+ * @see {@link https://core.telegram.org/constructor/channelParticipantsAdmins.md}
  * @typedef {ChannelParticipantsFilter} channelParticipantsAdmins
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelParticipantsKicked.md}
+ * @see {@link https://core.telegram.org/constructor/channelParticipantsKicked.md}
  * @typedef {ChannelParticipantsFilter} channelParticipantsKicked
  * @property {string} q
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelParticipantsBots.md}
+ * @see {@link https://core.telegram.org/constructor/channelParticipantsBots.md}
  * @typedef {ChannelParticipantsFilter} channelParticipantsBots
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelParticipantsBanned.md}
+ * @see {@link https://core.telegram.org/constructor/channelParticipantsBanned.md}
  * @typedef {ChannelParticipantsFilter} channelParticipantsBanned
  * @property {string} q
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelParticipantsSearch.md}
+ * @see {@link https://core.telegram.org/constructor/channelParticipantsSearch.md}
  * @typedef {ChannelParticipantsFilter} channelParticipantsSearch
  * @property {string} q
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channels.channelParticipants.md}
+ * @see {@link https://core.telegram.org/constructor/channels.channelParticipants.md}
  * @typedef {channels.ChannelParticipants} channels.channelParticipants
  * @property {int} count
  * @property {Vector.<ChannelParticipant>} participants
@@ -4007,13 +4007,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channels.channelParticipantsNotModified.md}
+ * @see {@link https://core.telegram.org/constructor/channels.channelParticipantsNotModified.md}
  * @typedef {channels.ChannelParticipants} channels.channelParticipantsNotModified
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channels.channelParticipant.md}
+ * @see {@link https://core.telegram.org/constructor/channels.channelParticipant.md}
  * @typedef {channels.ChannelParticipant} channels.channelParticipant
  * @property {ChannelParticipant} participant
  * @property {Vector.<User>} users
@@ -4021,7 +4021,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/help.termsOfService.md}
+ * @see {@link https://core.telegram.org/constructor/help.termsOfService.md}
  * @typedef {help.TermsOfService} help.termsOfService
  * @property {#} flags
  * @property {true} popup
@@ -4033,7 +4033,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/foundGif.md}
+ * @see {@link https://core.telegram.org/constructor/foundGif.md}
  * @typedef {FoundGif} foundGif
  * @property {string} url
  * @property {string} thumb_url
@@ -4045,7 +4045,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/foundGifCached.md}
+ * @see {@link https://core.telegram.org/constructor/foundGifCached.md}
  * @typedef {FoundGif} foundGifCached
  * @property {string} url
  * @property {Photo} photo
@@ -4054,7 +4054,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.foundGifs.md}
+ * @see {@link https://core.telegram.org/constructor/messages.foundGifs.md}
  * @typedef {messages.FoundGifs} messages.foundGifs
  * @property {int} next_offset
  * @property {Vector.<FoundGif>} results
@@ -4062,13 +4062,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.savedGifsNotModified.md}
+ * @see {@link https://core.telegram.org/constructor/messages.savedGifsNotModified.md}
  * @typedef {messages.SavedGifs} messages.savedGifsNotModified
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.savedGifs.md}
+ * @see {@link https://core.telegram.org/constructor/messages.savedGifs.md}
  * @typedef {messages.SavedGifs} messages.savedGifs
  * @property {int} hash
  * @property {Vector.<Document>} gifs
@@ -4076,7 +4076,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputBotInlineMessageMediaAuto.md}
+ * @see {@link https://core.telegram.org/constructor/inputBotInlineMessageMediaAuto.md}
  * @typedef {InputBotInlineMessage} inputBotInlineMessageMediaAuto
  * @property {#} flags
  * @property {string} message
@@ -4086,7 +4086,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputBotInlineMessageText.md}
+ * @see {@link https://core.telegram.org/constructor/inputBotInlineMessageText.md}
  * @typedef {InputBotInlineMessage} inputBotInlineMessageText
  * @property {#} flags
  * @property {true} no_webpage
@@ -4097,7 +4097,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputBotInlineMessageMediaGeo.md}
+ * @see {@link https://core.telegram.org/constructor/inputBotInlineMessageMediaGeo.md}
  * @typedef {InputBotInlineMessage} inputBotInlineMessageMediaGeo
  * @property {#} flags
  * @property {InputGeoPoint} geo_point
@@ -4107,7 +4107,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputBotInlineMessageMediaVenue.md}
+ * @see {@link https://core.telegram.org/constructor/inputBotInlineMessageMediaVenue.md}
  * @typedef {InputBotInlineMessage} inputBotInlineMessageMediaVenue
  * @property {#} flags
  * @property {InputGeoPoint} geo_point
@@ -4121,7 +4121,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputBotInlineMessageMediaContact.md}
+ * @see {@link https://core.telegram.org/constructor/inputBotInlineMessageMediaContact.md}
  * @typedef {InputBotInlineMessage} inputBotInlineMessageMediaContact
  * @property {#} flags
  * @property {string} phone_number
@@ -4133,7 +4133,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputBotInlineMessageGame.md}
+ * @see {@link https://core.telegram.org/constructor/inputBotInlineMessageGame.md}
  * @typedef {InputBotInlineMessage} inputBotInlineMessageGame
  * @property {#} flags
  * @property {ReplyMarkup} reply_markup
@@ -4141,7 +4141,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputBotInlineResult.md}
+ * @see {@link https://core.telegram.org/constructor/inputBotInlineResult.md}
  * @typedef {InputBotInlineResult} inputBotInlineResult
  * @property {#} flags
  * @property {string} id
@@ -4156,7 +4156,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputBotInlineResultPhoto.md}
+ * @see {@link https://core.telegram.org/constructor/inputBotInlineResultPhoto.md}
  * @typedef {InputBotInlineResult} inputBotInlineResultPhoto
  * @property {string} id
  * @property {string} type
@@ -4166,7 +4166,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputBotInlineResultDocument.md}
+ * @see {@link https://core.telegram.org/constructor/inputBotInlineResultDocument.md}
  * @typedef {InputBotInlineResult} inputBotInlineResultDocument
  * @property {#} flags
  * @property {string} id
@@ -4179,7 +4179,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputBotInlineResultGame.md}
+ * @see {@link https://core.telegram.org/constructor/inputBotInlineResultGame.md}
  * @typedef {InputBotInlineResult} inputBotInlineResultGame
  * @property {string} id
  * @property {string} short_name
@@ -4188,7 +4188,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/botInlineMessageMediaAuto.md}
+ * @see {@link https://core.telegram.org/constructor/botInlineMessageMediaAuto.md}
  * @typedef {BotInlineMessage} botInlineMessageMediaAuto
  * @property {#} flags
  * @property {string} message
@@ -4198,7 +4198,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/botInlineMessageText.md}
+ * @see {@link https://core.telegram.org/constructor/botInlineMessageText.md}
  * @typedef {BotInlineMessage} botInlineMessageText
  * @property {#} flags
  * @property {true} no_webpage
@@ -4209,7 +4209,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/botInlineMessageMediaGeo.md}
+ * @see {@link https://core.telegram.org/constructor/botInlineMessageMediaGeo.md}
  * @typedef {BotInlineMessage} botInlineMessageMediaGeo
  * @property {#} flags
  * @property {GeoPoint} geo
@@ -4219,7 +4219,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/botInlineMessageMediaVenue.md}
+ * @see {@link https://core.telegram.org/constructor/botInlineMessageMediaVenue.md}
  * @typedef {BotInlineMessage} botInlineMessageMediaVenue
  * @property {#} flags
  * @property {GeoPoint} geo
@@ -4233,7 +4233,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/botInlineMessageMediaContact.md}
+ * @see {@link https://core.telegram.org/constructor/botInlineMessageMediaContact.md}
  * @typedef {BotInlineMessage} botInlineMessageMediaContact
  * @property {#} flags
  * @property {string} phone_number
@@ -4245,7 +4245,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/botInlineResult.md}
+ * @see {@link https://core.telegram.org/constructor/botInlineResult.md}
  * @typedef {BotInlineResult} botInlineResult
  * @property {#} flags
  * @property {string} id
@@ -4260,7 +4260,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/botInlineMediaResult.md}
+ * @see {@link https://core.telegram.org/constructor/botInlineMediaResult.md}
  * @typedef {BotInlineResult} botInlineMediaResult
  * @property {#} flags
  * @property {string} id
@@ -4274,7 +4274,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.botResults.md}
+ * @see {@link https://core.telegram.org/constructor/messages.botResults.md}
  * @typedef {messages.BotResults} messages.botResults
  * @property {#} flags
  * @property {true} gallery
@@ -4288,7 +4288,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/exportedMessageLink.md}
+ * @see {@link https://core.telegram.org/constructor/exportedMessageLink.md}
  * @typedef {ExportedMessageLink} exportedMessageLink
  * @property {string} link
  * @property {string} html
@@ -4296,7 +4296,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messageFwdHeader.md}
+ * @see {@link https://core.telegram.org/constructor/messageFwdHeader.md}
  * @typedef {MessageFwdHeader} messageFwdHeader
  * @property {#} flags
  * @property {int} from_id
@@ -4310,53 +4310,53 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/auth.codeTypeSms.md}
+ * @see {@link https://core.telegram.org/constructor/auth.codeTypeSms.md}
  * @typedef {auth.CodeType} auth.codeTypeSms
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/auth.codeTypeCall.md}
+ * @see {@link https://core.telegram.org/constructor/auth.codeTypeCall.md}
  * @typedef {auth.CodeType} auth.codeTypeCall
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/auth.codeTypeFlashCall.md}
+ * @see {@link https://core.telegram.org/constructor/auth.codeTypeFlashCall.md}
  * @typedef {auth.CodeType} auth.codeTypeFlashCall
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/auth.sentCodeTypeApp.md}
+ * @see {@link https://core.telegram.org/constructor/auth.sentCodeTypeApp.md}
  * @typedef {auth.SentCodeType} auth.sentCodeTypeApp
  * @property {int} length
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/auth.sentCodeTypeSms.md}
+ * @see {@link https://core.telegram.org/constructor/auth.sentCodeTypeSms.md}
  * @typedef {auth.SentCodeType} auth.sentCodeTypeSms
  * @property {int} length
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/auth.sentCodeTypeCall.md}
+ * @see {@link https://core.telegram.org/constructor/auth.sentCodeTypeCall.md}
  * @typedef {auth.SentCodeType} auth.sentCodeTypeCall
  * @property {int} length
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/auth.sentCodeTypeFlashCall.md}
+ * @see {@link https://core.telegram.org/constructor/auth.sentCodeTypeFlashCall.md}
  * @typedef {auth.SentCodeType} auth.sentCodeTypeFlashCall
  * @property {string} pattern
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.botCallbackAnswer.md}
+ * @see {@link https://core.telegram.org/constructor/messages.botCallbackAnswer.md}
  * @typedef {messages.BotCallbackAnswer} messages.botCallbackAnswer
  * @property {#} flags
  * @property {true} alert
@@ -4369,7 +4369,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.messageEditData.md}
+ * @see {@link https://core.telegram.org/constructor/messages.messageEditData.md}
  * @typedef {messages.MessageEditData} messages.messageEditData
  * @property {#} flags
  * @property {true} caption
@@ -4377,7 +4377,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputBotInlineMessageID.md}
+ * @see {@link https://core.telegram.org/constructor/inputBotInlineMessageID.md}
  * @typedef {InputBotInlineMessageID} inputBotInlineMessageID
  * @property {int} dc_id
  * @property {long} id
@@ -4386,7 +4386,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inlineBotSwitchPM.md}
+ * @see {@link https://core.telegram.org/constructor/inlineBotSwitchPM.md}
  * @typedef {InlineBotSwitchPM} inlineBotSwitchPM
  * @property {string} text
  * @property {string} start_param
@@ -4394,7 +4394,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.peerDialogs.md}
+ * @see {@link https://core.telegram.org/constructor/messages.peerDialogs.md}
  * @typedef {messages.PeerDialogs} messages.peerDialogs
  * @property {Vector.<Dialog>} dialogs
  * @property {Vector.<Message>} messages
@@ -4405,7 +4405,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/topPeer.md}
+ * @see {@link https://core.telegram.org/constructor/topPeer.md}
  * @typedef {TopPeer} topPeer
  * @property {Peer} peer
  * @property {double} rating
@@ -4413,43 +4413,43 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/topPeerCategoryBotsPM.md}
+ * @see {@link https://core.telegram.org/constructor/topPeerCategoryBotsPM.md}
  * @typedef {TopPeerCategory} topPeerCategoryBotsPM
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/topPeerCategoryBotsInline.md}
+ * @see {@link https://core.telegram.org/constructor/topPeerCategoryBotsInline.md}
  * @typedef {TopPeerCategory} topPeerCategoryBotsInline
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/topPeerCategoryCorrespondents.md}
+ * @see {@link https://core.telegram.org/constructor/topPeerCategoryCorrespondents.md}
  * @typedef {TopPeerCategory} topPeerCategoryCorrespondents
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/topPeerCategoryGroups.md}
+ * @see {@link https://core.telegram.org/constructor/topPeerCategoryGroups.md}
  * @typedef {TopPeerCategory} topPeerCategoryGroups
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/topPeerCategoryChannels.md}
+ * @see {@link https://core.telegram.org/constructor/topPeerCategoryChannels.md}
  * @typedef {TopPeerCategory} topPeerCategoryChannels
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/topPeerCategoryPhoneCalls.md}
+ * @see {@link https://core.telegram.org/constructor/topPeerCategoryPhoneCalls.md}
  * @typedef {TopPeerCategory} topPeerCategoryPhoneCalls
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/topPeerCategoryPeers.md}
+ * @see {@link https://core.telegram.org/constructor/topPeerCategoryPeers.md}
  * @typedef {TopPeerCategoryPeers} topPeerCategoryPeers
  * @property {TopPeerCategory} category
  * @property {int} count
@@ -4458,13 +4458,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/contacts.topPeersNotModified.md}
+ * @see {@link https://core.telegram.org/constructor/contacts.topPeersNotModified.md}
  * @typedef {contacts.TopPeers} contacts.topPeersNotModified
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/contacts.topPeers.md}
+ * @see {@link https://core.telegram.org/constructor/contacts.topPeers.md}
  * @typedef {contacts.TopPeers} contacts.topPeers
  * @property {Vector.<TopPeerCategoryPeers>} categories
  * @property {Vector.<Chat>} chats
@@ -4473,13 +4473,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/contacts.topPeersDisabled.md}
+ * @see {@link https://core.telegram.org/constructor/contacts.topPeersDisabled.md}
  * @typedef {contacts.TopPeers} contacts.topPeersDisabled
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/draftMessageEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/draftMessageEmpty.md}
  * @typedef {DraftMessage} draftMessageEmpty
  * @property {#} flags
  * @property {int} date
@@ -4487,7 +4487,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/draftMessage.md}
+ * @see {@link https://core.telegram.org/constructor/draftMessage.md}
  * @typedef {DraftMessage} draftMessage
  * @property {#} flags
  * @property {true} no_webpage
@@ -4499,13 +4499,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.featuredStickersNotModified.md}
+ * @see {@link https://core.telegram.org/constructor/messages.featuredStickersNotModified.md}
  * @typedef {messages.FeaturedStickers} messages.featuredStickersNotModified
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.featuredStickers.md}
+ * @see {@link https://core.telegram.org/constructor/messages.featuredStickers.md}
  * @typedef {messages.FeaturedStickers} messages.featuredStickers
  * @property {int} hash
  * @property {Vector.<StickerSetCovered>} sets
@@ -4514,13 +4514,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.recentStickersNotModified.md}
+ * @see {@link https://core.telegram.org/constructor/messages.recentStickersNotModified.md}
  * @typedef {messages.RecentStickers} messages.recentStickersNotModified
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.recentStickers.md}
+ * @see {@link https://core.telegram.org/constructor/messages.recentStickers.md}
  * @typedef {messages.RecentStickers} messages.recentStickers
  * @property {int} hash
  * @property {Vector.<StickerPack>} packs
@@ -4530,7 +4530,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.archivedStickers.md}
+ * @see {@link https://core.telegram.org/constructor/messages.archivedStickers.md}
  * @typedef {messages.ArchivedStickers} messages.archivedStickers
  * @property {int} count
  * @property {Vector.<StickerSetCovered>} sets
@@ -4538,20 +4538,20 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.stickerSetInstallResultSuccess.md}
+ * @see {@link https://core.telegram.org/constructor/messages.stickerSetInstallResultSuccess.md}
  * @typedef {messages.StickerSetInstallResult} messages.stickerSetInstallResultSuccess
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.stickerSetInstallResultArchive.md}
+ * @see {@link https://core.telegram.org/constructor/messages.stickerSetInstallResultArchive.md}
  * @typedef {messages.StickerSetInstallResult} messages.stickerSetInstallResultArchive
  * @property {Vector.<StickerSetCovered>} sets
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/stickerSetCovered.md}
+ * @see {@link https://core.telegram.org/constructor/stickerSetCovered.md}
  * @typedef {StickerSetCovered} stickerSetCovered
  * @property {StickerSet} set
  * @property {Document} cover
@@ -4559,7 +4559,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/stickerSetMultiCovered.md}
+ * @see {@link https://core.telegram.org/constructor/stickerSetMultiCovered.md}
  * @typedef {StickerSetCovered} stickerSetMultiCovered
  * @property {StickerSet} set
  * @property {Vector.<Document>} covers
@@ -4567,7 +4567,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/maskCoords.md}
+ * @see {@link https://core.telegram.org/constructor/maskCoords.md}
  * @typedef {MaskCoords} maskCoords
  * @property {int} n
  * @property {double} x
@@ -4577,21 +4577,21 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputStickeredMediaPhoto.md}
+ * @see {@link https://core.telegram.org/constructor/inputStickeredMediaPhoto.md}
  * @typedef {InputStickeredMedia} inputStickeredMediaPhoto
  * @property {InputPhoto} id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputStickeredMediaDocument.md}
+ * @see {@link https://core.telegram.org/constructor/inputStickeredMediaDocument.md}
  * @typedef {InputStickeredMedia} inputStickeredMediaDocument
  * @property {InputDocument} id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/game.md}
+ * @see {@link https://core.telegram.org/constructor/game.md}
  * @typedef {Game} game
  * @property {#} flags
  * @property {long} id
@@ -4605,7 +4605,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputGameID.md}
+ * @see {@link https://core.telegram.org/constructor/inputGameID.md}
  * @typedef {InputGame} inputGameID
  * @property {long} id
  * @property {long} access_hash
@@ -4613,7 +4613,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputGameShortName.md}
+ * @see {@link https://core.telegram.org/constructor/inputGameShortName.md}
  * @typedef {InputGame} inputGameShortName
  * @property {InputUser} bot_id
  * @property {string} short_name
@@ -4621,7 +4621,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/highScore.md}
+ * @see {@link https://core.telegram.org/constructor/highScore.md}
  * @typedef {HighScore} highScore
  * @property {int} pos
  * @property {int} user_id
@@ -4630,7 +4630,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.highScores.md}
+ * @see {@link https://core.telegram.org/constructor/messages.highScores.md}
  * @typedef {messages.HighScores} messages.highScores
  * @property {Vector.<HighScore>} scores
  * @property {Vector.<User>} users
@@ -4638,55 +4638,55 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/textEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/textEmpty.md}
  * @typedef {RichText} textEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/textPlain.md}
+ * @see {@link https://core.telegram.org/constructor/textPlain.md}
  * @typedef {RichText} textPlain
  * @property {string} text
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/textBold.md}
+ * @see {@link https://core.telegram.org/constructor/textBold.md}
  * @typedef {RichText} textBold
  * @property {RichText} text
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/textItalic.md}
+ * @see {@link https://core.telegram.org/constructor/textItalic.md}
  * @typedef {RichText} textItalic
  * @property {RichText} text
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/textUnderline.md}
+ * @see {@link https://core.telegram.org/constructor/textUnderline.md}
  * @typedef {RichText} textUnderline
  * @property {RichText} text
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/textStrike.md}
+ * @see {@link https://core.telegram.org/constructor/textStrike.md}
  * @typedef {RichText} textStrike
  * @property {RichText} text
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/textFixed.md}
+ * @see {@link https://core.telegram.org/constructor/textFixed.md}
  * @typedef {RichText} textFixed
  * @property {RichText} text
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/textUrl.md}
+ * @see {@link https://core.telegram.org/constructor/textUrl.md}
  * @typedef {RichText} textUrl
  * @property {RichText} text
  * @property {string} url
@@ -4695,7 +4695,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/textEmail.md}
+ * @see {@link https://core.telegram.org/constructor/textEmail.md}
  * @typedef {RichText} textEmail
  * @property {RichText} text
  * @property {string} email
@@ -4703,34 +4703,34 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/textConcat.md}
+ * @see {@link https://core.telegram.org/constructor/textConcat.md}
  * @typedef {RichText} textConcat
  * @property {Vector.<RichText>} texts
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockUnsupported.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockUnsupported.md}
  * @typedef {PageBlock} pageBlockUnsupported
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockTitle.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockTitle.md}
  * @typedef {PageBlock} pageBlockTitle
  * @property {RichText} text
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockSubtitle.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockSubtitle.md}
  * @typedef {PageBlock} pageBlockSubtitle
  * @property {RichText} text
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockAuthorDate.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockAuthorDate.md}
  * @typedef {PageBlock} pageBlockAuthorDate
  * @property {RichText} author
  * @property {int} published_date
@@ -4738,28 +4738,28 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockHeader.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockHeader.md}
  * @typedef {PageBlock} pageBlockHeader
  * @property {RichText} text
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockSubheader.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockSubheader.md}
  * @typedef {PageBlock} pageBlockSubheader
  * @property {RichText} text
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockParagraph.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockParagraph.md}
  * @typedef {PageBlock} pageBlockParagraph
  * @property {RichText} text
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockPreformatted.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockPreformatted.md}
  * @typedef {PageBlock} pageBlockPreformatted
  * @property {RichText} text
  * @property {string} language
@@ -4767,27 +4767,27 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockFooter.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockFooter.md}
  * @typedef {PageBlock} pageBlockFooter
  * @property {RichText} text
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockDivider.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockDivider.md}
  * @typedef {PageBlock} pageBlockDivider
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockAnchor.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockAnchor.md}
  * @typedef {PageBlock} pageBlockAnchor
  * @property {string} name
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockList.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockList.md}
  * @typedef {PageBlock} pageBlockList
  * @property {Bool} ordered
  * @property {Vector.<RichText>} items
@@ -4795,7 +4795,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockBlockquote.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockBlockquote.md}
  * @typedef {PageBlock} pageBlockBlockquote
  * @property {RichText} text
  * @property {RichText} caption
@@ -4803,7 +4803,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockPullquote.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockPullquote.md}
  * @typedef {PageBlock} pageBlockPullquote
  * @property {RichText} text
  * @property {RichText} caption
@@ -4811,7 +4811,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockPhoto.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockPhoto.md}
  * @typedef {PageBlock} pageBlockPhoto
  * @property {long} photo_id
  * @property {RichText} caption
@@ -4819,7 +4819,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockVideo.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockVideo.md}
  * @typedef {PageBlock} pageBlockVideo
  * @property {#} flags
  * @property {true} autoplay
@@ -4830,14 +4830,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockCover.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockCover.md}
  * @typedef {PageBlock} pageBlockCover
  * @property {PageBlock} cover
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockEmbed.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockEmbed.md}
  * @typedef {PageBlock} pageBlockEmbed
  * @property {#} flags
  * @property {true} full_width
@@ -4852,7 +4852,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockEmbedPost.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockEmbedPost.md}
  * @typedef {PageBlock} pageBlockEmbedPost
  * @property {string} url
  * @property {long} webpage_id
@@ -4865,7 +4865,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockCollage.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockCollage.md}
  * @typedef {PageBlock} pageBlockCollage
  * @property {Vector.<PageBlock>} items
  * @property {RichText} caption
@@ -4873,7 +4873,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockSlideshow.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockSlideshow.md}
  * @typedef {PageBlock} pageBlockSlideshow
  * @property {Vector.<PageBlock>} items
  * @property {RichText} caption
@@ -4881,14 +4881,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockChannel.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockChannel.md}
  * @typedef {PageBlock} pageBlockChannel
  * @property {Chat} channel
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageBlockAudio.md}
+ * @see {@link https://core.telegram.org/constructor/pageBlockAudio.md}
  * @typedef {PageBlock} pageBlockAudio
  * @property {long} audio_id
  * @property {RichText} caption
@@ -4896,7 +4896,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pagePart.md}
+ * @see {@link https://core.telegram.org/constructor/pagePart.md}
  * @typedef {Page} pagePart
  * @property {Vector.<PageBlock>} blocks
  * @property {Vector.<Photo>} photos
@@ -4905,7 +4905,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/pageFull.md}
+ * @see {@link https://core.telegram.org/constructor/pageFull.md}
  * @typedef {Page} pageFull
  * @property {Vector.<PageBlock>} blocks
  * @property {Vector.<Photo>} photos
@@ -4914,38 +4914,38 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/phoneCallDiscardReasonMissed.md}
+ * @see {@link https://core.telegram.org/constructor/phoneCallDiscardReasonMissed.md}
  * @typedef {PhoneCallDiscardReason} phoneCallDiscardReasonMissed
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/phoneCallDiscardReasonDisconnect.md}
+ * @see {@link https://core.telegram.org/constructor/phoneCallDiscardReasonDisconnect.md}
  * @typedef {PhoneCallDiscardReason} phoneCallDiscardReasonDisconnect
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/phoneCallDiscardReasonHangup.md}
+ * @see {@link https://core.telegram.org/constructor/phoneCallDiscardReasonHangup.md}
  * @typedef {PhoneCallDiscardReason} phoneCallDiscardReasonHangup
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/phoneCallDiscardReasonBusy.md}
+ * @see {@link https://core.telegram.org/constructor/phoneCallDiscardReasonBusy.md}
  * @typedef {PhoneCallDiscardReason} phoneCallDiscardReasonBusy
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/dataJSON.md}
+ * @see {@link https://core.telegram.org/constructor/dataJSON.md}
  * @typedef {DataJSON} dataJSON
  * @property {string} data
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/labeledPrice.md}
+ * @see {@link https://core.telegram.org/constructor/labeledPrice.md}
  * @typedef {LabeledPrice} labeledPrice
  * @property {string} label
  * @property {long} amount
@@ -4953,7 +4953,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/invoice.md}
+ * @see {@link https://core.telegram.org/constructor/invoice.md}
  * @typedef {Invoice} invoice
  * @property {#} flags
  * @property {true} test
@@ -4970,7 +4970,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/paymentCharge.md}
+ * @see {@link https://core.telegram.org/constructor/paymentCharge.md}
  * @typedef {PaymentCharge} paymentCharge
  * @property {string} id
  * @property {string} provider_charge_id
@@ -4978,7 +4978,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/postAddress.md}
+ * @see {@link https://core.telegram.org/constructor/postAddress.md}
  * @typedef {PostAddress} postAddress
  * @property {string} street_line1
  * @property {string} street_line2
@@ -4990,7 +4990,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/paymentRequestedInfo.md}
+ * @see {@link https://core.telegram.org/constructor/paymentRequestedInfo.md}
  * @typedef {PaymentRequestedInfo} paymentRequestedInfo
  * @property {#} flags
  * @property {string} name
@@ -5001,7 +5001,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/paymentSavedCredentialsCard.md}
+ * @see {@link https://core.telegram.org/constructor/paymentSavedCredentialsCard.md}
  * @typedef {PaymentSavedCredentials} paymentSavedCredentialsCard
  * @property {string} id
  * @property {string} title
@@ -5009,7 +5009,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/webDocument.md}
+ * @see {@link https://core.telegram.org/constructor/webDocument.md}
  * @typedef {WebDocument} webDocument
  * @property {string} url
  * @property {long} access_hash
@@ -5020,7 +5020,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/webDocumentNoProxy.md}
+ * @see {@link https://core.telegram.org/constructor/webDocumentNoProxy.md}
  * @typedef {WebDocument} webDocumentNoProxy
  * @property {string} url
  * @property {int} size
@@ -5030,7 +5030,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputWebDocument.md}
+ * @see {@link https://core.telegram.org/constructor/inputWebDocument.md}
  * @typedef {InputWebDocument} inputWebDocument
  * @property {string} url
  * @property {int} size
@@ -5040,7 +5040,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputWebFileLocation.md}
+ * @see {@link https://core.telegram.org/constructor/inputWebFileLocation.md}
  * @typedef {InputWebFileLocation} inputWebFileLocation
  * @property {string} url
  * @property {long} access_hash
@@ -5048,7 +5048,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputWebFileGeoPointLocation.md}
+ * @see {@link https://core.telegram.org/constructor/inputWebFileGeoPointLocation.md}
  * @typedef {InputWebFileLocation} inputWebFileGeoPointLocation
  * @property {InputGeoPoint} geo_point
  * @property {long} access_hash
@@ -5060,7 +5060,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/upload.webFile.md}
+ * @see {@link https://core.telegram.org/constructor/upload.webFile.md}
  * @typedef {upload.WebFile} upload.webFile
  * @property {int} size
  * @property {string} mime_type
@@ -5071,7 +5071,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/payments.paymentForm.md}
+ * @see {@link https://core.telegram.org/constructor/payments.paymentForm.md}
  * @typedef {payments.PaymentForm} payments.paymentForm
  * @property {#} flags
  * @property {true} can_save_credentials
@@ -5089,7 +5089,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/payments.validatedRequestedInfo.md}
+ * @see {@link https://core.telegram.org/constructor/payments.validatedRequestedInfo.md}
  * @typedef {payments.ValidatedRequestedInfo} payments.validatedRequestedInfo
  * @property {#} flags
  * @property {string} id
@@ -5098,21 +5098,21 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/payments.paymentResult.md}
+ * @see {@link https://core.telegram.org/constructor/payments.paymentResult.md}
  * @typedef {payments.PaymentResult} payments.paymentResult
  * @property {Updates} updates
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/payments.paymentVerficationNeeded.md}
+ * @see {@link https://core.telegram.org/constructor/payments.paymentVerficationNeeded.md}
  * @typedef {payments.PaymentResult} payments.paymentVerficationNeeded
  * @property {string} url
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/payments.paymentReceipt.md}
+ * @see {@link https://core.telegram.org/constructor/payments.paymentReceipt.md}
  * @typedef {payments.PaymentReceipt} payments.paymentReceipt
  * @property {#} flags
  * @property {int} date
@@ -5129,7 +5129,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/payments.savedInfo.md}
+ * @see {@link https://core.telegram.org/constructor/payments.savedInfo.md}
  * @typedef {payments.SavedInfo} payments.savedInfo
  * @property {#} flags
  * @property {true} has_saved_credentials
@@ -5138,7 +5138,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPaymentCredentialsSaved.md}
+ * @see {@link https://core.telegram.org/constructor/inputPaymentCredentialsSaved.md}
  * @typedef {InputPaymentCredentials} inputPaymentCredentialsSaved
  * @property {string} id
  * @property {bytes} tmp_password
@@ -5146,7 +5146,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPaymentCredentials.md}
+ * @see {@link https://core.telegram.org/constructor/inputPaymentCredentials.md}
  * @typedef {InputPaymentCredentials} inputPaymentCredentials
  * @property {#} flags
  * @property {true} save
@@ -5155,14 +5155,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPaymentCredentialsApplePay.md}
+ * @see {@link https://core.telegram.org/constructor/inputPaymentCredentialsApplePay.md}
  * @typedef {InputPaymentCredentials} inputPaymentCredentialsApplePay
  * @property {DataJSON} payment_data
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPaymentCredentialsAndroidPay.md}
+ * @see {@link https://core.telegram.org/constructor/inputPaymentCredentialsAndroidPay.md}
  * @typedef {InputPaymentCredentials} inputPaymentCredentialsAndroidPay
  * @property {DataJSON} payment_token
  * @property {string} google_transaction_id
@@ -5170,7 +5170,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/account.tmpPassword.md}
+ * @see {@link https://core.telegram.org/constructor/account.tmpPassword.md}
  * @typedef {account.TmpPassword} account.tmpPassword
  * @property {bytes} tmp_password
  * @property {int} valid_until
@@ -5178,7 +5178,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/shippingOption.md}
+ * @see {@link https://core.telegram.org/constructor/shippingOption.md}
  * @typedef {ShippingOption} shippingOption
  * @property {string} id
  * @property {string} title
@@ -5187,7 +5187,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputStickerSetItem.md}
+ * @see {@link https://core.telegram.org/constructor/inputStickerSetItem.md}
  * @typedef {InputStickerSetItem} inputStickerSetItem
  * @property {#} flags
  * @property {InputDocument} document
@@ -5197,7 +5197,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputPhoneCall.md}
+ * @see {@link https://core.telegram.org/constructor/inputPhoneCall.md}
  * @typedef {InputPhoneCall} inputPhoneCall
  * @property {long} id
  * @property {long} access_hash
@@ -5205,14 +5205,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/phoneCallEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/phoneCallEmpty.md}
  * @typedef {PhoneCall} phoneCallEmpty
  * @property {long} id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/phoneCallWaiting.md}
+ * @see {@link https://core.telegram.org/constructor/phoneCallWaiting.md}
  * @typedef {PhoneCall} phoneCallWaiting
  * @property {#} flags
  * @property {long} id
@@ -5226,7 +5226,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/phoneCallRequested.md}
+ * @see {@link https://core.telegram.org/constructor/phoneCallRequested.md}
  * @typedef {PhoneCall} phoneCallRequested
  * @property {long} id
  * @property {long} access_hash
@@ -5239,7 +5239,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/phoneCallAccepted.md}
+ * @see {@link https://core.telegram.org/constructor/phoneCallAccepted.md}
  * @typedef {PhoneCall} phoneCallAccepted
  * @property {long} id
  * @property {long} access_hash
@@ -5252,7 +5252,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/phoneCall.md}
+ * @see {@link https://core.telegram.org/constructor/phoneCall.md}
  * @typedef {PhoneCall} phoneCall
  * @property {long} id
  * @property {long} access_hash
@@ -5269,7 +5269,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/phoneCallDiscarded.md}
+ * @see {@link https://core.telegram.org/constructor/phoneCallDiscarded.md}
  * @typedef {PhoneCall} phoneCallDiscarded
  * @property {#} flags
  * @property {true} need_rating
@@ -5281,7 +5281,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/phoneConnection.md}
+ * @see {@link https://core.telegram.org/constructor/phoneConnection.md}
  * @typedef {PhoneConnection} phoneConnection
  * @property {long} id
  * @property {string} ip
@@ -5292,7 +5292,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/phoneCallProtocol.md}
+ * @see {@link https://core.telegram.org/constructor/phoneCallProtocol.md}
  * @typedef {PhoneCallProtocol} phoneCallProtocol
  * @property {#} flags
  * @property {true} udp_p2p
@@ -5303,7 +5303,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/phone.phoneCall.md}
+ * @see {@link https://core.telegram.org/constructor/phone.phoneCall.md}
  * @typedef {phone.PhoneCall} phone.phoneCall
  * @property {PhoneCall} phone_call
  * @property {Vector.<User>} users
@@ -5311,21 +5311,21 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/upload.cdnFileReuploadNeeded.md}
+ * @see {@link https://core.telegram.org/constructor/upload.cdnFileReuploadNeeded.md}
  * @typedef {upload.CdnFile} upload.cdnFileReuploadNeeded
  * @property {bytes} request_token
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/upload.cdnFile.md}
+ * @see {@link https://core.telegram.org/constructor/upload.cdnFile.md}
  * @typedef {upload.CdnFile} upload.cdnFile
  * @property {bytes} bytes
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/cdnPublicKey.md}
+ * @see {@link https://core.telegram.org/constructor/cdnPublicKey.md}
  * @typedef {CdnPublicKey} cdnPublicKey
  * @property {int} dc_id
  * @property {string} public_key
@@ -5333,14 +5333,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/cdnConfig.md}
+ * @see {@link https://core.telegram.org/constructor/cdnConfig.md}
  * @typedef {CdnConfig} cdnConfig
  * @property {Vector.<CdnPublicKey>} public_keys
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/langPackString.md}
+ * @see {@link https://core.telegram.org/constructor/langPackString.md}
  * @typedef {LangPackString} langPackString
  * @property {string} key
  * @property {string} value
@@ -5348,7 +5348,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/langPackStringPluralized.md}
+ * @see {@link https://core.telegram.org/constructor/langPackStringPluralized.md}
  * @typedef {LangPackString} langPackStringPluralized
  * @property {#} flags
  * @property {string} key
@@ -5362,14 +5362,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/langPackStringDeleted.md}
+ * @see {@link https://core.telegram.org/constructor/langPackStringDeleted.md}
  * @typedef {LangPackString} langPackStringDeleted
  * @property {string} key
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/langPackDifference.md}
+ * @see {@link https://core.telegram.org/constructor/langPackDifference.md}
  * @typedef {LangPackDifference} langPackDifference
  * @property {string} lang_code
  * @property {int} from_version
@@ -5379,7 +5379,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/langPackLanguage.md}
+ * @see {@link https://core.telegram.org/constructor/langPackLanguage.md}
  * @typedef {LangPackLanguage} langPackLanguage
  * @property {string} name
  * @property {string} native_name
@@ -5388,7 +5388,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelAdminRights.md}
+ * @see {@link https://core.telegram.org/constructor/channelAdminRights.md}
  * @typedef {ChannelAdminRights} channelAdminRights
  * @property {#} flags
  * @property {true} change_info
@@ -5405,7 +5405,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelBannedRights.md}
+ * @see {@link https://core.telegram.org/constructor/channelBannedRights.md}
  * @typedef {ChannelBannedRights} channelBannedRights
  * @property {#} flags
  * @property {true} view_messages
@@ -5421,7 +5421,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelAdminLogEventActionChangeTitle.md}
+ * @see {@link https://core.telegram.org/constructor/channelAdminLogEventActionChangeTitle.md}
  * @typedef {ChannelAdminLogEventAction} channelAdminLogEventActionChangeTitle
  * @property {string} prev_value
  * @property {string} new_value
@@ -5429,7 +5429,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelAdminLogEventActionChangeAbout.md}
+ * @see {@link https://core.telegram.org/constructor/channelAdminLogEventActionChangeAbout.md}
  * @typedef {ChannelAdminLogEventAction} channelAdminLogEventActionChangeAbout
  * @property {string} prev_value
  * @property {string} new_value
@@ -5437,7 +5437,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelAdminLogEventActionChangeUsername.md}
+ * @see {@link https://core.telegram.org/constructor/channelAdminLogEventActionChangeUsername.md}
  * @typedef {ChannelAdminLogEventAction} channelAdminLogEventActionChangeUsername
  * @property {string} prev_value
  * @property {string} new_value
@@ -5445,7 +5445,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelAdminLogEventActionChangePhoto.md}
+ * @see {@link https://core.telegram.org/constructor/channelAdminLogEventActionChangePhoto.md}
  * @typedef {ChannelAdminLogEventAction} channelAdminLogEventActionChangePhoto
  * @property {ChatPhoto} prev_photo
  * @property {ChatPhoto} new_photo
@@ -5453,28 +5453,28 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelAdminLogEventActionToggleInvites.md}
+ * @see {@link https://core.telegram.org/constructor/channelAdminLogEventActionToggleInvites.md}
  * @typedef {ChannelAdminLogEventAction} channelAdminLogEventActionToggleInvites
  * @property {Bool} new_value
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelAdminLogEventActionToggleSignatures.md}
+ * @see {@link https://core.telegram.org/constructor/channelAdminLogEventActionToggleSignatures.md}
  * @typedef {ChannelAdminLogEventAction} channelAdminLogEventActionToggleSignatures
  * @property {Bool} new_value
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelAdminLogEventActionUpdatePinned.md}
+ * @see {@link https://core.telegram.org/constructor/channelAdminLogEventActionUpdatePinned.md}
  * @typedef {ChannelAdminLogEventAction} channelAdminLogEventActionUpdatePinned
  * @property {Message} message
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelAdminLogEventActionEditMessage.md}
+ * @see {@link https://core.telegram.org/constructor/channelAdminLogEventActionEditMessage.md}
  * @typedef {ChannelAdminLogEventAction} channelAdminLogEventActionEditMessage
  * @property {Message} prev_message
  * @property {Message} new_message
@@ -5482,33 +5482,33 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelAdminLogEventActionDeleteMessage.md}
+ * @see {@link https://core.telegram.org/constructor/channelAdminLogEventActionDeleteMessage.md}
  * @typedef {ChannelAdminLogEventAction} channelAdminLogEventActionDeleteMessage
  * @property {Message} message
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelAdminLogEventActionParticipantJoin.md}
+ * @see {@link https://core.telegram.org/constructor/channelAdminLogEventActionParticipantJoin.md}
  * @typedef {ChannelAdminLogEventAction} channelAdminLogEventActionParticipantJoin
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelAdminLogEventActionParticipantLeave.md}
+ * @see {@link https://core.telegram.org/constructor/channelAdminLogEventActionParticipantLeave.md}
  * @typedef {ChannelAdminLogEventAction} channelAdminLogEventActionParticipantLeave
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelAdminLogEventActionParticipantInvite.md}
+ * @see {@link https://core.telegram.org/constructor/channelAdminLogEventActionParticipantInvite.md}
  * @typedef {ChannelAdminLogEventAction} channelAdminLogEventActionParticipantInvite
  * @property {ChannelParticipant} participant
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelAdminLogEventActionParticipantToggleBan.md}
+ * @see {@link https://core.telegram.org/constructor/channelAdminLogEventActionParticipantToggleBan.md}
  * @typedef {ChannelAdminLogEventAction} channelAdminLogEventActionParticipantToggleBan
  * @property {ChannelParticipant} prev_participant
  * @property {ChannelParticipant} new_participant
@@ -5516,7 +5516,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelAdminLogEventActionParticipantToggleAdmin.md}
+ * @see {@link https://core.telegram.org/constructor/channelAdminLogEventActionParticipantToggleAdmin.md}
  * @typedef {ChannelAdminLogEventAction} channelAdminLogEventActionParticipantToggleAdmin
  * @property {ChannelParticipant} prev_participant
  * @property {ChannelParticipant} new_participant
@@ -5524,7 +5524,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelAdminLogEventActionChangeStickerSet.md}
+ * @see {@link https://core.telegram.org/constructor/channelAdminLogEventActionChangeStickerSet.md}
  * @typedef {ChannelAdminLogEventAction} channelAdminLogEventActionChangeStickerSet
  * @property {InputStickerSet} prev_stickerset
  * @property {InputStickerSet} new_stickerset
@@ -5532,14 +5532,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelAdminLogEventActionTogglePreHistoryHidden.md}
+ * @see {@link https://core.telegram.org/constructor/channelAdminLogEventActionTogglePreHistoryHidden.md}
  * @typedef {ChannelAdminLogEventAction} channelAdminLogEventActionTogglePreHistoryHidden
  * @property {Bool} new_value
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelAdminLogEvent.md}
+ * @see {@link https://core.telegram.org/constructor/channelAdminLogEvent.md}
  * @typedef {ChannelAdminLogEvent} channelAdminLogEvent
  * @property {long} id
  * @property {int} date
@@ -5549,7 +5549,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channels.adminLogResults.md}
+ * @see {@link https://core.telegram.org/constructor/channels.adminLogResults.md}
  * @typedef {channels.AdminLogResults} channels.adminLogResults
  * @property {Vector.<ChannelAdminLogEvent>} events
  * @property {Vector.<Chat>} chats
@@ -5558,7 +5558,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/channelAdminLogEventsFilter.md}
+ * @see {@link https://core.telegram.org/constructor/channelAdminLogEventsFilter.md}
  * @typedef {ChannelAdminLogEventsFilter} channelAdminLogEventsFilter
  * @property {#} flags
  * @property {true} join
@@ -5579,7 +5579,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/popularContact.md}
+ * @see {@link https://core.telegram.org/constructor/popularContact.md}
  * @typedef {PopularContact} popularContact
  * @property {long} client_id
  * @property {int} importers
@@ -5587,13 +5587,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.favedStickersNotModified.md}
+ * @see {@link https://core.telegram.org/constructor/messages.favedStickersNotModified.md}
  * @typedef {messages.FavedStickers} messages.favedStickersNotModified
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.favedStickers.md}
+ * @see {@link https://core.telegram.org/constructor/messages.favedStickers.md}
  * @typedef {messages.FavedStickers} messages.favedStickers
  * @property {int} hash
  * @property {Vector.<StickerPack>} packs
@@ -5602,14 +5602,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/recentMeUrlUnknown.md}
+ * @see {@link https://core.telegram.org/constructor/recentMeUrlUnknown.md}
  * @typedef {RecentMeUrl} recentMeUrlUnknown
  * @property {string} url
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/recentMeUrlUser.md}
+ * @see {@link https://core.telegram.org/constructor/recentMeUrlUser.md}
  * @typedef {RecentMeUrl} recentMeUrlUser
  * @property {string} url
  * @property {int} user_id
@@ -5617,7 +5617,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/recentMeUrlChat.md}
+ * @see {@link https://core.telegram.org/constructor/recentMeUrlChat.md}
  * @typedef {RecentMeUrl} recentMeUrlChat
  * @property {string} url
  * @property {int} chat_id
@@ -5625,7 +5625,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/recentMeUrlChatInvite.md}
+ * @see {@link https://core.telegram.org/constructor/recentMeUrlChatInvite.md}
  * @typedef {RecentMeUrl} recentMeUrlChatInvite
  * @property {string} url
  * @property {ChatInvite} chat_invite
@@ -5633,7 +5633,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/recentMeUrlStickerSet.md}
+ * @see {@link https://core.telegram.org/constructor/recentMeUrlStickerSet.md}
  * @typedef {RecentMeUrl} recentMeUrlStickerSet
  * @property {string} url
  * @property {StickerSetCovered} set
@@ -5641,7 +5641,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/help.recentMeUrls.md}
+ * @see {@link https://core.telegram.org/constructor/help.recentMeUrls.md}
  * @typedef {help.RecentMeUrls} help.recentMeUrls
  * @property {Vector.<RecentMeUrl>} urls
  * @property {Vector.<Chat>} chats
@@ -5650,7 +5650,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputSingleMedia.md}
+ * @see {@link https://core.telegram.org/constructor/inputSingleMedia.md}
  * @typedef {InputSingleMedia} inputSingleMedia
  * @property {#} flags
  * @property {InputMedia} media
@@ -5661,7 +5661,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/webAuthorization.md}
+ * @see {@link https://core.telegram.org/constructor/webAuthorization.md}
  * @typedef {WebAuthorization} webAuthorization
  * @property {long} hash
  * @property {int} bot_id
@@ -5676,7 +5676,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/account.webAuthorizations.md}
+ * @see {@link https://core.telegram.org/constructor/account.webAuthorizations.md}
  * @typedef {account.WebAuthorizations} account.webAuthorizations
  * @property {Vector.<WebAuthorization>} authorizations
  * @property {Vector.<User>} users
@@ -5684,47 +5684,47 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMessageID.md}
+ * @see {@link https://core.telegram.org/constructor/inputMessageID.md}
  * @typedef {InputMessage} inputMessageID
  * @property {int} id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMessageReplyTo.md}
+ * @see {@link https://core.telegram.org/constructor/inputMessageReplyTo.md}
  * @typedef {InputMessage} inputMessageReplyTo
  * @property {int} id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputMessagePinned.md}
+ * @see {@link https://core.telegram.org/constructor/inputMessagePinned.md}
  * @typedef {InputMessage} inputMessagePinned
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputDialogPeer.md}
+ * @see {@link https://core.telegram.org/constructor/inputDialogPeer.md}
  * @typedef {InputDialogPeer} inputDialogPeer
  * @property {InputPeer} peer
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/dialogPeer.md}
+ * @see {@link https://core.telegram.org/constructor/dialogPeer.md}
  * @typedef {DialogPeer} dialogPeer
  * @property {Peer} peer
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.foundStickerSetsNotModified.md}
+ * @see {@link https://core.telegram.org/constructor/messages.foundStickerSetsNotModified.md}
  * @typedef {messages.FoundStickerSets} messages.foundStickerSetsNotModified
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/messages.foundStickerSets.md}
+ * @see {@link https://core.telegram.org/constructor/messages.foundStickerSets.md}
  * @typedef {messages.FoundStickerSets} messages.foundStickerSets
  * @property {int} hash
  * @property {Vector.<StickerSetCovered>} sets
@@ -5732,7 +5732,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/fileHash.md}
+ * @see {@link https://core.telegram.org/constructor/fileHash.md}
  * @typedef {FileHash} fileHash
  * @property {int} offset
  * @property {int} limit
@@ -5741,7 +5741,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputClientProxy.md}
+ * @see {@link https://core.telegram.org/constructor/inputClientProxy.md}
  * @typedef {InputClientProxy} inputClientProxy
  * @property {string} address
  * @property {int} port
@@ -5749,14 +5749,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/help.proxyDataEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/help.proxyDataEmpty.md}
  * @typedef {help.ProxyData} help.proxyDataEmpty
  * @property {int} expires
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/help.proxyDataPromo.md}
+ * @see {@link https://core.telegram.org/constructor/help.proxyDataPromo.md}
  * @typedef {help.ProxyData} help.proxyDataPromo
  * @property {int} expires
  * @property {Peer} peer
@@ -5766,14 +5766,14 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/help.termsOfServiceUpdateEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/help.termsOfServiceUpdateEmpty.md}
  * @typedef {help.TermsOfServiceUpdate} help.termsOfServiceUpdateEmpty
  * @property {int} expires
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/help.termsOfServiceUpdate.md}
+ * @see {@link https://core.telegram.org/constructor/help.termsOfServiceUpdate.md}
  * @typedef {help.TermsOfServiceUpdate} help.termsOfServiceUpdate
  * @property {int} expires
  * @property {help.TermsOfService} terms_of_service
@@ -5781,7 +5781,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputSecureFileUploaded.md}
+ * @see {@link https://core.telegram.org/constructor/inputSecureFileUploaded.md}
  * @typedef {InputSecureFile} inputSecureFileUploaded
  * @property {long} id
  * @property {int} parts
@@ -5792,7 +5792,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputSecureFile.md}
+ * @see {@link https://core.telegram.org/constructor/inputSecureFile.md}
  * @typedef {InputSecureFile} inputSecureFile
  * @property {long} id
  * @property {long} access_hash
@@ -5800,13 +5800,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureFileEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/secureFileEmpty.md}
  * @typedef {SecureFile} secureFileEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureFile.md}
+ * @see {@link https://core.telegram.org/constructor/secureFile.md}
  * @typedef {SecureFile} secureFile
  * @property {long} id
  * @property {long} access_hash
@@ -5819,7 +5819,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureData.md}
+ * @see {@link https://core.telegram.org/constructor/secureData.md}
  * @typedef {SecureData} secureData
  * @property {bytes} data
  * @property {bytes} data_hash
@@ -5828,99 +5828,99 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/securePlainPhone.md}
+ * @see {@link https://core.telegram.org/constructor/securePlainPhone.md}
  * @typedef {SecurePlainData} securePlainPhone
  * @property {string} phone
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/securePlainEmail.md}
+ * @see {@link https://core.telegram.org/constructor/securePlainEmail.md}
  * @typedef {SecurePlainData} securePlainEmail
  * @property {string} email
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueTypePersonalDetails.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueTypePersonalDetails.md}
  * @typedef {SecureValueType} secureValueTypePersonalDetails
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueTypePassport.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueTypePassport.md}
  * @typedef {SecureValueType} secureValueTypePassport
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueTypeDriverLicense.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueTypeDriverLicense.md}
  * @typedef {SecureValueType} secureValueTypeDriverLicense
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueTypeIdentityCard.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueTypeIdentityCard.md}
  * @typedef {SecureValueType} secureValueTypeIdentityCard
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueTypeInternalPassport.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueTypeInternalPassport.md}
  * @typedef {SecureValueType} secureValueTypeInternalPassport
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueTypeAddress.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueTypeAddress.md}
  * @typedef {SecureValueType} secureValueTypeAddress
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueTypeUtilityBill.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueTypeUtilityBill.md}
  * @typedef {SecureValueType} secureValueTypeUtilityBill
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueTypeBankStatement.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueTypeBankStatement.md}
  * @typedef {SecureValueType} secureValueTypeBankStatement
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueTypeRentalAgreement.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueTypeRentalAgreement.md}
  * @typedef {SecureValueType} secureValueTypeRentalAgreement
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueTypePassportRegistration.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueTypePassportRegistration.md}
  * @typedef {SecureValueType} secureValueTypePassportRegistration
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueTypeTemporaryRegistration.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueTypeTemporaryRegistration.md}
  * @typedef {SecureValueType} secureValueTypeTemporaryRegistration
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueTypePhone.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueTypePhone.md}
  * @typedef {SecureValueType} secureValueTypePhone
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueTypeEmail.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueTypeEmail.md}
  * @typedef {SecureValueType} secureValueTypeEmail
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValue.md}
+ * @see {@link https://core.telegram.org/constructor/secureValue.md}
  * @typedef {SecureValue} secureValue
  * @property {#} flags
  * @property {SecureValueType} type
@@ -5936,7 +5936,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputSecureValue.md}
+ * @see {@link https://core.telegram.org/constructor/inputSecureValue.md}
  * @typedef {InputSecureValue} inputSecureValue
  * @property {#} flags
  * @property {SecureValueType} type
@@ -5951,7 +5951,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueHash.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueHash.md}
  * @typedef {SecureValueHash} secureValueHash
  * @property {SecureValueType} type
  * @property {bytes} hash
@@ -5959,7 +5959,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueErrorData.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueErrorData.md}
  * @typedef {SecureValueError} secureValueErrorData
  * @property {SecureValueType} type
  * @property {bytes} data_hash
@@ -5969,7 +5969,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueErrorFrontSide.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueErrorFrontSide.md}
  * @typedef {SecureValueError} secureValueErrorFrontSide
  * @property {SecureValueType} type
  * @property {bytes} file_hash
@@ -5978,7 +5978,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueErrorReverseSide.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueErrorReverseSide.md}
  * @typedef {SecureValueError} secureValueErrorReverseSide
  * @property {SecureValueType} type
  * @property {bytes} file_hash
@@ -5987,7 +5987,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueErrorSelfie.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueErrorSelfie.md}
  * @typedef {SecureValueError} secureValueErrorSelfie
  * @property {SecureValueType} type
  * @property {bytes} file_hash
@@ -5996,7 +5996,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueErrorFile.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueErrorFile.md}
  * @typedef {SecureValueError} secureValueErrorFile
  * @property {SecureValueType} type
  * @property {bytes} file_hash
@@ -6005,7 +6005,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueErrorFiles.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueErrorFiles.md}
  * @typedef {SecureValueError} secureValueErrorFiles
  * @property {SecureValueType} type
  * @property {Vector.<bytes>} file_hash
@@ -6014,7 +6014,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueError.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueError.md}
  * @typedef {SecureValueError} secureValueError
  * @property {SecureValueType} type
  * @property {bytes} hash
@@ -6023,7 +6023,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueErrorTranslationFile.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueErrorTranslationFile.md}
  * @typedef {SecureValueError} secureValueErrorTranslationFile
  * @property {SecureValueType} type
  * @property {bytes} file_hash
@@ -6032,7 +6032,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureValueErrorTranslationFiles.md}
+ * @see {@link https://core.telegram.org/constructor/secureValueErrorTranslationFiles.md}
  * @typedef {SecureValueError} secureValueErrorTranslationFiles
  * @property {SecureValueType} type
  * @property {Vector.<bytes>} file_hash
@@ -6041,7 +6041,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureCredentialsEncrypted.md}
+ * @see {@link https://core.telegram.org/constructor/secureCredentialsEncrypted.md}
  * @typedef {SecureCredentialsEncrypted} secureCredentialsEncrypted
  * @property {bytes} data
  * @property {bytes} hash
@@ -6050,7 +6050,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/account.authorizationForm.md}
+ * @see {@link https://core.telegram.org/constructor/account.authorizationForm.md}
  * @typedef {account.AuthorizationForm} account.authorizationForm
  * @property {#} flags
  * @property {Vector.<SecureRequiredType>} required_types
@@ -6062,7 +6062,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/account.sentEmailCode.md}
+ * @see {@link https://core.telegram.org/constructor/account.sentEmailCode.md}
  * @typedef {account.SentEmailCode} account.sentEmailCode
  * @property {string} email_pattern
  * @property {int} length
@@ -6070,13 +6070,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/help.deepLinkInfoEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/help.deepLinkInfoEmpty.md}
  * @typedef {help.DeepLinkInfo} help.deepLinkInfoEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/help.deepLinkInfo.md}
+ * @see {@link https://core.telegram.org/constructor/help.deepLinkInfo.md}
  * @typedef {help.DeepLinkInfo} help.deepLinkInfo
  * @property {#} flags
  * @property {true} update_app
@@ -6086,7 +6086,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/savedPhoneContact.md}
+ * @see {@link https://core.telegram.org/constructor/savedPhoneContact.md}
  * @typedef {SavedContact} savedPhoneContact
  * @property {string} phone
  * @property {string} first_name
@@ -6096,20 +6096,20 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/account.takeout.md}
+ * @see {@link https://core.telegram.org/constructor/account.takeout.md}
  * @typedef {account.Takeout} account.takeout
  * @property {long} id
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/passwordKdfAlgoUnknown.md}
+ * @see {@link https://core.telegram.org/constructor/passwordKdfAlgoUnknown.md}
  * @typedef {PasswordKdfAlgo} passwordKdfAlgoUnknown
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/passwordKdfAlgoSHA256SHA256PBKDF2HMACSHA512iter100000SHA256ModPow.md}
+ * @see {@link https://core.telegram.org/constructor/passwordKdfAlgoSHA256SHA256PBKDF2HMACSHA512iter100000SHA256ModPow.md}
  * @typedef {PasswordKdfAlgo} passwordKdfAlgoSHA256SHA256PBKDF2HMACSHA512iter100000SHA256ModPow
  * @property {bytes} salt1
  * @property {bytes} salt2
@@ -6119,27 +6119,27 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/securePasswordKdfAlgoUnknown.md}
+ * @see {@link https://core.telegram.org/constructor/securePasswordKdfAlgoUnknown.md}
  * @typedef {SecurePasswordKdfAlgo} securePasswordKdfAlgoUnknown
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/securePasswordKdfAlgoPBKDF2HMACSHA512iter100000.md}
+ * @see {@link https://core.telegram.org/constructor/securePasswordKdfAlgoPBKDF2HMACSHA512iter100000.md}
  * @typedef {SecurePasswordKdfAlgo} securePasswordKdfAlgoPBKDF2HMACSHA512iter100000
  * @property {bytes} salt
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/securePasswordKdfAlgoSHA512.md}
+ * @see {@link https://core.telegram.org/constructor/securePasswordKdfAlgoSHA512.md}
  * @typedef {SecurePasswordKdfAlgo} securePasswordKdfAlgoSHA512
  * @property {bytes} salt
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureSecretSettings.md}
+ * @see {@link https://core.telegram.org/constructor/secureSecretSettings.md}
  * @typedef {SecureSecretSettings} secureSecretSettings
  * @property {SecurePasswordKdfAlgo} secure_algo
  * @property {bytes} secure_secret
@@ -6148,13 +6148,13 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputCheckPasswordEmpty.md}
+ * @see {@link https://core.telegram.org/constructor/inputCheckPasswordEmpty.md}
  * @typedef {InputCheckPasswordSRP} inputCheckPasswordEmpty
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/inputCheckPasswordSRP.md}
+ * @see {@link https://core.telegram.org/constructor/inputCheckPasswordSRP.md}
  * @typedef {InputCheckPasswordSRP} inputCheckPasswordSRP
  * @property {long} srp_id
  * @property {bytes} A
@@ -6163,7 +6163,7 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureRequiredType.md}
+ * @see {@link https://core.telegram.org/constructor/secureRequiredType.md}
  * @typedef {SecureRequiredType} secureRequiredType
  * @property {#} flags
  * @property {true} native_names
@@ -6174,20 +6174,20 @@
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/secureRequiredTypeOneOf.md}
+ * @see {@link https://core.telegram.org/constructor/secureRequiredTypeOneOf.md}
  * @typedef {SecureRequiredType} secureRequiredTypeOneOf
  * @property {Vector.<SecureRequiredType>} types
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/help.passportConfigNotModified.md}
+ * @see {@link https://core.telegram.org/constructor/help.passportConfigNotModified.md}
  * @typedef {help.PassportConfig} help.passportConfigNotModified
  */
 
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/help.passportConfig.md}
+ * @see {@link https://core.telegram.org/constructor/help.passportConfig.md}
  * @typedef {help.PassportConfig} help.passportConfig
  * @property {int} hash
  * @property {DataJSON} countries_langs

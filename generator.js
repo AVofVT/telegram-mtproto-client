@@ -1,5 +1,5 @@
 const fs = require('fs')
-const {parse} = require('tl-parser')
+const { parse } = require('tl-parser')
 
 const dump = json => console.log(JSON.stringify(json, (k, v) => (k == 'start' || k == 'end' ? undefined : v), '    '));
 
@@ -44,7 +44,7 @@ const typeTpl = (ctor) => {
     return `
 /**
  *
- * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/constructor/${ctor.name}.md}
+ * @see {@link https://core.telegram.org/constructor/${ctor.name}}
  * @typedef {${ctor.type}} ${ctor.name}` + ctor.args.map(p =>
     `\n * @property {${p.type}} ${p.name}` ).join('') + `\n */`
 }
@@ -53,7 +53,7 @@ const descriptionTpl = (method) => {
     const hasParams = method.args && method.args.length
     return `
     /**
-     * @see {@link https://github.com/wfjsw/telegram-core-docs/blob/master/method/${method.name}.md}` +
+     * @see {@link https://core.telegram.org/method/${method.name}}` +
      `${hasParams ? '\n     * @param {object} config': ''}` +
      method.args.map(p =>  `\n     * @property {${p.type}} config.${p.name}` ).join('') + `
      * @returns {${method.return}}
@@ -102,9 +102,8 @@ const functions = result.functions.reduce((m, fn) => {
     }
 
     fn.method = method || ctor
-    m[ctor].push(fn)
 
-    return m
+    return m[ctor].push(fn), m
 }, {})
 
 
