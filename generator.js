@@ -102,9 +102,8 @@ const functions = result.functions.reduce((m, fn) => {
     }
 
     fn.method = method || ctor
-    m[ctor].push(fn)
 
-    return m
+    return m[ctor].push(fn), m
 }, {})
 
 
