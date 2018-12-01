@@ -44,7 +44,7 @@ const typeTpl = (ctor) => {
     return `
 /**
  *
- * @see {@link https://core.telegram.org/constructor/${ctor.name}.md}
+ * @see {@link https://core.telegram.org/constructor/${ctor.name}}
  * @typedef {${ctor.type}} ${ctor.name}` + ctor.args.map(p =>
     `\n * @property {${p.type}} ${p.name}` ).join('') + `\n */`
 }
@@ -53,7 +53,7 @@ const descriptionTpl = (method) => {
     const hasParams = method.args && method.args.length
     return `
     /**
-     * @see {@link https://core.telegram.org/method/${method.name}.md}` +
+     * @see {@link https://core.telegram.org/method/${method.name}}` +
      `${hasParams ? '\n     * @param {object} config': ''}` +
      method.args.map(p =>  `\n     * @property {${p.type}} config.${p.name}` ).join('') + `
      * @returns {${method.return}}
