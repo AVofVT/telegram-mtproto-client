@@ -61,7 +61,7 @@ const methodTpl = (method) => {
     /**
      * @see {@link https://core.telegram.org/method/${method.name}}` +
      `${hasParams ? '\n     * @param {Object} config' : ''}`
-     + method.args.map(p => `\n     * @param {${p.type}} config.${p.name}` ).join('') + `
+     + method.args.map(p => `\n     * @param {${propertyType(p.type)}} config.${p.name}` ).join('') + `
      * @returns {${method.return}}
      */`
 }
