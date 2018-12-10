@@ -25,6 +25,8 @@ const mapFunc = fn => {
 const mapCtor = ctor => {
     if (ctor.id.name === 'vector') return null
 
+
+
     let sexp = ctor.resultType.expression.subexpressions
     let type = ctor.resultType.id.name + (sexp.length ? sexp.map(s => `.<${s.id.name}>` ).join('') : '')
     let args = ctor.args.map(mapArgs)
@@ -39,12 +41,18 @@ const mapCtor = ctor => {
 
 const capitalise = s => s.replace(/^./, str => str.toUpperCase())
 
+const propertyType = (type) => {
+    if (type === '#') return 'number'
+    if (~type.indexOf('Vector.')) return type.replace('Vector.', 'Array.')
+    return type
+}
+
 const typeTpl = (ctor) => {
     // !ctor && dump(ctor)
     return '\n/**\n *'
         + `\n * @see {@link https://core.telegram.org/constructor/${ctor.name}}`
         + `\n * @typedef {${ctor.type}} ${ctor.name}`
-        + ctor.args.map(p => `\n * @property {${p.type}} ${p.name}` ).join('') + '\n */'
+        + ctor.args.map(p => `\n * @property {${propertyType(p.type)}} ${p.name}` ).join('') + '\n */'
 }
 
 const methodTpl = (method) => {

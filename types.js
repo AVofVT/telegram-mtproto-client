@@ -53,7 +53,7 @@
  * @property {int128} nonce
  * @property {int128} server_nonce
  * @property {string} pq
- * @property {Vector.<long>} server_public_key_fingerprints
+ * @property {Array.<long>} server_public_key_fingerprints
  */
 
 /**
@@ -197,7 +197,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/msgs_ack}
  * @typedef {MsgsAck} msgs_ack
- * @property {Vector.<long>} msg_ids
+ * @property {Array.<long>} msg_ids
  */
 
 /**
@@ -223,7 +223,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/msgs_state_req}
  * @typedef {MsgsStateReq} msgs_state_req
- * @property {Vector.<long>} msg_ids
+ * @property {Array.<long>} msg_ids
  */
 
 /**
@@ -238,7 +238,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/msgs_all_info}
  * @typedef {MsgsAllInfo} msgs_all_info
- * @property {Vector.<long>} msg_ids
+ * @property {Array.<long>} msg_ids
  * @property {string} info
  */
 
@@ -265,7 +265,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/msg_resend_req}
  * @typedef {MsgResendReq} msg_resend_req
- * @property {Vector.<long>} msg_ids
+ * @property {Array.<long>} msg_ids
  */
 
 /**
@@ -516,9 +516,9 @@
  *
  * @see {@link https://core.telegram.org/constructor/inputMediaUploadedPhoto}
  * @typedef {InputMedia} inputMediaUploadedPhoto
- * @property {#} flags
+ * @property {number} flags
  * @property {InputFile} file
- * @property {Vector.<InputDocument>} stickers
+ * @property {Array.<InputDocument>} stickers
  * @property {int} ttl_seconds
  */
 
@@ -526,7 +526,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/inputMediaPhoto}
  * @typedef {InputMedia} inputMediaPhoto
- * @property {#} flags
+ * @property {number} flags
  * @property {InputPhoto} id
  * @property {int} ttl_seconds
  */
@@ -552,13 +552,13 @@
  *
  * @see {@link https://core.telegram.org/constructor/inputMediaUploadedDocument}
  * @typedef {InputMedia} inputMediaUploadedDocument
- * @property {#} flags
+ * @property {number} flags
  * @property {true} nosound_video
  * @property {InputFile} file
  * @property {InputFile} thumb
  * @property {string} mime_type
- * @property {Vector.<DocumentAttribute>} attributes
- * @property {Vector.<InputDocument>} stickers
+ * @property {Array.<DocumentAttribute>} attributes
+ * @property {Array.<InputDocument>} stickers
  * @property {int} ttl_seconds
  */
 
@@ -566,7 +566,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/inputMediaDocument}
  * @typedef {InputMedia} inputMediaDocument
- * @property {#} flags
+ * @property {number} flags
  * @property {InputDocument} id
  * @property {int} ttl_seconds
  */
@@ -595,7 +595,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/inputMediaPhotoExternal}
  * @typedef {InputMedia} inputMediaPhotoExternal
- * @property {#} flags
+ * @property {number} flags
  * @property {string} url
  * @property {int} ttl_seconds
  */
@@ -604,7 +604,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/inputMediaDocumentExternal}
  * @typedef {InputMedia} inputMediaDocumentExternal
- * @property {#} flags
+ * @property {number} flags
  * @property {string} url
  * @property {int} ttl_seconds
  */
@@ -620,7 +620,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/inputMediaInvoice}
  * @typedef {InputMedia} inputMediaInvoice
- * @property {#} flags
+ * @property {number} flags
  * @property {string} title
  * @property {string} description
  * @property {InputWebDocument} photo
@@ -851,7 +851,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/user}
  * @typedef {User} user
- * @property {#} flags
+ * @property {number} flags
  * @property {true} self
  * @property {true} contact
  * @property {true} mutual_contact
@@ -941,7 +941,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/chat}
  * @typedef {Chat} chat
- * @property {#} flags
+ * @property {number} flags
  * @property {true} creator
  * @property {true} kicked
  * @property {true} left
@@ -969,7 +969,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/channel}
  * @typedef {Chat} channel
- * @property {#} flags
+ * @property {number} flags
  * @property {true} creator
  * @property {true} left
  * @property {true} editor
@@ -997,7 +997,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/channelForbidden}
  * @typedef {Chat} channelForbidden
- * @property {#} flags
+ * @property {number} flags
  * @property {true} broadcast
  * @property {true} megagroup
  * @property {int} id
@@ -1010,13 +1010,13 @@
  *
  * @see {@link https://core.telegram.org/constructor/chatFull}
  * @typedef {ChatFull} chatFull
- * @property {#} flags
+ * @property {number} flags
  * @property {int} id
  * @property {ChatParticipants} participants
  * @property {Photo} chat_photo
  * @property {PeerNotifySettings} notify_settings
  * @property {ExportedChatInvite} exported_invite
- * @property {Vector.<BotInfo>} bot_info
+ * @property {Array.<BotInfo>} bot_info
  * @property {int} pinned_msg_id
  */
 
@@ -1024,7 +1024,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/channelFull}
  * @typedef {ChatFull} channelFull
- * @property {#} flags
+ * @property {number} flags
  * @property {true} can_view_participants
  * @property {true} can_set_username
  * @property {true} can_set_stickers
@@ -1041,7 +1041,7 @@
  * @property {Photo} chat_photo
  * @property {PeerNotifySettings} notify_settings
  * @property {ExportedChatInvite} exported_invite
- * @property {Vector.<BotInfo>} bot_info
+ * @property {Array.<BotInfo>} bot_info
  * @property {int} migrated_from_chat_id
  * @property {int} migrated_from_max_id
  * @property {int} pinned_msg_id
@@ -1078,7 +1078,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/chatParticipantsForbidden}
  * @typedef {ChatParticipants} chatParticipantsForbidden
- * @property {#} flags
+ * @property {number} flags
  * @property {int} chat_id
  * @property {ChatParticipant} self_participant
  */
@@ -1088,7 +1088,7 @@
  * @see {@link https://core.telegram.org/constructor/chatParticipants}
  * @typedef {ChatParticipants} chatParticipants
  * @property {int} chat_id
- * @property {Vector.<ChatParticipant>} participants
+ * @property {Array.<ChatParticipant>} participants
  * @property {int} version
  */
 
@@ -1117,7 +1117,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/message}
  * @typedef {Message} message
- * @property {#} flags
+ * @property {number} flags
  * @property {true} out
  * @property {true} mentioned
  * @property {true} media_unread
@@ -1134,7 +1134,7 @@
  * @property {string} message
  * @property {MessageMedia} media
  * @property {ReplyMarkup} reply_markup
- * @property {Vector.<MessageEntity>} entities
+ * @property {Array.<MessageEntity>} entities
  * @property {int} views
  * @property {int} edit_date
  * @property {string} post_author
@@ -1145,7 +1145,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/messageService}
  * @typedef {Message} messageService
- * @property {#} flags
+ * @property {number} flags
  * @property {true} out
  * @property {true} mentioned
  * @property {true} media_unread
@@ -1169,7 +1169,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/messageMediaPhoto}
  * @typedef {MessageMedia} messageMediaPhoto
- * @property {#} flags
+ * @property {number} flags
  * @property {Photo} photo
  * @property {int} ttl_seconds
  */
@@ -1202,7 +1202,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/messageMediaDocument}
  * @typedef {MessageMedia} messageMediaDocument
- * @property {#} flags
+ * @property {number} flags
  * @property {Document} document
  * @property {int} ttl_seconds
  */
@@ -1237,7 +1237,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/messageMediaInvoice}
  * @typedef {MessageMedia} messageMediaInvoice
- * @property {#} flags
+ * @property {number} flags
  * @property {true} shipping_address_requested
  * @property {true} test
  * @property {string} title
@@ -1268,7 +1268,7 @@
  * @see {@link https://core.telegram.org/constructor/messageActionChatCreate}
  * @typedef {MessageAction} messageActionChatCreate
  * @property {string} title
- * @property {Vector.<int>} users
+ * @property {Array.<int>} users
  */
 
 /**
@@ -1295,7 +1295,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/messageActionChatAddUser}
  * @typedef {MessageAction} messageActionChatAddUser
- * @property {Vector.<int>} users
+ * @property {Array.<int>} users
  */
 
 /**
@@ -1358,7 +1358,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/messageActionPaymentSentMe}
  * @typedef {MessageAction} messageActionPaymentSentMe
- * @property {#} flags
+ * @property {number} flags
  * @property {string} currency
  * @property {long} total_amount
  * @property {bytes} payload
@@ -1379,7 +1379,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/messageActionPhoneCall}
  * @typedef {MessageAction} messageActionPhoneCall
- * @property {#} flags
+ * @property {number} flags
  * @property {long} call_id
  * @property {PhoneCallDiscardReason} reason
  * @property {int} duration
@@ -1409,7 +1409,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/messageActionSecureValuesSentMe}
  * @typedef {MessageAction} messageActionSecureValuesSentMe
- * @property {Vector.<SecureValue>} values
+ * @property {Array.<SecureValue>} values
  * @property {SecureCredentialsEncrypted} credentials
  */
 
@@ -1417,14 +1417,14 @@
  *
  * @see {@link https://core.telegram.org/constructor/messageActionSecureValuesSent}
  * @typedef {MessageAction} messageActionSecureValuesSent
- * @property {Vector.<SecureValueType>} types
+ * @property {Array.<SecureValueType>} types
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/dialog}
  * @typedef {Dialog} dialog
- * @property {#} flags
+ * @property {number} flags
  * @property {true} pinned
  * @property {true} unread_mark
  * @property {Peer} peer
@@ -1449,13 +1449,13 @@
  *
  * @see {@link https://core.telegram.org/constructor/photo}
  * @typedef {Photo} photo
- * @property {#} flags
+ * @property {number} flags
  * @property {true} has_stickers
  * @property {long} id
  * @property {long} access_hash
  * @property {bytes} file_reference
  * @property {int} date
- * @property {Vector.<PhotoSize>} sizes
+ * @property {Array.<PhotoSize>} sizes
  */
 
 /**
@@ -1513,7 +1513,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/auth.sentCode}
  * @typedef {auth.SentCode} auth.sentCode
- * @property {#} flags
+ * @property {number} flags
  * @property {true} phone_registered
  * @property {auth.SentCodeType} type
  * @property {string} phone_code_hash
@@ -1526,7 +1526,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/auth.authorization}
  * @typedef {auth.Authorization} auth.authorization
- * @property {#} flags
+ * @property {number} flags
  * @property {int} tmp_sessions
  * @property {User} user
  */
@@ -1568,7 +1568,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/inputPeerNotifySettings}
  * @typedef {InputPeerNotifySettings} inputPeerNotifySettings
- * @property {#} flags
+ * @property {number} flags
  * @property {Bool} show_previews
  * @property {Bool} silent
  * @property {int} mute_until
@@ -1579,7 +1579,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/peerNotifySettings}
  * @typedef {PeerNotifySettings} peerNotifySettings
- * @property {#} flags
+ * @property {number} flags
  * @property {Bool} show_previews
  * @property {Bool} silent
  * @property {int} mute_until
@@ -1590,7 +1590,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/peerSettings}
  * @typedef {PeerSettings} peerSettings
- * @property {#} flags
+ * @property {number} flags
  * @property {true} report_spam
  */
 
@@ -1600,7 +1600,7 @@
  * @typedef {WallPaper} wallPaper
  * @property {int} id
  * @property {string} title
- * @property {Vector.<PhotoSize>} sizes
+ * @property {Array.<PhotoSize>} sizes
  * @property {int} color
  */
 
@@ -1649,7 +1649,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/userFull}
  * @typedef {UserFull} userFull
- * @property {#} flags
+ * @property {number} flags
  * @property {true} blocked
  * @property {true} phone_calls_available
  * @property {true} phone_calls_private
@@ -1715,27 +1715,27 @@
  *
  * @see {@link https://core.telegram.org/constructor/contacts.contacts}
  * @typedef {contacts.Contacts} contacts.contacts
- * @property {Vector.<Contact>} contacts
+ * @property {Array.<Contact>} contacts
  * @property {int} saved_count
- * @property {Vector.<User>} users
+ * @property {Array.<User>} users
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/contacts.importedContacts}
  * @typedef {contacts.ImportedContacts} contacts.importedContacts
- * @property {Vector.<ImportedContact>} imported
- * @property {Vector.<PopularContact>} popular_invites
- * @property {Vector.<long>} retry_contacts
- * @property {Vector.<User>} users
+ * @property {Array.<ImportedContact>} imported
+ * @property {Array.<PopularContact>} popular_invites
+ * @property {Array.<long>} retry_contacts
+ * @property {Array.<User>} users
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/contacts.blocked}
  * @typedef {contacts.Blocked} contacts.blocked
- * @property {Vector.<ContactBlocked>} blocked
- * @property {Vector.<User>} users
+ * @property {Array.<ContactBlocked>} blocked
+ * @property {Array.<User>} users
  */
 
 /**
@@ -1743,18 +1743,18 @@
  * @see {@link https://core.telegram.org/constructor/contacts.blockedSlice}
  * @typedef {contacts.Blocked} contacts.blockedSlice
  * @property {int} count
- * @property {Vector.<ContactBlocked>} blocked
- * @property {Vector.<User>} users
+ * @property {Array.<ContactBlocked>} blocked
+ * @property {Array.<User>} users
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/messages.dialogs}
  * @typedef {messages.Dialogs} messages.dialogs
- * @property {Vector.<Dialog>} dialogs
- * @property {Vector.<Message>} messages
- * @property {Vector.<Chat>} chats
- * @property {Vector.<User>} users
+ * @property {Array.<Dialog>} dialogs
+ * @property {Array.<Message>} messages
+ * @property {Array.<Chat>} chats
+ * @property {Array.<User>} users
  */
 
 /**
@@ -1762,10 +1762,10 @@
  * @see {@link https://core.telegram.org/constructor/messages.dialogsSlice}
  * @typedef {messages.Dialogs} messages.dialogsSlice
  * @property {int} count
- * @property {Vector.<Dialog>} dialogs
- * @property {Vector.<Message>} messages
- * @property {Vector.<Chat>} chats
- * @property {Vector.<User>} users
+ * @property {Array.<Dialog>} dialogs
+ * @property {Array.<Message>} messages
+ * @property {Array.<Chat>} chats
+ * @property {Array.<User>} users
  */
 
 /**
@@ -1779,9 +1779,9 @@
  *
  * @see {@link https://core.telegram.org/constructor/messages.messages}
  * @typedef {messages.Messages} messages.messages
- * @property {Vector.<Message>} messages
- * @property {Vector.<Chat>} chats
- * @property {Vector.<User>} users
+ * @property {Array.<Message>} messages
+ * @property {Array.<Chat>} chats
+ * @property {Array.<User>} users
  */
 
 /**
@@ -1789,21 +1789,21 @@
  * @see {@link https://core.telegram.org/constructor/messages.messagesSlice}
  * @typedef {messages.Messages} messages.messagesSlice
  * @property {int} count
- * @property {Vector.<Message>} messages
- * @property {Vector.<Chat>} chats
- * @property {Vector.<User>} users
+ * @property {Array.<Message>} messages
+ * @property {Array.<Chat>} chats
+ * @property {Array.<User>} users
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/messages.channelMessages}
  * @typedef {messages.Messages} messages.channelMessages
- * @property {#} flags
+ * @property {number} flags
  * @property {int} pts
  * @property {int} count
- * @property {Vector.<Message>} messages
- * @property {Vector.<Chat>} chats
- * @property {Vector.<User>} users
+ * @property {Array.<Message>} messages
+ * @property {Array.<Chat>} chats
+ * @property {Array.<User>} users
  */
 
 /**
@@ -1817,7 +1817,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/messages.chats}
  * @typedef {messages.Chats} messages.chats
- * @property {Vector.<Chat>} chats
+ * @property {Array.<Chat>} chats
  */
 
 /**
@@ -1825,7 +1825,7 @@
  * @see {@link https://core.telegram.org/constructor/messages.chatsSlice}
  * @typedef {messages.Chats} messages.chatsSlice
  * @property {int} count
- * @property {Vector.<Chat>} chats
+ * @property {Array.<Chat>} chats
  */
 
 /**
@@ -1833,8 +1833,8 @@
  * @see {@link https://core.telegram.org/constructor/messages.chatFull}
  * @typedef {messages.ChatFull} messages.chatFull
  * @property {ChatFull} full_chat
- * @property {Vector.<Chat>} chats
- * @property {Vector.<User>} users
+ * @property {Array.<Chat>} chats
+ * @property {Array.<User>} users
  */
 
 /**
@@ -1910,7 +1910,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/inputMessagesFilterPhoneCalls}
  * @typedef {MessagesFilter} inputMessagesFilterPhoneCalls
- * @property {#} flags
+ * @property {number} flags
  * @property {true} missed
  */
 
@@ -1965,7 +1965,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/updateDeleteMessages}
  * @typedef {Update} updateDeleteMessages
- * @property {Vector.<int>} messages
+ * @property {Array.<int>} messages
  * @property {int} pts
  * @property {int} pts_count
  */
@@ -2095,7 +2095,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/updateDcOptions}
  * @typedef {Update} updateDcOptions
- * @property {Vector.<DcOption>} dc_options
+ * @property {Array.<DcOption>} dc_options
  */
 
 /**
@@ -2118,13 +2118,13 @@
  *
  * @see {@link https://core.telegram.org/constructor/updateServiceNotification}
  * @typedef {Update} updateServiceNotification
- * @property {#} flags
+ * @property {number} flags
  * @property {true} popup
  * @property {int} inbox_date
  * @property {string} type
  * @property {string} message
  * @property {MessageMedia} media
- * @property {Vector.<MessageEntity>} entities
+ * @property {Array.<MessageEntity>} entities
  */
 
 /**
@@ -2132,7 +2132,7 @@
  * @see {@link https://core.telegram.org/constructor/updatePrivacy}
  * @typedef {Update} updatePrivacy
  * @property {PrivacyKey} key
- * @property {Vector.<PrivacyRule>} rules
+ * @property {Array.<PrivacyRule>} rules
  */
 
 /**
@@ -2176,7 +2176,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/updateReadMessagesContents}
  * @typedef {Update} updateReadMessagesContents
- * @property {Vector.<int>} messages
+ * @property {Array.<int>} messages
  * @property {int} pts
  * @property {int} pts_count
  */
@@ -2185,7 +2185,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/updateChannelTooLong}
  * @typedef {Update} updateChannelTooLong
- * @property {#} flags
+ * @property {number} flags
  * @property {int} channel_id
  * @property {int} pts
  */
@@ -2219,7 +2219,7 @@
  * @see {@link https://core.telegram.org/constructor/updateDeleteChannelMessages}
  * @typedef {Update} updateDeleteChannelMessages
  * @property {int} channel_id
- * @property {Vector.<int>} messages
+ * @property {Array.<int>} messages
  * @property {int} pts
  * @property {int} pts_count
  */
@@ -2263,9 +2263,9 @@
  *
  * @see {@link https://core.telegram.org/constructor/updateStickerSetsOrder}
  * @typedef {Update} updateStickerSetsOrder
- * @property {#} flags
+ * @property {number} flags
  * @property {true} masks
- * @property {Vector.<long>} order
+ * @property {Array.<long>} order
  */
 
 /**
@@ -2284,7 +2284,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/updateBotInlineQuery}
  * @typedef {Update} updateBotInlineQuery
- * @property {#} flags
+ * @property {number} flags
  * @property {long} query_id
  * @property {int} user_id
  * @property {string} query
@@ -2296,7 +2296,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/updateBotInlineSend}
  * @typedef {Update} updateBotInlineSend
- * @property {#} flags
+ * @property {number} flags
  * @property {int} user_id
  * @property {string} query
  * @property {GeoPoint} geo
@@ -2325,7 +2325,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/updateBotCallbackQuery}
  * @typedef {Update} updateBotCallbackQuery
- * @property {#} flags
+ * @property {number} flags
  * @property {long} query_id
  * @property {int} user_id
  * @property {Peer} peer
@@ -2348,7 +2348,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/updateInlineBotCallbackQuery}
  * @typedef {Update} updateInlineBotCallbackQuery
- * @property {#} flags
+ * @property {number} flags
  * @property {long} query_id
  * @property {int} user_id
  * @property {InputBotInlineMessageID} msg_id
@@ -2411,7 +2411,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/updateDialogPinned}
  * @typedef {Update} updateDialogPinned
- * @property {#} flags
+ * @property {number} flags
  * @property {true} pinned
  * @property {DialogPeer} peer
  */
@@ -2420,8 +2420,8 @@
  *
  * @see {@link https://core.telegram.org/constructor/updatePinnedDialogs}
  * @typedef {Update} updatePinnedDialogs
- * @property {#} flags
- * @property {Vector.<DialogPeer>} order
+ * @property {number} flags
+ * @property {Array.<DialogPeer>} order
  */
 
 /**
@@ -2454,7 +2454,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/updateBotPrecheckoutQuery}
  * @typedef {Update} updateBotPrecheckoutQuery
- * @property {#} flags
+ * @property {number} flags
  * @property {long} query_id
  * @property {int} user_id
  * @property {bytes} payload
@@ -2496,7 +2496,7 @@
  * @see {@link https://core.telegram.org/constructor/updateChannelReadMessagesContents}
  * @typedef {Update} updateChannelReadMessagesContents
  * @property {int} channel_id
- * @property {Vector.<int>} messages
+ * @property {Array.<int>} messages
  */
 
 /**
@@ -2517,7 +2517,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/updateDialogUnreadMark}
  * @typedef {Update} updateDialogUnreadMark
- * @property {#} flags
+ * @property {number} flags
  * @property {true} unread
  * @property {DialogPeer} peer
  */
@@ -2561,11 +2561,11 @@
  *
  * @see {@link https://core.telegram.org/constructor/updates.difference}
  * @typedef {updates.Difference} updates.difference
- * @property {Vector.<Message>} new_messages
- * @property {Vector.<EncryptedMessage>} new_encrypted_messages
- * @property {Vector.<Update>} other_updates
- * @property {Vector.<Chat>} chats
- * @property {Vector.<User>} users
+ * @property {Array.<Message>} new_messages
+ * @property {Array.<EncryptedMessage>} new_encrypted_messages
+ * @property {Array.<Update>} other_updates
+ * @property {Array.<Chat>} chats
+ * @property {Array.<User>} users
  * @property {updates.State} state
  */
 
@@ -2573,11 +2573,11 @@
  *
  * @see {@link https://core.telegram.org/constructor/updates.differenceSlice}
  * @typedef {updates.Difference} updates.differenceSlice
- * @property {Vector.<Message>} new_messages
- * @property {Vector.<EncryptedMessage>} new_encrypted_messages
- * @property {Vector.<Update>} other_updates
- * @property {Vector.<Chat>} chats
- * @property {Vector.<User>} users
+ * @property {Array.<Message>} new_messages
+ * @property {Array.<EncryptedMessage>} new_encrypted_messages
+ * @property {Array.<Update>} other_updates
+ * @property {Array.<Chat>} chats
+ * @property {Array.<User>} users
  * @property {updates.State} intermediate_state
  */
 
@@ -2598,7 +2598,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/updateShortMessage}
  * @typedef {Updates} updateShortMessage
- * @property {#} flags
+ * @property {number} flags
  * @property {true} out
  * @property {true} mentioned
  * @property {true} media_unread
@@ -2612,14 +2612,14 @@
  * @property {MessageFwdHeader} fwd_from
  * @property {int} via_bot_id
  * @property {int} reply_to_msg_id
- * @property {Vector.<MessageEntity>} entities
+ * @property {Array.<MessageEntity>} entities
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/updateShortChatMessage}
  * @typedef {Updates} updateShortChatMessage
- * @property {#} flags
+ * @property {number} flags
  * @property {true} out
  * @property {true} mentioned
  * @property {true} media_unread
@@ -2634,7 +2634,7 @@
  * @property {MessageFwdHeader} fwd_from
  * @property {int} via_bot_id
  * @property {int} reply_to_msg_id
- * @property {Vector.<MessageEntity>} entities
+ * @property {Array.<MessageEntity>} entities
  */
 
 /**
@@ -2649,9 +2649,9 @@
  *
  * @see {@link https://core.telegram.org/constructor/updatesCombined}
  * @typedef {Updates} updatesCombined
- * @property {Vector.<Update>} updates
- * @property {Vector.<User>} users
- * @property {Vector.<Chat>} chats
+ * @property {Array.<Update>} updates
+ * @property {Array.<User>} users
+ * @property {Array.<Chat>} chats
  * @property {int} date
  * @property {int} seq_start
  * @property {int} seq
@@ -2661,9 +2661,9 @@
  *
  * @see {@link https://core.telegram.org/constructor/updates}
  * @typedef {Updates} updates
- * @property {Vector.<Update>} updates
- * @property {Vector.<User>} users
- * @property {Vector.<Chat>} chats
+ * @property {Array.<Update>} updates
+ * @property {Array.<User>} users
+ * @property {Array.<Chat>} chats
  * @property {int} date
  * @property {int} seq
  */
@@ -2672,22 +2672,22 @@
  *
  * @see {@link https://core.telegram.org/constructor/updateShortSentMessage}
  * @typedef {Updates} updateShortSentMessage
- * @property {#} flags
+ * @property {number} flags
  * @property {true} out
  * @property {int} id
  * @property {int} pts
  * @property {int} pts_count
  * @property {int} date
  * @property {MessageMedia} media
- * @property {Vector.<MessageEntity>} entities
+ * @property {Array.<MessageEntity>} entities
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/photos.photos}
  * @typedef {photos.Photos} photos.photos
- * @property {Vector.<Photo>} photos
- * @property {Vector.<User>} users
+ * @property {Array.<Photo>} photos
+ * @property {Array.<User>} users
  */
 
 /**
@@ -2695,8 +2695,8 @@
  * @see {@link https://core.telegram.org/constructor/photos.photosSlice}
  * @typedef {photos.Photos} photos.photosSlice
  * @property {int} count
- * @property {Vector.<Photo>} photos
- * @property {Vector.<User>} users
+ * @property {Array.<Photo>} photos
+ * @property {Array.<User>} users
  */
 
 /**
@@ -2704,7 +2704,7 @@
  * @see {@link https://core.telegram.org/constructor/photos.photo}
  * @typedef {photos.Photo} photos.photo
  * @property {Photo} photo
- * @property {Vector.<User>} users
+ * @property {Array.<User>} users
  */
 
 /**
@@ -2724,14 +2724,14 @@
  * @property {bytes} file_token
  * @property {bytes} encryption_key
  * @property {bytes} encryption_iv
- * @property {Vector.<FileHash>} file_hashes
+ * @property {Array.<FileHash>} file_hashes
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/dcOption}
  * @typedef {DcOption} dcOption
- * @property {#} flags
+ * @property {number} flags
  * @property {true} ipv6
  * @property {true} media_only
  * @property {true} tcpo_only
@@ -2747,7 +2747,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/config}
  * @typedef {Config} config
- * @property {#} flags
+ * @property {number} flags
  * @property {true} phonecalls_enabled
  * @property {true} default_p2p_contacts
  * @property {true} preload_featured_stickers
@@ -2758,7 +2758,7 @@
  * @property {int} expires
  * @property {Bool} test_mode
  * @property {int} this_dc
- * @property {Vector.<DcOption>} dc_options
+ * @property {Array.<DcOption>} dc_options
  * @property {string} dc_txt_domain_name
  * @property {int} chat_size_max
  * @property {int} megagroup_size_max
@@ -2812,12 +2812,12 @@
  *
  * @see {@link https://core.telegram.org/constructor/help.appUpdate}
  * @typedef {help.AppUpdate} help.appUpdate
- * @property {#} flags
+ * @property {number} flags
  * @property {true} popup
  * @property {int} id
  * @property {string} version
  * @property {string} text
- * @property {Vector.<MessageEntity>} entities
+ * @property {Array.<MessageEntity>} entities
  * @property {Document} document
  * @property {string} url
  */
@@ -3030,7 +3030,7 @@
  * @property {int} size
  * @property {PhotoSize} thumb
  * @property {int} dc_id
- * @property {Vector.<DocumentAttribute>} attributes
+ * @property {Array.<DocumentAttribute>} attributes
  */
 
 /**
@@ -3153,10 +3153,10 @@
  *
  * @see {@link https://core.telegram.org/constructor/contacts.found}
  * @typedef {contacts.Found} contacts.found
- * @property {Vector.<Peer>} my_results
- * @property {Vector.<Peer>} results
- * @property {Vector.<Chat>} chats
- * @property {Vector.<User>} users
+ * @property {Array.<Peer>} my_results
+ * @property {Array.<Peer>} results
+ * @property {Array.<Chat>} chats
+ * @property {Array.<User>} users
  */
 
 /**
@@ -3223,7 +3223,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/inputPrivacyValueAllowUsers}
  * @typedef {InputPrivacyRule} inputPrivacyValueAllowUsers
- * @property {Vector.<InputUser>} users
+ * @property {Array.<InputUser>} users
  */
 
 /**
@@ -3242,7 +3242,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/inputPrivacyValueDisallowUsers}
  * @typedef {InputPrivacyRule} inputPrivacyValueDisallowUsers
- * @property {Vector.<InputUser>} users
+ * @property {Array.<InputUser>} users
  */
 
 /**
@@ -3261,7 +3261,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/privacyValueAllowUsers}
  * @typedef {PrivacyRule} privacyValueAllowUsers
- * @property {Vector.<int>} users
+ * @property {Array.<int>} users
  */
 
 /**
@@ -3280,15 +3280,15 @@
  *
  * @see {@link https://core.telegram.org/constructor/privacyValueDisallowUsers}
  * @typedef {PrivacyRule} privacyValueDisallowUsers
- * @property {Vector.<int>} users
+ * @property {Array.<int>} users
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/account.privacyRules}
  * @typedef {account.PrivacyRules} account.privacyRules
- * @property {Vector.<PrivacyRule>} rules
- * @property {Vector.<User>} users
+ * @property {Array.<PrivacyRule>} rules
+ * @property {Array.<User>} users
  */
 
 /**
@@ -3316,7 +3316,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/documentAttributeSticker}
  * @typedef {DocumentAttribute} documentAttributeSticker
- * @property {#} flags
+ * @property {number} flags
  * @property {true} mask
  * @property {string} alt
  * @property {InputStickerSet} stickerset
@@ -3327,7 +3327,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/documentAttributeVideo}
  * @typedef {DocumentAttribute} documentAttributeVideo
- * @property {#} flags
+ * @property {number} flags
  * @property {true} round_message
  * @property {true} supports_streaming
  * @property {int} duration
@@ -3339,7 +3339,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/documentAttributeAudio}
  * @typedef {DocumentAttribute} documentAttributeAudio
- * @property {#} flags
+ * @property {number} flags
  * @property {true} voice
  * @property {int} duration
  * @property {string} title
@@ -3371,7 +3371,7 @@
  * @see {@link https://core.telegram.org/constructor/messages.stickers}
  * @typedef {messages.Stickers} messages.stickers
  * @property {int} hash
- * @property {Vector.<Document>} stickers
+ * @property {Array.<Document>} stickers
  */
 
 /**
@@ -3379,7 +3379,7 @@
  * @see {@link https://core.telegram.org/constructor/stickerPack}
  * @typedef {StickerPack} stickerPack
  * @property {string} emoticon
- * @property {Vector.<long>} documents
+ * @property {Array.<long>} documents
  */
 
 /**
@@ -3393,7 +3393,7 @@
  * @see {@link https://core.telegram.org/constructor/messages.allStickers}
  * @typedef {messages.AllStickers} messages.allStickers
  * @property {int} hash
- * @property {Vector.<StickerSet>} sets
+ * @property {Array.<StickerSet>} sets
  */
 
 /**
@@ -3447,7 +3447,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/webPage}
  * @typedef {WebPage} webPage
- * @property {#} flags
+ * @property {number} flags
  * @property {long} id
  * @property {string} url
  * @property {string} display_url
@@ -3477,7 +3477,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/authorization}
  * @typedef {Authorization} authorization
- * @property {#} flags
+ * @property {number} flags
  * @property {true} current
  * @property {true} official_app
  * @property {true} password_pending
@@ -3499,14 +3499,14 @@
  *
  * @see {@link https://core.telegram.org/constructor/account.authorizations}
  * @typedef {account.Authorizations} account.authorizations
- * @property {Vector.<Authorization>} authorizations
+ * @property {Array.<Authorization>} authorizations
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/account.password}
  * @typedef {account.Password} account.password
- * @property {#} flags
+ * @property {number} flags
  * @property {true} has_recovery
  * @property {true} has_secure_values
  * @property {true} has_password
@@ -3524,7 +3524,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/account.passwordSettings}
  * @typedef {account.PasswordSettings} account.passwordSettings
- * @property {#} flags
+ * @property {number} flags
  * @property {string} email
  * @property {SecureSecretSettings} secure_settings
  */
@@ -3533,7 +3533,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/account.passwordInputSettings}
  * @typedef {account.PasswordInputSettings} account.passwordInputSettings
- * @property {#} flags
+ * @property {number} flags
  * @property {PasswordKdfAlgo} new_algo
  * @property {bytes} new_password_hash
  * @property {string} hint
@@ -3580,7 +3580,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/chatInvite}
  * @typedef {ChatInvite} chatInvite
- * @property {#} flags
+ * @property {number} flags
  * @property {true} channel
  * @property {true} broadcast
  * @property {true} public
@@ -3588,7 +3588,7 @@
  * @property {string} title
  * @property {ChatPhoto} photo
  * @property {int} participants_count
- * @property {Vector.<User>} participants
+ * @property {Array.<User>} participants
  */
 
 /**
@@ -3616,7 +3616,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/stickerSet}
  * @typedef {StickerSet} stickerSet
- * @property {#} flags
+ * @property {number} flags
  * @property {true} archived
  * @property {true} official
  * @property {true} masks
@@ -3634,8 +3634,8 @@
  * @see {@link https://core.telegram.org/constructor/messages.stickerSet}
  * @typedef {messages.StickerSet} messages.stickerSet
  * @property {StickerSet} set
- * @property {Vector.<StickerPack>} packs
- * @property {Vector.<Document>} documents
+ * @property {Array.<StickerPack>} packs
+ * @property {Array.<Document>} documents
  */
 
 /**
@@ -3652,7 +3652,7 @@
  * @typedef {BotInfo} botInfo
  * @property {int} user_id
  * @property {string} description
- * @property {Vector.<BotCommand>} commands
+ * @property {Array.<BotCommand>} commands
  */
 
 /**
@@ -3696,7 +3696,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/keyboardButtonSwitchInline}
  * @typedef {KeyboardButton} keyboardButtonSwitchInline
- * @property {#} flags
+ * @property {number} flags
  * @property {true} same_peer
  * @property {string} text
  * @property {string} query
@@ -3720,14 +3720,14 @@
  *
  * @see {@link https://core.telegram.org/constructor/keyboardButtonRow}
  * @typedef {KeyboardButtonRow} keyboardButtonRow
- * @property {Vector.<KeyboardButton>} buttons
+ * @property {Array.<KeyboardButton>} buttons
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/replyKeyboardHide}
  * @typedef {ReplyMarkup} replyKeyboardHide
- * @property {#} flags
+ * @property {number} flags
  * @property {true} selective
  */
 
@@ -3735,7 +3735,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/replyKeyboardForceReply}
  * @typedef {ReplyMarkup} replyKeyboardForceReply
- * @property {#} flags
+ * @property {number} flags
  * @property {true} single_use
  * @property {true} selective
  */
@@ -3744,18 +3744,18 @@
  *
  * @see {@link https://core.telegram.org/constructor/replyKeyboardMarkup}
  * @typedef {ReplyMarkup} replyKeyboardMarkup
- * @property {#} flags
+ * @property {number} flags
  * @property {true} resize
  * @property {true} single_use
  * @property {true} selective
- * @property {Vector.<KeyboardButtonRow>} rows
+ * @property {Array.<KeyboardButtonRow>} rows
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/replyInlineMarkup}
  * @typedef {ReplyMarkup} replyInlineMarkup
- * @property {Vector.<KeyboardButtonRow>} rows
+ * @property {Array.<KeyboardButtonRow>} rows
  */
 
 /**
@@ -3901,8 +3901,8 @@
  * @see {@link https://core.telegram.org/constructor/contacts.resolvedPeer}
  * @typedef {contacts.ResolvedPeer} contacts.resolvedPeer
  * @property {Peer} peer
- * @property {Vector.<Chat>} chats
- * @property {Vector.<User>} users
+ * @property {Array.<Chat>} chats
+ * @property {Array.<User>} users
  */
 
 /**
@@ -3917,7 +3917,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/updates.channelDifferenceEmpty}
  * @typedef {updates.ChannelDifference} updates.channelDifferenceEmpty
- * @property {#} flags
+ * @property {number} flags
  * @property {true} final
  * @property {int} pts
  * @property {int} timeout
@@ -3927,7 +3927,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/updates.channelDifferenceTooLong}
  * @typedef {updates.ChannelDifference} updates.channelDifferenceTooLong
- * @property {#} flags
+ * @property {number} flags
  * @property {true} final
  * @property {int} pts
  * @property {int} timeout
@@ -3936,23 +3936,23 @@
  * @property {int} read_outbox_max_id
  * @property {int} unread_count
  * @property {int} unread_mentions_count
- * @property {Vector.<Message>} messages
- * @property {Vector.<Chat>} chats
- * @property {Vector.<User>} users
+ * @property {Array.<Message>} messages
+ * @property {Array.<Chat>} chats
+ * @property {Array.<User>} users
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/updates.channelDifference}
  * @typedef {updates.ChannelDifference} updates.channelDifference
- * @property {#} flags
+ * @property {number} flags
  * @property {true} final
  * @property {int} pts
  * @property {int} timeout
- * @property {Vector.<Message>} new_messages
- * @property {Vector.<Update>} other_updates
- * @property {Vector.<Chat>} chats
- * @property {Vector.<User>} users
+ * @property {Array.<Message>} new_messages
+ * @property {Array.<Update>} other_updates
+ * @property {Array.<Chat>} chats
+ * @property {Array.<User>} users
  */
 
 /**
@@ -3965,9 +3965,9 @@
  *
  * @see {@link https://core.telegram.org/constructor/channelMessagesFilter}
  * @typedef {ChannelMessagesFilter} channelMessagesFilter
- * @property {#} flags
+ * @property {number} flags
  * @property {true} exclude_new_messages
- * @property {Vector.<MessageRange>} ranges
+ * @property {Array.<MessageRange>} ranges
  */
 
 /**
@@ -3998,7 +3998,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/channelParticipantAdmin}
  * @typedef {ChannelParticipant} channelParticipantAdmin
- * @property {#} flags
+ * @property {number} flags
  * @property {true} can_edit
  * @property {int} user_id
  * @property {int} inviter_id
@@ -4011,7 +4011,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/channelParticipantBanned}
  * @typedef {ChannelParticipant} channelParticipantBanned
- * @property {#} flags
+ * @property {number} flags
  * @property {true} left
  * @property {int} user_id
  * @property {int} kicked_by
@@ -4063,8 +4063,8 @@
  * @see {@link https://core.telegram.org/constructor/channels.channelParticipants}
  * @typedef {channels.ChannelParticipants} channels.channelParticipants
  * @property {int} count
- * @property {Vector.<ChannelParticipant>} participants
- * @property {Vector.<User>} users
+ * @property {Array.<ChannelParticipant>} participants
+ * @property {Array.<User>} users
  */
 
 /**
@@ -4078,18 +4078,18 @@
  * @see {@link https://core.telegram.org/constructor/channels.channelParticipant}
  * @typedef {channels.ChannelParticipant} channels.channelParticipant
  * @property {ChannelParticipant} participant
- * @property {Vector.<User>} users
+ * @property {Array.<User>} users
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/help.termsOfService}
  * @typedef {help.TermsOfService} help.termsOfService
- * @property {#} flags
+ * @property {number} flags
  * @property {true} popup
  * @property {DataJSON} id
  * @property {string} text
- * @property {Vector.<MessageEntity>} entities
+ * @property {Array.<MessageEntity>} entities
  * @property {int} min_age_confirm
  */
 
@@ -4119,7 +4119,7 @@
  * @see {@link https://core.telegram.org/constructor/messages.foundGifs}
  * @typedef {messages.FoundGifs} messages.foundGifs
  * @property {int} next_offset
- * @property {Vector.<FoundGif>} results
+ * @property {Array.<FoundGif>} results
  */
 
 /**
@@ -4133,16 +4133,16 @@
  * @see {@link https://core.telegram.org/constructor/messages.savedGifs}
  * @typedef {messages.SavedGifs} messages.savedGifs
  * @property {int} hash
- * @property {Vector.<Document>} gifs
+ * @property {Array.<Document>} gifs
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/inputBotInlineMessageMediaAuto}
  * @typedef {InputBotInlineMessage} inputBotInlineMessageMediaAuto
- * @property {#} flags
+ * @property {number} flags
  * @property {string} message
- * @property {Vector.<MessageEntity>} entities
+ * @property {Array.<MessageEntity>} entities
  * @property {ReplyMarkup} reply_markup
  */
 
@@ -4150,10 +4150,10 @@
  *
  * @see {@link https://core.telegram.org/constructor/inputBotInlineMessageText}
  * @typedef {InputBotInlineMessage} inputBotInlineMessageText
- * @property {#} flags
+ * @property {number} flags
  * @property {true} no_webpage
  * @property {string} message
- * @property {Vector.<MessageEntity>} entities
+ * @property {Array.<MessageEntity>} entities
  * @property {ReplyMarkup} reply_markup
  */
 
@@ -4161,7 +4161,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/inputBotInlineMessageMediaGeo}
  * @typedef {InputBotInlineMessage} inputBotInlineMessageMediaGeo
- * @property {#} flags
+ * @property {number} flags
  * @property {InputGeoPoint} geo_point
  * @property {int} period
  * @property {ReplyMarkup} reply_markup
@@ -4171,7 +4171,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/inputBotInlineMessageMediaVenue}
  * @typedef {InputBotInlineMessage} inputBotInlineMessageMediaVenue
- * @property {#} flags
+ * @property {number} flags
  * @property {InputGeoPoint} geo_point
  * @property {string} title
  * @property {string} address
@@ -4185,7 +4185,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/inputBotInlineMessageMediaContact}
  * @typedef {InputBotInlineMessage} inputBotInlineMessageMediaContact
- * @property {#} flags
+ * @property {number} flags
  * @property {string} phone_number
  * @property {string} first_name
  * @property {string} last_name
@@ -4197,7 +4197,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/inputBotInlineMessageGame}
  * @typedef {InputBotInlineMessage} inputBotInlineMessageGame
- * @property {#} flags
+ * @property {number} flags
  * @property {ReplyMarkup} reply_markup
  */
 
@@ -4205,7 +4205,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/inputBotInlineResult}
  * @typedef {InputBotInlineResult} inputBotInlineResult
- * @property {#} flags
+ * @property {number} flags
  * @property {string} id
  * @property {string} type
  * @property {string} title
@@ -4230,7 +4230,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/inputBotInlineResultDocument}
  * @typedef {InputBotInlineResult} inputBotInlineResultDocument
- * @property {#} flags
+ * @property {number} flags
  * @property {string} id
  * @property {string} type
  * @property {string} title
@@ -4252,9 +4252,9 @@
  *
  * @see {@link https://core.telegram.org/constructor/botInlineMessageMediaAuto}
  * @typedef {BotInlineMessage} botInlineMessageMediaAuto
- * @property {#} flags
+ * @property {number} flags
  * @property {string} message
- * @property {Vector.<MessageEntity>} entities
+ * @property {Array.<MessageEntity>} entities
  * @property {ReplyMarkup} reply_markup
  */
 
@@ -4262,10 +4262,10 @@
  *
  * @see {@link https://core.telegram.org/constructor/botInlineMessageText}
  * @typedef {BotInlineMessage} botInlineMessageText
- * @property {#} flags
+ * @property {number} flags
  * @property {true} no_webpage
  * @property {string} message
- * @property {Vector.<MessageEntity>} entities
+ * @property {Array.<MessageEntity>} entities
  * @property {ReplyMarkup} reply_markup
  */
 
@@ -4273,7 +4273,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/botInlineMessageMediaGeo}
  * @typedef {BotInlineMessage} botInlineMessageMediaGeo
- * @property {#} flags
+ * @property {number} flags
  * @property {GeoPoint} geo
  * @property {int} period
  * @property {ReplyMarkup} reply_markup
@@ -4283,7 +4283,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/botInlineMessageMediaVenue}
  * @typedef {BotInlineMessage} botInlineMessageMediaVenue
- * @property {#} flags
+ * @property {number} flags
  * @property {GeoPoint} geo
  * @property {string} title
  * @property {string} address
@@ -4297,7 +4297,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/botInlineMessageMediaContact}
  * @typedef {BotInlineMessage} botInlineMessageMediaContact
- * @property {#} flags
+ * @property {number} flags
  * @property {string} phone_number
  * @property {string} first_name
  * @property {string} last_name
@@ -4309,7 +4309,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/botInlineResult}
  * @typedef {BotInlineResult} botInlineResult
- * @property {#} flags
+ * @property {number} flags
  * @property {string} id
  * @property {string} type
  * @property {string} title
@@ -4324,7 +4324,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/botInlineMediaResult}
  * @typedef {BotInlineResult} botInlineMediaResult
- * @property {#} flags
+ * @property {number} flags
  * @property {string} id
  * @property {string} type
  * @property {Photo} photo
@@ -4338,14 +4338,14 @@
  *
  * @see {@link https://core.telegram.org/constructor/messages.botResults}
  * @typedef {messages.BotResults} messages.botResults
- * @property {#} flags
+ * @property {number} flags
  * @property {true} gallery
  * @property {long} query_id
  * @property {string} next_offset
  * @property {InlineBotSwitchPM} switch_pm
- * @property {Vector.<BotInlineResult>} results
+ * @property {Array.<BotInlineResult>} results
  * @property {int} cache_time
- * @property {Vector.<User>} users
+ * @property {Array.<User>} users
  */
 
 /**
@@ -4360,7 +4360,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/messageFwdHeader}
  * @typedef {MessageFwdHeader} messageFwdHeader
- * @property {#} flags
+ * @property {number} flags
  * @property {int} from_id
  * @property {int} date
  * @property {int} channel_id
@@ -4420,7 +4420,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/messages.botCallbackAnswer}
  * @typedef {messages.BotCallbackAnswer} messages.botCallbackAnswer
- * @property {#} flags
+ * @property {number} flags
  * @property {true} alert
  * @property {true} has_url
  * @property {true} native_ui
@@ -4433,7 +4433,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/messages.messageEditData}
  * @typedef {messages.MessageEditData} messages.messageEditData
- * @property {#} flags
+ * @property {number} flags
  * @property {true} caption
  */
 
@@ -4458,10 +4458,10 @@
  *
  * @see {@link https://core.telegram.org/constructor/messages.peerDialogs}
  * @typedef {messages.PeerDialogs} messages.peerDialogs
- * @property {Vector.<Dialog>} dialogs
- * @property {Vector.<Message>} messages
- * @property {Vector.<Chat>} chats
- * @property {Vector.<User>} users
+ * @property {Array.<Dialog>} dialogs
+ * @property {Array.<Message>} messages
+ * @property {Array.<Chat>} chats
+ * @property {Array.<User>} users
  * @property {updates.State} state
  */
 
@@ -4515,7 +4515,7 @@
  * @typedef {TopPeerCategoryPeers} topPeerCategoryPeers
  * @property {TopPeerCategory} category
  * @property {int} count
- * @property {Vector.<TopPeer>} peers
+ * @property {Array.<TopPeer>} peers
  */
 
 /**
@@ -4528,9 +4528,9 @@
  *
  * @see {@link https://core.telegram.org/constructor/contacts.topPeers}
  * @typedef {contacts.TopPeers} contacts.topPeers
- * @property {Vector.<TopPeerCategoryPeers>} categories
- * @property {Vector.<Chat>} chats
- * @property {Vector.<User>} users
+ * @property {Array.<TopPeerCategoryPeers>} categories
+ * @property {Array.<Chat>} chats
+ * @property {Array.<User>} users
  */
 
 /**
@@ -4543,7 +4543,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/draftMessageEmpty}
  * @typedef {DraftMessage} draftMessageEmpty
- * @property {#} flags
+ * @property {number} flags
  * @property {int} date
  */
 
@@ -4551,11 +4551,11 @@
  *
  * @see {@link https://core.telegram.org/constructor/draftMessage}
  * @typedef {DraftMessage} draftMessage
- * @property {#} flags
+ * @property {number} flags
  * @property {true} no_webpage
  * @property {int} reply_to_msg_id
  * @property {string} message
- * @property {Vector.<MessageEntity>} entities
+ * @property {Array.<MessageEntity>} entities
  * @property {int} date
  */
 
@@ -4570,8 +4570,8 @@
  * @see {@link https://core.telegram.org/constructor/messages.featuredStickers}
  * @typedef {messages.FeaturedStickers} messages.featuredStickers
  * @property {int} hash
- * @property {Vector.<StickerSetCovered>} sets
- * @property {Vector.<long>} unread
+ * @property {Array.<StickerSetCovered>} sets
+ * @property {Array.<long>} unread
  */
 
 /**
@@ -4585,9 +4585,9 @@
  * @see {@link https://core.telegram.org/constructor/messages.recentStickers}
  * @typedef {messages.RecentStickers} messages.recentStickers
  * @property {int} hash
- * @property {Vector.<StickerPack>} packs
- * @property {Vector.<Document>} stickers
- * @property {Vector.<int>} dates
+ * @property {Array.<StickerPack>} packs
+ * @property {Array.<Document>} stickers
+ * @property {Array.<int>} dates
  */
 
 /**
@@ -4595,7 +4595,7 @@
  * @see {@link https://core.telegram.org/constructor/messages.archivedStickers}
  * @typedef {messages.ArchivedStickers} messages.archivedStickers
  * @property {int} count
- * @property {Vector.<StickerSetCovered>} sets
+ * @property {Array.<StickerSetCovered>} sets
  */
 
 /**
@@ -4608,7 +4608,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/messages.stickerSetInstallResultArchive}
  * @typedef {messages.StickerSetInstallResult} messages.stickerSetInstallResultArchive
- * @property {Vector.<StickerSetCovered>} sets
+ * @property {Array.<StickerSetCovered>} sets
  */
 
 /**
@@ -4624,7 +4624,7 @@
  * @see {@link https://core.telegram.org/constructor/stickerSetMultiCovered}
  * @typedef {StickerSetCovered} stickerSetMultiCovered
  * @property {StickerSet} set
- * @property {Vector.<Document>} covers
+ * @property {Array.<Document>} covers
  */
 
 /**
@@ -4655,7 +4655,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/game}
  * @typedef {Game} game
- * @property {#} flags
+ * @property {number} flags
  * @property {long} id
  * @property {long} access_hash
  * @property {string} short_name
@@ -4694,8 +4694,8 @@
  *
  * @see {@link https://core.telegram.org/constructor/messages.highScores}
  * @typedef {messages.HighScores} messages.highScores
- * @property {Vector.<HighScore>} scores
- * @property {Vector.<User>} users
+ * @property {Array.<HighScore>} scores
+ * @property {Array.<User>} users
  */
 
 /**
@@ -4767,7 +4767,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/textConcat}
  * @typedef {RichText} textConcat
- * @property {Vector.<RichText>} texts
+ * @property {Array.<RichText>} texts
  */
 
 /**
@@ -4897,7 +4897,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/pageBlockList}
  * @typedef {PageBlock} pageBlockList
- * @property {Vector.<PageListItem>} items
+ * @property {Array.<PageListItem>} items
  */
 
 /**
@@ -4920,7 +4920,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/pageBlockPhoto}
  * @typedef {PageBlock} pageBlockPhoto
- * @property {#} flags
+ * @property {number} flags
  * @property {long} photo_id
  * @property {PageCaption} caption
  * @property {string} url
@@ -4931,7 +4931,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/pageBlockVideo}
  * @typedef {PageBlock} pageBlockVideo
- * @property {#} flags
+ * @property {number} flags
  * @property {true} autoplay
  * @property {true} loop
  * @property {long} video_id
@@ -4949,7 +4949,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/pageBlockEmbed}
  * @typedef {PageBlock} pageBlockEmbed
- * @property {#} flags
+ * @property {number} flags
  * @property {true} full_width
  * @property {true} allow_scrolling
  * @property {string} url
@@ -4969,7 +4969,7 @@
  * @property {long} author_photo_id
  * @property {string} author
  * @property {int} date
- * @property {Vector.<PageBlock>} blocks
+ * @property {Array.<PageBlock>} blocks
  * @property {PageCaption} caption
  */
 
@@ -4977,7 +4977,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/pageBlockCollage}
  * @typedef {PageBlock} pageBlockCollage
- * @property {Vector.<PageBlock>} items
+ * @property {Array.<PageBlock>} items
  * @property {PageCaption} caption
  */
 
@@ -4985,7 +4985,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/pageBlockSlideshow}
  * @typedef {PageBlock} pageBlockSlideshow
- * @property {Vector.<PageBlock>} items
+ * @property {Array.<PageBlock>} items
  * @property {PageCaption} caption
  */
 
@@ -5015,27 +5015,27 @@
  *
  * @see {@link https://core.telegram.org/constructor/pageBlockTable}
  * @typedef {PageBlock} pageBlockTable
- * @property {#} flags
+ * @property {number} flags
  * @property {true} bordered
  * @property {true} striped
  * @property {RichText} title
- * @property {Vector.<PageTableRow>} rows
+ * @property {Array.<PageTableRow>} rows
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/pageBlockOrderedList}
  * @typedef {PageBlock} pageBlockOrderedList
- * @property {Vector.<PageListOrderedItem>} items
+ * @property {Array.<PageListOrderedItem>} items
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/pageBlockDetails}
  * @typedef {PageBlock} pageBlockDetails
- * @property {#} flags
+ * @property {number} flags
  * @property {true} open
- * @property {Vector.<PageBlock>} blocks
+ * @property {Array.<PageBlock>} blocks
  * @property {RichText} title
  */
 
@@ -5044,7 +5044,7 @@
  * @see {@link https://core.telegram.org/constructor/pageBlockRelatedArticles}
  * @typedef {PageBlock} pageBlockRelatedArticles
  * @property {RichText} title
- * @property {Vector.<PageRelatedArticle>} articles
+ * @property {Array.<PageRelatedArticle>} articles
  */
 
 /**
@@ -5101,7 +5101,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/invoice}
  * @typedef {Invoice} invoice
- * @property {#} flags
+ * @property {number} flags
  * @property {true} test
  * @property {true} name_requested
  * @property {true} phone_requested
@@ -5111,7 +5111,7 @@
  * @property {true} phone_to_provider
  * @property {true} email_to_provider
  * @property {string} currency
- * @property {Vector.<LabeledPrice>} prices
+ * @property {Array.<LabeledPrice>} prices
  */
 
 /**
@@ -5138,7 +5138,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/paymentRequestedInfo}
  * @typedef {PaymentRequestedInfo} paymentRequestedInfo
- * @property {#} flags
+ * @property {number} flags
  * @property {string} name
  * @property {string} phone
  * @property {string} email
@@ -5161,7 +5161,7 @@
  * @property {long} access_hash
  * @property {int} size
  * @property {string} mime_type
- * @property {Vector.<DocumentAttribute>} attributes
+ * @property {Array.<DocumentAttribute>} attributes
  */
 
 /**
@@ -5171,7 +5171,7 @@
  * @property {string} url
  * @property {int} size
  * @property {string} mime_type
- * @property {Vector.<DocumentAttribute>} attributes
+ * @property {Array.<DocumentAttribute>} attributes
  */
 
 /**
@@ -5181,7 +5181,7 @@
  * @property {string} url
  * @property {int} size
  * @property {string} mime_type
- * @property {Vector.<DocumentAttribute>} attributes
+ * @property {Array.<DocumentAttribute>} attributes
  */
 
 /**
@@ -5219,7 +5219,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/payments.paymentForm}
  * @typedef {payments.PaymentForm} payments.paymentForm
- * @property {#} flags
+ * @property {number} flags
  * @property {true} can_save_credentials
  * @property {true} password_missing
  * @property {int} bot_id
@@ -5230,16 +5230,16 @@
  * @property {DataJSON} native_params
  * @property {PaymentRequestedInfo} saved_info
  * @property {PaymentSavedCredentials} saved_credentials
- * @property {Vector.<User>} users
+ * @property {Array.<User>} users
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/payments.validatedRequestedInfo}
  * @typedef {payments.ValidatedRequestedInfo} payments.validatedRequestedInfo
- * @property {#} flags
+ * @property {number} flags
  * @property {string} id
- * @property {Vector.<ShippingOption>} shipping_options
+ * @property {Array.<ShippingOption>} shipping_options
  */
 
 /**
@@ -5260,7 +5260,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/payments.paymentReceipt}
  * @typedef {payments.PaymentReceipt} payments.paymentReceipt
- * @property {#} flags
+ * @property {number} flags
  * @property {int} date
  * @property {int} bot_id
  * @property {Invoice} invoice
@@ -5270,14 +5270,14 @@
  * @property {string} currency
  * @property {long} total_amount
  * @property {string} credentials_title
- * @property {Vector.<User>} users
+ * @property {Array.<User>} users
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/payments.savedInfo}
  * @typedef {payments.SavedInfo} payments.savedInfo
- * @property {#} flags
+ * @property {number} flags
  * @property {true} has_saved_credentials
  * @property {PaymentRequestedInfo} saved_info
  */
@@ -5294,7 +5294,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/inputPaymentCredentials}
  * @typedef {InputPaymentCredentials} inputPaymentCredentials
- * @property {#} flags
+ * @property {number} flags
  * @property {true} save
  * @property {DataJSON} data
  */
@@ -5328,14 +5328,14 @@
  * @typedef {ShippingOption} shippingOption
  * @property {string} id
  * @property {string} title
- * @property {Vector.<LabeledPrice>} prices
+ * @property {Array.<LabeledPrice>} prices
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/inputStickerSetItem}
  * @typedef {InputStickerSetItem} inputStickerSetItem
- * @property {#} flags
+ * @property {number} flags
  * @property {InputDocument} document
  * @property {string} emoji
  * @property {MaskCoords} mask_coords
@@ -5360,7 +5360,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/phoneCallWaiting}
  * @typedef {PhoneCall} phoneCallWaiting
- * @property {#} flags
+ * @property {number} flags
  * @property {long} id
  * @property {long} access_hash
  * @property {int} date
@@ -5400,7 +5400,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/phoneCall}
  * @typedef {PhoneCall} phoneCall
- * @property {#} flags
+ * @property {number} flags
  * @property {true} p2p_allowed
  * @property {long} id
  * @property {long} access_hash
@@ -5411,7 +5411,7 @@
  * @property {long} key_fingerprint
  * @property {PhoneCallProtocol} protocol
  * @property {PhoneConnection} connection
- * @property {Vector.<PhoneConnection>} alternative_connections
+ * @property {Array.<PhoneConnection>} alternative_connections
  * @property {int} start_date
  */
 
@@ -5419,7 +5419,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/phoneCallDiscarded}
  * @typedef {PhoneCall} phoneCallDiscarded
- * @property {#} flags
+ * @property {number} flags
  * @property {true} need_rating
  * @property {true} need_debug
  * @property {long} id
@@ -5442,7 +5442,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/phoneCallProtocol}
  * @typedef {PhoneCallProtocol} phoneCallProtocol
- * @property {#} flags
+ * @property {number} flags
  * @property {true} udp_p2p
  * @property {true} udp_reflector
  * @property {int} min_layer
@@ -5454,7 +5454,7 @@
  * @see {@link https://core.telegram.org/constructor/phone.phoneCall}
  * @typedef {phone.PhoneCall} phone.phoneCall
  * @property {PhoneCall} phone_call
- * @property {Vector.<User>} users
+ * @property {Array.<User>} users
  */
 
 /**
@@ -5483,7 +5483,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/cdnConfig}
  * @typedef {CdnConfig} cdnConfig
- * @property {Vector.<CdnPublicKey>} public_keys
+ * @property {Array.<CdnPublicKey>} public_keys
  */
 
 /**
@@ -5498,7 +5498,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/langPackStringPluralized}
  * @typedef {LangPackString} langPackStringPluralized
- * @property {#} flags
+ * @property {number} flags
  * @property {string} key
  * @property {string} zero_value
  * @property {string} one_value
@@ -5522,14 +5522,14 @@
  * @property {string} lang_code
  * @property {int} from_version
  * @property {int} version
- * @property {Vector.<LangPackString>} strings
+ * @property {Array.<LangPackString>} strings
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/langPackLanguage}
  * @typedef {LangPackLanguage} langPackLanguage
- * @property {#} flags
+ * @property {number} flags
  * @property {true} official
  * @property {true} rtl
  * @property {string} name
@@ -5546,7 +5546,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/channelAdminRights}
  * @typedef {ChannelAdminRights} channelAdminRights
- * @property {#} flags
+ * @property {number} flags
  * @property {true} change_info
  * @property {true} post_messages
  * @property {true} edit_messages
@@ -5563,7 +5563,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/channelBannedRights}
  * @typedef {ChannelBannedRights} channelBannedRights
- * @property {#} flags
+ * @property {number} flags
  * @property {true} view_messages
  * @property {true} send_messages
  * @property {true} send_media
@@ -5707,16 +5707,16 @@
  *
  * @see {@link https://core.telegram.org/constructor/channels.adminLogResults}
  * @typedef {channels.AdminLogResults} channels.adminLogResults
- * @property {Vector.<ChannelAdminLogEvent>} events
- * @property {Vector.<Chat>} chats
- * @property {Vector.<User>} users
+ * @property {Array.<ChannelAdminLogEvent>} events
+ * @property {Array.<Chat>} chats
+ * @property {Array.<User>} users
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/channelAdminLogEventsFilter}
  * @typedef {ChannelAdminLogEventsFilter} channelAdminLogEventsFilter
- * @property {#} flags
+ * @property {number} flags
  * @property {true} join
  * @property {true} leave
  * @property {true} invite
@@ -5752,8 +5752,8 @@
  * @see {@link https://core.telegram.org/constructor/messages.favedStickers}
  * @typedef {messages.FavedStickers} messages.favedStickers
  * @property {int} hash
- * @property {Vector.<StickerPack>} packs
- * @property {Vector.<Document>} stickers
+ * @property {Array.<StickerPack>} packs
+ * @property {Array.<Document>} stickers
  */
 
 /**
@@ -5799,20 +5799,20 @@
  *
  * @see {@link https://core.telegram.org/constructor/help.recentMeUrls}
  * @typedef {help.RecentMeUrls} help.recentMeUrls
- * @property {Vector.<RecentMeUrl>} urls
- * @property {Vector.<Chat>} chats
- * @property {Vector.<User>} users
+ * @property {Array.<RecentMeUrl>} urls
+ * @property {Array.<Chat>} chats
+ * @property {Array.<User>} users
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/inputSingleMedia}
  * @typedef {InputSingleMedia} inputSingleMedia
- * @property {#} flags
+ * @property {number} flags
  * @property {InputMedia} media
  * @property {long} random_id
  * @property {string} message
- * @property {Vector.<MessageEntity>} entities
+ * @property {Array.<MessageEntity>} entities
  */
 
 /**
@@ -5834,8 +5834,8 @@
  *
  * @see {@link https://core.telegram.org/constructor/account.webAuthorizations}
  * @typedef {account.WebAuthorizations} account.webAuthorizations
- * @property {Vector.<WebAuthorization>} authorizations
- * @property {Vector.<User>} users
+ * @property {Array.<WebAuthorization>} authorizations
+ * @property {Array.<User>} users
  */
 
 /**
@@ -5883,7 +5883,7 @@
  * @see {@link https://core.telegram.org/constructor/messages.foundStickerSets}
  * @typedef {messages.FoundStickerSets} messages.foundStickerSets
  * @property {int} hash
- * @property {Vector.<StickerSetCovered>} sets
+ * @property {Array.<StickerSetCovered>} sets
  */
 
 /**
@@ -5916,8 +5916,8 @@
  * @typedef {help.ProxyData} help.proxyDataPromo
  * @property {int} expires
  * @property {Peer} peer
- * @property {Vector.<Chat>} chats
- * @property {Vector.<User>} users
+ * @property {Array.<Chat>} chats
+ * @property {Array.<User>} users
  */
 
 /**
@@ -6078,14 +6078,14 @@
  *
  * @see {@link https://core.telegram.org/constructor/secureValue}
  * @typedef {SecureValue} secureValue
- * @property {#} flags
+ * @property {number} flags
  * @property {SecureValueType} type
  * @property {SecureData} data
  * @property {SecureFile} front_side
  * @property {SecureFile} reverse_side
  * @property {SecureFile} selfie
- * @property {Vector.<SecureFile>} translation
- * @property {Vector.<SecureFile>} files
+ * @property {Array.<SecureFile>} translation
+ * @property {Array.<SecureFile>} files
  * @property {SecurePlainData} plain_data
  * @property {bytes} hash
  */
@@ -6094,14 +6094,14 @@
  *
  * @see {@link https://core.telegram.org/constructor/inputSecureValue}
  * @typedef {InputSecureValue} inputSecureValue
- * @property {#} flags
+ * @property {number} flags
  * @property {SecureValueType} type
  * @property {SecureData} data
  * @property {InputSecureFile} front_side
  * @property {InputSecureFile} reverse_side
  * @property {InputSecureFile} selfie
- * @property {Vector.<InputSecureFile>} translation
- * @property {Vector.<InputSecureFile>} files
+ * @property {Array.<InputSecureFile>} translation
+ * @property {Array.<InputSecureFile>} files
  * @property {SecurePlainData} plain_data
  */
 
@@ -6164,7 +6164,7 @@
  * @see {@link https://core.telegram.org/constructor/secureValueErrorFiles}
  * @typedef {SecureValueError} secureValueErrorFiles
  * @property {SecureValueType} type
- * @property {Vector.<bytes>} file_hash
+ * @property {Array.<bytes>} file_hash
  * @property {string} text
  */
 
@@ -6191,7 +6191,7 @@
  * @see {@link https://core.telegram.org/constructor/secureValueErrorTranslationFiles}
  * @typedef {SecureValueError} secureValueErrorTranslationFiles
  * @property {SecureValueType} type
- * @property {Vector.<bytes>} file_hash
+ * @property {Array.<bytes>} file_hash
  * @property {string} text
  */
 
@@ -6208,11 +6208,11 @@
  *
  * @see {@link https://core.telegram.org/constructor/account.authorizationForm}
  * @typedef {account.AuthorizationForm} account.authorizationForm
- * @property {#} flags
- * @property {Vector.<SecureRequiredType>} required_types
- * @property {Vector.<SecureValue>} values
- * @property {Vector.<SecureValueError>} errors
- * @property {Vector.<User>} users
+ * @property {number} flags
+ * @property {Array.<SecureRequiredType>} required_types
+ * @property {Array.<SecureValue>} values
+ * @property {Array.<SecureValueError>} errors
+ * @property {Array.<User>} users
  * @property {string} privacy_policy_url
  */
 
@@ -6234,10 +6234,10 @@
  *
  * @see {@link https://core.telegram.org/constructor/help.deepLinkInfo}
  * @typedef {help.DeepLinkInfo} help.deepLinkInfo
- * @property {#} flags
+ * @property {number} flags
  * @property {true} update_app
  * @property {string} message
- * @property {Vector.<MessageEntity>} entities
+ * @property {Array.<MessageEntity>} entities
  */
 
 /**
@@ -6321,7 +6321,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/secureRequiredType}
  * @typedef {SecureRequiredType} secureRequiredType
- * @property {#} flags
+ * @property {number} flags
  * @property {true} native_names
  * @property {true} selfie_required
  * @property {true} translation_required
@@ -6332,7 +6332,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/secureRequiredTypeOneOf}
  * @typedef {SecureRequiredType} secureRequiredTypeOneOf
- * @property {Vector.<SecureRequiredType>} types
+ * @property {Array.<SecureRequiredType>} types
  */
 
 /**
@@ -6353,7 +6353,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/pageTableCell}
  * @typedef {PageTableCell} pageTableCell
- * @property {#} flags
+ * @property {number} flags
  * @property {true} header
  * @property {true} align_center
  * @property {true} align_right
@@ -6368,7 +6368,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/pageTableRow}
  * @typedef {PageTableRow} pageTableRow
- * @property {Vector.<PageTableCell>} cells
+ * @property {Array.<PageTableCell>} cells
  */
 
 /**
@@ -6390,7 +6390,7 @@
  *
  * @see {@link https://core.telegram.org/constructor/pageListItemBlocks}
  * @typedef {PageListItem} pageListItemBlocks
- * @property {Vector.<PageBlock>} blocks
+ * @property {Array.<PageBlock>} blocks
  */
 
 /**
@@ -6406,14 +6406,14 @@
  * @see {@link https://core.telegram.org/constructor/pageListOrderedItemBlocks}
  * @typedef {PageListOrderedItem} pageListOrderedItemBlocks
  * @property {string} num
- * @property {Vector.<PageBlock>} blocks
+ * @property {Array.<PageBlock>} blocks
  */
 
 /**
  *
  * @see {@link https://core.telegram.org/constructor/pageRelatedArticle}
  * @typedef {PageRelatedArticle} pageRelatedArticle
- * @property {#} flags
+ * @property {number} flags
  * @property {string} url
  * @property {long} webpage_id
  * @property {string} title
@@ -6427,13 +6427,13 @@
  *
  * @see {@link https://core.telegram.org/constructor/page}
  * @typedef {Page} page
- * @property {#} flags
+ * @property {number} flags
  * @property {true} part
  * @property {true} rtl
  * @property {string} url
- * @property {Vector.<PageBlock>} blocks
- * @property {Vector.<Photo>} photos
- * @property {Vector.<Document>} documents
+ * @property {Array.<PageBlock>} blocks
+ * @property {Array.<Photo>} photos
+ * @property {Array.<Document>} documents
  */
 
 /**
@@ -6454,7 +6454,7 @@
  * @see {@link https://core.telegram.org/constructor/help.userInfo}
  * @typedef {help.UserInfo} help.userInfo
  * @property {string} message
- * @property {Vector.<MessageEntity>} entities
+ * @property {Array.<MessageEntity>} entities
  * @property {string} author
  * @property {int} date
  */
