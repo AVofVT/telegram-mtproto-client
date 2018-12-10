@@ -7,14 +7,26 @@
 
 /**
  *
+ * @see {@link https://core.telegram.org/constructor/int128}
+ * @typedef {number} int128
+ */
+
+/**
+ *
+ * @see {@link https://core.telegram.org/constructor/int256}
+ * @typedef {number} int256
+ */
+
+/**
+ *
  * @see {@link https://core.telegram.org/constructor/double}
  * @typedef {number} double
  */
 
 /**
  *
- * @see {@link https://core.telegram.org/constructor/log}
- * @typedef {number} log
+ * @see {@link https://core.telegram.org/constructor/long}
+ * @typedef {number} long
  */
 
 /**

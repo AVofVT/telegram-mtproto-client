@@ -80,7 +80,7 @@ let result = {
 }
 
 
-let types = ['number:int', 'number:double', 'number:log', 'string:bytes', 'boolean:Bool', 'Array:Vector']
+let types = ['number:int', 'number:int128', 'number:int256', 'number:double', 'number:long', 'string:bytes', 'boolean:Bool', 'Array:Vector']
     .map(t => t.split(':'))
     .map(([type, name]) => ({type, name, args: []}))
     .map(typeTpl).join('\n') + result.constructors
