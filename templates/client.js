@@ -1,4 +1,72 @@
 
+/// TL Builtin ///
+/**
+ *
+ * @see {@link https://core.telegram.org/constructor/Type}
+ * @typedef {any} Type
+ */
+
+/**
+ *
+ * @see {@link https://core.telegram.org/constructor/int}
+ * @typedef {number} int
+ */
+
+/**
+ *
+ * @see {@link https://core.telegram.org/constructor/long}
+ * @typedef {string} long
+ */
+
+/**
+ *
+ * @see {@link https://core.telegram.org/constructor/double}
+ * @typedef {number} double
+ */
+
+/**
+ *
+ * @see {@link https://core.telegram.org/constructor/int128}
+ * @typedef {(number | string)} int128
+ */
+
+/**
+ *
+ * @see {@link https://core.telegram.org/constructor/int256}
+ * @typedef {(number | string)} int256
+ */
+
+/**
+ *
+ * @see {@link https://core.telegram.org/constructor/bytes}
+ * @typedef {number[]} bytes
+ */
+
+/**
+ *
+ * @see {@link https://core.telegram.org/constructor/boolFalse}
+ * @typedef {false} boolFalse
+ */
+
+/**
+ *
+ * @see {@link https://core.telegram.org/constructor/boolTrue}
+ * @typedef {true} boolTrue
+ */
+
+/**
+ *
+ * @see {@link https://core.telegram.org/constructor/X}
+ * @typedef {any} X
+ */
+
+
+/// Constructors ///
+//constructors//
+
+/// Types ///
+//types//
+
 class Ctor {
     /**
      * @param {MTProtoClient} client
@@ -44,6 +112,7 @@ class MTProtoClient {
         const ctor = this.constructor
 
         //internal//
+
     }
 
     request(query, config) {
