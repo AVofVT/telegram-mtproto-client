@@ -27,13 +27,13 @@ class Ctor {
 
 class Contest extends Ctor {
     /**
-     * @see {@link https://core.telegram.org/method/contest.saveDeveloperInfo.md}
-     * @param {object} config
-     * @property {int} config.vk_id
-     * @property {string} config.name
-     * @property {string} config.phone_number
-     * @property {int} config.age
-     * @property {string} config.city
+     * @see {@link https://core.telegram.org/method/contest.saveDeveloperInfo}
+     * @param {Object} config
+     * @param {int} config.vk_id
+     * @param {string} config.name
+     * @param {string} config.phone_number
+     * @param {int} config.age
+     * @param {string} config.city
      * @returns {Bool}
      */
     saveDeveloperInfo(config) {
@@ -43,14 +43,14 @@ class Contest extends Ctor {
 
 class Auth extends Ctor {
     /**
-     * @see {@link https://core.telegram.org/method/auth.sendCode.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.allow_flashcall
-     * @property {string} config.phone_number
-     * @property {Bool} config.current_number
-     * @property {int} config.api_id
-     * @property {string} config.api_hash
+     * @see {@link https://core.telegram.org/method/auth.sendCode}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.allow_flashcall
+     * @param {string} config.phone_number
+     * @param {Bool} config.current_number
+     * @param {int} config.api_id
+     * @param {string} config.api_hash
      * @returns {auth.SentCode}
      */
     sendCode(config) {
@@ -58,13 +58,13 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/auth.signUp.md}
-     * @param {object} config
-     * @property {string} config.phone_number
-     * @property {string} config.phone_code_hash
-     * @property {string} config.phone_code
-     * @property {string} config.first_name
-     * @property {string} config.last_name
+     * @see {@link https://core.telegram.org/method/auth.signUp}
+     * @param {Object} config
+     * @param {string} config.phone_number
+     * @param {string} config.phone_code_hash
+     * @param {string} config.phone_code
+     * @param {string} config.first_name
+     * @param {string} config.last_name
      * @returns {auth.Authorization}
      */
     signUp(config) {
@@ -72,11 +72,11 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/auth.signIn.md}
-     * @param {object} config
-     * @property {string} config.phone_number
-     * @property {string} config.phone_code_hash
-     * @property {string} config.phone_code
+     * @see {@link https://core.telegram.org/method/auth.signIn}
+     * @param {Object} config
+     * @param {string} config.phone_number
+     * @param {string} config.phone_code_hash
+     * @param {string} config.phone_code
      * @returns {auth.Authorization}
      */
     signIn(config) {
@@ -84,7 +84,7 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/auth.logOut.md}
+     * @see {@link https://core.telegram.org/method/auth.logOut}
      * @returns {Bool}
      */
     logOut() {
@@ -92,7 +92,7 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/auth.resetAuthorizations.md}
+     * @see {@link https://core.telegram.org/method/auth.resetAuthorizations}
      * @returns {Bool}
      */
     resetAuthorizations() {
@@ -100,9 +100,9 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/auth.exportAuthorization.md}
-     * @param {object} config
-     * @property {int} config.dc_id
+     * @see {@link https://core.telegram.org/method/auth.exportAuthorization}
+     * @param {Object} config
+     * @param {int} config.dc_id
      * @returns {auth.ExportedAuthorization}
      */
     exportAuthorization(config) {
@@ -110,10 +110,10 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/auth.importAuthorization.md}
-     * @param {object} config
-     * @property {int} config.id
-     * @property {bytes} config.bytes
+     * @see {@link https://core.telegram.org/method/auth.importAuthorization}
+     * @param {Object} config
+     * @param {int} config.id
+     * @param {bytes} config.bytes
      * @returns {auth.Authorization}
      */
     importAuthorization(config) {
@@ -121,12 +121,12 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/auth.bindTempAuthKey.md}
-     * @param {object} config
-     * @property {long} config.perm_auth_key_id
-     * @property {long} config.nonce
-     * @property {int} config.expires_at
-     * @property {bytes} config.encrypted_message
+     * @see {@link https://core.telegram.org/method/auth.bindTempAuthKey}
+     * @param {Object} config
+     * @param {long} config.perm_auth_key_id
+     * @param {long} config.nonce
+     * @param {int} config.expires_at
+     * @param {bytes} config.encrypted_message
      * @returns {Bool}
      */
     bindTempAuthKey(config) {
@@ -134,12 +134,12 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/auth.importBotAuthorization.md}
-     * @param {object} config
-     * @property {int} config.flags
-     * @property {int} config.api_id
-     * @property {string} config.api_hash
-     * @property {string} config.bot_auth_token
+     * @see {@link https://core.telegram.org/method/auth.importBotAuthorization}
+     * @param {Object} config
+     * @param {int} config.flags
+     * @param {int} config.api_id
+     * @param {string} config.api_hash
+     * @param {string} config.bot_auth_token
      * @returns {auth.Authorization}
      */
     importBotAuthorization(config) {
@@ -147,9 +147,9 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/auth.checkPassword.md}
-     * @param {object} config
-     * @property {InputCheckPasswordSRP} config.password
+     * @see {@link https://core.telegram.org/method/auth.checkPassword}
+     * @param {Object} config
+     * @param {InputCheckPasswordSRP} config.password
      * @returns {auth.Authorization}
      */
     checkPassword(config) {
@@ -157,7 +157,7 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/auth.requestPasswordRecovery.md}
+     * @see {@link https://core.telegram.org/method/auth.requestPasswordRecovery}
      * @returns {auth.PasswordRecovery}
      */
     requestPasswordRecovery() {
@@ -165,9 +165,9 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/auth.recoverPassword.md}
-     * @param {object} config
-     * @property {string} config.code
+     * @see {@link https://core.telegram.org/method/auth.recoverPassword}
+     * @param {Object} config
+     * @param {string} config.code
      * @returns {auth.Authorization}
      */
     recoverPassword(config) {
@@ -175,10 +175,10 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/auth.resendCode.md}
-     * @param {object} config
-     * @property {string} config.phone_number
-     * @property {string} config.phone_code_hash
+     * @see {@link https://core.telegram.org/method/auth.resendCode}
+     * @param {Object} config
+     * @param {string} config.phone_number
+     * @param {string} config.phone_code_hash
      * @returns {auth.SentCode}
      */
     resendCode(config) {
@@ -186,10 +186,10 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/auth.cancelCode.md}
-     * @param {object} config
-     * @property {string} config.phone_number
-     * @property {string} config.phone_code_hash
+     * @see {@link https://core.telegram.org/method/auth.cancelCode}
+     * @param {Object} config
+     * @param {string} config.phone_number
+     * @param {string} config.phone_code_hash
      * @returns {Bool}
      */
     cancelCode(config) {
@@ -197,9 +197,9 @@ class Auth extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/auth.dropTempAuthKeys.md}
-     * @param {object} config
-     * @property {Vector.<long>} config.except_auth_keys
+     * @see {@link https://core.telegram.org/method/auth.dropTempAuthKeys}
+     * @param {Object} config
+     * @param {Vector.<long>} config.except_auth_keys
      * @returns {Bool}
      */
     dropTempAuthKeys(config) {
@@ -209,13 +209,13 @@ class Auth extends Ctor {
 
 class Account extends Ctor {
     /**
-     * @see {@link https://core.telegram.org/method/account.registerDevice.md}
-     * @param {object} config
-     * @property {int} config.token_type
-     * @property {string} config.token
-     * @property {Bool} config.app_sandbox
-     * @property {bytes} config.secret
-     * @property {Vector.<int>} config.other_uids
+     * @see {@link https://core.telegram.org/method/account.registerDevice}
+     * @param {Object} config
+     * @param {int} config.token_type
+     * @param {string} config.token
+     * @param {Bool} config.app_sandbox
+     * @param {bytes} config.secret
+     * @param {Vector.<int>} config.other_uids
      * @returns {Bool}
      */
     registerDevice(config) {
@@ -223,11 +223,11 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.unregisterDevice.md}
-     * @param {object} config
-     * @property {int} config.token_type
-     * @property {string} config.token
-     * @property {Vector.<int>} config.other_uids
+     * @see {@link https://core.telegram.org/method/account.unregisterDevice}
+     * @param {Object} config
+     * @param {int} config.token_type
+     * @param {string} config.token
+     * @param {Vector.<int>} config.other_uids
      * @returns {Bool}
      */
     unregisterDevice(config) {
@@ -235,10 +235,10 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.updateNotifySettings.md}
-     * @param {object} config
-     * @property {InputNotifyPeer} config.peer
-     * @property {InputPeerNotifySettings} config.settings
+     * @see {@link https://core.telegram.org/method/account.updateNotifySettings}
+     * @param {Object} config
+     * @param {InputNotifyPeer} config.peer
+     * @param {InputPeerNotifySettings} config.settings
      * @returns {Bool}
      */
     updateNotifySettings(config) {
@@ -246,9 +246,9 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.getNotifySettings.md}
-     * @param {object} config
-     * @property {InputNotifyPeer} config.peer
+     * @see {@link https://core.telegram.org/method/account.getNotifySettings}
+     * @param {Object} config
+     * @param {InputNotifyPeer} config.peer
      * @returns {PeerNotifySettings}
      */
     getNotifySettings(config) {
@@ -256,7 +256,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.resetNotifySettings.md}
+     * @see {@link https://core.telegram.org/method/account.resetNotifySettings}
      * @returns {Bool}
      */
     resetNotifySettings() {
@@ -264,12 +264,12 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.updateProfile.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {string} config.first_name
-     * @property {string} config.last_name
-     * @property {string} config.about
+     * @see {@link https://core.telegram.org/method/account.updateProfile}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {string} config.first_name
+     * @param {string} config.last_name
+     * @param {string} config.about
      * @returns {User}
      */
     updateProfile(config) {
@@ -277,9 +277,9 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.updateStatus.md}
-     * @param {object} config
-     * @property {Bool} config.offline
+     * @see {@link https://core.telegram.org/method/account.updateStatus}
+     * @param {Object} config
+     * @param {Bool} config.offline
      * @returns {Bool}
      */
     updateStatus(config) {
@@ -287,7 +287,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.getWallPapers.md}
+     * @see {@link https://core.telegram.org/method/account.getWallPapers}
      * @returns {Vector.<WallPaper>}
      */
     getWallPapers() {
@@ -295,10 +295,10 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.reportPeer.md}
-     * @param {object} config
-     * @property {InputPeer} config.peer
-     * @property {ReportReason} config.reason
+     * @see {@link https://core.telegram.org/method/account.reportPeer}
+     * @param {Object} config
+     * @param {InputPeer} config.peer
+     * @param {ReportReason} config.reason
      * @returns {Bool}
      */
     reportPeer(config) {
@@ -306,9 +306,9 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.checkUsername.md}
-     * @param {object} config
-     * @property {string} config.username
+     * @see {@link https://core.telegram.org/method/account.checkUsername}
+     * @param {Object} config
+     * @param {string} config.username
      * @returns {Bool}
      */
     checkUsername(config) {
@@ -316,9 +316,9 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.updateUsername.md}
-     * @param {object} config
-     * @property {string} config.username
+     * @see {@link https://core.telegram.org/method/account.updateUsername}
+     * @param {Object} config
+     * @param {string} config.username
      * @returns {User}
      */
     updateUsername(config) {
@@ -326,9 +326,9 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.getPrivacy.md}
-     * @param {object} config
-     * @property {InputPrivacyKey} config.key
+     * @see {@link https://core.telegram.org/method/account.getPrivacy}
+     * @param {Object} config
+     * @param {InputPrivacyKey} config.key
      * @returns {account.PrivacyRules}
      */
     getPrivacy(config) {
@@ -336,10 +336,10 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.setPrivacy.md}
-     * @param {object} config
-     * @property {InputPrivacyKey} config.key
-     * @property {Vector.<InputPrivacyRule>} config.rules
+     * @see {@link https://core.telegram.org/method/account.setPrivacy}
+     * @param {Object} config
+     * @param {InputPrivacyKey} config.key
+     * @param {Vector.<InputPrivacyRule>} config.rules
      * @returns {account.PrivacyRules}
      */
     setPrivacy(config) {
@@ -347,9 +347,9 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.deleteAccount.md}
-     * @param {object} config
-     * @property {string} config.reason
+     * @see {@link https://core.telegram.org/method/account.deleteAccount}
+     * @param {Object} config
+     * @param {string} config.reason
      * @returns {Bool}
      */
     deleteAccount(config) {
@@ -357,7 +357,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.getAccountTTL.md}
+     * @see {@link https://core.telegram.org/method/account.getAccountTTL}
      * @returns {AccountDaysTTL}
      */
     getAccountTTL() {
@@ -365,9 +365,9 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.setAccountTTL.md}
-     * @param {object} config
-     * @property {AccountDaysTTL} config.ttl
+     * @see {@link https://core.telegram.org/method/account.setAccountTTL}
+     * @param {Object} config
+     * @param {AccountDaysTTL} config.ttl
      * @returns {Bool}
      */
     setAccountTTL(config) {
@@ -375,12 +375,12 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.sendChangePhoneCode.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.allow_flashcall
-     * @property {string} config.phone_number
-     * @property {Bool} config.current_number
+     * @see {@link https://core.telegram.org/method/account.sendChangePhoneCode}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.allow_flashcall
+     * @param {string} config.phone_number
+     * @param {Bool} config.current_number
      * @returns {auth.SentCode}
      */
     sendChangePhoneCode(config) {
@@ -388,11 +388,11 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.changePhone.md}
-     * @param {object} config
-     * @property {string} config.phone_number
-     * @property {string} config.phone_code_hash
-     * @property {string} config.phone_code
+     * @see {@link https://core.telegram.org/method/account.changePhone}
+     * @param {Object} config
+     * @param {string} config.phone_number
+     * @param {string} config.phone_code_hash
+     * @param {string} config.phone_code
      * @returns {User}
      */
     changePhone(config) {
@@ -400,9 +400,9 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.updateDeviceLocked.md}
-     * @param {object} config
-     * @property {int} config.period
+     * @see {@link https://core.telegram.org/method/account.updateDeviceLocked}
+     * @param {Object} config
+     * @param {int} config.period
      * @returns {Bool}
      */
     updateDeviceLocked(config) {
@@ -410,7 +410,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.getAuthorizations.md}
+     * @see {@link https://core.telegram.org/method/account.getAuthorizations}
      * @returns {account.Authorizations}
      */
     getAuthorizations() {
@@ -418,9 +418,9 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.resetAuthorization.md}
-     * @param {object} config
-     * @property {long} config.hash
+     * @see {@link https://core.telegram.org/method/account.resetAuthorization}
+     * @param {Object} config
+     * @param {long} config.hash
      * @returns {Bool}
      */
     resetAuthorization(config) {
@@ -428,7 +428,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.getPassword.md}
+     * @see {@link https://core.telegram.org/method/account.getPassword}
      * @returns {account.Password}
      */
     getPassword() {
@@ -436,9 +436,9 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.getPasswordSettings.md}
-     * @param {object} config
-     * @property {InputCheckPasswordSRP} config.password
+     * @see {@link https://core.telegram.org/method/account.getPasswordSettings}
+     * @param {Object} config
+     * @param {InputCheckPasswordSRP} config.password
      * @returns {account.PasswordSettings}
      */
     getPasswordSettings(config) {
@@ -446,10 +446,10 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.updatePasswordSettings.md}
-     * @param {object} config
-     * @property {InputCheckPasswordSRP} config.password
-     * @property {account.PasswordInputSettings} config.new_settings
+     * @see {@link https://core.telegram.org/method/account.updatePasswordSettings}
+     * @param {Object} config
+     * @param {InputCheckPasswordSRP} config.password
+     * @param {account.PasswordInputSettings} config.new_settings
      * @returns {Bool}
      */
     updatePasswordSettings(config) {
@@ -457,12 +457,12 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.sendConfirmPhoneCode.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.allow_flashcall
-     * @property {string} config.hash
-     * @property {Bool} config.current_number
+     * @see {@link https://core.telegram.org/method/account.sendConfirmPhoneCode}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.allow_flashcall
+     * @param {string} config.hash
+     * @param {Bool} config.current_number
      * @returns {auth.SentCode}
      */
     sendConfirmPhoneCode(config) {
@@ -470,10 +470,10 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.confirmPhone.md}
-     * @param {object} config
-     * @property {string} config.phone_code_hash
-     * @property {string} config.phone_code
+     * @see {@link https://core.telegram.org/method/account.confirmPhone}
+     * @param {Object} config
+     * @param {string} config.phone_code_hash
+     * @param {string} config.phone_code
      * @returns {Bool}
      */
     confirmPhone(config) {
@@ -481,10 +481,10 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.getTmpPassword.md}
-     * @param {object} config
-     * @property {InputCheckPasswordSRP} config.password
-     * @property {int} config.period
+     * @see {@link https://core.telegram.org/method/account.getTmpPassword}
+     * @param {Object} config
+     * @param {InputCheckPasswordSRP} config.password
+     * @param {int} config.period
      * @returns {account.TmpPassword}
      */
     getTmpPassword(config) {
@@ -492,7 +492,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.getWebAuthorizations.md}
+     * @see {@link https://core.telegram.org/method/account.getWebAuthorizations}
      * @returns {account.WebAuthorizations}
      */
     getWebAuthorizations() {
@@ -500,9 +500,9 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.resetWebAuthorization.md}
-     * @param {object} config
-     * @property {long} config.hash
+     * @see {@link https://core.telegram.org/method/account.resetWebAuthorization}
+     * @param {Object} config
+     * @param {long} config.hash
      * @returns {Bool}
      */
     resetWebAuthorization(config) {
@@ -510,7 +510,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.resetWebAuthorizations.md}
+     * @see {@link https://core.telegram.org/method/account.resetWebAuthorizations}
      * @returns {Bool}
      */
     resetWebAuthorizations() {
@@ -518,7 +518,7 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.getAllSecureValues.md}
+     * @see {@link https://core.telegram.org/method/account.getAllSecureValues}
      * @returns {Vector.<SecureValue>}
      */
     getAllSecureValues() {
@@ -526,9 +526,9 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.getSecureValue.md}
-     * @param {object} config
-     * @property {Vector.<SecureValueType>} config.types
+     * @see {@link https://core.telegram.org/method/account.getSecureValue}
+     * @param {Object} config
+     * @param {Vector.<SecureValueType>} config.types
      * @returns {Vector.<SecureValue>}
      */
     getSecureValue(config) {
@@ -536,10 +536,10 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.saveSecureValue.md}
-     * @param {object} config
-     * @property {InputSecureValue} config.value
-     * @property {long} config.secure_secret_id
+     * @see {@link https://core.telegram.org/method/account.saveSecureValue}
+     * @param {Object} config
+     * @param {InputSecureValue} config.value
+     * @param {long} config.secure_secret_id
      * @returns {SecureValue}
      */
     saveSecureValue(config) {
@@ -547,9 +547,9 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.deleteSecureValue.md}
-     * @param {object} config
-     * @property {Vector.<SecureValueType>} config.types
+     * @see {@link https://core.telegram.org/method/account.deleteSecureValue}
+     * @param {Object} config
+     * @param {Vector.<SecureValueType>} config.types
      * @returns {Bool}
      */
     deleteSecureValue(config) {
@@ -557,11 +557,11 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.getAuthorizationForm.md}
-     * @param {object} config
-     * @property {int} config.bot_id
-     * @property {string} config.scope
-     * @property {string} config.public_key
+     * @see {@link https://core.telegram.org/method/account.getAuthorizationForm}
+     * @param {Object} config
+     * @param {int} config.bot_id
+     * @param {string} config.scope
+     * @param {string} config.public_key
      * @returns {account.AuthorizationForm}
      */
     getAuthorizationForm(config) {
@@ -569,13 +569,13 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.acceptAuthorization.md}
-     * @param {object} config
-     * @property {int} config.bot_id
-     * @property {string} config.scope
-     * @property {string} config.public_key
-     * @property {Vector.<SecureValueHash>} config.value_hashes
-     * @property {SecureCredentialsEncrypted} config.credentials
+     * @see {@link https://core.telegram.org/method/account.acceptAuthorization}
+     * @param {Object} config
+     * @param {int} config.bot_id
+     * @param {string} config.scope
+     * @param {string} config.public_key
+     * @param {Vector.<SecureValueHash>} config.value_hashes
+     * @param {SecureCredentialsEncrypted} config.credentials
      * @returns {Bool}
      */
     acceptAuthorization(config) {
@@ -583,12 +583,12 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.sendVerifyPhoneCode.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.allow_flashcall
-     * @property {string} config.phone_number
-     * @property {Bool} config.current_number
+     * @see {@link https://core.telegram.org/method/account.sendVerifyPhoneCode}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.allow_flashcall
+     * @param {string} config.phone_number
+     * @param {Bool} config.current_number
      * @returns {auth.SentCode}
      */
     sendVerifyPhoneCode(config) {
@@ -596,11 +596,11 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.verifyPhone.md}
-     * @param {object} config
-     * @property {string} config.phone_number
-     * @property {string} config.phone_code_hash
-     * @property {string} config.phone_code
+     * @see {@link https://core.telegram.org/method/account.verifyPhone}
+     * @param {Object} config
+     * @param {string} config.phone_number
+     * @param {string} config.phone_code_hash
+     * @param {string} config.phone_code
      * @returns {Bool}
      */
     verifyPhone(config) {
@@ -608,9 +608,9 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.sendVerifyEmailCode.md}
-     * @param {object} config
-     * @property {string} config.email
+     * @see {@link https://core.telegram.org/method/account.sendVerifyEmailCode}
+     * @param {Object} config
+     * @param {string} config.email
      * @returns {account.SentEmailCode}
      */
     sendVerifyEmailCode(config) {
@@ -618,10 +618,10 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.verifyEmail.md}
-     * @param {object} config
-     * @property {string} config.email
-     * @property {string} config.code
+     * @see {@link https://core.telegram.org/method/account.verifyEmail}
+     * @param {Object} config
+     * @param {string} config.email
+     * @param {string} config.code
      * @returns {Bool}
      */
     verifyEmail(config) {
@@ -629,16 +629,16 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.initTakeoutSession.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.contacts
-     * @property {true} config.message_users
-     * @property {true} config.message_chats
-     * @property {true} config.message_megagroups
-     * @property {true} config.message_channels
-     * @property {true} config.files
-     * @property {int} config.file_max_size
+     * @see {@link https://core.telegram.org/method/account.initTakeoutSession}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.contacts
+     * @param {true} config.message_users
+     * @param {true} config.message_chats
+     * @param {true} config.message_megagroups
+     * @param {true} config.message_channels
+     * @param {true} config.files
+     * @param {int} config.file_max_size
      * @returns {account.Takeout}
      */
     initTakeoutSession(config) {
@@ -646,22 +646,48 @@ class Account extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/account.finishTakeoutSession.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.success
+     * @see {@link https://core.telegram.org/method/account.finishTakeoutSession}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.success
      * @returns {Bool}
      */
     finishTakeoutSession(config) {
         return this.send('account.finishTakeoutSession', config)
     }
+
+    /**
+     * @see {@link https://core.telegram.org/method/account.confirmPasswordEmail}
+     * @param {Object} config
+     * @param {string} config.code
+     * @returns {Bool}
+     */
+    confirmPasswordEmail(config) {
+        return this.send('account.confirmPasswordEmail', config)
+    }
+
+    /**
+     * @see {@link https://core.telegram.org/method/account.resendPasswordEmail}
+     * @returns {Bool}
+     */
+    resendPasswordEmail() {
+        return this.send('account.resendPasswordEmail')
+    }
+
+    /**
+     * @see {@link https://core.telegram.org/method/account.cancelPasswordEmail}
+     * @returns {Bool}
+     */
+    cancelPasswordEmail() {
+        return this.send('account.cancelPasswordEmail')
+    }
 }
 
 class Users extends Ctor {
     /**
-     * @see {@link https://core.telegram.org/method/users.getUsers.md}
-     * @param {object} config
-     * @property {Vector.<InputUser>} config.id
+     * @see {@link https://core.telegram.org/method/users.getUsers}
+     * @param {Object} config
+     * @param {Vector.<InputUser>} config.id
      * @returns {Vector.<User>}
      */
     getUsers(config) {
@@ -669,9 +695,9 @@ class Users extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/users.getFullUser.md}
-     * @param {object} config
-     * @property {InputUser} config.id
+     * @see {@link https://core.telegram.org/method/users.getFullUser}
+     * @param {Object} config
+     * @param {InputUser} config.id
      * @returns {UserFull}
      */
     getFullUser(config) {
@@ -679,10 +705,10 @@ class Users extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/users.setSecureValueErrors.md}
-     * @param {object} config
-     * @property {InputUser} config.id
-     * @property {Vector.<SecureValueError>} config.errors
+     * @see {@link https://core.telegram.org/method/users.setSecureValueErrors}
+     * @param {Object} config
+     * @param {InputUser} config.id
+     * @param {Vector.<SecureValueError>} config.errors
      * @returns {Bool}
      */
     setSecureValueErrors(config) {
@@ -692,7 +718,17 @@ class Users extends Ctor {
 
 class Contacts extends Ctor {
     /**
-     * @see {@link https://core.telegram.org/method/contacts.getStatuses.md}
+     * @see {@link https://core.telegram.org/method/contacts.getContactIDs}
+     * @param {Object} config
+     * @param {int} config.hash
+     * @returns {Vector.<int>}
+     */
+    getContactIDs(config) {
+        return this.send('contacts.getContactIDs', config)
+    }
+
+    /**
+     * @see {@link https://core.telegram.org/method/contacts.getStatuses}
      * @returns {Vector.<ContactStatus>}
      */
     getStatuses() {
@@ -700,9 +736,9 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/contacts.getContacts.md}
-     * @param {object} config
-     * @property {int} config.hash
+     * @see {@link https://core.telegram.org/method/contacts.getContacts}
+     * @param {Object} config
+     * @param {int} config.hash
      * @returns {contacts.Contacts}
      */
     getContacts(config) {
@@ -710,9 +746,9 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/contacts.importContacts.md}
-     * @param {object} config
-     * @property {Vector.<InputContact>} config.contacts
+     * @see {@link https://core.telegram.org/method/contacts.importContacts}
+     * @param {Object} config
+     * @param {Vector.<InputContact>} config.contacts
      * @returns {contacts.ImportedContacts}
      */
     importContacts(config) {
@@ -720,9 +756,9 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/contacts.deleteContact.md}
-     * @param {object} config
-     * @property {InputUser} config.id
+     * @see {@link https://core.telegram.org/method/contacts.deleteContact}
+     * @param {Object} config
+     * @param {InputUser} config.id
      * @returns {contacts.Link}
      */
     deleteContact(config) {
@@ -730,9 +766,9 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/contacts.deleteContacts.md}
-     * @param {object} config
-     * @property {Vector.<InputUser>} config.id
+     * @see {@link https://core.telegram.org/method/contacts.deleteContacts}
+     * @param {Object} config
+     * @param {Vector.<InputUser>} config.id
      * @returns {Bool}
      */
     deleteContacts(config) {
@@ -740,9 +776,9 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/contacts.block.md}
-     * @param {object} config
-     * @property {InputUser} config.id
+     * @see {@link https://core.telegram.org/method/contacts.block}
+     * @param {Object} config
+     * @param {InputUser} config.id
      * @returns {Bool}
      */
     block(config) {
@@ -750,9 +786,9 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/contacts.unblock.md}
-     * @param {object} config
-     * @property {InputUser} config.id
+     * @see {@link https://core.telegram.org/method/contacts.unblock}
+     * @param {Object} config
+     * @param {InputUser} config.id
      * @returns {Bool}
      */
     unblock(config) {
@@ -760,10 +796,10 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/contacts.getBlocked.md}
-     * @param {object} config
-     * @property {int} config.offset
-     * @property {int} config.limit
+     * @see {@link https://core.telegram.org/method/contacts.getBlocked}
+     * @param {Object} config
+     * @param {int} config.offset
+     * @param {int} config.limit
      * @returns {contacts.Blocked}
      */
     getBlocked(config) {
@@ -771,7 +807,7 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/contacts.exportCard.md}
+     * @see {@link https://core.telegram.org/method/contacts.exportCard}
      * @returns {Vector.<int>}
      */
     exportCard() {
@@ -779,9 +815,9 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/contacts.importCard.md}
-     * @param {object} config
-     * @property {Vector.<int>} config.export_card
+     * @see {@link https://core.telegram.org/method/contacts.importCard}
+     * @param {Object} config
+     * @param {Vector.<int>} config.export_card
      * @returns {User}
      */
     importCard(config) {
@@ -789,10 +825,10 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/contacts.search.md}
-     * @param {object} config
-     * @property {string} config.q
-     * @property {int} config.limit
+     * @see {@link https://core.telegram.org/method/contacts.search}
+     * @param {Object} config
+     * @param {string} config.q
+     * @param {int} config.limit
      * @returns {contacts.Found}
      */
     search(config) {
@@ -800,9 +836,9 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/contacts.resolveUsername.md}
-     * @param {object} config
-     * @property {string} config.username
+     * @see {@link https://core.telegram.org/method/contacts.resolveUsername}
+     * @param {Object} config
+     * @param {string} config.username
      * @returns {contacts.ResolvedPeer}
      */
     resolveUsername(config) {
@@ -810,18 +846,18 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/contacts.getTopPeers.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.correspondents
-     * @property {true} config.bots_pm
-     * @property {true} config.bots_inline
-     * @property {true} config.phone_calls
-     * @property {true} config.groups
-     * @property {true} config.channels
-     * @property {int} config.offset
-     * @property {int} config.limit
-     * @property {int} config.hash
+     * @see {@link https://core.telegram.org/method/contacts.getTopPeers}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.correspondents
+     * @param {true} config.bots_pm
+     * @param {true} config.bots_inline
+     * @param {true} config.phone_calls
+     * @param {true} config.groups
+     * @param {true} config.channels
+     * @param {int} config.offset
+     * @param {int} config.limit
+     * @param {int} config.hash
      * @returns {contacts.TopPeers}
      */
     getTopPeers(config) {
@@ -829,10 +865,10 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/contacts.resetTopPeerRating.md}
-     * @param {object} config
-     * @property {TopPeerCategory} config.category
-     * @property {InputPeer} config.peer
+     * @see {@link https://core.telegram.org/method/contacts.resetTopPeerRating}
+     * @param {Object} config
+     * @param {TopPeerCategory} config.category
+     * @param {InputPeer} config.peer
      * @returns {Bool}
      */
     resetTopPeerRating(config) {
@@ -840,7 +876,7 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/contacts.resetSaved.md}
+     * @see {@link https://core.telegram.org/method/contacts.resetSaved}
      * @returns {Bool}
      */
     resetSaved() {
@@ -848,7 +884,7 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/contacts.getSaved.md}
+     * @see {@link https://core.telegram.org/method/contacts.getSaved}
      * @returns {Vector.<SavedContact>}
      */
     getSaved() {
@@ -856,9 +892,9 @@ class Contacts extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/contacts.toggleTopPeers.md}
-     * @param {object} config
-     * @property {Bool} config.enabled
+     * @see {@link https://core.telegram.org/method/contacts.toggleTopPeers}
+     * @param {Object} config
+     * @param {Bool} config.enabled
      * @returns {Bool}
      */
     toggleTopPeers(config) {
@@ -868,9 +904,9 @@ class Contacts extends Ctor {
 
 class Messages extends Ctor {
     /**
-     * @see {@link https://core.telegram.org/method/messages.getMessages.md}
-     * @param {object} config
-     * @property {Vector.<InputMessage>} config.id
+     * @see {@link https://core.telegram.org/method/messages.getMessages}
+     * @param {Object} config
+     * @param {Vector.<InputMessage>} config.id
      * @returns {messages.Messages}
      */
     getMessages(config) {
@@ -878,15 +914,15 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getDialogs.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.exclude_pinned
-     * @property {int} config.offset_date
-     * @property {int} config.offset_id
-     * @property {InputPeer} config.offset_peer
-     * @property {int} config.limit
-     * @property {int} config.hash
+     * @see {@link https://core.telegram.org/method/messages.getDialogs}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.exclude_pinned
+     * @param {int} config.offset_date
+     * @param {int} config.offset_id
+     * @param {InputPeer} config.offset_peer
+     * @param {int} config.limit
+     * @param {int} config.hash
      * @returns {messages.Dialogs}
      */
     getDialogs(config) {
@@ -894,16 +930,16 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getHistory.md}
-     * @param {object} config
-     * @property {InputPeer} config.peer
-     * @property {int} config.offset_id
-     * @property {int} config.offset_date
-     * @property {int} config.add_offset
-     * @property {int} config.limit
-     * @property {int} config.max_id
-     * @property {int} config.min_id
-     * @property {int} config.hash
+     * @see {@link https://core.telegram.org/method/messages.getHistory}
+     * @param {Object} config
+     * @param {InputPeer} config.peer
+     * @param {int} config.offset_id
+     * @param {int} config.offset_date
+     * @param {int} config.add_offset
+     * @param {int} config.limit
+     * @param {int} config.max_id
+     * @param {int} config.min_id
+     * @param {int} config.hash
      * @returns {messages.Messages}
      */
     getHistory(config) {
@@ -911,21 +947,21 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.search.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {InputPeer} config.peer
-     * @property {string} config.q
-     * @property {InputUser} config.from_id
-     * @property {MessagesFilter} config.filter
-     * @property {int} config.min_date
-     * @property {int} config.max_date
-     * @property {int} config.offset_id
-     * @property {int} config.add_offset
-     * @property {int} config.limit
-     * @property {int} config.max_id
-     * @property {int} config.min_id
-     * @property {int} config.hash
+     * @see {@link https://core.telegram.org/method/messages.search}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {InputPeer} config.peer
+     * @param {string} config.q
+     * @param {InputUser} config.from_id
+     * @param {MessagesFilter} config.filter
+     * @param {int} config.min_date
+     * @param {int} config.max_date
+     * @param {int} config.offset_id
+     * @param {int} config.add_offset
+     * @param {int} config.limit
+     * @param {int} config.max_id
+     * @param {int} config.min_id
+     * @param {int} config.hash
      * @returns {messages.Messages}
      */
     search(config) {
@@ -933,10 +969,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.readHistory.md}
-     * @param {object} config
-     * @property {InputPeer} config.peer
-     * @property {int} config.max_id
+     * @see {@link https://core.telegram.org/method/messages.readHistory}
+     * @param {Object} config
+     * @param {InputPeer} config.peer
+     * @param {int} config.max_id
      * @returns {messages.AffectedMessages}
      */
     readHistory(config) {
@@ -944,12 +980,12 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.deleteHistory.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.just_clear
-     * @property {InputPeer} config.peer
-     * @property {int} config.max_id
+     * @see {@link https://core.telegram.org/method/messages.deleteHistory}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.just_clear
+     * @param {InputPeer} config.peer
+     * @param {int} config.max_id
      * @returns {messages.AffectedHistory}
      */
     deleteHistory(config) {
@@ -957,11 +993,11 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.deleteMessages.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.revoke
-     * @property {Vector.<int>} config.id
+     * @see {@link https://core.telegram.org/method/messages.deleteMessages}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.revoke
+     * @param {Vector.<int>} config.id
      * @returns {messages.AffectedMessages}
      */
     deleteMessages(config) {
@@ -969,9 +1005,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.receivedMessages.md}
-     * @param {object} config
-     * @property {int} config.max_id
+     * @see {@link https://core.telegram.org/method/messages.receivedMessages}
+     * @param {Object} config
+     * @param {int} config.max_id
      * @returns {Vector.<ReceivedNotifyMessage>}
      */
     receivedMessages(config) {
@@ -979,10 +1015,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.setTyping.md}
-     * @param {object} config
-     * @property {InputPeer} config.peer
-     * @property {SendMessageAction} config.action
+     * @see {@link https://core.telegram.org/method/messages.setTyping}
+     * @param {Object} config
+     * @param {InputPeer} config.peer
+     * @param {SendMessageAction} config.action
      * @returns {Bool}
      */
     setTyping(config) {
@@ -990,19 +1026,19 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.sendMessage.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.no_webpage
-     * @property {true} config.silent
-     * @property {true} config.background
-     * @property {true} config.clear_draft
-     * @property {InputPeer} config.peer
-     * @property {int} config.reply_to_msg_id
-     * @property {string} config.message
-     * @property {long} config.random_id
-     * @property {ReplyMarkup} config.reply_markup
-     * @property {Vector.<MessageEntity>} config.entities
+     * @see {@link https://core.telegram.org/method/messages.sendMessage}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.no_webpage
+     * @param {true} config.silent
+     * @param {true} config.background
+     * @param {true} config.clear_draft
+     * @param {InputPeer} config.peer
+     * @param {int} config.reply_to_msg_id
+     * @param {string} config.message
+     * @param {long} config.random_id
+     * @param {ReplyMarkup} config.reply_markup
+     * @param {Vector.<MessageEntity>} config.entities
      * @returns {Updates}
      */
     sendMessage(config) {
@@ -1010,19 +1046,19 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.sendMedia.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.silent
-     * @property {true} config.background
-     * @property {true} config.clear_draft
-     * @property {InputPeer} config.peer
-     * @property {int} config.reply_to_msg_id
-     * @property {InputMedia} config.media
-     * @property {string} config.message
-     * @property {long} config.random_id
-     * @property {ReplyMarkup} config.reply_markup
-     * @property {Vector.<MessageEntity>} config.entities
+     * @see {@link https://core.telegram.org/method/messages.sendMedia}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.silent
+     * @param {true} config.background
+     * @param {true} config.clear_draft
+     * @param {InputPeer} config.peer
+     * @param {int} config.reply_to_msg_id
+     * @param {InputMedia} config.media
+     * @param {string} config.message
+     * @param {long} config.random_id
+     * @param {ReplyMarkup} config.reply_markup
+     * @param {Vector.<MessageEntity>} config.entities
      * @returns {Updates}
      */
     sendMedia(config) {
@@ -1030,17 +1066,17 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.forwardMessages.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.silent
-     * @property {true} config.background
-     * @property {true} config.with_my_score
-     * @property {true} config.grouped
-     * @property {InputPeer} config.from_peer
-     * @property {Vector.<int>} config.id
-     * @property {Vector.<long>} config.random_id
-     * @property {InputPeer} config.to_peer
+     * @see {@link https://core.telegram.org/method/messages.forwardMessages}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.silent
+     * @param {true} config.background
+     * @param {true} config.with_my_score
+     * @param {true} config.grouped
+     * @param {InputPeer} config.from_peer
+     * @param {Vector.<int>} config.id
+     * @param {Vector.<long>} config.random_id
+     * @param {InputPeer} config.to_peer
      * @returns {Updates}
      */
     forwardMessages(config) {
@@ -1048,9 +1084,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.reportSpam.md}
-     * @param {object} config
-     * @property {InputPeer} config.peer
+     * @see {@link https://core.telegram.org/method/messages.reportSpam}
+     * @param {Object} config
+     * @param {InputPeer} config.peer
      * @returns {Bool}
      */
     reportSpam(config) {
@@ -1058,9 +1094,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.hideReportSpam.md}
-     * @param {object} config
-     * @property {InputPeer} config.peer
+     * @see {@link https://core.telegram.org/method/messages.hideReportSpam}
+     * @param {Object} config
+     * @param {InputPeer} config.peer
      * @returns {Bool}
      */
     hideReportSpam(config) {
@@ -1068,9 +1104,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getPeerSettings.md}
-     * @param {object} config
-     * @property {InputPeer} config.peer
+     * @see {@link https://core.telegram.org/method/messages.getPeerSettings}
+     * @param {Object} config
+     * @param {InputPeer} config.peer
      * @returns {PeerSettings}
      */
     getPeerSettings(config) {
@@ -1078,11 +1114,11 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.report.md}
-     * @param {object} config
-     * @property {InputPeer} config.peer
-     * @property {Vector.<int>} config.id
-     * @property {ReportReason} config.reason
+     * @see {@link https://core.telegram.org/method/messages.report}
+     * @param {Object} config
+     * @param {InputPeer} config.peer
+     * @param {Vector.<int>} config.id
+     * @param {ReportReason} config.reason
      * @returns {Bool}
      */
     report(config) {
@@ -1090,9 +1126,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getChats.md}
-     * @param {object} config
-     * @property {Vector.<int>} config.id
+     * @see {@link https://core.telegram.org/method/messages.getChats}
+     * @param {Object} config
+     * @param {Vector.<int>} config.id
      * @returns {messages.Chats}
      */
     getChats(config) {
@@ -1100,9 +1136,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getFullChat.md}
-     * @param {object} config
-     * @property {int} config.chat_id
+     * @see {@link https://core.telegram.org/method/messages.getFullChat}
+     * @param {Object} config
+     * @param {int} config.chat_id
      * @returns {messages.ChatFull}
      */
     getFullChat(config) {
@@ -1110,10 +1146,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.editChatTitle.md}
-     * @param {object} config
-     * @property {int} config.chat_id
-     * @property {string} config.title
+     * @see {@link https://core.telegram.org/method/messages.editChatTitle}
+     * @param {Object} config
+     * @param {int} config.chat_id
+     * @param {string} config.title
      * @returns {Updates}
      */
     editChatTitle(config) {
@@ -1121,10 +1157,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.editChatPhoto.md}
-     * @param {object} config
-     * @property {int} config.chat_id
-     * @property {InputChatPhoto} config.photo
+     * @see {@link https://core.telegram.org/method/messages.editChatPhoto}
+     * @param {Object} config
+     * @param {int} config.chat_id
+     * @param {InputChatPhoto} config.photo
      * @returns {Updates}
      */
     editChatPhoto(config) {
@@ -1132,11 +1168,11 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.addChatUser.md}
-     * @param {object} config
-     * @property {int} config.chat_id
-     * @property {InputUser} config.user_id
-     * @property {int} config.fwd_limit
+     * @see {@link https://core.telegram.org/method/messages.addChatUser}
+     * @param {Object} config
+     * @param {int} config.chat_id
+     * @param {InputUser} config.user_id
+     * @param {int} config.fwd_limit
      * @returns {Updates}
      */
     addChatUser(config) {
@@ -1144,10 +1180,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.deleteChatUser.md}
-     * @param {object} config
-     * @property {int} config.chat_id
-     * @property {InputUser} config.user_id
+     * @see {@link https://core.telegram.org/method/messages.deleteChatUser}
+     * @param {Object} config
+     * @param {int} config.chat_id
+     * @param {InputUser} config.user_id
      * @returns {Updates}
      */
     deleteChatUser(config) {
@@ -1155,10 +1191,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.createChat.md}
-     * @param {object} config
-     * @property {Vector.<InputUser>} config.users
-     * @property {string} config.title
+     * @see {@link https://core.telegram.org/method/messages.createChat}
+     * @param {Object} config
+     * @param {Vector.<InputUser>} config.users
+     * @param {string} config.title
      * @returns {Updates}
      */
     createChat(config) {
@@ -1166,10 +1202,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getDhConfig.md}
-     * @param {object} config
-     * @property {int} config.version
-     * @property {int} config.random_length
+     * @see {@link https://core.telegram.org/method/messages.getDhConfig}
+     * @param {Object} config
+     * @param {int} config.version
+     * @param {int} config.random_length
      * @returns {messages.DhConfig}
      */
     getDhConfig(config) {
@@ -1177,11 +1213,11 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.requestEncryption.md}
-     * @param {object} config
-     * @property {InputUser} config.user_id
-     * @property {int} config.random_id
-     * @property {bytes} config.g_a
+     * @see {@link https://core.telegram.org/method/messages.requestEncryption}
+     * @param {Object} config
+     * @param {InputUser} config.user_id
+     * @param {int} config.random_id
+     * @param {bytes} config.g_a
      * @returns {EncryptedChat}
      */
     requestEncryption(config) {
@@ -1189,11 +1225,11 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.acceptEncryption.md}
-     * @param {object} config
-     * @property {InputEncryptedChat} config.peer
-     * @property {bytes} config.g_b
-     * @property {long} config.key_fingerprint
+     * @see {@link https://core.telegram.org/method/messages.acceptEncryption}
+     * @param {Object} config
+     * @param {InputEncryptedChat} config.peer
+     * @param {bytes} config.g_b
+     * @param {long} config.key_fingerprint
      * @returns {EncryptedChat}
      */
     acceptEncryption(config) {
@@ -1201,9 +1237,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.discardEncryption.md}
-     * @param {object} config
-     * @property {int} config.chat_id
+     * @see {@link https://core.telegram.org/method/messages.discardEncryption}
+     * @param {Object} config
+     * @param {int} config.chat_id
      * @returns {Bool}
      */
     discardEncryption(config) {
@@ -1211,10 +1247,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.setEncryptedTyping.md}
-     * @param {object} config
-     * @property {InputEncryptedChat} config.peer
-     * @property {Bool} config.typing
+     * @see {@link https://core.telegram.org/method/messages.setEncryptedTyping}
+     * @param {Object} config
+     * @param {InputEncryptedChat} config.peer
+     * @param {Bool} config.typing
      * @returns {Bool}
      */
     setEncryptedTyping(config) {
@@ -1222,10 +1258,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.readEncryptedHistory.md}
-     * @param {object} config
-     * @property {InputEncryptedChat} config.peer
-     * @property {int} config.max_date
+     * @see {@link https://core.telegram.org/method/messages.readEncryptedHistory}
+     * @param {Object} config
+     * @param {InputEncryptedChat} config.peer
+     * @param {int} config.max_date
      * @returns {Bool}
      */
     readEncryptedHistory(config) {
@@ -1233,11 +1269,11 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.sendEncrypted.md}
-     * @param {object} config
-     * @property {InputEncryptedChat} config.peer
-     * @property {long} config.random_id
-     * @property {bytes} config.data
+     * @see {@link https://core.telegram.org/method/messages.sendEncrypted}
+     * @param {Object} config
+     * @param {InputEncryptedChat} config.peer
+     * @param {long} config.random_id
+     * @param {bytes} config.data
      * @returns {messages.SentEncryptedMessage}
      */
     sendEncrypted(config) {
@@ -1245,12 +1281,12 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.sendEncryptedFile.md}
-     * @param {object} config
-     * @property {InputEncryptedChat} config.peer
-     * @property {long} config.random_id
-     * @property {bytes} config.data
-     * @property {InputEncryptedFile} config.file
+     * @see {@link https://core.telegram.org/method/messages.sendEncryptedFile}
+     * @param {Object} config
+     * @param {InputEncryptedChat} config.peer
+     * @param {long} config.random_id
+     * @param {bytes} config.data
+     * @param {InputEncryptedFile} config.file
      * @returns {messages.SentEncryptedMessage}
      */
     sendEncryptedFile(config) {
@@ -1258,11 +1294,11 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.sendEncryptedService.md}
-     * @param {object} config
-     * @property {InputEncryptedChat} config.peer
-     * @property {long} config.random_id
-     * @property {bytes} config.data
+     * @see {@link https://core.telegram.org/method/messages.sendEncryptedService}
+     * @param {Object} config
+     * @param {InputEncryptedChat} config.peer
+     * @param {long} config.random_id
+     * @param {bytes} config.data
      * @returns {messages.SentEncryptedMessage}
      */
     sendEncryptedService(config) {
@@ -1270,9 +1306,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.receivedQueue.md}
-     * @param {object} config
-     * @property {int} config.max_qts
+     * @see {@link https://core.telegram.org/method/messages.receivedQueue}
+     * @param {Object} config
+     * @param {int} config.max_qts
      * @returns {Vector.<long>}
      */
     receivedQueue(config) {
@@ -1280,9 +1316,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.reportEncryptedSpam.md}
-     * @param {object} config
-     * @property {InputEncryptedChat} config.peer
+     * @see {@link https://core.telegram.org/method/messages.reportEncryptedSpam}
+     * @param {Object} config
+     * @param {InputEncryptedChat} config.peer
      * @returns {Bool}
      */
     reportEncryptedSpam(config) {
@@ -1290,9 +1326,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.readMessageContents.md}
-     * @param {object} config
-     * @property {Vector.<int>} config.id
+     * @see {@link https://core.telegram.org/method/messages.readMessageContents}
+     * @param {Object} config
+     * @param {Vector.<int>} config.id
      * @returns {messages.AffectedMessages}
      */
     readMessageContents(config) {
@@ -1300,10 +1336,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getStickers.md}
-     * @param {object} config
-     * @property {string} config.emoticon
-     * @property {int} config.hash
+     * @see {@link https://core.telegram.org/method/messages.getStickers}
+     * @param {Object} config
+     * @param {string} config.emoticon
+     * @param {int} config.hash
      * @returns {messages.Stickers}
      */
     getStickers(config) {
@@ -1311,9 +1347,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getAllStickers.md}
-     * @param {object} config
-     * @property {int} config.hash
+     * @see {@link https://core.telegram.org/method/messages.getAllStickers}
+     * @param {Object} config
+     * @param {int} config.hash
      * @returns {messages.AllStickers}
      */
     getAllStickers(config) {
@@ -1321,11 +1357,11 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getWebPagePreview.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {string} config.message
-     * @property {Vector.<MessageEntity>} config.entities
+     * @see {@link https://core.telegram.org/method/messages.getWebPagePreview}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {string} config.message
+     * @param {Vector.<MessageEntity>} config.entities
      * @returns {MessageMedia}
      */
     getWebPagePreview(config) {
@@ -1333,9 +1369,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.exportChatInvite.md}
-     * @param {object} config
-     * @property {int} config.chat_id
+     * @see {@link https://core.telegram.org/method/messages.exportChatInvite}
+     * @param {Object} config
+     * @param {int} config.chat_id
      * @returns {ExportedChatInvite}
      */
     exportChatInvite(config) {
@@ -1343,9 +1379,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.checkChatInvite.md}
-     * @param {object} config
-     * @property {string} config.hash
+     * @see {@link https://core.telegram.org/method/messages.checkChatInvite}
+     * @param {Object} config
+     * @param {string} config.hash
      * @returns {ChatInvite}
      */
     checkChatInvite(config) {
@@ -1353,9 +1389,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.importChatInvite.md}
-     * @param {object} config
-     * @property {string} config.hash
+     * @see {@link https://core.telegram.org/method/messages.importChatInvite}
+     * @param {Object} config
+     * @param {string} config.hash
      * @returns {Updates}
      */
     importChatInvite(config) {
@@ -1363,9 +1399,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getStickerSet.md}
-     * @param {object} config
-     * @property {InputStickerSet} config.stickerset
+     * @see {@link https://core.telegram.org/method/messages.getStickerSet}
+     * @param {Object} config
+     * @param {InputStickerSet} config.stickerset
      * @returns {messages.StickerSet}
      */
     getStickerSet(config) {
@@ -1373,10 +1409,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.installStickerSet.md}
-     * @param {object} config
-     * @property {InputStickerSet} config.stickerset
-     * @property {Bool} config.archived
+     * @see {@link https://core.telegram.org/method/messages.installStickerSet}
+     * @param {Object} config
+     * @param {InputStickerSet} config.stickerset
+     * @param {Bool} config.archived
      * @returns {messages.StickerSetInstallResult}
      */
     installStickerSet(config) {
@@ -1384,9 +1420,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.uninstallStickerSet.md}
-     * @param {object} config
-     * @property {InputStickerSet} config.stickerset
+     * @see {@link https://core.telegram.org/method/messages.uninstallStickerSet}
+     * @param {Object} config
+     * @param {InputStickerSet} config.stickerset
      * @returns {Bool}
      */
     uninstallStickerSet(config) {
@@ -1394,12 +1430,12 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.startBot.md}
-     * @param {object} config
-     * @property {InputUser} config.bot
-     * @property {InputPeer} config.peer
-     * @property {long} config.random_id
-     * @property {string} config.start_param
+     * @see {@link https://core.telegram.org/method/messages.startBot}
+     * @param {Object} config
+     * @param {InputUser} config.bot
+     * @param {InputPeer} config.peer
+     * @param {long} config.random_id
+     * @param {string} config.start_param
      * @returns {Updates}
      */
     startBot(config) {
@@ -1407,11 +1443,11 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getMessagesViews.md}
-     * @param {object} config
-     * @property {InputPeer} config.peer
-     * @property {Vector.<int>} config.id
-     * @property {Bool} config.increment
+     * @see {@link https://core.telegram.org/method/messages.getMessagesViews}
+     * @param {Object} config
+     * @param {InputPeer} config.peer
+     * @param {Vector.<int>} config.id
+     * @param {Bool} config.increment
      * @returns {Vector.<int>}
      */
     getMessagesViews(config) {
@@ -1419,10 +1455,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.toggleChatAdmins.md}
-     * @param {object} config
-     * @property {int} config.chat_id
-     * @property {Bool} config.enabled
+     * @see {@link https://core.telegram.org/method/messages.toggleChatAdmins}
+     * @param {Object} config
+     * @param {int} config.chat_id
+     * @param {Bool} config.enabled
      * @returns {Updates}
      */
     toggleChatAdmins(config) {
@@ -1430,11 +1466,11 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.editChatAdmin.md}
-     * @param {object} config
-     * @property {int} config.chat_id
-     * @property {InputUser} config.user_id
-     * @property {Bool} config.is_admin
+     * @see {@link https://core.telegram.org/method/messages.editChatAdmin}
+     * @param {Object} config
+     * @param {int} config.chat_id
+     * @param {InputUser} config.user_id
+     * @param {Bool} config.is_admin
      * @returns {Bool}
      */
     editChatAdmin(config) {
@@ -1442,9 +1478,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.migrateChat.md}
-     * @param {object} config
-     * @property {int} config.chat_id
+     * @see {@link https://core.telegram.org/method/messages.migrateChat}
+     * @param {Object} config
+     * @param {int} config.chat_id
      * @returns {Updates}
      */
     migrateChat(config) {
@@ -1452,13 +1488,13 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.searchGlobal.md}
-     * @param {object} config
-     * @property {string} config.q
-     * @property {int} config.offset_date
-     * @property {InputPeer} config.offset_peer
-     * @property {int} config.offset_id
-     * @property {int} config.limit
+     * @see {@link https://core.telegram.org/method/messages.searchGlobal}
+     * @param {Object} config
+     * @param {string} config.q
+     * @param {int} config.offset_date
+     * @param {InputPeer} config.offset_peer
+     * @param {int} config.offset_id
+     * @param {int} config.limit
      * @returns {messages.Messages}
      */
     searchGlobal(config) {
@@ -1466,11 +1502,11 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.reorderStickerSets.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.masks
-     * @property {Vector.<long>} config.order
+     * @see {@link https://core.telegram.org/method/messages.reorderStickerSets}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.masks
+     * @param {Vector.<long>} config.order
      * @returns {Bool}
      */
     reorderStickerSets(config) {
@@ -1478,11 +1514,11 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getDocumentByHash.md}
-     * @param {object} config
-     * @property {bytes} config.sha256
-     * @property {int} config.size
-     * @property {string} config.mime_type
+     * @see {@link https://core.telegram.org/method/messages.getDocumentByHash}
+     * @param {Object} config
+     * @param {bytes} config.sha256
+     * @param {int} config.size
+     * @param {string} config.mime_type
      * @returns {Document}
      */
     getDocumentByHash(config) {
@@ -1490,10 +1526,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.searchGifs.md}
-     * @param {object} config
-     * @property {string} config.q
-     * @property {int} config.offset
+     * @see {@link https://core.telegram.org/method/messages.searchGifs}
+     * @param {Object} config
+     * @param {string} config.q
+     * @param {int} config.offset
      * @returns {messages.FoundGifs}
      */
     searchGifs(config) {
@@ -1501,9 +1537,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getSavedGifs.md}
-     * @param {object} config
-     * @property {int} config.hash
+     * @see {@link https://core.telegram.org/method/messages.getSavedGifs}
+     * @param {Object} config
+     * @param {int} config.hash
      * @returns {messages.SavedGifs}
      */
     getSavedGifs(config) {
@@ -1511,10 +1547,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.saveGif.md}
-     * @param {object} config
-     * @property {InputDocument} config.id
-     * @property {Bool} config.unsave
+     * @see {@link https://core.telegram.org/method/messages.saveGif}
+     * @param {Object} config
+     * @param {InputDocument} config.id
+     * @param {Bool} config.unsave
      * @returns {Bool}
      */
     saveGif(config) {
@@ -1522,14 +1558,14 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getInlineBotResults.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {InputUser} config.bot
-     * @property {InputPeer} config.peer
-     * @property {InputGeoPoint} config.geo_point
-     * @property {string} config.query
-     * @property {string} config.offset
+     * @see {@link https://core.telegram.org/method/messages.getInlineBotResults}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {InputUser} config.bot
+     * @param {InputPeer} config.peer
+     * @param {InputGeoPoint} config.geo_point
+     * @param {string} config.query
+     * @param {string} config.offset
      * @returns {messages.BotResults}
      */
     getInlineBotResults(config) {
@@ -1537,16 +1573,16 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.setInlineBotResults.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.gallery
-     * @property {true} config.private
-     * @property {long} config.query_id
-     * @property {Vector.<InputBotInlineResult>} config.results
-     * @property {int} config.cache_time
-     * @property {string} config.next_offset
-     * @property {InlineBotSwitchPM} config.switch_pm
+     * @see {@link https://core.telegram.org/method/messages.setInlineBotResults}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.gallery
+     * @param {true} config.private
+     * @param {long} config.query_id
+     * @param {Vector.<InputBotInlineResult>} config.results
+     * @param {int} config.cache_time
+     * @param {string} config.next_offset
+     * @param {InlineBotSwitchPM} config.switch_pm
      * @returns {Bool}
      */
     setInlineBotResults(config) {
@@ -1554,17 +1590,17 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.sendInlineBotResult.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.silent
-     * @property {true} config.background
-     * @property {true} config.clear_draft
-     * @property {InputPeer} config.peer
-     * @property {int} config.reply_to_msg_id
-     * @property {long} config.random_id
-     * @property {long} config.query_id
-     * @property {string} config.id
+     * @see {@link https://core.telegram.org/method/messages.sendInlineBotResult}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.silent
+     * @param {true} config.background
+     * @param {true} config.clear_draft
+     * @param {InputPeer} config.peer
+     * @param {int} config.reply_to_msg_id
+     * @param {long} config.random_id
+     * @param {long} config.query_id
+     * @param {string} config.id
      * @returns {Updates}
      */
     sendInlineBotResult(config) {
@@ -1572,10 +1608,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getMessageEditData.md}
-     * @param {object} config
-     * @property {InputPeer} config.peer
-     * @property {int} config.id
+     * @see {@link https://core.telegram.org/method/messages.getMessageEditData}
+     * @param {Object} config
+     * @param {InputPeer} config.peer
+     * @param {int} config.id
      * @returns {messages.MessageEditData}
      */
     getMessageEditData(config) {
@@ -1583,18 +1619,18 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.editMessage.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.no_webpage
-     * @property {true} config.stop_geo_live
-     * @property {InputPeer} config.peer
-     * @property {int} config.id
-     * @property {string} config.message
-     * @property {InputMedia} config.media
-     * @property {ReplyMarkup} config.reply_markup
-     * @property {Vector.<MessageEntity>} config.entities
-     * @property {InputGeoPoint} config.geo_point
+     * @see {@link https://core.telegram.org/method/messages.editMessage}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.no_webpage
+     * @param {true} config.stop_geo_live
+     * @param {InputPeer} config.peer
+     * @param {int} config.id
+     * @param {string} config.message
+     * @param {InputMedia} config.media
+     * @param {ReplyMarkup} config.reply_markup
+     * @param {Vector.<MessageEntity>} config.entities
+     * @param {InputGeoPoint} config.geo_point
      * @returns {Updates}
      */
     editMessage(config) {
@@ -1602,17 +1638,17 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.editInlineBotMessage.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.no_webpage
-     * @property {true} config.stop_geo_live
-     * @property {InputBotInlineMessageID} config.id
-     * @property {string} config.message
-     * @property {InputMedia} config.media
-     * @property {ReplyMarkup} config.reply_markup
-     * @property {Vector.<MessageEntity>} config.entities
-     * @property {InputGeoPoint} config.geo_point
+     * @see {@link https://core.telegram.org/method/messages.editInlineBotMessage}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.no_webpage
+     * @param {true} config.stop_geo_live
+     * @param {InputBotInlineMessageID} config.id
+     * @param {string} config.message
+     * @param {InputMedia} config.media
+     * @param {ReplyMarkup} config.reply_markup
+     * @param {Vector.<MessageEntity>} config.entities
+     * @param {InputGeoPoint} config.geo_point
      * @returns {Bool}
      */
     editInlineBotMessage(config) {
@@ -1620,13 +1656,13 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getBotCallbackAnswer.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.game
-     * @property {InputPeer} config.peer
-     * @property {int} config.msg_id
-     * @property {bytes} config.data
+     * @see {@link https://core.telegram.org/method/messages.getBotCallbackAnswer}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.game
+     * @param {InputPeer} config.peer
+     * @param {int} config.msg_id
+     * @param {bytes} config.data
      * @returns {messages.BotCallbackAnswer}
      */
     getBotCallbackAnswer(config) {
@@ -1634,14 +1670,14 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.setBotCallbackAnswer.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.alert
-     * @property {long} config.query_id
-     * @property {string} config.message
-     * @property {string} config.url
-     * @property {int} config.cache_time
+     * @see {@link https://core.telegram.org/method/messages.setBotCallbackAnswer}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.alert
+     * @param {long} config.query_id
+     * @param {string} config.message
+     * @param {string} config.url
+     * @param {int} config.cache_time
      * @returns {Bool}
      */
     setBotCallbackAnswer(config) {
@@ -1649,9 +1685,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getPeerDialogs.md}
-     * @param {object} config
-     * @property {Vector.<InputDialogPeer>} config.peers
+     * @see {@link https://core.telegram.org/method/messages.getPeerDialogs}
+     * @param {Object} config
+     * @param {Vector.<InputDialogPeer>} config.peers
      * @returns {messages.PeerDialogs}
      */
     getPeerDialogs(config) {
@@ -1659,14 +1695,14 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.saveDraft.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.no_webpage
-     * @property {int} config.reply_to_msg_id
-     * @property {InputPeer} config.peer
-     * @property {string} config.message
-     * @property {Vector.<MessageEntity>} config.entities
+     * @see {@link https://core.telegram.org/method/messages.saveDraft}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.no_webpage
+     * @param {int} config.reply_to_msg_id
+     * @param {InputPeer} config.peer
+     * @param {string} config.message
+     * @param {Vector.<MessageEntity>} config.entities
      * @returns {Bool}
      */
     saveDraft(config) {
@@ -1674,7 +1710,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getAllDrafts.md}
+     * @see {@link https://core.telegram.org/method/messages.getAllDrafts}
      * @returns {Updates}
      */
     getAllDrafts() {
@@ -1682,9 +1718,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getFeaturedStickers.md}
-     * @param {object} config
-     * @property {int} config.hash
+     * @see {@link https://core.telegram.org/method/messages.getFeaturedStickers}
+     * @param {Object} config
+     * @param {int} config.hash
      * @returns {messages.FeaturedStickers}
      */
     getFeaturedStickers(config) {
@@ -1692,9 +1728,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.readFeaturedStickers.md}
-     * @param {object} config
-     * @property {Vector.<long>} config.id
+     * @see {@link https://core.telegram.org/method/messages.readFeaturedStickers}
+     * @param {Object} config
+     * @param {Vector.<long>} config.id
      * @returns {Bool}
      */
     readFeaturedStickers(config) {
@@ -1702,11 +1738,11 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getRecentStickers.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.attached
-     * @property {int} config.hash
+     * @see {@link https://core.telegram.org/method/messages.getRecentStickers}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.attached
+     * @param {int} config.hash
      * @returns {messages.RecentStickers}
      */
     getRecentStickers(config) {
@@ -1714,12 +1750,12 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.saveRecentSticker.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.attached
-     * @property {InputDocument} config.id
-     * @property {Bool} config.unsave
+     * @see {@link https://core.telegram.org/method/messages.saveRecentSticker}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.attached
+     * @param {InputDocument} config.id
+     * @param {Bool} config.unsave
      * @returns {Bool}
      */
     saveRecentSticker(config) {
@@ -1727,10 +1763,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.clearRecentStickers.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.attached
+     * @see {@link https://core.telegram.org/method/messages.clearRecentStickers}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.attached
      * @returns {Bool}
      */
     clearRecentStickers(config) {
@@ -1738,12 +1774,12 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getArchivedStickers.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.masks
-     * @property {long} config.offset_id
-     * @property {int} config.limit
+     * @see {@link https://core.telegram.org/method/messages.getArchivedStickers}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.masks
+     * @param {long} config.offset_id
+     * @param {int} config.limit
      * @returns {messages.ArchivedStickers}
      */
     getArchivedStickers(config) {
@@ -1751,9 +1787,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getMaskStickers.md}
-     * @param {object} config
-     * @property {int} config.hash
+     * @see {@link https://core.telegram.org/method/messages.getMaskStickers}
+     * @param {Object} config
+     * @param {int} config.hash
      * @returns {messages.AllStickers}
      */
     getMaskStickers(config) {
@@ -1761,9 +1797,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getAttachedStickers.md}
-     * @param {object} config
-     * @property {InputStickeredMedia} config.media
+     * @see {@link https://core.telegram.org/method/messages.getAttachedStickers}
+     * @param {Object} config
+     * @param {InputStickeredMedia} config.media
      * @returns {Vector.<StickerSetCovered>}
      */
     getAttachedStickers(config) {
@@ -1771,15 +1807,15 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.setGameScore.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.edit_message
-     * @property {true} config.force
-     * @property {InputPeer} config.peer
-     * @property {int} config.id
-     * @property {InputUser} config.user_id
-     * @property {int} config.score
+     * @see {@link https://core.telegram.org/method/messages.setGameScore}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.edit_message
+     * @param {true} config.force
+     * @param {InputPeer} config.peer
+     * @param {int} config.id
+     * @param {InputUser} config.user_id
+     * @param {int} config.score
      * @returns {Updates}
      */
     setGameScore(config) {
@@ -1787,14 +1823,14 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.setInlineGameScore.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.edit_message
-     * @property {true} config.force
-     * @property {InputBotInlineMessageID} config.id
-     * @property {InputUser} config.user_id
-     * @property {int} config.score
+     * @see {@link https://core.telegram.org/method/messages.setInlineGameScore}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.edit_message
+     * @param {true} config.force
+     * @param {InputBotInlineMessageID} config.id
+     * @param {InputUser} config.user_id
+     * @param {int} config.score
      * @returns {Bool}
      */
     setInlineGameScore(config) {
@@ -1802,11 +1838,11 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getGameHighScores.md}
-     * @param {object} config
-     * @property {InputPeer} config.peer
-     * @property {int} config.id
-     * @property {InputUser} config.user_id
+     * @see {@link https://core.telegram.org/method/messages.getGameHighScores}
+     * @param {Object} config
+     * @param {InputPeer} config.peer
+     * @param {int} config.id
+     * @param {InputUser} config.user_id
      * @returns {messages.HighScores}
      */
     getGameHighScores(config) {
@@ -1814,10 +1850,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getInlineGameHighScores.md}
-     * @param {object} config
-     * @property {InputBotInlineMessageID} config.id
-     * @property {InputUser} config.user_id
+     * @see {@link https://core.telegram.org/method/messages.getInlineGameHighScores}
+     * @param {Object} config
+     * @param {InputBotInlineMessageID} config.id
+     * @param {InputUser} config.user_id
      * @returns {messages.HighScores}
      */
     getInlineGameHighScores(config) {
@@ -1825,11 +1861,11 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getCommonChats.md}
-     * @param {object} config
-     * @property {InputUser} config.user_id
-     * @property {int} config.max_id
-     * @property {int} config.limit
+     * @see {@link https://core.telegram.org/method/messages.getCommonChats}
+     * @param {Object} config
+     * @param {InputUser} config.user_id
+     * @param {int} config.max_id
+     * @param {int} config.limit
      * @returns {messages.Chats}
      */
     getCommonChats(config) {
@@ -1837,9 +1873,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getAllChats.md}
-     * @param {object} config
-     * @property {Vector.<int>} config.except_ids
+     * @see {@link https://core.telegram.org/method/messages.getAllChats}
+     * @param {Object} config
+     * @param {Vector.<int>} config.except_ids
      * @returns {messages.Chats}
      */
     getAllChats(config) {
@@ -1847,10 +1883,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getWebPage.md}
-     * @param {object} config
-     * @property {string} config.url
-     * @property {int} config.hash
+     * @see {@link https://core.telegram.org/method/messages.getWebPage}
+     * @param {Object} config
+     * @param {string} config.url
+     * @param {int} config.hash
      * @returns {WebPage}
      */
     getWebPage(config) {
@@ -1858,11 +1894,11 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.toggleDialogPin.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.pinned
-     * @property {InputDialogPeer} config.peer
+     * @see {@link https://core.telegram.org/method/messages.toggleDialogPin}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.pinned
+     * @param {InputDialogPeer} config.peer
      * @returns {Bool}
      */
     toggleDialogPin(config) {
@@ -1870,11 +1906,11 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.reorderPinnedDialogs.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.force
-     * @property {Vector.<InputDialogPeer>} config.order
+     * @see {@link https://core.telegram.org/method/messages.reorderPinnedDialogs}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.force
+     * @param {Vector.<InputDialogPeer>} config.order
      * @returns {Bool}
      */
     reorderPinnedDialogs(config) {
@@ -1882,7 +1918,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getPinnedDialogs.md}
+     * @see {@link https://core.telegram.org/method/messages.getPinnedDialogs}
      * @returns {messages.PeerDialogs}
      */
     getPinnedDialogs() {
@@ -1890,12 +1926,12 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.setBotShippingResults.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {long} config.query_id
-     * @property {string} config.error
-     * @property {Vector.<ShippingOption>} config.shipping_options
+     * @see {@link https://core.telegram.org/method/messages.setBotShippingResults}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {long} config.query_id
+     * @param {string} config.error
+     * @param {Vector.<ShippingOption>} config.shipping_options
      * @returns {Bool}
      */
     setBotShippingResults(config) {
@@ -1903,12 +1939,12 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.setBotPrecheckoutResults.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.success
-     * @property {long} config.query_id
-     * @property {string} config.error
+     * @see {@link https://core.telegram.org/method/messages.setBotPrecheckoutResults}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.success
+     * @param {long} config.query_id
+     * @param {string} config.error
      * @returns {Bool}
      */
     setBotPrecheckoutResults(config) {
@@ -1916,10 +1952,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.uploadMedia.md}
-     * @param {object} config
-     * @property {InputPeer} config.peer
-     * @property {InputMedia} config.media
+     * @see {@link https://core.telegram.org/method/messages.uploadMedia}
+     * @param {Object} config
+     * @param {InputPeer} config.peer
+     * @param {InputMedia} config.media
      * @returns {MessageMedia}
      */
     uploadMedia(config) {
@@ -1927,11 +1963,11 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.sendScreenshotNotification.md}
-     * @param {object} config
-     * @property {InputPeer} config.peer
-     * @property {int} config.reply_to_msg_id
-     * @property {long} config.random_id
+     * @see {@link https://core.telegram.org/method/messages.sendScreenshotNotification}
+     * @param {Object} config
+     * @param {InputPeer} config.peer
+     * @param {int} config.reply_to_msg_id
+     * @param {long} config.random_id
      * @returns {Updates}
      */
     sendScreenshotNotification(config) {
@@ -1939,9 +1975,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getFavedStickers.md}
-     * @param {object} config
-     * @property {int} config.hash
+     * @see {@link https://core.telegram.org/method/messages.getFavedStickers}
+     * @param {Object} config
+     * @param {int} config.hash
      * @returns {messages.FavedStickers}
      */
     getFavedStickers(config) {
@@ -1949,10 +1985,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.faveSticker.md}
-     * @param {object} config
-     * @property {InputDocument} config.id
-     * @property {Bool} config.unfave
+     * @see {@link https://core.telegram.org/method/messages.faveSticker}
+     * @param {Object} config
+     * @param {InputDocument} config.id
+     * @param {Bool} config.unfave
      * @returns {Bool}
      */
     faveSticker(config) {
@@ -1960,14 +1996,14 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getUnreadMentions.md}
-     * @param {object} config
-     * @property {InputPeer} config.peer
-     * @property {int} config.offset_id
-     * @property {int} config.add_offset
-     * @property {int} config.limit
-     * @property {int} config.max_id
-     * @property {int} config.min_id
+     * @see {@link https://core.telegram.org/method/messages.getUnreadMentions}
+     * @param {Object} config
+     * @param {InputPeer} config.peer
+     * @param {int} config.offset_id
+     * @param {int} config.add_offset
+     * @param {int} config.limit
+     * @param {int} config.max_id
+     * @param {int} config.min_id
      * @returns {messages.Messages}
      */
     getUnreadMentions(config) {
@@ -1975,9 +2011,9 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.readMentions.md}
-     * @param {object} config
-     * @property {InputPeer} config.peer
+     * @see {@link https://core.telegram.org/method/messages.readMentions}
+     * @param {Object} config
+     * @param {InputPeer} config.peer
      * @returns {messages.AffectedHistory}
      */
     readMentions(config) {
@@ -1985,11 +2021,11 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getRecentLocations.md}
-     * @param {object} config
-     * @property {InputPeer} config.peer
-     * @property {int} config.limit
-     * @property {int} config.hash
+     * @see {@link https://core.telegram.org/method/messages.getRecentLocations}
+     * @param {Object} config
+     * @param {InputPeer} config.peer
+     * @param {int} config.limit
+     * @param {int} config.hash
      * @returns {messages.Messages}
      */
     getRecentLocations(config) {
@@ -1997,15 +2033,15 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.sendMultiMedia.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.silent
-     * @property {true} config.background
-     * @property {true} config.clear_draft
-     * @property {InputPeer} config.peer
-     * @property {int} config.reply_to_msg_id
-     * @property {Vector.<InputSingleMedia>} config.multi_media
+     * @see {@link https://core.telegram.org/method/messages.sendMultiMedia}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.silent
+     * @param {true} config.background
+     * @param {true} config.clear_draft
+     * @param {InputPeer} config.peer
+     * @param {int} config.reply_to_msg_id
+     * @param {Vector.<InputSingleMedia>} config.multi_media
      * @returns {Updates}
      */
     sendMultiMedia(config) {
@@ -2013,10 +2049,10 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.uploadEncryptedFile.md}
-     * @param {object} config
-     * @property {InputEncryptedChat} config.peer
-     * @property {InputEncryptedFile} config.file
+     * @see {@link https://core.telegram.org/method/messages.uploadEncryptedFile}
+     * @param {Object} config
+     * @param {InputEncryptedChat} config.peer
+     * @param {InputEncryptedFile} config.file
      * @returns {EncryptedFile}
      */
     uploadEncryptedFile(config) {
@@ -2024,12 +2060,12 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.searchStickerSets.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.exclude_featured
-     * @property {string} config.q
-     * @property {int} config.hash
+     * @see {@link https://core.telegram.org/method/messages.searchStickerSets}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.exclude_featured
+     * @param {string} config.q
+     * @param {int} config.hash
      * @returns {messages.FoundStickerSets}
      */
     searchStickerSets(config) {
@@ -2037,7 +2073,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getSplitRanges.md}
+     * @see {@link https://core.telegram.org/method/messages.getSplitRanges}
      * @returns {Vector.<MessageRange>}
      */
     getSplitRanges() {
@@ -2045,11 +2081,11 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.markDialogUnread.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.unread
-     * @property {InputDialogPeer} config.peer
+     * @see {@link https://core.telegram.org/method/messages.markDialogUnread}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.unread
+     * @param {InputDialogPeer} config.peer
      * @returns {Bool}
      */
     markDialogUnread(config) {
@@ -2057,7 +2093,7 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.getDialogUnreadMarks.md}
+     * @see {@link https://core.telegram.org/method/messages.getDialogUnreadMarks}
      * @returns {Vector.<DialogPeer>}
      */
     getDialogUnreadMarks() {
@@ -2065,17 +2101,30 @@ class Messages extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/messages.clearAllDrafts.md}
+     * @see {@link https://core.telegram.org/method/messages.clearAllDrafts}
      * @returns {Bool}
      */
     clearAllDrafts() {
         return this.send('messages.clearAllDrafts')
     }
+
+    /**
+     * @see {@link https://core.telegram.org/method/messages.updatePinnedMessage}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.silent
+     * @param {InputPeer} config.peer
+     * @param {int} config.id
+     * @returns {Updates}
+     */
+    updatePinnedMessage(config) {
+        return this.send('messages.updatePinnedMessage', config)
+    }
 }
 
 class Updates extends Ctor {
     /**
-     * @see {@link https://core.telegram.org/method/updates.getState.md}
+     * @see {@link https://core.telegram.org/method/updates.getState}
      * @returns {updates.State}
      */
     getState() {
@@ -2083,13 +2132,13 @@ class Updates extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/updates.getDifference.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {int} config.pts
-     * @property {int} config.pts_total_limit
-     * @property {int} config.date
-     * @property {int} config.qts
+     * @see {@link https://core.telegram.org/method/updates.getDifference}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {int} config.pts
+     * @param {int} config.pts_total_limit
+     * @param {int} config.date
+     * @param {int} config.qts
      * @returns {updates.Difference}
      */
     getDifference(config) {
@@ -2097,14 +2146,14 @@ class Updates extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/updates.getChannelDifference.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.force
-     * @property {InputChannel} config.channel
-     * @property {ChannelMessagesFilter} config.filter
-     * @property {int} config.pts
-     * @property {int} config.limit
+     * @see {@link https://core.telegram.org/method/updates.getChannelDifference}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.force
+     * @param {InputChannel} config.channel
+     * @param {ChannelMessagesFilter} config.filter
+     * @param {int} config.pts
+     * @param {int} config.limit
      * @returns {updates.ChannelDifference}
      */
     getChannelDifference(config) {
@@ -2114,9 +2163,9 @@ class Updates extends Ctor {
 
 class Photos extends Ctor {
     /**
-     * @see {@link https://core.telegram.org/method/photos.updateProfilePhoto.md}
-     * @param {object} config
-     * @property {InputPhoto} config.id
+     * @see {@link https://core.telegram.org/method/photos.updateProfilePhoto}
+     * @param {Object} config
+     * @param {InputPhoto} config.id
      * @returns {UserProfilePhoto}
      */
     updateProfilePhoto(config) {
@@ -2124,9 +2173,9 @@ class Photos extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/photos.uploadProfilePhoto.md}
-     * @param {object} config
-     * @property {InputFile} config.file
+     * @see {@link https://core.telegram.org/method/photos.uploadProfilePhoto}
+     * @param {Object} config
+     * @param {InputFile} config.file
      * @returns {photos.Photo}
      */
     uploadProfilePhoto(config) {
@@ -2134,9 +2183,9 @@ class Photos extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/photos.deletePhotos.md}
-     * @param {object} config
-     * @property {Vector.<InputPhoto>} config.id
+     * @see {@link https://core.telegram.org/method/photos.deletePhotos}
+     * @param {Object} config
+     * @param {Vector.<InputPhoto>} config.id
      * @returns {Vector.<long>}
      */
     deletePhotos(config) {
@@ -2144,12 +2193,12 @@ class Photos extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/photos.getUserPhotos.md}
-     * @param {object} config
-     * @property {InputUser} config.user_id
-     * @property {int} config.offset
-     * @property {long} config.max_id
-     * @property {int} config.limit
+     * @see {@link https://core.telegram.org/method/photos.getUserPhotos}
+     * @param {Object} config
+     * @param {InputUser} config.user_id
+     * @param {int} config.offset
+     * @param {long} config.max_id
+     * @param {int} config.limit
      * @returns {photos.Photos}
      */
     getUserPhotos(config) {
@@ -2159,11 +2208,11 @@ class Photos extends Ctor {
 
 class Upload extends Ctor {
     /**
-     * @see {@link https://core.telegram.org/method/upload.saveFilePart.md}
-     * @param {object} config
-     * @property {long} config.file_id
-     * @property {int} config.file_part
-     * @property {bytes} config.bytes
+     * @see {@link https://core.telegram.org/method/upload.saveFilePart}
+     * @param {Object} config
+     * @param {long} config.file_id
+     * @param {int} config.file_part
+     * @param {bytes} config.bytes
      * @returns {Bool}
      */
     saveFilePart(config) {
@@ -2171,11 +2220,11 @@ class Upload extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/upload.getFile.md}
-     * @param {object} config
-     * @property {InputFileLocation} config.location
-     * @property {int} config.offset
-     * @property {int} config.limit
+     * @see {@link https://core.telegram.org/method/upload.getFile}
+     * @param {Object} config
+     * @param {InputFileLocation} config.location
+     * @param {int} config.offset
+     * @param {int} config.limit
      * @returns {upload.File}
      */
     getFile(config) {
@@ -2183,12 +2232,12 @@ class Upload extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/upload.saveBigFilePart.md}
-     * @param {object} config
-     * @property {long} config.file_id
-     * @property {int} config.file_part
-     * @property {int} config.file_total_parts
-     * @property {bytes} config.bytes
+     * @see {@link https://core.telegram.org/method/upload.saveBigFilePart}
+     * @param {Object} config
+     * @param {long} config.file_id
+     * @param {int} config.file_part
+     * @param {int} config.file_total_parts
+     * @param {bytes} config.bytes
      * @returns {Bool}
      */
     saveBigFilePart(config) {
@@ -2196,11 +2245,11 @@ class Upload extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/upload.getWebFile.md}
-     * @param {object} config
-     * @property {InputWebFileLocation} config.location
-     * @property {int} config.offset
-     * @property {int} config.limit
+     * @see {@link https://core.telegram.org/method/upload.getWebFile}
+     * @param {Object} config
+     * @param {InputWebFileLocation} config.location
+     * @param {int} config.offset
+     * @param {int} config.limit
      * @returns {upload.WebFile}
      */
     getWebFile(config) {
@@ -2208,11 +2257,11 @@ class Upload extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/upload.getCdnFile.md}
-     * @param {object} config
-     * @property {bytes} config.file_token
-     * @property {int} config.offset
-     * @property {int} config.limit
+     * @see {@link https://core.telegram.org/method/upload.getCdnFile}
+     * @param {Object} config
+     * @param {bytes} config.file_token
+     * @param {int} config.offset
+     * @param {int} config.limit
      * @returns {upload.CdnFile}
      */
     getCdnFile(config) {
@@ -2220,10 +2269,10 @@ class Upload extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/upload.reuploadCdnFile.md}
-     * @param {object} config
-     * @property {bytes} config.file_token
-     * @property {bytes} config.request_token
+     * @see {@link https://core.telegram.org/method/upload.reuploadCdnFile}
+     * @param {Object} config
+     * @param {bytes} config.file_token
+     * @param {bytes} config.request_token
      * @returns {Vector.<FileHash>}
      */
     reuploadCdnFile(config) {
@@ -2231,10 +2280,10 @@ class Upload extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/upload.getCdnFileHashes.md}
-     * @param {object} config
-     * @property {bytes} config.file_token
-     * @property {int} config.offset
+     * @see {@link https://core.telegram.org/method/upload.getCdnFileHashes}
+     * @param {Object} config
+     * @param {bytes} config.file_token
+     * @param {int} config.offset
      * @returns {Vector.<FileHash>}
      */
     getCdnFileHashes(config) {
@@ -2242,10 +2291,10 @@ class Upload extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/upload.getFileHashes.md}
-     * @param {object} config
-     * @property {InputFileLocation} config.location
-     * @property {int} config.offset
+     * @see {@link https://core.telegram.org/method/upload.getFileHashes}
+     * @param {Object} config
+     * @param {InputFileLocation} config.location
+     * @param {int} config.offset
      * @returns {Vector.<FileHash>}
      */
     getFileHashes(config) {
@@ -2255,7 +2304,7 @@ class Upload extends Ctor {
 
 class Help extends Ctor {
     /**
-     * @see {@link https://core.telegram.org/method/help.getConfig.md}
+     * @see {@link https://core.telegram.org/method/help.getConfig}
      * @returns {Config}
      */
     getConfig() {
@@ -2263,7 +2312,7 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/help.getNearestDc.md}
+     * @see {@link https://core.telegram.org/method/help.getNearestDc}
      * @returns {NearestDc}
      */
     getNearestDc() {
@@ -2271,9 +2320,9 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/help.getAppUpdate.md}
-     * @param {object} config
-     * @property {string} config.source
+     * @see {@link https://core.telegram.org/method/help.getAppUpdate}
+     * @param {Object} config
+     * @param {string} config.source
      * @returns {help.AppUpdate}
      */
     getAppUpdate(config) {
@@ -2281,9 +2330,9 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/help.saveAppLog.md}
-     * @param {object} config
-     * @property {Vector.<InputAppEvent>} config.events
+     * @see {@link https://core.telegram.org/method/help.saveAppLog}
+     * @param {Object} config
+     * @param {Vector.<InputAppEvent>} config.events
      * @returns {Bool}
      */
     saveAppLog(config) {
@@ -2291,7 +2340,7 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/help.getInviteText.md}
+     * @see {@link https://core.telegram.org/method/help.getInviteText}
      * @returns {help.InviteText}
      */
     getInviteText() {
@@ -2299,7 +2348,7 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/help.getSupport.md}
+     * @see {@link https://core.telegram.org/method/help.getSupport}
      * @returns {help.Support}
      */
     getSupport() {
@@ -2307,9 +2356,9 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/help.getAppChangelog.md}
-     * @param {object} config
-     * @property {string} config.prev_app_version
+     * @see {@link https://core.telegram.org/method/help.getAppChangelog}
+     * @param {Object} config
+     * @param {string} config.prev_app_version
      * @returns {Updates}
      */
     getAppChangelog(config) {
@@ -2317,10 +2366,10 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/help.setBotUpdatesStatus.md}
-     * @param {object} config
-     * @property {int} config.pending_updates_count
-     * @property {string} config.message
+     * @see {@link https://core.telegram.org/method/help.setBotUpdatesStatus}
+     * @param {Object} config
+     * @param {int} config.pending_updates_count
+     * @param {string} config.message
      * @returns {Bool}
      */
     setBotUpdatesStatus(config) {
@@ -2328,7 +2377,7 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/help.getCdnConfig.md}
+     * @see {@link https://core.telegram.org/method/help.getCdnConfig}
      * @returns {CdnConfig}
      */
     getCdnConfig() {
@@ -2336,9 +2385,9 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/help.getRecentMeUrls.md}
-     * @param {object} config
-     * @property {string} config.referer
+     * @see {@link https://core.telegram.org/method/help.getRecentMeUrls}
+     * @param {Object} config
+     * @param {string} config.referer
      * @returns {help.RecentMeUrls}
      */
     getRecentMeUrls(config) {
@@ -2346,7 +2395,7 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/help.getProxyData.md}
+     * @see {@link https://core.telegram.org/method/help.getProxyData}
      * @returns {help.ProxyData}
      */
     getProxyData() {
@@ -2354,7 +2403,7 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/help.getTermsOfServiceUpdate.md}
+     * @see {@link https://core.telegram.org/method/help.getTermsOfServiceUpdate}
      * @returns {help.TermsOfServiceUpdate}
      */
     getTermsOfServiceUpdate() {
@@ -2362,9 +2411,9 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/help.acceptTermsOfService.md}
-     * @param {object} config
-     * @property {DataJSON} config.id
+     * @see {@link https://core.telegram.org/method/help.acceptTermsOfService}
+     * @param {Object} config
+     * @param {DataJSON} config.id
      * @returns {Bool}
      */
     acceptTermsOfService(config) {
@@ -2372,9 +2421,9 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/help.getDeepLinkInfo.md}
-     * @param {object} config
-     * @property {string} config.path
+     * @see {@link https://core.telegram.org/method/help.getDeepLinkInfo}
+     * @param {Object} config
+     * @param {string} config.path
      * @returns {help.DeepLinkInfo}
      */
     getDeepLinkInfo(config) {
@@ -2382,22 +2431,52 @@ class Help extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/help.getPassportConfig.md}
-     * @param {object} config
-     * @property {int} config.hash
+     * @see {@link https://core.telegram.org/method/help.getPassportConfig}
+     * @param {Object} config
+     * @param {int} config.hash
      * @returns {help.PassportConfig}
      */
     getPassportConfig(config) {
         return this.send('help.getPassportConfig', config)
     }
+
+    /**
+     * @see {@link https://core.telegram.org/method/help.getSupportName}
+     * @returns {help.SupportName}
+     */
+    getSupportName() {
+        return this.send('help.getSupportName')
+    }
+
+    /**
+     * @see {@link https://core.telegram.org/method/help.getUserInfo}
+     * @param {Object} config
+     * @param {InputUser} config.user_id
+     * @returns {help.UserInfo}
+     */
+    getUserInfo(config) {
+        return this.send('help.getUserInfo', config)
+    }
+
+    /**
+     * @see {@link https://core.telegram.org/method/help.editUserInfo}
+     * @param {Object} config
+     * @param {InputUser} config.user_id
+     * @param {string} config.message
+     * @param {Vector.<MessageEntity>} config.entities
+     * @returns {help.UserInfo}
+     */
+    editUserInfo(config) {
+        return this.send('help.editUserInfo', config)
+    }
 }
 
 class Channels extends Ctor {
     /**
-     * @see {@link https://core.telegram.org/method/channels.readHistory.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {int} config.max_id
+     * @see {@link https://core.telegram.org/method/channels.readHistory}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {int} config.max_id
      * @returns {Bool}
      */
     readHistory(config) {
@@ -2405,10 +2484,10 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.deleteMessages.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {Vector.<int>} config.id
+     * @see {@link https://core.telegram.org/method/channels.deleteMessages}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {Vector.<int>} config.id
      * @returns {messages.AffectedMessages}
      */
     deleteMessages(config) {
@@ -2416,10 +2495,10 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.deleteUserHistory.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {InputUser} config.user_id
+     * @see {@link https://core.telegram.org/method/channels.deleteUserHistory}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {InputUser} config.user_id
      * @returns {messages.AffectedHistory}
      */
     deleteUserHistory(config) {
@@ -2427,11 +2506,11 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.reportSpam.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {InputUser} config.user_id
-     * @property {Vector.<int>} config.id
+     * @see {@link https://core.telegram.org/method/channels.reportSpam}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {InputUser} config.user_id
+     * @param {Vector.<int>} config.id
      * @returns {Bool}
      */
     reportSpam(config) {
@@ -2439,10 +2518,10 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.getMessages.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {Vector.<InputMessage>} config.id
+     * @see {@link https://core.telegram.org/method/channels.getMessages}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {Vector.<InputMessage>} config.id
      * @returns {messages.Messages}
      */
     getMessages(config) {
@@ -2450,13 +2529,13 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.getParticipants.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {ChannelParticipantsFilter} config.filter
-     * @property {int} config.offset
-     * @property {int} config.limit
-     * @property {int} config.hash
+     * @see {@link https://core.telegram.org/method/channels.getParticipants}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {ChannelParticipantsFilter} config.filter
+     * @param {int} config.offset
+     * @param {int} config.limit
+     * @param {int} config.hash
      * @returns {channels.ChannelParticipants}
      */
     getParticipants(config) {
@@ -2464,10 +2543,10 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.getParticipant.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {InputUser} config.user_id
+     * @see {@link https://core.telegram.org/method/channels.getParticipant}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {InputUser} config.user_id
      * @returns {channels.ChannelParticipant}
      */
     getParticipant(config) {
@@ -2475,9 +2554,9 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.getChannels.md}
-     * @param {object} config
-     * @property {Vector.<InputChannel>} config.id
+     * @see {@link https://core.telegram.org/method/channels.getChannels}
+     * @param {Object} config
+     * @param {Vector.<InputChannel>} config.id
      * @returns {messages.Chats}
      */
     getChannels(config) {
@@ -2485,9 +2564,9 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.getFullChannel.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
+     * @see {@link https://core.telegram.org/method/channels.getFullChannel}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
      * @returns {messages.ChatFull}
      */
     getFullChannel(config) {
@@ -2495,13 +2574,13 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.createChannel.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.broadcast
-     * @property {true} config.megagroup
-     * @property {string} config.title
-     * @property {string} config.about
+     * @see {@link https://core.telegram.org/method/channels.createChannel}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.broadcast
+     * @param {true} config.megagroup
+     * @param {string} config.title
+     * @param {string} config.about
      * @returns {Updates}
      */
     createChannel(config) {
@@ -2509,10 +2588,10 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.editAbout.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {string} config.about
+     * @see {@link https://core.telegram.org/method/channels.editAbout}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {string} config.about
      * @returns {Bool}
      */
     editAbout(config) {
@@ -2520,11 +2599,11 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.editAdmin.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {InputUser} config.user_id
-     * @property {ChannelAdminRights} config.admin_rights
+     * @see {@link https://core.telegram.org/method/channels.editAdmin}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {InputUser} config.user_id
+     * @param {ChannelAdminRights} config.admin_rights
      * @returns {Updates}
      */
     editAdmin(config) {
@@ -2532,10 +2611,10 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.editTitle.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {string} config.title
+     * @see {@link https://core.telegram.org/method/channels.editTitle}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {string} config.title
      * @returns {Updates}
      */
     editTitle(config) {
@@ -2543,10 +2622,10 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.editPhoto.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {InputChatPhoto} config.photo
+     * @see {@link https://core.telegram.org/method/channels.editPhoto}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {InputChatPhoto} config.photo
      * @returns {Updates}
      */
     editPhoto(config) {
@@ -2554,10 +2633,10 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.checkUsername.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {string} config.username
+     * @see {@link https://core.telegram.org/method/channels.checkUsername}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {string} config.username
      * @returns {Bool}
      */
     checkUsername(config) {
@@ -2565,10 +2644,10 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.updateUsername.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {string} config.username
+     * @see {@link https://core.telegram.org/method/channels.updateUsername}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {string} config.username
      * @returns {Bool}
      */
     updateUsername(config) {
@@ -2576,9 +2655,9 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.joinChannel.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
+     * @see {@link https://core.telegram.org/method/channels.joinChannel}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
      * @returns {Updates}
      */
     joinChannel(config) {
@@ -2586,9 +2665,9 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.leaveChannel.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
+     * @see {@link https://core.telegram.org/method/channels.leaveChannel}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
      * @returns {Updates}
      */
     leaveChannel(config) {
@@ -2596,10 +2675,10 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.inviteToChannel.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {Vector.<InputUser>} config.users
+     * @see {@link https://core.telegram.org/method/channels.inviteToChannel}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {Vector.<InputUser>} config.users
      * @returns {Updates}
      */
     inviteToChannel(config) {
@@ -2607,9 +2686,9 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.exportInvite.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
+     * @see {@link https://core.telegram.org/method/channels.exportInvite}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
      * @returns {ExportedChatInvite}
      */
     exportInvite(config) {
@@ -2617,9 +2696,9 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.deleteChannel.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
+     * @see {@link https://core.telegram.org/method/channels.deleteChannel}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
      * @returns {Updates}
      */
     deleteChannel(config) {
@@ -2627,10 +2706,10 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.toggleInvites.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {Bool} config.enabled
+     * @see {@link https://core.telegram.org/method/channels.toggleInvites}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {Bool} config.enabled
      * @returns {Updates}
      */
     toggleInvites(config) {
@@ -2638,11 +2717,11 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.exportMessageLink.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {int} config.id
-     * @property {Bool} config.grouped
+     * @see {@link https://core.telegram.org/method/channels.exportMessageLink}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {int} config.id
+     * @param {Bool} config.grouped
      * @returns {ExportedMessageLink}
      */
     exportMessageLink(config) {
@@ -2650,10 +2729,10 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.toggleSignatures.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {Bool} config.enabled
+     * @see {@link https://core.telegram.org/method/channels.toggleSignatures}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {Bool} config.enabled
      * @returns {Updates}
      */
     toggleSignatures(config) {
@@ -2661,12 +2740,12 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.updatePinnedMessage.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.silent
-     * @property {InputChannel} config.channel
-     * @property {int} config.id
+     * @see {@link https://core.telegram.org/method/channels.updatePinnedMessage}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.silent
+     * @param {InputChannel} config.channel
+     * @param {int} config.id
      * @returns {Updates}
      */
     updatePinnedMessage(config) {
@@ -2674,7 +2753,7 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.getAdminedPublicChannels.md}
+     * @see {@link https://core.telegram.org/method/channels.getAdminedPublicChannels}
      * @returns {messages.Chats}
      */
     getAdminedPublicChannels() {
@@ -2682,11 +2761,11 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.editBanned.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {InputUser} config.user_id
-     * @property {ChannelBannedRights} config.banned_rights
+     * @see {@link https://core.telegram.org/method/channels.editBanned}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {InputUser} config.user_id
+     * @param {ChannelBannedRights} config.banned_rights
      * @returns {Updates}
      */
     editBanned(config) {
@@ -2694,16 +2773,16 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.getAdminLog.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {InputChannel} config.channel
-     * @property {string} config.q
-     * @property {ChannelAdminLogEventsFilter} config.events_filter
-     * @property {Vector.<InputUser>} config.admins
-     * @property {long} config.max_id
-     * @property {long} config.min_id
-     * @property {int} config.limit
+     * @see {@link https://core.telegram.org/method/channels.getAdminLog}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {InputChannel} config.channel
+     * @param {string} config.q
+     * @param {ChannelAdminLogEventsFilter} config.events_filter
+     * @param {Vector.<InputUser>} config.admins
+     * @param {long} config.max_id
+     * @param {long} config.min_id
+     * @param {int} config.limit
      * @returns {channels.AdminLogResults}
      */
     getAdminLog(config) {
@@ -2711,10 +2790,10 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.setStickers.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {InputStickerSet} config.stickerset
+     * @see {@link https://core.telegram.org/method/channels.setStickers}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {InputStickerSet} config.stickerset
      * @returns {Bool}
      */
     setStickers(config) {
@@ -2722,10 +2801,10 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.readMessageContents.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {Vector.<int>} config.id
+     * @see {@link https://core.telegram.org/method/channels.readMessageContents}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {Vector.<int>} config.id
      * @returns {Bool}
      */
     readMessageContents(config) {
@@ -2733,10 +2812,10 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.deleteHistory.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {int} config.max_id
+     * @see {@link https://core.telegram.org/method/channels.deleteHistory}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {int} config.max_id
      * @returns {Bool}
      */
     deleteHistory(config) {
@@ -2744,10 +2823,10 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.togglePreHistoryHidden.md}
-     * @param {object} config
-     * @property {InputChannel} config.channel
-     * @property {Bool} config.enabled
+     * @see {@link https://core.telegram.org/method/channels.togglePreHistoryHidden}
+     * @param {Object} config
+     * @param {InputChannel} config.channel
+     * @param {Bool} config.enabled
      * @returns {Updates}
      */
     togglePreHistoryHidden(config) {
@@ -2755,9 +2834,9 @@ class Channels extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/channels.getLeftChannels.md}
-     * @param {object} config
-     * @property {int} config.offset
+     * @see {@link https://core.telegram.org/method/channels.getLeftChannels}
+     * @param {Object} config
+     * @param {int} config.offset
      * @returns {messages.Chats}
      */
     getLeftChannels(config) {
@@ -2767,10 +2846,10 @@ class Channels extends Ctor {
 
 class Bots extends Ctor {
     /**
-     * @see {@link https://core.telegram.org/method/bots.sendCustomRequest.md}
-     * @param {object} config
-     * @property {string} config.custom_method
-     * @property {DataJSON} config.params
+     * @see {@link https://core.telegram.org/method/bots.sendCustomRequest}
+     * @param {Object} config
+     * @param {string} config.custom_method
+     * @param {DataJSON} config.params
      * @returns {DataJSON}
      */
     sendCustomRequest(config) {
@@ -2778,10 +2857,10 @@ class Bots extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/bots.answerWebhookJSONQuery.md}
-     * @param {object} config
-     * @property {long} config.query_id
-     * @property {DataJSON} config.data
+     * @see {@link https://core.telegram.org/method/bots.answerWebhookJSONQuery}
+     * @param {Object} config
+     * @param {long} config.query_id
+     * @param {DataJSON} config.data
      * @returns {Bool}
      */
     answerWebhookJSONQuery(config) {
@@ -2791,9 +2870,9 @@ class Bots extends Ctor {
 
 class Payments extends Ctor {
     /**
-     * @see {@link https://core.telegram.org/method/payments.getPaymentForm.md}
-     * @param {object} config
-     * @property {int} config.msg_id
+     * @see {@link https://core.telegram.org/method/payments.getPaymentForm}
+     * @param {Object} config
+     * @param {int} config.msg_id
      * @returns {payments.PaymentForm}
      */
     getPaymentForm(config) {
@@ -2801,9 +2880,9 @@ class Payments extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/payments.getPaymentReceipt.md}
-     * @param {object} config
-     * @property {int} config.msg_id
+     * @see {@link https://core.telegram.org/method/payments.getPaymentReceipt}
+     * @param {Object} config
+     * @param {int} config.msg_id
      * @returns {payments.PaymentReceipt}
      */
     getPaymentReceipt(config) {
@@ -2811,12 +2890,12 @@ class Payments extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/payments.validateRequestedInfo.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.save
-     * @property {int} config.msg_id
-     * @property {PaymentRequestedInfo} config.info
+     * @see {@link https://core.telegram.org/method/payments.validateRequestedInfo}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.save
+     * @param {int} config.msg_id
+     * @param {PaymentRequestedInfo} config.info
      * @returns {payments.ValidatedRequestedInfo}
      */
     validateRequestedInfo(config) {
@@ -2824,13 +2903,13 @@ class Payments extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/payments.sendPaymentForm.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {int} config.msg_id
-     * @property {string} config.requested_info_id
-     * @property {string} config.shipping_option_id
-     * @property {InputPaymentCredentials} config.credentials
+     * @see {@link https://core.telegram.org/method/payments.sendPaymentForm}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {int} config.msg_id
+     * @param {string} config.requested_info_id
+     * @param {string} config.shipping_option_id
+     * @param {InputPaymentCredentials} config.credentials
      * @returns {payments.PaymentResult}
      */
     sendPaymentForm(config) {
@@ -2838,7 +2917,7 @@ class Payments extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/payments.getSavedInfo.md}
+     * @see {@link https://core.telegram.org/method/payments.getSavedInfo}
      * @returns {payments.SavedInfo}
      */
     getSavedInfo() {
@@ -2846,11 +2925,11 @@ class Payments extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/payments.clearSavedInfo.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.credentials
-     * @property {true} config.info
+     * @see {@link https://core.telegram.org/method/payments.clearSavedInfo}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.credentials
+     * @param {true} config.info
      * @returns {Bool}
      */
     clearSavedInfo(config) {
@@ -2860,14 +2939,14 @@ class Payments extends Ctor {
 
 class Stickers extends Ctor {
     /**
-     * @see {@link https://core.telegram.org/method/stickers.createStickerSet.md}
-     * @param {object} config
-     * @property {#} config.flags
-     * @property {true} config.masks
-     * @property {InputUser} config.user_id
-     * @property {string} config.title
-     * @property {string} config.short_name
-     * @property {Vector.<InputStickerSetItem>} config.stickers
+     * @see {@link https://core.telegram.org/method/stickers.createStickerSet}
+     * @param {Object} config
+     * @param {#} config.flags
+     * @param {true} config.masks
+     * @param {InputUser} config.user_id
+     * @param {string} config.title
+     * @param {string} config.short_name
+     * @param {Vector.<InputStickerSetItem>} config.stickers
      * @returns {messages.StickerSet}
      */
     createStickerSet(config) {
@@ -2875,9 +2954,9 @@ class Stickers extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/stickers.removeStickerFromSet.md}
-     * @param {object} config
-     * @property {InputDocument} config.sticker
+     * @see {@link https://core.telegram.org/method/stickers.removeStickerFromSet}
+     * @param {Object} config
+     * @param {InputDocument} config.sticker
      * @returns {messages.StickerSet}
      */
     removeStickerFromSet(config) {
@@ -2885,10 +2964,10 @@ class Stickers extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/stickers.changeStickerPosition.md}
-     * @param {object} config
-     * @property {InputDocument} config.sticker
-     * @property {int} config.position
+     * @see {@link https://core.telegram.org/method/stickers.changeStickerPosition}
+     * @param {Object} config
+     * @param {InputDocument} config.sticker
+     * @param {int} config.position
      * @returns {messages.StickerSet}
      */
     changeStickerPosition(config) {
@@ -2896,10 +2975,10 @@ class Stickers extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/stickers.addStickerToSet.md}
-     * @param {object} config
-     * @property {InputStickerSet} config.stickerset
-     * @property {InputStickerSetItem} config.sticker
+     * @see {@link https://core.telegram.org/method/stickers.addStickerToSet}
+     * @param {Object} config
+     * @param {InputStickerSet} config.stickerset
+     * @param {InputStickerSetItem} config.sticker
      * @returns {messages.StickerSet}
      */
     addStickerToSet(config) {
@@ -2909,7 +2988,7 @@ class Stickers extends Ctor {
 
 class Phone extends Ctor {
     /**
-     * @see {@link https://core.telegram.org/method/phone.getCallConfig.md}
+     * @see {@link https://core.telegram.org/method/phone.getCallConfig}
      * @returns {DataJSON}
      */
     getCallConfig() {
@@ -2917,12 +2996,12 @@ class Phone extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/phone.requestCall.md}
-     * @param {object} config
-     * @property {InputUser} config.user_id
-     * @property {int} config.random_id
-     * @property {bytes} config.g_a_hash
-     * @property {PhoneCallProtocol} config.protocol
+     * @see {@link https://core.telegram.org/method/phone.requestCall}
+     * @param {Object} config
+     * @param {InputUser} config.user_id
+     * @param {int} config.random_id
+     * @param {bytes} config.g_a_hash
+     * @param {PhoneCallProtocol} config.protocol
      * @returns {phone.PhoneCall}
      */
     requestCall(config) {
@@ -2930,11 +3009,11 @@ class Phone extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/phone.acceptCall.md}
-     * @param {object} config
-     * @property {InputPhoneCall} config.peer
-     * @property {bytes} config.g_b
-     * @property {PhoneCallProtocol} config.protocol
+     * @see {@link https://core.telegram.org/method/phone.acceptCall}
+     * @param {Object} config
+     * @param {InputPhoneCall} config.peer
+     * @param {bytes} config.g_b
+     * @param {PhoneCallProtocol} config.protocol
      * @returns {phone.PhoneCall}
      */
     acceptCall(config) {
@@ -2942,12 +3021,12 @@ class Phone extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/phone.confirmCall.md}
-     * @param {object} config
-     * @property {InputPhoneCall} config.peer
-     * @property {bytes} config.g_a
-     * @property {long} config.key_fingerprint
-     * @property {PhoneCallProtocol} config.protocol
+     * @see {@link https://core.telegram.org/method/phone.confirmCall}
+     * @param {Object} config
+     * @param {InputPhoneCall} config.peer
+     * @param {bytes} config.g_a
+     * @param {long} config.key_fingerprint
+     * @param {PhoneCallProtocol} config.protocol
      * @returns {phone.PhoneCall}
      */
     confirmCall(config) {
@@ -2955,9 +3034,9 @@ class Phone extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/phone.receivedCall.md}
-     * @param {object} config
-     * @property {InputPhoneCall} config.peer
+     * @see {@link https://core.telegram.org/method/phone.receivedCall}
+     * @param {Object} config
+     * @param {InputPhoneCall} config.peer
      * @returns {Bool}
      */
     receivedCall(config) {
@@ -2965,12 +3044,12 @@ class Phone extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/phone.discardCall.md}
-     * @param {object} config
-     * @property {InputPhoneCall} config.peer
-     * @property {int} config.duration
-     * @property {PhoneCallDiscardReason} config.reason
-     * @property {long} config.connection_id
+     * @see {@link https://core.telegram.org/method/phone.discardCall}
+     * @param {Object} config
+     * @param {InputPhoneCall} config.peer
+     * @param {int} config.duration
+     * @param {PhoneCallDiscardReason} config.reason
+     * @param {long} config.connection_id
      * @returns {Updates}
      */
     discardCall(config) {
@@ -2978,11 +3057,11 @@ class Phone extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/phone.setCallRating.md}
-     * @param {object} config
-     * @property {InputPhoneCall} config.peer
-     * @property {int} config.rating
-     * @property {string} config.comment
+     * @see {@link https://core.telegram.org/method/phone.setCallRating}
+     * @param {Object} config
+     * @param {InputPhoneCall} config.peer
+     * @param {int} config.rating
+     * @param {string} config.comment
      * @returns {Updates}
      */
     setCallRating(config) {
@@ -2990,10 +3069,10 @@ class Phone extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/phone.saveCallDebug.md}
-     * @param {object} config
-     * @property {InputPhoneCall} config.peer
-     * @property {DataJSON} config.debug
+     * @see {@link https://core.telegram.org/method/phone.saveCallDebug}
+     * @param {Object} config
+     * @param {InputPhoneCall} config.peer
+     * @param {DataJSON} config.debug
      * @returns {Bool}
      */
     saveCallDebug(config) {
@@ -3003,10 +3082,10 @@ class Phone extends Ctor {
 
 class Langpack extends Ctor {
     /**
-     * @see {@link https://core.telegram.org/method/langpack.getLangPack.md}
-     * @param {object} config
-     * @property {string} config.lang_pack
-     * @property {string} config.lang_code
+     * @see {@link https://core.telegram.org/method/langpack.getLangPack}
+     * @param {Object} config
+     * @param {string} config.lang_pack
+     * @param {string} config.lang_code
      * @returns {LangPackDifference}
      */
     getLangPack(config) {
@@ -3014,11 +3093,11 @@ class Langpack extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/langpack.getStrings.md}
-     * @param {object} config
-     * @property {string} config.lang_pack
-     * @property {string} config.lang_code
-     * @property {Vector.<string>} config.keys
+     * @see {@link https://core.telegram.org/method/langpack.getStrings}
+     * @param {Object} config
+     * @param {string} config.lang_pack
+     * @param {string} config.lang_code
+     * @param {Vector.<string>} config.keys
      * @returns {Vector.<LangPackString>}
      */
     getStrings(config) {
@@ -3026,9 +3105,10 @@ class Langpack extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/langpack.getDifference.md}
-     * @param {object} config
-     * @property {int} config.from_version
+     * @see {@link https://core.telegram.org/method/langpack.getDifference}
+     * @param {Object} config
+     * @param {string} config.lang_code
+     * @param {int} config.from_version
      * @returns {LangPackDifference}
      */
     getDifference(config) {
@@ -3036,13 +3116,24 @@ class Langpack extends Ctor {
     }
 
     /**
-     * @see {@link https://core.telegram.org/method/langpack.getLanguages.md}
-     * @param {object} config
-     * @property {string} config.lang_pack
+     * @see {@link https://core.telegram.org/method/langpack.getLanguages}
+     * @param {Object} config
+     * @param {string} config.lang_pack
      * @returns {Vector.<LangPackLanguage>}
      */
     getLanguages(config) {
         return this.send('langpack.getLanguages', config)
+    }
+
+    /**
+     * @see {@link https://core.telegram.org/method/langpack.getLanguage}
+     * @param {Object} config
+     * @param {string} config.lang_pack
+     * @param {string} config.lang_code
+     * @returns {LangPackLanguage}
+     */
+    getLanguage(config) {
+        return this.send('langpack.getLanguage', config)
     }
 }
 
