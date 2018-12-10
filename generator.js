@@ -1,7 +1,7 @@
 const fs = require('fs')
 const { parse } = require('tl-parser')
 
-const dump = json => console.log(JSON.stringify(json, (k, v) => (k == 'start' || k == 'end' ? undefined : v), '    '));
+const dump = json => console.log(JSON.stringify(json, (k, v) => (k === 'start' || k === 'end' ? undefined : v), '    '));
 
 /// tl parser
 const mapArgs = arg => {
@@ -14,25 +14,25 @@ const mapArgs = arg => {
 }
 
 const mapFunc = fn => {
-	let subExp = fn.resultType.expression.subexpressions
-	let type = fn.resultType.id.name + (subExp.length ? subExp.map(s => `.<${s.id.name}>` ).join('') : '')
+    let subExp = fn.resultType.expression.subexpressions
+    let type = fn.resultType.id.name + (subExp.length ? subExp.map(s => `.<${s.id.name}>` ).join('') : '')
     let optional = fn.optionalArgs.map(mapArgs)
     let args = fn.args.map(mapArgs)
 
-	return { name: fn.id.name, optional, args, return: type }
+    return { name: fn.id.name, optional, args, return: type }
 }
 
 const mapCtor = ctor => {
-    if (ctor.id.name == 'vector') return;
+    if (ctor.id.name === 'vector') return null
 
-	let sexp = ctor.resultType.expression.subexpressions
-	let type = ctor.resultType.id.name + (sexp.length ? sexp.map(s => `.<${s.id.name}>` ).join('') : '')
-	let args = ctor.args.map(mapArgs)
+    let sexp = ctor.resultType.expression.subexpressions
+    let type = ctor.resultType.id.name + (sexp.length ? sexp.map(s => `.<${s.id.name}>` ).join('') : '')
+    let args = ctor.args.map(mapArgs)
 
-	return {
-		name: ctor.id.name,
-		type, args
-	}
+    return {
+        name: ctor.id.name,
+        type, args
+    }
 }
 
 /// tpl
@@ -40,22 +40,20 @@ const mapCtor = ctor => {
 const capitalise = s => s.replace(/^./, str => str.toUpperCase())
 
 const typeTpl = (ctor) => {
-    !ctor && dump(ctor)
-    return `
-/**
- *
- * @see {@link https://core.telegram.org/constructor/${ctor.name}}
- * @typedef {${ctor.type}} ${ctor.name}` + ctor.args.map(p =>
-    `\n * @property {${p.type}} ${p.name}` ).join('') + `\n */`
+    // !ctor && dump(ctor)
+    return '\n/**\n *'
+        + `\n * @see {@link https://core.telegram.org/constructor/${ctor.name}}`
+        + `\n * @typedef {${ctor.type}} ${ctor.name}`
+        + ctor.args.map(p => `\n * @property {${p.type}} ${p.name}` ).join('') + '\n */'
 }
 
-const descriptionTpl = (method) => {
+const methodTpl = (method) => {
     const hasParams = method.args && method.args.length
     return `
     /**
      * @see {@link https://core.telegram.org/method/${method.name}}` +
-     `${hasParams ? '\n     * @param {object} config': ''}` +
-     method.args.map(p =>  `\n     * @property {${p.type}} config.${p.name}` ).join('') + `
+     `${hasParams ? '\n     * @param {Object} config' : ''}`
+     + method.args.map(p => `\n     * @param {${p.type}} config.${p.name}` ).join('') + `
      * @returns {${method.return}}
      */`
 }
@@ -63,13 +61,13 @@ const descriptionTpl = (method) => {
 const classTpl = (name, methods) => {
     return `class ${capitalise(name)} extends Ctor {` +
     methods.map(fn => {
-        const description = descriptionTpl(fn)
+        const description = methodTpl(fn)
         const hasParams = fn.args && fn.args.length
 
-    return `${description}\n    ${fn.method}(${hasParams ? 'config': ''}) {
-        return this.send('${fn.name}'${hasParams ? ', config': ''})
+        return `${description}\n    ${fn.method}(${hasParams ? 'config' : ''}) {
+        return this.send('${fn.name}'${hasParams ? ', config' : ''})
     }`
-    }).join('\n') + `\n}\n`
+    }).join('\n') + '\n}\n'
 }
 
 /// run
@@ -103,7 +101,7 @@ const functions = result.functions.reduce((m, fn) => {
 
     fn.method = method || ctor
 
-    return m[ctor].push(fn), m
+    return (m[ctor].push(fn), m)
 }, {})
 
 
