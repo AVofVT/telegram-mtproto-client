@@ -7,8 +7,8 @@ const capitalise = s => s.replace(/^./, str => str.toUpperCase())
 
 const convertType = (type) => {
     if (~type.indexOf('.')) {
-        if (~type.indexOf('Vector.')) {
-            return type.replace('Vector.', 'Array.')
+        if (~type.toLowerCase().indexOf('vector.')) {
+            return type.replace(/^vector\./i, 'Array.')
         }
         else {
             return type.replace('.', '_')
@@ -70,24 +70,10 @@ const ctorTpl = (ctor) => {
         + properties + '\n */'
 }
 
-// const typeTpl = (type, name) => {
-//     return `
-//     /**
-//      * @see {@link https://core.telegram.org/constructor/${type.name}}
-//      * @typedef {(number|string)} NumberLike
-//      */`
-
-//     return '\n/**\n *'
-//         + `\n * @see {@link https://core.telegram.org/constructor/${type.name}}`
-//         + `\n * @typedef {Object} ${convertType(type.name)}`
-//         + `\n * @property {string} [_=${type.name}]`
-//         + properties + '\n */'
-// }
-
 
 const methodTpl = (method) => {
     const hasParams = method.args && method.args.length
-    const params = method.args.map(p => `\n     * @param {${p.optional ? '?' : ''}${convertType(p.type)}} config.${p.name}` ).join('')
+    const params = method.args.map(p => `\n     * @param {${p.optional ? '?' : ''}${p.type}} config.${p.name}` ).join('')
     return `
     /**
      * @see {@link https://core.telegram.org/method/${method.name}}` +

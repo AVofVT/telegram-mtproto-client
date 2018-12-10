@@ -359,7 +359,7 @@
  * @property {string} [_=future_salts]
  * @property {long} req_msg_id
  * @property {int} now
- * @property {vector_<future_salt>} salts
+ * @property {Array.<future_salt>} salts
  */
 
 /**
@@ -433,7 +433,7 @@
  * @property {string} [_=accessPointRule]
  * @property {string} phone_prefix_rules
  * @property {int} dc_id
- * @property {vector_<IpPort>} ips
+ * @property {Array.<IpPort>} ips
  */
 
 /**
@@ -443,7 +443,7 @@
  * @property {string} [_=help.configSimple]
  * @property {int} date
  * @property {int} expires
- * @property {vector_<AccessPointRule>} rules
+ * @property {Array.<AccessPointRule>} rules
  */
 
 /**
@@ -8750,7 +8750,7 @@ class AuthMtProto extends Ctor {
     /**
      * @see {@link https://core.telegram.org/method/auth.dropTempAuthKeys}
      * @param {Object} config
-     * @param {Array_<long>} config.except_auth_keys
+     * @param {Array.<long>} config.except_auth_keys
      * @returns {Bool}
      */
     dropTempAuthKeys(config) {
@@ -8766,7 +8766,7 @@ class AccountMtProto extends Ctor {
      * @param {string} config.token
      * @param {Bool} config.app_sandbox
      * @param {bytes} config.secret
-     * @param {Array_<int>} config.other_uids
+     * @param {Array.<int>} config.other_uids
      * @returns {Bool}
      */
     registerDevice(config) {
@@ -8778,7 +8778,7 @@ class AccountMtProto extends Ctor {
      * @param {Object} config
      * @param {int} config.token_type
      * @param {string} config.token
-     * @param {Array_<int>} config.other_uids
+     * @param {Array.<int>} config.other_uids
      * @returns {Bool}
      */
     unregisterDevice(config) {
@@ -8890,7 +8890,7 @@ class AccountMtProto extends Ctor {
      * @see {@link https://core.telegram.org/method/account.setPrivacy}
      * @param {Object} config
      * @param {InputPrivacyKey} config.key
-     * @param {Array_<InputPrivacyRule>} config.rules
+     * @param {Array.<InputPrivacyRule>} config.rules
      * @returns {account_PrivacyRules}
      */
     setPrivacy(config) {
@@ -9079,7 +9079,7 @@ class AccountMtProto extends Ctor {
     /**
      * @see {@link https://core.telegram.org/method/account.getSecureValue}
      * @param {Object} config
-     * @param {Array_<SecureValueType>} config.types
+     * @param {Array.<SecureValueType>} config.types
      * @returns {Array.<SecureValue>}
      */
     getSecureValue(config) {
@@ -9100,7 +9100,7 @@ class AccountMtProto extends Ctor {
     /**
      * @see {@link https://core.telegram.org/method/account.deleteSecureValue}
      * @param {Object} config
-     * @param {Array_<SecureValueType>} config.types
+     * @param {Array.<SecureValueType>} config.types
      * @returns {Bool}
      */
     deleteSecureValue(config) {
@@ -9125,7 +9125,7 @@ class AccountMtProto extends Ctor {
      * @param {int} config.bot_id
      * @param {string} config.scope
      * @param {string} config.public_key
-     * @param {Array_<SecureValueHash>} config.value_hashes
+     * @param {Array.<SecureValueHash>} config.value_hashes
      * @param {SecureCredentialsEncrypted} config.credentials
      * @returns {Bool}
      */
@@ -9238,7 +9238,7 @@ class UsersMtProto extends Ctor {
     /**
      * @see {@link https://core.telegram.org/method/users.getUsers}
      * @param {Object} config
-     * @param {Array_<InputUser>} config.id
+     * @param {Array.<InputUser>} config.id
      * @returns {Array.<User>}
      */
     getUsers(config) {
@@ -9259,7 +9259,7 @@ class UsersMtProto extends Ctor {
      * @see {@link https://core.telegram.org/method/users.setSecureValueErrors}
      * @param {Object} config
      * @param {InputUser} config.id
-     * @param {Array_<SecureValueError>} config.errors
+     * @param {Array.<SecureValueError>} config.errors
      * @returns {Bool}
      */
     setSecureValueErrors(config) {
@@ -9299,7 +9299,7 @@ class ContactsMtProto extends Ctor {
     /**
      * @see {@link https://core.telegram.org/method/contacts.importContacts}
      * @param {Object} config
-     * @param {Array_<InputContact>} config.contacts
+     * @param {Array.<InputContact>} config.contacts
      * @returns {contacts_ImportedContacts}
      */
     importContacts(config) {
@@ -9319,7 +9319,7 @@ class ContactsMtProto extends Ctor {
     /**
      * @see {@link https://core.telegram.org/method/contacts.deleteContacts}
      * @param {Object} config
-     * @param {Array_<InputUser>} config.id
+     * @param {Array.<InputUser>} config.id
      * @returns {Bool}
      */
     deleteContacts(config) {
@@ -9368,7 +9368,7 @@ class ContactsMtProto extends Ctor {
     /**
      * @see {@link https://core.telegram.org/method/contacts.importCard}
      * @param {Object} config
-     * @param {Array_<int>} config.export_card
+     * @param {Array.<int>} config.export_card
      * @returns {User}
      */
     importCard(config) {
@@ -9457,7 +9457,7 @@ class MessagesMtProto extends Ctor {
     /**
      * @see {@link https://core.telegram.org/method/messages.getMessages}
      * @param {Object} config
-     * @param {Array_<InputMessage>} config.id
+     * @param {Array.<InputMessage>} config.id
      * @returns {messages_Messages}
      */
     getMessages(config) {
@@ -9548,7 +9548,7 @@ class MessagesMtProto extends Ctor {
      * @param {Object} config
      * @param {number} config.flags
      * @param {?true} config.revoke
-     * @param {Array_<int>} config.id
+     * @param {Array.<int>} config.id
      * @returns {messages_AffectedMessages}
      */
     deleteMessages(config) {
@@ -9589,7 +9589,7 @@ class MessagesMtProto extends Ctor {
      * @param {string} config.message
      * @param {long} config.random_id
      * @param {?ReplyMarkup} config.reply_markup
-     * @param {?Array_<MessageEntity>} config.entities
+     * @param {?Array.<MessageEntity>} config.entities
      * @returns {Updates}
      */
     sendMessage(config) {
@@ -9609,7 +9609,7 @@ class MessagesMtProto extends Ctor {
      * @param {string} config.message
      * @param {long} config.random_id
      * @param {?ReplyMarkup} config.reply_markup
-     * @param {?Array_<MessageEntity>} config.entities
+     * @param {?Array.<MessageEntity>} config.entities
      * @returns {Updates}
      */
     sendMedia(config) {
@@ -9625,8 +9625,8 @@ class MessagesMtProto extends Ctor {
      * @param {?true} config.with_my_score
      * @param {?true} config.grouped
      * @param {InputPeer} config.from_peer
-     * @param {Array_<int>} config.id
-     * @param {Array_<long>} config.random_id
+     * @param {Array.<int>} config.id
+     * @param {Array.<long>} config.random_id
      * @param {InputPeer} config.to_peer
      * @returns {Updates}
      */
@@ -9668,7 +9668,7 @@ class MessagesMtProto extends Ctor {
      * @see {@link https://core.telegram.org/method/messages.report}
      * @param {Object} config
      * @param {InputPeer} config.peer
-     * @param {Array_<int>} config.id
+     * @param {Array.<int>} config.id
      * @param {ReportReason} config.reason
      * @returns {Bool}
      */
@@ -9679,7 +9679,7 @@ class MessagesMtProto extends Ctor {
     /**
      * @see {@link https://core.telegram.org/method/messages.getChats}
      * @param {Object} config
-     * @param {Array_<int>} config.id
+     * @param {Array.<int>} config.id
      * @returns {messages_Chats}
      */
     getChats(config) {
@@ -9744,7 +9744,7 @@ class MessagesMtProto extends Ctor {
     /**
      * @see {@link https://core.telegram.org/method/messages.createChat}
      * @param {Object} config
-     * @param {Array_<InputUser>} config.users
+     * @param {Array.<InputUser>} config.users
      * @param {string} config.title
      * @returns {Updates}
      */
@@ -9879,7 +9879,7 @@ class MessagesMtProto extends Ctor {
     /**
      * @see {@link https://core.telegram.org/method/messages.readMessageContents}
      * @param {Object} config
-     * @param {Array_<int>} config.id
+     * @param {Array.<int>} config.id
      * @returns {messages_AffectedMessages}
      */
     readMessageContents(config) {
@@ -9912,7 +9912,7 @@ class MessagesMtProto extends Ctor {
      * @param {Object} config
      * @param {number} config.flags
      * @param {string} config.message
-     * @param {?Array_<MessageEntity>} config.entities
+     * @param {?Array.<MessageEntity>} config.entities
      * @returns {MessageMedia}
      */
     getWebPagePreview(config) {
@@ -9997,7 +9997,7 @@ class MessagesMtProto extends Ctor {
      * @see {@link https://core.telegram.org/method/messages.getMessagesViews}
      * @param {Object} config
      * @param {InputPeer} config.peer
-     * @param {Array_<int>} config.id
+     * @param {Array.<int>} config.id
      * @param {Bool} config.increment
      * @returns {Array.<int>}
      */
@@ -10057,7 +10057,7 @@ class MessagesMtProto extends Ctor {
      * @param {Object} config
      * @param {number} config.flags
      * @param {?true} config.masks
-     * @param {Array_<long>} config.order
+     * @param {Array.<long>} config.order
      * @returns {Bool}
      */
     reorderStickerSets(config) {
@@ -10130,7 +10130,7 @@ class MessagesMtProto extends Ctor {
      * @param {?true} config.gallery
      * @param {?true} config.private
      * @param {long} config.query_id
-     * @param {Array_<InputBotInlineResult>} config.results
+     * @param {Array.<InputBotInlineResult>} config.results
      * @param {int} config.cache_time
      * @param {?string} config.next_offset
      * @param {?InlineBotSwitchPM} config.switch_pm
@@ -10180,7 +10180,7 @@ class MessagesMtProto extends Ctor {
      * @param {?string} config.message
      * @param {?InputMedia} config.media
      * @param {?ReplyMarkup} config.reply_markup
-     * @param {?Array_<MessageEntity>} config.entities
+     * @param {?Array.<MessageEntity>} config.entities
      * @param {?InputGeoPoint} config.geo_point
      * @returns {Updates}
      */
@@ -10198,7 +10198,7 @@ class MessagesMtProto extends Ctor {
      * @param {?string} config.message
      * @param {?InputMedia} config.media
      * @param {?ReplyMarkup} config.reply_markup
-     * @param {?Array_<MessageEntity>} config.entities
+     * @param {?Array.<MessageEntity>} config.entities
      * @param {?InputGeoPoint} config.geo_point
      * @returns {Bool}
      */
@@ -10238,7 +10238,7 @@ class MessagesMtProto extends Ctor {
     /**
      * @see {@link https://core.telegram.org/method/messages.getPeerDialogs}
      * @param {Object} config
-     * @param {Array_<InputDialogPeer>} config.peers
+     * @param {Array.<InputDialogPeer>} config.peers
      * @returns {messages_PeerDialogs}
      */
     getPeerDialogs(config) {
@@ -10253,7 +10253,7 @@ class MessagesMtProto extends Ctor {
      * @param {?int} config.reply_to_msg_id
      * @param {InputPeer} config.peer
      * @param {string} config.message
-     * @param {?Array_<MessageEntity>} config.entities
+     * @param {?Array.<MessageEntity>} config.entities
      * @returns {Bool}
      */
     saveDraft(config) {
@@ -10281,7 +10281,7 @@ class MessagesMtProto extends Ctor {
     /**
      * @see {@link https://core.telegram.org/method/messages.readFeaturedStickers}
      * @param {Object} config
-     * @param {Array_<long>} config.id
+     * @param {Array.<long>} config.id
      * @returns {Bool}
      */
     readFeaturedStickers(config) {
@@ -10426,7 +10426,7 @@ class MessagesMtProto extends Ctor {
     /**
      * @see {@link https://core.telegram.org/method/messages.getAllChats}
      * @param {Object} config
-     * @param {Array_<int>} config.except_ids
+     * @param {Array.<int>} config.except_ids
      * @returns {messages_Chats}
      */
     getAllChats(config) {
@@ -10461,7 +10461,7 @@ class MessagesMtProto extends Ctor {
      * @param {Object} config
      * @param {number} config.flags
      * @param {?true} config.force
-     * @param {Array_<InputDialogPeer>} config.order
+     * @param {Array.<InputDialogPeer>} config.order
      * @returns {Bool}
      */
     reorderPinnedDialogs(config) {
@@ -10482,7 +10482,7 @@ class MessagesMtProto extends Ctor {
      * @param {number} config.flags
      * @param {long} config.query_id
      * @param {?string} config.error
-     * @param {?Array_<ShippingOption>} config.shipping_options
+     * @param {?Array.<ShippingOption>} config.shipping_options
      * @returns {Bool}
      */
     setBotShippingResults(config) {
@@ -10592,7 +10592,7 @@ class MessagesMtProto extends Ctor {
      * @param {?true} config.clear_draft
      * @param {InputPeer} config.peer
      * @param {?int} config.reply_to_msg_id
-     * @param {Array_<InputSingleMedia>} config.multi_media
+     * @param {Array.<InputSingleMedia>} config.multi_media
      * @returns {Updates}
      */
     sendMultiMedia(config) {
@@ -10736,7 +10736,7 @@ class PhotosMtProto extends Ctor {
     /**
      * @see {@link https://core.telegram.org/method/photos.deletePhotos}
      * @param {Object} config
-     * @param {Array_<InputPhoto>} config.id
+     * @param {Array.<InputPhoto>} config.id
      * @returns {Array.<long>}
      */
     deletePhotos(config) {
@@ -10883,7 +10883,7 @@ class HelpMtProto extends Ctor {
     /**
      * @see {@link https://core.telegram.org/method/help.saveAppLog}
      * @param {Object} config
-     * @param {Array_<InputAppEvent>} config.events
+     * @param {Array.<InputAppEvent>} config.events
      * @returns {Bool}
      */
     saveAppLog(config) {
@@ -11014,7 +11014,7 @@ class HelpMtProto extends Ctor {
      * @param {Object} config
      * @param {InputUser} config.user_id
      * @param {string} config.message
-     * @param {Array_<MessageEntity>} config.entities
+     * @param {Array.<MessageEntity>} config.entities
      * @returns {help_UserInfo}
      */
     editUserInfo(config) {
@@ -11038,7 +11038,7 @@ class ChannelsMtProto extends Ctor {
      * @see {@link https://core.telegram.org/method/channels.deleteMessages}
      * @param {Object} config
      * @param {InputChannel} config.channel
-     * @param {Array_<int>} config.id
+     * @param {Array.<int>} config.id
      * @returns {messages_AffectedMessages}
      */
     deleteMessages(config) {
@@ -11061,7 +11061,7 @@ class ChannelsMtProto extends Ctor {
      * @param {Object} config
      * @param {InputChannel} config.channel
      * @param {InputUser} config.user_id
-     * @param {Array_<int>} config.id
+     * @param {Array.<int>} config.id
      * @returns {Bool}
      */
     reportSpam(config) {
@@ -11072,7 +11072,7 @@ class ChannelsMtProto extends Ctor {
      * @see {@link https://core.telegram.org/method/channels.getMessages}
      * @param {Object} config
      * @param {InputChannel} config.channel
-     * @param {Array_<InputMessage>} config.id
+     * @param {Array.<InputMessage>} config.id
      * @returns {messages_Messages}
      */
     getMessages(config) {
@@ -11107,7 +11107,7 @@ class ChannelsMtProto extends Ctor {
     /**
      * @see {@link https://core.telegram.org/method/channels.getChannels}
      * @param {Object} config
-     * @param {Array_<InputChannel>} config.id
+     * @param {Array.<InputChannel>} config.id
      * @returns {messages_Chats}
      */
     getChannels(config) {
@@ -11229,7 +11229,7 @@ class ChannelsMtProto extends Ctor {
      * @see {@link https://core.telegram.org/method/channels.inviteToChannel}
      * @param {Object} config
      * @param {InputChannel} config.channel
-     * @param {Array_<InputUser>} config.users
+     * @param {Array.<InputUser>} config.users
      * @returns {Updates}
      */
     inviteToChannel(config) {
@@ -11330,7 +11330,7 @@ class ChannelsMtProto extends Ctor {
      * @param {InputChannel} config.channel
      * @param {string} config.q
      * @param {?ChannelAdminLogEventsFilter} config.events_filter
-     * @param {?Array_<InputUser>} config.admins
+     * @param {?Array.<InputUser>} config.admins
      * @param {long} config.max_id
      * @param {long} config.min_id
      * @param {int} config.limit
@@ -11355,7 +11355,7 @@ class ChannelsMtProto extends Ctor {
      * @see {@link https://core.telegram.org/method/channels.readMessageContents}
      * @param {Object} config
      * @param {InputChannel} config.channel
-     * @param {Array_<int>} config.id
+     * @param {Array.<int>} config.id
      * @returns {Bool}
      */
     readMessageContents(config) {
@@ -11497,7 +11497,7 @@ class StickersMtProto extends Ctor {
      * @param {InputUser} config.user_id
      * @param {string} config.title
      * @param {string} config.short_name
-     * @param {Array_<InputStickerSetItem>} config.stickers
+     * @param {Array.<InputStickerSetItem>} config.stickers
      * @returns {messages_StickerSet}
      */
     createStickerSet(config) {
@@ -11648,7 +11648,7 @@ class LangpackMtProto extends Ctor {
      * @param {Object} config
      * @param {string} config.lang_pack
      * @param {string} config.lang_code
-     * @param {Array_<string>} config.keys
+     * @param {Array.<string>} config.keys
      * @returns {Array.<LangPackString>}
      */
     getStrings(config) {
