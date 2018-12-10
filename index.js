@@ -448,39 +448,11 @@
 
 /**
  *
- * @see {@link https://core.telegram.org/constructor/boolFalse}
- * @typedef {Object} boolFalse
- * @property {string} [_=boolFalse]
- */
-
-/**
- *
- * @see {@link https://core.telegram.org/constructor/boolTrue}
- * @typedef {Object} boolTrue
- * @property {string} [_=boolTrue]
- */
-
-/**
- *
- * @see {@link https://core.telegram.org/constructor/true}
- * @typedef {Object} true
- * @property {string} [_=true]
- */
-
-/**
- *
  * @see {@link https://core.telegram.org/constructor/error}
  * @typedef {Object} error
  * @property {string} [_=error]
  * @property {int} code
  * @property {string} text
- */
-
-/**
- *
- * @see {@link https://core.telegram.org/constructor/null}
- * @typedef {Object} null
- * @property {string} [_=null]
  */
 
 /**
@@ -11705,7 +11677,7 @@ class MTProtoClient {
 
         const ctor = this.constructor
 
-        
+
         /**
          * @type {ContestMtProto}
          * @memberof MTProtoClient

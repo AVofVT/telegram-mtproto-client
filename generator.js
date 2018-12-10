@@ -164,7 +164,7 @@ const external = Object.keys(functions).map(capitalise).map(ctor => `MTProtoClie
 let classes = Object.keys(functions).map(ctor => classTpl(ctor, functions[ctor])).join('\n')
 
 
-let constructors = result.constructors.filter(c => !!c).map(ctorTpl).join('\n')
+let constructors = result.constructors.filter(c => !!c && ['boolFalse', 'boolTrue', 'true', 'null'].indexOf(c.name) === -1).map(ctorTpl).join('\n')
 
 
 
